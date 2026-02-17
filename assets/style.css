@@ -96,6 +96,7 @@
   --gruen: #00a878;
   --gruen-hell: #e0fff6;
   --rot: #e53e3e;
+  --weiss: #ffffff;
 
   /* ── Schatten & Rahmen ── */
   --schatten: 4px 4px 0 var(--tinte);
@@ -129,7 +130,7 @@ body {
 /* ── Seitenkopf ── */
 .seitenkopf-oben {
   background: var(--tinte);
-  color: #fff;
+  color: var(--weiss);
   padding: 0.4em 2em;
   display: flex;
   align-items: center;
@@ -242,7 +243,7 @@ nav a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #fff;
+  color: var(--weiss);
   background: var(--orange);
   display: inline-block;
   padding: 0.15em 0.6em;
@@ -395,19 +396,19 @@ nav a:hover {
 }
 .schaltflaeche-orange {
   background: var(--orange);
-  color: #fff;
+  color: var(--weiss);
 }
 .schaltflaeche-tuerkis {
   background: var(--tuerkis);
-  color: #fff;
+  color: var(--weiss);
 }
 .schaltflaeche-lila {
   background: var(--lila);
-  color: #fff;
+  color: var(--weiss);
 }
 .schaltflaeche-gruen {
   background: var(--gruen);
-  color: #fff;
+  color: var(--weiss);
 }
 
 /* ── Abschnittsüberschrift ── */
