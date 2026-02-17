@@ -96,6 +96,7 @@
   --gruen: #00a878;
   --gruen-hell: #e0fff6;
   --rot: #e53e3e;
+  --blau: #6b2bff;
   --weiss: #ffffff;
 
   /* ── Schatten & Rahmen ── */
@@ -174,7 +175,7 @@ body {
 
 .logo-titel em {
   font-style: normal;
-  color: var(--lila);
+  color: var(--blau);
 }
 
 .logo-untertitel {
@@ -211,8 +212,8 @@ nav a:last-child {
   border-right: none;
 }
 nav a:hover {
-  background: var(--lila);
-  color: var(--tinte);
+  background: var(--blau);
+  color: var(--weiss);
 }
 
 /* ── Seiteninhalt ── */
