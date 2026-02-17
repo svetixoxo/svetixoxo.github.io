@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="artikel-rahmen">
+  <p class="artikel-meta">{{ page.date | date: "%Y-%m-%d" }} // {{ page.category | default: "Allgemein" }}</p>
+
+  <h1>{{ page.title }}</h1>
+
+  <div class="etiketten-zeile">
+    {% for etikett in page.tags %}
+      <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
+    {% endfor %}
+  </div>
+
+  {{ content }}
+
+  <hr class="artikel-trennlinie">
+
+  <div class="artikel-navigation">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis">← {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-orange" style="margin-left:auto">{{ page.next.title }} →</a>
+    {% endif %}
+  </div>
+</div>
