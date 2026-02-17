@@ -129,7 +129,7 @@ body {
 /* ── Seitenkopf ── */
 .seitenkopf-oben {
   background: var(--tinte);
-  color: #fff;
+  color: var(--orange);
   padding: 0.4em 2em;
   display: flex;
   align-items: center;
