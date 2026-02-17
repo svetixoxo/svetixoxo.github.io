@@ -1,0 +1,55 @@
+---
+layout: default
+title: Startseite
+---
+
+{% assign aufmacher-beitrag = site.posts.first %}
+{% if aufmacher-beitrag %}
+<div class="aufmacher">
+  <div class="aufmacher-haupt">
+    <div class="aufmacher-etikett">✦ Neuester Artikel</div>
+    <h1>{{ aufmacher-beitrag.title }}</h1>
+    <hr class="aufmacher-trennlinie">
+    <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 180 }}</p>
+    <div style="margin-bottom:1.2em">
+      {% for etikett in aufmacher-beitrag.tags %}
+        <span class="etikett etikett-tuerkis">{{ etikett }}</span>
+      {% endfor %}
+    </div>
+    <a href="{{ aufmacher-beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-orange">Artikel lesen →</a>
+  </div>
+  <div class="aufmacher-seite">
+    <div class="aufmacher-seite-titel">Weitere Artikel</div>
+    {% for beitrag in site.posts limit:3 offset:1 %}
+    <div class="seitenleiste-eintrag">
+      <div class="seitenleiste-kategorie">{{ beitrag.category | default: "Allgemein" }}</div>
+      <div class="seitenleiste-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="abschnitt-kopf">
+  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="#ff6b2b"/></svg>
+  <h2>Alle Artikel</h2>
+</div>
+
+<div class="beitragsliste">
+  {% assign streifenfarben = "tuerkis,orange,lila,gruen" | split: "," %}
+  {% for beitrag in site.posts %}
+  {% assign farbe = streifenfarben[forloop.index0 | modulo: 4] %}
+  <div class="beitragskarte">
+    <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
+    <div class="beitragskarte-inhalt">
+      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Allgemein" }}</div>
+      <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
+      <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
+      {% for etikett in beitrag.tags %}
+        <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
+      {% endfor %}
+      <br><a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ farbe }}" style="margin-top:0.8em;font-size:0.75rem">Lesen →</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
