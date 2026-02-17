@@ -178,6 +178,10 @@ body {
   color: var(--orange);
 }
 
+.logo-titel em:hover {
+   color: var(--lila);
+}
+
 .logo-untertitel {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.68rem;
