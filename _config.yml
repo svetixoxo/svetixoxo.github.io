@@ -4,14 +4,16 @@ author: "Svetlana"
 url: "https://svetixoxo.github.io"
 baseurl: ""
 
-# Jekyll Settings
+# Markdown-Einstellungen
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 permalink: /:year/:month/:day/:title/
 timezone: Europe/Berlin
 
 # Theme
-theme: minima
+theme: null
 
 # Plugins
 plugins:
@@ -27,3 +29,9 @@ header_pages:
   - pages/sicherheit.md
   - pages/infrastruktur.md
   - pages/status.md
+
+# Ausschlüsse
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
