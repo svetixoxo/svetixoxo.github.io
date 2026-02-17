@@ -85,7 +85,7 @@
   --gedimmt: #666680;
   --linie: #d8d4cc;
 
-  --tuerkis: #00b8d9;
+  --tuerkis: #3e92e5; /* 00b8d9 */
   --tuerkis-hell: #e0f8ff;
   --orange: #ff6b2b;
   --orange-hell: #fff1eb;
@@ -216,7 +216,7 @@ nav a:last-child {
   border-right: none;
 }
 nav a:hover {
-  background: var(--lila);
+  background: var(--tuerkis);
   color: var(--weiss);
 }
 
