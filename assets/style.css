@@ -142,7 +142,7 @@ body {
 }
 
 .seitenkopf-oben .ausgabe {
-  color: var(--blau);
+  color: var(--orange);
 }
 
 .seitenkopf-haupt {
@@ -175,7 +175,7 @@ body {
 
 .logo-titel em {
   font-style: normal;
-  color: var(--blau);
+  color: var(--orange);
 }
 
 .logo-untertitel {
@@ -212,7 +212,7 @@ nav a:last-child {
   border-right: none;
 }
 nav a:hover {
-  background: var(--blau);
+  background: var(--lila);
   color: var(--weiss);
 }
 
