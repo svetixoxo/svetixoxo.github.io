@@ -130,8 +130,8 @@ body {
 
 /* ── Seitenkopf ── */
 .seitenkopf-oben {
-  background: var(--tinte);
-  color: var(--weiss);
+  background: var(--orange);
+  color: var(--tinte);
   padding: 0.4em 2em;
   display: flex;
   align-items: center;
@@ -216,7 +216,7 @@ nav a:last-child {
   border-right: none;
 }
 nav a:hover {
-  background: var(--tuerkis);
+  background: var(--lila);
   color: var(--weiss);
 }
 
