@@ -175,11 +175,11 @@ body {
 
 .logo-titel em {
   font-style: normal;
-  color: var(--orange);
+  color: var(--lila);
 }
 
 .logo-titel em:hover {
-   color: var(--lila);
+   color: var(--orange);
 }
 
 .logo-untertitel {
@@ -216,7 +216,7 @@ nav a:last-child {
   border-right: none;
 }
 nav a:hover {
-  background: var(--lila);
+  background: var(--tuerkis);
   color: var(--weiss);
 }
 
