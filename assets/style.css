@@ -129,7 +129,7 @@ body {
 /* ── Seitenkopf ── */
 .seitenkopf-oben {
   background: var(--tinte);
-  color: var(--orange);
+  color: #fff;
   padding: 0.4em 2em;
   display: flex;
   align-items: center;
@@ -140,7 +140,7 @@ body {
 }
 
 .seitenkopf-oben .ausgabe {
-  color: var(--gelb);
+  color: var(--orange);
 }
 
 .seitenkopf-haupt {
@@ -210,8 +210,8 @@ nav a:last-child {
   border-right: none;
 }
 nav a:hover {
-  background: var(--tinte);
-  color: var(--gelb);
+  background: var(--orange);
+  color: var(--tinte);
 }
 
 /* ── Seiteninhalt ── */
