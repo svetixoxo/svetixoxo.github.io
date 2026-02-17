@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% seo %}
+  {% feed_meta %}
+</head>
+<body>
+
+  <div class="seitenkopf-oben">
+    <span>{{ site.title }}</span>
+    <span class="ausgabe">// Linux · IoT · DIY</span>
+  </div>
+
+  <div class="seitenkopf-haupt">
+    <div class="logo-block">
+      <a class="logo-titel" href="{{ '/' | relative_url }}">svetixoxo.<em>github</em>io</a>
+      <span class="logo-untertitel">Linux · IoT · DIY</span>
+    </div>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Artikel</a>
+      <a href="{{ '/projekte/' | relative_url }}">Projekte</a>
+      <a href="{{ '/hardware/' | relative_url }}">Hardware</a>
+      <a href="{{ '/ueber/' | relative_url }}">Über</a>
+    </nav>
+  </div>
+
+  <div class="seiteninhalt">
+    {{ content }}
+  </div>
+
+  <footer class="seitenfuss">
+    <span>{{ site.title }}</span>
+    <span>— mit ❤️ gebaut —</span>
+    <span>© {{ site.time | date: "%Y" }}</span>
+  </footer>
+
+</body>
+</html>
