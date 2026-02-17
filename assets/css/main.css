@@ -625,24 +625,29 @@ code {
   color: #ff9060;
   font-weight: 700;
 }
+
 .highlight .s,
 .highlight .s1,
 .highlight .s2 {
   color: #68d391;
 }
+
 .highlight .c,
 .highlight .c1,
 .highlight .cm {
   color: #555;
 }
+
 .highlight .nf,
 .highlight .nb {
   color: #b794f4;
 }
+
 .highlight .mi,
 .highlight .mf {
   color: #ffd700;
 }
+
 .highlight .na {
   color: #79c0ff;
 }
@@ -676,28 +681,36 @@ code {
   .aufmacher {
     grid-template-columns: 1fr;
   }
+   
   .aufmacher-seite {
     border-top: var(--rahmen);
   }
+   
   .seitenkopf-oben {
     display: none;
   }
+   
   .seitenkopf-haupt {
     padding: 0.8em 1em;
   }
+   
   .logo-titel {
     font-size: 1.4rem;
   }
+   
   nav a {
     padding: 0.4em 0.6em;
     font-size: 0.7rem;
   }
+   
   .seiteninhalt {
     padding: 1.5em 1em;
   }
+   
   .artikel-rahmen {
     padding: 1.5em;
   }
+   
   .seitenfuss {
     flex-direction: column;
     gap: 0.3em;
