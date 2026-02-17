@@ -756,6 +756,10 @@ code {
   color: var(--weiss);
 }
 
+.seitenfuss em {
+   color: var(--rot);
+}
+
 /* ── Mobilansicht ── */
 @media (max-width: 700px) {
   .aufmacher {
