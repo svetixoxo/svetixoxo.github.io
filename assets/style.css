@@ -333,7 +333,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.profilbild img {
+.profilbild {
    width: 280px;
    aspect-ratio: 1;
    overflow: hidden;
