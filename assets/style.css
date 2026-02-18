@@ -749,7 +749,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 3px solid var(--orange);
+  border-top: 3px solid var(--tuerkis);
 }
 
 .seitenfuss span {
