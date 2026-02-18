@@ -25,10 +25,10 @@ plugins:
 header_pages:
   - index.md
   - pages/smart-home.md
-  - pages/speicher-backup.md
-  - pages/sicherheit.md
+  - pages/self-hosting.md
   - pages/infrastruktur.md
-  - pages/status.md
+  - pages/sicherheit.md
+  - pages/ueber.md
 
 # Ausschlüsse
 exclude:
