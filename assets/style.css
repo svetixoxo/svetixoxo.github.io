@@ -459,6 +459,11 @@ nav a:hover {
   color: var(--weiss);
 }
 
+.schaltflaeche-magenta {
+  background: var(--magenta);
+  color: var(--weiss);
+}
+
 .schaltflaeche-tuerkis {
   background: var(--tuerkis);
   color: var(--weiss);
