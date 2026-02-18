@@ -128,6 +128,16 @@ body {
   line-height: 1.6;
 }
 
+.aufmacher-etikett,
+.etikett,
+.schaltflaeche,
+.seitenkopf-oben,
+.seitenkopf-haupt,
+.seitenfuss
+{
+   user-select: none;
+}
+
 /* ── Seitenkopf ── */
 .seitenkopf-oben {
   background: var(--tinte);
