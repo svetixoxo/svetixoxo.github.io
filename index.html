@@ -13,7 +13,7 @@ title: Startseite
     <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 180 }}</p>
     <div style="margin-bottom:1.2em">
       {% for etikett in aufmacher-beitrag.tags %}
-        <span class="etikett etikett-tuerkis">{{ etikett }}</span>
+        <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
       {% endfor %}
     </div>
     <a href="{{ aufmacher-beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-orange">Artikel lesen →</a>
@@ -47,7 +47,9 @@ title: Startseite
       <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
       <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
       {% for etikett in beitrag.tags %}
-        <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
+        <div class="beitragskarte-etikett">
+          <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
+        </div>
       {% endfor %}
       <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ farbe }}" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">Lesen →</a>
     </div>
