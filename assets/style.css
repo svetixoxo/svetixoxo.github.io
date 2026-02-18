@@ -334,9 +334,17 @@ nav a:hover {
 }
 
 .profilbild img {
+   width: 280px;
+   aspect-ratio: 1;
+   overflow: hidden;
+   padding: 2em;
+}
+
+.profilbild img {
    width: 100%;
    height: 100%;
-   max-width: 280px;
+   object-fit: cover;
+   display: block;
    border: var(--border);
 }
 
