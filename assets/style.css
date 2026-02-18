@@ -238,8 +238,7 @@ nav a:hover {
   background: var(--hintergrund-karte);
 }
 
-.aufmacher-haupt,
-.aufmacher-info {
+.aufmacher-haupt {
   border-right: var(--rahmen);
   padding: 2em;
 }
