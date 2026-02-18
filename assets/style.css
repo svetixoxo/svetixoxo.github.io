@@ -131,8 +131,9 @@ body {
 .seitenkopf-oben {
   background: var(--orange);
   color: var(--tinte);
-  padding: 0.4em 2em;
-  display: flex;
+  padding: 0.4em 2em;/*
+  display: flex;*/
+  display: none;
   align-items: center;
   justify-content: space-between;
   font-family: "IBM Plex Mono", monospace;
