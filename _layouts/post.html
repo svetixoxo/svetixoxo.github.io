@@ -1,22 +1,43 @@
 ---
 layout: default
 ---
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const inhalt = document.querySelector('.artikel-inhalt');
+  if (!inhalt) return;
 
-<div class="artikel-rahmen">
+  const kinder = Array.from(inhalt.childNodes);
+  let aktuellerRahmen = null;
+
+  kinder.forEach(function(kind) {
+    if (kind.nodeType === 1 && kind.tagName === 'H2') {
+      aktuellerRahmen = document.createElement('div');
+      aktuellerRahmen.className = 'artikel-rahmen';
+      inhalt.insertBefore(aktuellerRahmen, kind);
+    }
+    if (aktuellerRahmen) {
+      aktuellerRahmen.appendChild(kind);
+    }
+  });
+});
+</script>
+
+<div class="artikel-kopf artikel-rahmen">
   <p class="artikel-meta">{{ page.date | date: "%Y-%m-%d" }} // {{ page.category | default: "Allgemein" }}</p>
-
   <h1>{{ page.title }}</h1>
-
   <div class="etiketten-zeile">
     {% for etikett in page.tags %}
       <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
     {% endfor %}
   </div>
+</div>
 
+<div class="artikel-inhalt">
   {{ content }}
+</div>
 
+<div class="artikel-rahmen">
   <hr class="artikel-trennlinie">
-
   <div class="artikel-navigation">
     {% if page.previous.url %}
       <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis">← {{ page.previous.title }}</a>
