@@ -130,8 +130,8 @@ body {
 
 /* ── Seitenkopf ── */
 .seitenkopf-oben {
-  background: var(--orange);
-  color: var(--tinte);
+  background: var(--tinte);
+  color: var(--weiss);
   padding: 0.4em 2em;
   display: flex;
   align-items: center;
