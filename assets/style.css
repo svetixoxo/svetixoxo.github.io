@@ -338,6 +338,7 @@ nav a:hover {
    aspect-ratio: 1;
    overflow: hidden;
    padding: 2em;
+   vertical-align: top;
 }
 
 .profilbild img {
