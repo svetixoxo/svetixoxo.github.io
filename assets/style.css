@@ -743,6 +743,7 @@ nav a:hover {
 }
 
 .artikel-nav-text {
+  text-align: left;
   display: flex;
   flex-direction: column;
   line-height: 1.3;
