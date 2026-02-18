@@ -8,17 +8,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const kinder = Array.from(inhalt.childNodes);
   let aktuellerRahmen = null;
+  let ersteH2Gefunden = false;
+
+  // Ersten Rahmen für alles vor der ersten h2-Überschrift
+  aktuellerRahmen = document.createElement('div');
+  aktuellerRahmen.className = 'artikel-rahmen';
+  inhalt.insertBefore(aktuellerRahmen, inhalt.firstChild);
 
   kinder.forEach(function(kind) {
     if (kind.nodeType === 1 && kind.tagName === 'H2') {
+      ersteH2Gefunden = true;
       aktuellerRahmen = document.createElement('div');
       aktuellerRahmen.className = 'artikel-rahmen';
       inhalt.insertBefore(aktuellerRahmen, kind);
     }
-    if (aktuellerRahmen) {
-      aktuellerRahmen.appendChild(kind);
-    }
+    aktuellerRahmen.appendChild(kind);
   });
+
+  // Ersten Rahmen entfernen falls er leer ist (Artikel beginnt direkt mit h2-Überschrift)
+  const rahmen = inhalt.querySelectorAll('.artikel-rahmen');
+  if (rahmen[0] && rahmen[0].childNodes.length === 0) {
+    rahmen[0].remove();
+  }
 });
 </script>
 
