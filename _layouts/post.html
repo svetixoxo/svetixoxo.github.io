@@ -39,14 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
   {{ content }}
 </div>
 
-<div class="artikel-rahmen">
-  <hr class="artikel-trennlinie">
-  <div class="artikel-navigation">
+<div class="artikel-navigation">
     {% if page.previous.url %}
       <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis">← {{ page.previous.title }}</a>
     {% endif %}
     {% if page.next.url %}
       <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta" style="margin-left:auto">{{ page.next.title }} →</a>
     {% endif %}
-  </div>
 </div>
