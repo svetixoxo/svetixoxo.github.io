@@ -715,6 +715,39 @@ nav a:hover {
   gap: 1em;
 }
 
+.artikel-navigation .schaltflaeche {
+  display: grid;
+  flex: 1;
+  padding: 0.8em 1.2em;
+  align-items: center;
+}
+
+.schaltflaeche-tuerkis.artikel-nav {
+  grid-template-columns: 24px 1fr;
+  gap: 0.8em;
+}
+
+.schaltflaeche-magenta.artikel-nav {
+  grid-template-columns: 1fr 24px;
+  gap: 0.8em;
+  text-align: right;
+}
+
+.artikel-nav-pfeil {
+  font-size: 1.4rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artikel-nav-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-size: 0.8rem;
+}
+
 /* ── Hinweisboxen ── */
 .hinweisbox {
   border: var(--rahmen);
