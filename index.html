@@ -35,7 +35,7 @@ title: Startseite
   <h2>Alle Artikel</h2>
 </div>
 
-<div class="beitragsliste">
+<div class="beitragsliste-raster">
   {% assign streifenfarben = "tuerkis,orange,lila,gruen" | split: "," %}
   {% for beitrag in site.posts %}
   {% assign farbindex = forloop.index0 | modulo: 4 %}
