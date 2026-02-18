@@ -415,6 +415,10 @@ nav a:hover {
   background: var(--gruen);
   color: var(--weiss);
 }
+.schaltflaeche-gelb {
+  background: var(--gelb);
+  color: var(--tinte);
+}
 
 /* ── Abschnittsüberschrift ── */
 .abschnitt-kopf {
