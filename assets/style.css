@@ -228,7 +228,7 @@ nav a:hover {
   padding: 2.5em 1.5em;
 }
 
-/* ── Aufmacher (Hero) ── */
+/* ── Aufmacher ── */
 .aufmacher {
   display: grid;
   grid-template-columns: 1fr 280px;
@@ -238,7 +238,8 @@ nav a:hover {
   background: var(--hintergrund-karte);
 }
 
-.aufmacher-haupt {
+.aufmacher-haupt,
+.aufmacher-info {
   border-right: var(--rahmen);
   padding: 2em;
 }
