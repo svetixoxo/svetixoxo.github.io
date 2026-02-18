@@ -264,7 +264,7 @@ nav a:hover {
   letter-spacing: -0.02em;
   color: var(--tinte);
   margin-bottom: 0.7em;
-  max-width: 480px;
+  max-width: 100%; /* 480px */
 }
 
 .aufmacher-trennlinie {
