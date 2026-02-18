@@ -3,23 +3,11 @@ layout: post
 title: "Mein Smart Home und die Infrastruktur dahinter"
 date: 2025-06-20
 categories: [smart-home]
+tags: [Smart Home, Infrastruktur, Sicherheit]
 excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden."
 ---
 
 **Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden.**
-
-1. [Das Netzwerk als Grundlage](#das-netzwerk-als-grundlage)
-2. [Netzwerksegmentierung und VLANs: Sicherheit durch Trennung](#netzwerksegmentierung-und-vlans-sicherheit-durch-trennung)
-3. [Server-Landschaft: Getrennte Aufgaben](#server-landschaft-getrennte-aufgaben)
-4. [Protokolle und Standards: Warum Apple HomeKit?](#protokolle-und-standards-warum-apple-homekit)
-5. [Smart Home: Vollständige Automatisierung](#smart-home-vollständige-automatisierung)
-6. [Videoüberwachung: Professionelle Sicherheit](#videoüberwachung-professionelle-sicherheit)
-7. [Zentrale Steuerung und Monitoring](#zentrale-steuerung-und-monitoring)
-8. [Redundanz und Ausfallsicherheit](#redundanz-und-ausfallsicherheit)
-9. [Sicherheit und Datenschutz](#sicherheit-und-datenschutz)
-10. [Kosten und Wirtschaftlichkeit](#kosten-und-wirtschaftlichkeit)
-11. [Erfahrungen](#erfahrungen)
-12. [Ausblick](#ausblick)
 
 ## Das Netzwerk als Grundlage
 
