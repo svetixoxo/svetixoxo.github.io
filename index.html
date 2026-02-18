@@ -38,7 +38,7 @@ title: Startseite
 <div class="beitragsliste-raster">
   {% assign streifenfarben = "tuerkis,orange,lila,gruen,gelb" | split: "," %}
   {% for beitrag in site.posts %}
-  {% assign farbindex = forloop.index0 | modulo: 4 %}
+  {% assign farbindex = forloop.index0 | modulo: 5 %}
   {% assign farbe = streifenfarben[farbindex] %}
   <div class="beitragskarte">
     <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
