@@ -129,7 +129,7 @@ body {
   line-height: 1.6;
 }
 
-a {
+a, .schaltflaeche {
   cursor: url('/assets/cursors/link.png') 4 4, pointer;
 }
 
