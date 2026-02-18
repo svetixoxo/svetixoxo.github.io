@@ -4,7 +4,6 @@ layout: default
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const inhalt = document.querySelector('.artikel-inhalt');
-  const kopf = document.querySelector('.artikel-kopf');
   if (!inhalt) return;
 
   const kinder = Array.from(inhalt.childNodes);
@@ -12,18 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   kinder.forEach(function(kind) {
     if (kind.nodeType === 1 && kind.tagName === 'H2') {
-      // Ab der ersten H2 → neuer artikel-rahmen in artikel-inhalt
       aktuellerRahmen = document.createElement('div');
       aktuellerRahmen.className = 'artikel-rahmen';
       inhalt.insertBefore(aktuellerRahmen, kind);
     }
-
     if (aktuellerRahmen) {
-      // Nach der ersten H2 → in neuen Rahmen
       aktuellerRahmen.appendChild(kind);
-    } else {
-      // Vor der ersten H2 → in artikel-kopf verschieben
-      if (kopf) kopf.appendChild(kind);
     }
   });
 });
@@ -32,6 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="artikel-kopf artikel-rahmen">
   <p class="artikel-meta">{{ page.date | date: "%Y-%m-%d" }} // {{ page.category | default: "Allgemein" }}</p>
   <h1>{{ page.title }}</h1>
+  {% if page.excerpt %}
+    <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
+  {% endif %}
   <div class="etiketten-zeile">
     {% for etikett in page.tags %}
       <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
