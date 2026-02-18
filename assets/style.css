@@ -324,14 +324,14 @@ nav a:hover {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--gedimmt);
-  border-bottom: 2px solid var(--linie);
+  border-bottom: 2px solid var(--orange);
   padding-bottom: 0.4em;
   margin-bottom: 0.2em;
 }
 
 .seitenleiste-eintrag {
   padding-bottom: 0.8em;
-  border-bottom: 2px solid var(--orange);
+  border-bottom: 2px solid var(--linie);
 }
 
 .seitenleiste-eintrag:last-child {
