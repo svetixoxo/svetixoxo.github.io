@@ -593,6 +593,10 @@ nav a:hover {
   margin-bottom: 0.9em;
 }
 
+.beitragskarte-etikett {
+   display: inline flow-root;
+}
+
 /* ── Artikel-Einzelansicht ── */
 .artikel-rahmen {
   background: var(--hintergrund-karte);
