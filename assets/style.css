@@ -624,6 +624,10 @@ nav a:hover {
   margin-bottom: 2em;
 }
 
+.artikel-kopf.artikel-rahmen {
+   background: var(--gelb);
+}
+
 .artikel-meta {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.68rem;
