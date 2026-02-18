@@ -132,7 +132,7 @@ body {
 .seitenkopf-oben {
   background: var(--tinte);
   color: var(--weiss);
-  padding: 0.4em 2em;
+  padding: 0.3rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,11 +143,13 @@ body {
 
 .seitenkopf-oben .ausgabe {
   color: var(--weiss);
+  text-transform: uppercase;
 }
 
 .seitenkopf-oben .ausgabe a {
   color: var(--weiss);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .seitenkopf-oben .ausgabe a:hover {
