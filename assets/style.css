@@ -134,7 +134,7 @@ a, .schaltflaeche {
 }
 
 p, h1, h2, h3, h4, h5, li {
-   cursor: url('/assets/cursors/xterm.png') 16 16, text;
+   cursor: url('/assets/cursors/xterm.png') 12 12, text;
 }
 /*
 .aufmacher-etikett,
