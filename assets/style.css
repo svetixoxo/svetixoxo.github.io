@@ -121,11 +121,20 @@ html {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  cursor: url('/assets/cursors/left_ptr.png') 4 4, auto;
   background: var(--hintergrund);
   background-image: radial-gradient(circle, #c8c0b0 1px, transparent 1px);
   background-size: 22px 22px;
   color: var(--text);
   line-height: 1.6;
+}
+
+a {
+  cursor: url('/assets/cursors/link.png') 4 4, pointer;
+}
+
+p, h1, h2, h3, h4, h5, li {
+   cursor: url('/assets/cursors/xterm.png') 16 16, text;
 }
 /*
 .aufmacher-etikett,
