@@ -40,10 +40,27 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="artikel-navigation">
-    {% if page.previous.url %}
-      <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis">← {{ page.previous.title }}</a>
-    {% endif %}
-    {% if page.next.url %}
-      <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta" style="margin-left:auto">{{ page.next.title }} →</a>
-    {% endif %}
+  {% if page.previous.url %}
+    {% assign vorheriger-titel = page.previous.title | split: ": " %}
+    <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
+      <span class="artikel-nav-pfeil">←</span>
+      <span class="artikel-nav-text">
+        <span>{{ vorheriger-titel[0] }}{% if vorheriger-titel[1] %}:{% endif %}</span>
+        {% if vorheriger-titel[1] %}<span>{{ vorheriger-titel[1] }}</span>{% endif %}
+      </span>
+    </a>
+  {% else %}
+    <div style="flex:1"></div>
+  {% endif %}
+
+  {% if page.next.url %}
+    {% assign naechster-titel = page.next.title | split: ": " %}
+    <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-orange artikel-nav">
+      <span class="artikel-nav-text">
+        <span>{{ naechster-titel[0] }}{% if naechster-titel[1] %}:{% endif %}</span>
+        {% if naechster-titel[1] %}<span>{{ naechster-titel[1] }}</span>{% endif %}
+      </span>
+      <span class="artikel-nav-pfeil">→</span>
+    </a>
+  {% endif %}
 </div>
