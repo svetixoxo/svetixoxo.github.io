@@ -186,11 +186,11 @@ body {
 
 .logo-titel em {
   font-style: normal;
-  color: var(--tuerkis);
+  color: var(--magenta);
 }
 
 .logo-titel em:hover {
-   color: var(--orange);
+   color: var(--tuerkis);
 }
 
 .logo-untertitel {
