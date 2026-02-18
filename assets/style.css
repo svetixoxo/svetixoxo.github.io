@@ -455,6 +455,24 @@ nav a:hover {
   color: var(--orange);
 }
 
+/* ── Beitragsliste als Raster (3 Spalten) ── */
+.beitragsliste-raster {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2em;
+  margin-bottom: 2.5em;
+}
+
+.beitragsliste-raster .beitragskarte {
+  flex-direction: column;
+}
+
+.beitragsliste-raster .beitragskarte-streifen {
+  width: 100%;
+  height: 6px;
+  flex-shrink: 0;
+}
+
 /* ── Beitragsliste ── */
 .beitragsliste {
   display: flex;
@@ -768,6 +786,10 @@ code {
    
   .aufmacher-seite {
     border-top: var(--rahmen);
+  }
+
+  .beitragsliste-raster {
+    grid-template-columns: 1fr;
   }
    
   .seitenkopf-oben {
