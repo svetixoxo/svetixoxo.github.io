@@ -145,6 +145,15 @@ body {
   color: var(--weiss);
 }
 
+.seitenkopf-oben .ausgabe a {
+  color: var(--weiss);
+  font-weight: 600;
+}
+
+.seitenkopf-oben .ausgabe a:hover {
+  color: var(--tuerkis);
+}
+
 .seitenkopf-haupt {
   background: var(--hintergrund-karte);
   border-bottom: var(--rahmen);
