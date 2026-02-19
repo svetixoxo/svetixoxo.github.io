@@ -6,8 +6,6 @@ categories: [infrastruktur, speicher]
 excerpt: "Nach einem Jahr mit meinem QNAP-System stelle ich mir die Frage: Würde ich heute wieder ein Fertig-NAS kaufen oder doch lieber einen DIY-Server bauen?"
 ---
 
-**Nach einem Jahr mit meinem QNAP-System stelle ich mir die Frage: Würde ich heute wieder ein Fertig-NAS kaufen oder doch lieber einen DIY-Server bauen?**
-
 ## Die große Entscheidung
 
 Als ich vor gut einem Jahr meinen Heimserver geplant habe, war die Entscheidung eigentlich schnell getroffen: QNAP TS-873AeU-RP, fertig. Plug-and-Play, redundante Stromversorgung (RP), professionell aussehend, alle Features aus einer Hand. Heute, nach einem Jahr intensiver Nutzung und deutlich mehr Erfahrung mit Heimservern, würde ich diese Entscheidung kritischer betrachten.
