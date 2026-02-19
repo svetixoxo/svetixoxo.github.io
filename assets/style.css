@@ -196,7 +196,7 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .seitenkopf-haupt.kompakt {
-   padding: 0.4em 2em;
+   padding: 0.8em 2em;
 }
 
 .seitenkopf-haupt.kompakt .logo-titel {
@@ -242,8 +242,7 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .logo-posttitel {
-  color: var(--tinte);
-  font-weight: 700;
+  color: var(--weiss);
   text-tranform: none;
 }
 
