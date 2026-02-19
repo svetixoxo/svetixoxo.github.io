@@ -220,6 +220,12 @@ p, h1, h2, h3, h4, h5, li {
   margin-top: 0.1em;
 }
 
+.logo-posttitel {
+  color: var(--tinte);
+  font-weight: 700;
+  text-tranform: none;
+}
+
 nav {
   margin-left: auto;
   display: flex;
