@@ -124,7 +124,7 @@ Ein Raspberry Pi 5 mit externem USB-Gehäuse reicht völlig aus. Die Lernkurve i
 - Medienserver für lokale Medien
 - Smart-Home-Integration
 - Budget um 500–2.000 €
-- **Empfehlung: Entry-Level DIY-Server oder günstiges Consumer-NAS**
+- **Empfehlung: Raspberry Pi, Entry-Level DIY-Server oder günstiges Consumer-NAS**
 
 Hier wird es interessant. Ein gebrauchter Dell-Server für 500 € plus neuer Festplatten kann mehr Performance bieten als eine NAS für 1.000 €. Dafür ist die Einrichtung aufwendiger.
 
