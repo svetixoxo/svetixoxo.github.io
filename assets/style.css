@@ -196,7 +196,15 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .seitenkopf-haupt.kompakt {
-   padding: 0.2em 2em;
+   padding: 0.4em 2em;
+}
+
+.seitenkopf-haupt.kompakt .logo-titel {
+   font-size: 1.5rem;
+}
+
+.seitenkopf-haupt.kompakt .logo-untertitel {
+   display: none;
 }
 
 .logo-block {
@@ -212,6 +220,7 @@ p, h1, h2, h3, h4, h5, li {
   line-height: 1;
   letter-spacing: -0.02em;
   text-decoration: none;
+  transition: font-size 0.2s ease;
 }
 
 .logo-titel em {
@@ -272,6 +281,8 @@ nav a:hover {
   max-width: 1111px;
   margin: 0 auto;
   padding: 2.5em 1.5em;
+  position: relative;
+  top: 2rem;
 }
 
 /* ── Aufmacher ── */
