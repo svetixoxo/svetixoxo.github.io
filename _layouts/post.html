@@ -5,14 +5,19 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
   const inhalt = document.querySelector('.artikel-inhalt');
   if (!inhalt) return;
-
   const kinder = Array.from(inhalt.childNodes);
   let aktuellerRahmen = null;
-
+  let zaehler = 0;
   kinder.forEach(function(kind) {
     if (kind.nodeType === 1 && kind.tagName === 'H2') {
+      zaehler++;
       aktuellerRahmen = document.createElement('div');
       aktuellerRahmen.className = 'artikel-rahmen';
+      aktuellerRahmen.style.position = 'relative';
+      const nummer = document.createElement('span');
+      nummer.className = 'artikel-rahmen-nummer';
+      nummer.textContent = zaehler;
+      aktuellerRahmen.appendChild(nummer);
       inhalt.insertBefore(aktuellerRahmen, kind);
     }
     if (aktuellerRahmen) {
