@@ -11,16 +11,16 @@
   {% feed_meta %}
 </head>
 <body>
-
+  
   <div class="seitenkopf-oben">
-    <span>{% if page.layout == 'post' %}{{ page.title }}{% else %}Guten Tag und gr&uuml;&szlig; Gott!{% endif %}</span>
+    <span>Guten Tag und gr&uuml;&szlig; Gott!</span>
     <span class="ausgabe"><a href="/">Start</a> // <a href="/themen/">Themen</a> // <a href="/archiv/">Archiv</a></span>
   </div>
 
   <div class="seitenkopf-haupt">
     <div class="logo-block">
       <a class="logo-titel" href="{{ '/' | relative_url }}"><em>svetixoxo</em>.github.io</a>
-      <span class="logo-untertitel">Linux · IoT · DIY</span>
+      <span class="logo-untertitel">{% if page.layout == 'post' %}{{ page.title }}{% else %}Linux · IoT · DIY{% endif %}</span>
     </div>
     <nav>
       <a href="{{ '/self-hosting/' | relative_url }}">Self-Hosting</a>
