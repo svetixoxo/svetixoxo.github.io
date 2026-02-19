@@ -632,14 +632,14 @@ nav a:hover {
 
 .artikel-rahmen-nummer {
   position: absolute;
-  top: 0.6em;
-  right: 0.8em;
+  top: 1.5em;
+  right: 1.5em;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--gedimmt);
-  opacity: 0.5;
-  user-select: none;
+  color: var(--tinte);
+  background: var(--gelb);
+  padding: 0.5em 0.75em;
 }
 
 .artikel-kopf.artikel-rahmen {
