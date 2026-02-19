@@ -169,7 +169,8 @@ p, h1, h2, h3, h4, h5, li {
   text-transform: uppercase;
 }
 
-.seitenkopf-oben .ausgabe a {
+.seitenkopf-oben .ausgabe a,
+.seitenfuss a {
   color: var(--weiss);
   font-weight: 600;
   text-decoration: none;
@@ -945,6 +946,10 @@ code {
   justify-content: space-between;
   align-items: center;
   border-top: 3px solid var(--tuerkis);
+}
+
+.seitenfuss a {
+   text-transform: none;
 }
 
 .seitenfuss span {
