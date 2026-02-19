@@ -9,18 +9,29 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   {% seo %}
   {% feed_meta %}
+  <script>
+    window.addEventListener('scroll', function() {
+      const haupt = document.querySelector('.seitenkopf-haupt');
+      if (window.scrollY > 50) {
+        haupt.classList.add('kompakt');
+      }
+      else {
+        haupt.classList.remove('kompakt');
+      }
+    });
+  </script>
 </head>
 <body>
   
   <div class="seitenkopf-oben">
-    <span>Guten Tag und gr&uuml;&szlig; Gott!</span>
+    <span>{% if page.layout == 'post' %}<span class="logo-posttitel">{{ page.title }}</span>{% else %}Guten Tag und gr&uuml;&szlig; Gott!{% endif %}</span>
     <span class="ausgabe"><a href="/">Start</a> // <a href="/themen/">Themen</a> // <a href="/archiv/">Archiv</a></span>
   </div>
 
   <div class="seitenkopf-haupt">
     <div class="logo-block">
       <a class="logo-titel" href="{{ '/' | relative_url }}"><em>svetixoxo</em>.github.io</a>
-      <span class="logo-untertitel">Linux · IoT · DIY{% if page.layout == 'post' %}<span class="logo-posttitel"> &ndash; {{ page.title }}</span>{% endif %}</span>
+      <span class="logo-untertitel">Linux · IoT · DIY</span>
     </div>
     <nav>
       <a href="{{ '/self-hosting/' | relative_url }}">Self-Hosting</a>
