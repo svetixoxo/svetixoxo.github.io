@@ -6,8 +6,6 @@ categories: [speicher]
 excerpt: "Ein Jahr ist vergangen, seit ich den Sprung von iCloud Drive zu Nextcloud gewagt habe. Zeit für ein ehrliches Fazit: Was funktioniert besser als erwartet, wo hakt es noch und würde ich es wieder machen?"
 ---
 
-**Ein Jahr ist vergangen, seit ich den Sprung von iCloud Drive zu Nextcloud gewagt habe. Zeit für ein ehrliches Fazit: Was funktioniert besser als erwartet, wo hakt es noch und würde ich es wieder machen?**
-
 ## Warum der Wechsel überhaupt?
 
 Vor rund 2 Jahren war ich noch die typische Apple-Userin: iCloud Drive für alles, weil es einfach funktioniert. Mit der Einrichtung eines Smart Homes und der damit verbundenen Anschaffung eines eigenen Servers änderte sich dann aber doch einiges und ich beschloss, darüber auch weitere Dienste selbst zu hosten. Plötzlich störte mich nicht nur der fehlende Einblick in meine eigenen Daten, sondern auch die Abhängigkeit von Apple. Der finale Auslöser war schließlich, dass bei mir im Keller ein Gerät stand, das das auch leisten konnte.
