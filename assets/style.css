@@ -630,6 +630,18 @@ nav a:hover {
   margin-bottom: 2em;
 }
 
+.artikel-rahmen-nummer {
+  position: absolute;
+  top: 0.6em;
+  right: 0.8em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gedimmt);
+  opacity: 0.5;
+  user-select: none;
+}
+
 .artikel-kopf.artikel-rahmen {
    background: var(--gelb);
 }
