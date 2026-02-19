@@ -13,7 +13,7 @@
 <body>
 
   <div class="seitenkopf-oben">
-    <span>Guten Tag und gr&uuml;&szlig; Gott!</span>
+    <span>{% if page.layout == 'post' %}{{ page.title }}{% else %}Guten Tag und gr&uuml;&szlig; Gott!{% endif %}</span>
     <span class="ausgabe"><a href="/">Start</a> // <a href="/themen/">Themen</a> // <a href="/archiv/">Archiv</a></span>
   </div>
 
