@@ -157,6 +157,11 @@ p, h1, h2, h3, h4, h5, li {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1323;
 }
 
 .seitenkopf-oben .ausgabe {
@@ -182,9 +187,15 @@ p, h1, h2, h3, h4, h5, li {
   display: flex;
   align-items: center;
   gap: 1.5em;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  z-index: 777;
+}
+
+.seitenkopf-haupt.kompakt {
+   padding: 0.2em 2em;
 }
 
 .logo-block {
