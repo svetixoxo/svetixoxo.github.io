@@ -706,6 +706,7 @@ nav a:hover {
   margin-bottom: 1em;
   font-size: 0.97rem;
   line-height: 1.75;
+  text-align: justify;
 }
 
 .artikel-rahmen ul,
