@@ -791,6 +791,23 @@ nav a.nav-sicherheit:hover {
   color: var(--orange);
 }
 
+.artikel-inhalt.zweispaltig .artikel-rahmen {
+  display: block;
+}
+
+.artikel-inhalt.zweispaltig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .artikel-inhalt.zweispaltig {
+    grid-template-columns: 1fr;
+  }
+}
+
 .artikel-trennlinie {
   border: none;
   border-top: 2px dashed var(--linie);
