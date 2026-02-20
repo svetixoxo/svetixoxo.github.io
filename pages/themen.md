@@ -4,10 +4,9 @@ title: "Themen"
 permalink: /themen/
 ---
 
-{% assign sortierte-tags = site.tags | sort %}
+{% assign sortierte-tags = site.tags_collection | sort: "title" %}
 {% for tag in sortierte-tags %}
-  {% assign tag-name = tag | first %}
-  <a href="/tags/{{ tag-name | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ tag-name | downcase | replace: ' ', '-' }}">{{ tag-name }}</a>
+  <a href="{{ tag.url }}" class="etikett etikett-{{ tag.title | downcase | replace: ' ', '-' }}">{{ tag.title }}</a>
 {% endfor %}
 
 ## Self-Hosting & Dienste
