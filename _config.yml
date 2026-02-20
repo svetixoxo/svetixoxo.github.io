@@ -21,6 +21,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Tags
+collections:
+  tags:
+    output: true
+
 # Navigation
 header_pages:
   - index.md
