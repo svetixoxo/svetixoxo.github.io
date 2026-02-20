@@ -23,3 +23,11 @@ Dabei geht es weniger um bunte Dashboards, sondern um sinnvolle Abläufe. Automa
 **Ohne Backup ist alles nur eine Leihgabe.** Datensicherung, Redundanz, Zugriffskontrolle und Netzwerksegmentierung gehören von Anfang an ins Konzept. Sicherheit entsteht nicht durch ein einzelnes Tool, sondern durch eine durchdachte Struktur.
 
 Hier geht es um realistische Risikobewertung statt Alarmismus. Welche Daten sind kritisch? Welche Systeme müssen abgesichert werden? Und wie sieht ein funktionierender Notfallplan aus? Wer vorbereitet ist, muss im Ernstfall nicht improvisieren.
+
+## Alle Themen
+
+{% assign sortierte-tags = site.tags | sort %}
+{% for tag in sortierte-tags %}
+  {% assign tag-name = tag | first %}
+  <a href="/tags/{{ tag-name | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ tag-name | downcase | replace: ' ', '-' }}">{{ tag-name }}</a>
+{% endfor %}
