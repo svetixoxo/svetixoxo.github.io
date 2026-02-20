@@ -4,6 +4,12 @@ title: "Themen"
 permalink: /themen/
 ---
 
+{% assign sortierte-tags = site.tags | sort %}
+{% for tag in sortierte-tags %}
+  {% assign tag-name = tag | first %}
+  <a href="/tags/{{ tag-name | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ tag-name | downcase | replace: ' ', '-' }}">{{ tag-name }}</a>
+{% endfor %}
+
 ## Self-Hosting & Dienste
 **Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben, zu verstehen und bewusst zu kontrollieren – statt sie nur zu konsumieren. Welche Anwendungen laufen lokal? Welche gehören vielleicht doch in die Cloud? Und wie hält man das Ganze wartbar?
 
@@ -23,11 +29,3 @@ Dabei geht es weniger um bunte Dashboards, sondern um sinnvolle Abläufe. Automa
 **Ohne Backup ist alles nur eine Leihgabe.** Datensicherung, Redundanz, Zugriffskontrolle und Netzwerksegmentierung gehören von Anfang an ins Konzept. Sicherheit entsteht nicht durch ein einzelnes Tool, sondern durch eine durchdachte Struktur.
 
 Hier geht es um realistische Risikobewertung statt Alarmismus. Welche Daten sind kritisch? Welche Systeme müssen abgesichert werden? Und wie sieht ein funktionierender Notfallplan aus? Wer vorbereitet ist, muss im Ernstfall nicht improvisieren.
-
-## Alle Themen
-
-{% assign sortierte-tags = site.tags | sort %}
-{% for tag in sortierte-tags %}
-  {% assign tag-name = tag | first %}
-  <a href="/tags/{{ tag-name | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ tag-name | downcase | replace: ' ', '-' }}">{{ tag-name }}</a>
-{% endfor %}
