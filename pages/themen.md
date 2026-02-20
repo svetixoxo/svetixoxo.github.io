@@ -14,9 +14,9 @@ zweispaltig: true
 </div>
 
 ## Self-Hosting & Dienste
-**Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben, zu verstehen und bewusst zu kontrollieren – statt sie nur zu konsumieren. Welche Anwendungen laufen lokal? Welche gehören vielleicht doch in die Cloud? Und wie hält man das Ganze wartbar?
+**Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben und zu verstehen, statt sie nur zu konsumieren.
 
-Self-Hosting ist kein Selbstzweck. Es geht nicht darum, möglichst viel selbst zu machen, sondern die richtigen Dinge selbst zu betreiben. Performance, Updatestrategie, Backup-Konzept und saubere Container-Strukturen spielen dabei eine größere Rolle als das reine „Es läuft bei mir“. Komfort ist nett – Kontrolle ist besser.
+Self-Hosting ist kein Selbstzweck. Es geht nicht darum, möglichst viel selbst zu machen, sondern die richtigen Dinge selbst zu betreiben. Performance und saubere Container-Strukturen spielen dabei eine größere Rolle als das reine „es läuft bei mir“. Komfort ist nett, Kontrolle ist besser.
 
 ## Infrastruktur & Technik
 **Das Fundament hinter allem.** Server-Hardware, NAS, Linux, Raspberry Pi, Netzwerk, Speicher… das alles bildet die Basis für jedes stabile Setup. Hier geht es um Planung, Dimensionierung und die Frage, wie viel Technik wirklich nötig ist – und wie viel nur Spieltrieb.
