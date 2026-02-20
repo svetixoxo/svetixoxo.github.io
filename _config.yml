@@ -29,11 +29,9 @@ collections:
 # Navigation
 header_pages:
   - index.md
-  - pages/smart-home.md
-  - pages/self-hosting.md
-  - pages/infrastruktur.md
-  - pages/sicherheit.md
-  - pages/ueber.md
+  - pages/themen.md
+  - pages/tags.md
+  - pages/archiv.md
 
 # Ausschlüsse
 exclude:
