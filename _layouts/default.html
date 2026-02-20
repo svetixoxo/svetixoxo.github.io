@@ -34,10 +34,10 @@
       <span class="logo-untertitel">Linux · IoT · DIY</span>
     </div>
     <nav>
-      <a href="{{ '/self-hosting/' | relative_url }}" class="nav-self-hosting">Self-Hosting</a>
-      <a href="{{ '/smart-home/' | relative_url }}" class="nav-smart-home">Smart Home</a>
-      <a href="{{ '/infrastruktur/' | relative_url }}" class="nav-infrastruktur">Infrastruktur</a>
-      <a href="{{ '/sicherheit/' | relative_url }}" class="nav-sicherheit">Sicherheit</a>
+      <a href="{{ '/self-hosting/' | relative_url }}" class="nav-self-hosting" {% if page.category=='Self-Hosting'%}schrift-tuerkis{% endif %}">Self-Hosting</a>
+      <a href="{{ '/smart-home/' | relative_url }}" class="nav-smart-home" {% if page.category=='Smart Home'%}schrift-orange{% endif %}">Smart Home</a>
+      <a href="{{ '/infrastruktur/' | relative_url }}" class="nav-infrastruktur"{% if page.category=='Infrastruktur'%}schrift-lila{% endif %}">Infrastruktur</a>
+      <a href="{{ '/sicherheit/' | relative_url }}" class="nav-sicherheit" {% if page.category=='Sicherheit'%}schrift-magenta{% endif %}">Sicherheit</a>
     </nav>
   </div>
 
