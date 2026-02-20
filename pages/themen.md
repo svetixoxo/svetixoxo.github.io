@@ -14,10 +14,10 @@ zweispaltig: true
 </div>
 
 ## Self-Hosting & Dienste
-**Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben und zu verstehen, statt sie nur zu konsumieren. **Self-Hosting ist kein Selbstzweck.** Es geht nicht darum, möglichst viel selbst zu betreiben, sondern das Richtige. Saubere Container-Strukturen spielen dabei eine größere Rolle als das reine „es läuft bei mir“. **Komfort ist nett, Kontrolle ist besser.**
+**Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben und zu verstehen, statt sie nur zu konsumieren. **Self-Hosting ist kein Selbstzweck.** Es geht nicht darum, möglichst viel selbst zu machen. Saubere Container-Strukturen spielen dabei eine größere Rolle als das reine „es läuft bei mir“. **Komfort ist nett, Kontrolle ist besser.**
 
 ## Infrastruktur & Technik
-**Das Fundament hinter allem.** Hardware, Netzwerk und Speicher bilden die Basis für alles andere. Es geht um Planung, sinnvolle Dimensionierung und die ehrliche Frage, wie viel Technik wirklich nötig ist. Eine saubere Infrastruktur entscheidet darüber, ob Dienste stabil laufen oder bei der ersten Lastspitze einknicken. Netzwerkdesign und ein solides Host-System sind keine Nebensache. **Wer hier sauber arbeitet, hat später deutlich weniger Probleme.**
+**Das Fundament hinter allem.** Hardware, Netzwerk und Speicher bilden die Basis für alles andere. Es geht um Planung, sinnvolle Dimensionierung und die Frage, wie viel Technik wirklich nötig ist. Eine saubere Infrastruktur entscheidet darüber, ob Dienste stabil laufen oder bei der ersten Lastspitze einknicken. Netzwerkdesign und ein solides Host-System sind keine Nebensache. **Wer hier sauber arbeitet, hat später deutlich weniger Probleme.**
 
 ## Smart Home & Automatisierung
 **Technik, die nicht nur läuft, sondern reagiert.** Einzelne Geräte und Automationen ergeben zusammen ein Gesamtsystem, ob durch einfache Zeitpläne oder komplexe Abhängigkeiten zwischen Diensten und Geräten. Dabei geht es weniger um bunte Dashboards, sondern um sinnvolle Abläufe. **Automatisierung sollte den Alltag vereinfachen.** Wenn ein Prozess stabil im Hintergrund funktioniert, ohne ständig Aufmerksamkeit zu brauchen, ist das Ziel erreicht.
