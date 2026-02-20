@@ -45,6 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="artikel-inhalt">
+<div class="artikel-inhalt {% if page.zweispaltig %}zweispaltig{% endif %}">
   {{ content }}
 </div>
