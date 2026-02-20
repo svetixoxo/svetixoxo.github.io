@@ -272,9 +272,25 @@ nav a {
 nav a:last-child {
   border-right: none;
 }
-nav a:hover {
-  background: var(--tuerkis);
-  color: var(--weiss);
+
+nav a.nav-self-hosting:hover {
+   background: var(--tuerkis);
+   color: var(--weiss);
+}
+
+nav a.nav-smart-home:hover {
+   background: var(--orange);
+   color: var(--weiss);
+}
+
+nav a.nav-infrastruktur:hover {
+   background: var(--lila);
+   color: var(--weiss);
+}
+
+nav a.nav-sicherheit:hover {
+   background: var(--magenta);
+   color: var(--weiss);
 }
 
 /* ── Seiteninhalt ── */
