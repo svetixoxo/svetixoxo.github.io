@@ -1,7 +1,7 @@
 ---
 layout: seite
 title: "Archiv"
-permalink: "/archiv/
+permalink: "/archiv/"
 ---
 
 test
