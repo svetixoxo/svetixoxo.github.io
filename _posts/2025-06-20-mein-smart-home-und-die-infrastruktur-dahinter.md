@@ -2,7 +2,7 @@
 layout: post
 title: "Mein Smart Home und die Infrastruktur dahinter"
 date: 2025-06-20
-categories: [smart-home]
+category: infrastruktur
 tags: [Smart Home, Infrastruktur, Sicherheit]
 excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden."
 ---
