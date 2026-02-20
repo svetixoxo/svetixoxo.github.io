@@ -25,7 +25,6 @@ plugins:
 header_pages:
   - index.md
   - pages/themen.md
-  - pages/tags.md
   - pages/archiv.md
 
 # Ausschlüsse
