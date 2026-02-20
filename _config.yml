@@ -25,6 +25,7 @@ plugins:
 collections:
   tags:
     output: true
+    directory: _tags
 
 # Navigation
 header_pages:
