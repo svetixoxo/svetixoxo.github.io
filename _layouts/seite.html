@@ -3,6 +3,11 @@ layout: default
 ---
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  const tagListe = document.getElementById('tag-liste');
+  const kopf = document.querySelector('.artikel-kopf');
+  if (tagListe && kopf) {
+    kopf.appendChild(tagListe);
+  }
   const inhalt = document.querySelector('.artikel-inhalt');
   if (!inhalt) return;
   const kinder = Array.from(inhalt.childNodes);
