@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   {% endif %}
   <div class="etiketten-zeile">
     {% for etikett in page.tags %}
-      <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
+      <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
     {% endfor %}
   </div>
 </div>
