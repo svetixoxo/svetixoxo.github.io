@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="artikel-kopf artikel-rahmen">
+  <p class="artikel-meta">Tag</p>
+  <h1># {{ page.title }}</h1>
+  <p class="artikel-einleitung">Alle Beiträge mit dem Tag: {{ page.title }}</p>
+</div>
+
+<div class="beitragsliste">
+  {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %}
+  {% assign gefundene = site.posts | where_exp: "beitrag", "beitrag.tags contains page.tag" %}
+  {% for beitrag in gefundene %}
+  {% assign farbindex = forloop.index0 | modulo: 5 %}
+  {% assign farbe = streifenfarben[farbindex] %}
+  <div class="beitragskarte">
+    <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
+    <div class="beitragskarte-inhalt">
+      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Allgemein" }}</div>
+      <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
+      <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
+      {% for etikett in beitrag.tags %}
+        <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
+      {% endfor %}
+      <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ farbe }}" style="margin-top:auto;font-size:0.75rem;align-self:flex-start">Lesen →</a>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% if gefundene.size == 0 %}
+  <div class="artikel-rahmen">
+    <p>Es sind noch keine Beiträge mit diesem Tag vorhanden.</p>
+  </div>
+  {% endif %}
+</div>
