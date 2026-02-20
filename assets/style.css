@@ -136,6 +136,31 @@ a, .schaltflaeche {
 p, h1, h2, h3, h4, h5, li {
    cursor: url('/assets/cursors/xterm.png') 12 12, text;
 }
+
+.schrift-tuerkis {
+   color: var(--tuerkis);
+}
+
+.schrift-orange {
+   color: var(--orange);
+}
+
+.schrift-lila {
+   color: var(--lila);
+}
+
+.schrift-magenta {
+   color: var(--magenta);
+}
+
+.schrift-gelb {
+   color: var(--gelb);
+}
+
+.schrift-gruen {
+   color: var(--gruen);
+}
+
 /*
 .aufmacher-etikett,
 .etikett,
