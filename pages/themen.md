@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Themen"
+permalink: /themen/
 ---
 
 ## Self-Hosting & Dienste
