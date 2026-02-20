@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: seite
 title: "Themen"
 permalink: /themen/
 ---
