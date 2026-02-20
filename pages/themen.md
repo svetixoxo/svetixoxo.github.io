@@ -4,10 +4,12 @@ title: "Themen"
 permalink: /themen/
 ---
 
-{% assign alle-tags = site.pages | where_exp: "seite", "seite.path contains 'tags/'" | sort: "title" %}
-{% for tag in alle-tags %}
-  <a href="{{ tag.url }}" class="etikett etikett-{{ tag.title | downcase | replace: ' ', '-' }}">{{ tag.title }}</a>
-{% endfor %}
+<div class="etiketten-zeile">
+  {% assign alle-tags = site.pages | where_exp: "seite", "seite.path contains 'tags/'" | sort: "title" %}
+  {% for tag in alle-tags %}
+    <a href="{{ tag.url }}" class="etikett etikett-{{ tag.title | downcase | replace: ' ', '-' }}">{{ tag.title }}</a>
+  {% endfor %}
+</div>
 
 ## Self-Hosting & Dienste
 **Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben, zu verstehen und bewusst zu kontrollieren – statt sie nur zu konsumieren. Welche Anwendungen laufen lokal? Welche gehören vielleicht doch in die Cloud? Und wie hält man das Ganze wartbar?
