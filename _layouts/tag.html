@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<div class="artikel-rahmen">
+  <h1>#{{ page.title }}</h1>
+</div>
 <div class="beitragsliste-raster">
   {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %}
   {% assign gefundene = site.posts | where_exp: "beitrag", "beitrag.tags contains page.tag" %}
