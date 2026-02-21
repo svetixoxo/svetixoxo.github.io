@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const aktuelleZahl = parseInt(nummer.dataset.zahl);
         const url = window.location.origin + window.location.pathname + '#' + ankerId;
         navigator.clipboard.writeText(url).then(function() {
-          nummer.textContent = 'Link kopiert';
+          nummer.textContent = '¶';
           setTimeout(function() { nummer.textContent = aktuelleZahl; }, 1500);
         });
       });
