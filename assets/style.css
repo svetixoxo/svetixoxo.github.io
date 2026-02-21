@@ -711,6 +711,17 @@ nav a:hover {
   margin-bottom: 0.4em;
 }
 
+.artikel-meta-datum {
+   background: var(--lila);
+   color: var(--lila-hell);
+   display: inline;
+   padding: 0.2em 0.6em;
+}
+
+.artikel-meta-thema {
+   color: var(--lila);
+}
+
 .artikel-einleitung {
   font-size: 1.05rem;
   color: var(--tinte);
