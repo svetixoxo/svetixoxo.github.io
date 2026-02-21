@@ -2,54 +2,26 @@
 layout: default
 ---
 <style>
-  .beitragskarte-meta {
-    display: flex;
-    gap: 0.8em;
-    align-items: baseline;
-    font-size: 0.8rem;
-  }
-
-  .beitragskarte-meta-titel {
-    color: var(--tinte);
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: none;
-    font-family: "IBM Plex Sans", sans-serif;
-  }
-
-  .beitragskarte-meta-titel:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--orange);
-    text-decoration-thickness: 2px;
-  }
-
-  .artikel-rahmen .beitragskarte-inhalt {
-    padding: 0;
-  }
-
-  .artikel-rahmen .beitragskarte-meta:last-child {
+  .artikel-rahmen h1 {
     margin-bottom: 0;
   }
 </style>
-
-<div class="beitragsliste">
-  <div class="artikel-rahmen">
+<div class="artikel-rahmen">
   <h1>#{{ page.title }}</h1>
-    {% assign gefundene = site.posts | where_exp: "beitrag", "beitrag.tags contains page.tag" %}
-    {% for beitrag in gefundene %}
+</div>
+<div class="beitragsliste-raster">
+  {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %}
+  {% for beitrag in gefundene %}
+  {% assign farbindex = forloop.index0 | modulo: 5 %}
+  {% assign farbe = streifenfarben[farbindex] %}
+  <div class="beitragskarte">
+    <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
     <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-meta">
-        {{ beitrag.date | date: "%Y-%m-%d" }}
-        <a href="{{ beitrag.url | relative_url }}" class="beitragskarte-meta-titel">{{ beitrag.title }}</a>
-      </div>
+      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Sonstiges" }}</div>
+      <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
+      <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
+      <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ farbe }}" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">Lesen →</a>
     </div>
-    {% endfor %}
   </div>
-
-  {% if gefundene.size == 0 %}
-  <div class="artikel-rahmen">
-    <p>Es sind noch keine Beiträge mit diesem Tag vorhanden.</p>
-  </div>
-  {% endif %}
+  {% endfor %}
 </div>
