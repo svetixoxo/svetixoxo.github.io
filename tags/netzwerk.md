@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Netzwerk"
-tag: "Netzwerk"
+title: "Netzwerk (Tag)"
+tag: "netzwerk"
 permalink: /tags/netzwerk/
 ---
