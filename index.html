@@ -13,7 +13,7 @@ title: Startseite
     <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 180 }}</p>
     <div style="margin-bottom:1.2em">
       {% for etikett in aufmacher-beitrag.tags %}
-        <span class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</span>
+        <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
       {% endfor %}
     </div>
     <a href="{{ aufmacher-beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-orange">Artikel lesen →</a>
@@ -30,10 +30,7 @@ title: Startseite
 </div>
 {% endif %}
 
-<div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="#ff6b2b"/></svg>
-  <h2>Alle Artikel</h2>
-</div>
+<div class="abschnitt-kopf"></div>
 
 <div class="beitragsliste-raster">
   {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %}
@@ -44,7 +41,7 @@ title: Startseite
   <div class="beitragskarte">
     <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
     <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Allgemein" }}</div>
+      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Sonstiges" }}</div>
       <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
       <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
       <div class="beitragskarte-etikett">
