@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Self-Hosting (Tag)"
+title: "self-hosting"
 tag: "self-hosting"
 permalink: /tags/self-hosting/
 ---
