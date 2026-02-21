@@ -32,9 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
       nummer.addEventListener('click', function() {
         const aktuelleZahl = parseInt(nummer.dataset.zahl);
         const url = window.location.origin + window.location.pathname + '#' + ankerId;
-        window.location.hash = ankerId;
         navigator.clipboard.writeText(url).then(function() {
-          nummer.textContent = '✓';
+          nummer.textContent = 'Link kopiert';
           setTimeout(function() { nummer.textContent = aktuelleZahl; }, 1500);
         });
       });
