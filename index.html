@@ -26,7 +26,18 @@ title: Startseite
     <div class="aufmacher-seite-titel">Weitere Artikel</div>
     {% for beitrag in site.posts limit:3 offset:1 %}
     <div class="seitenleiste-eintrag">
-      <div class="seitenleiste-kategorie">{{ beitrag.category | default: "Allgemein" }}</div>
+      {% if beitrag.category == "Self-Hosting & Dienste" %}
+        {% assign katfarbe = "var(--magenta)" %}
+      {% elsif beitrag.category == "Netzwerk & Infrastruktur" %}
+        {% assign katfarbe = "var(--tuerkis)" %}
+      {% elsif beitrag.category == "Smart Home & Automatisierung" %}
+        {% assign katfarbe = "var(--gruen)" %}
+      {% elsif beitrag.category == "Proberaum & Musikmachen" %}
+        {% assign katfarbe = "var(--lila)" %}
+      {% else %}
+        {% assign katfarbe = "" %}
+      {% endif %}
+      <div class="seitenleiste-kategorie" style="color: {{ katfarbe }}">{{ beitrag.category | default: "Sonstiges" }}</div>
       <div class="seitenleiste-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
     </div>
     {% endfor %}
