@@ -14,9 +14,28 @@ document.addEventListener('DOMContentLoaded', function() {
       aktuellerRahmen = document.createElement('div');
       aktuellerRahmen.className = 'artikel-rahmen';
       aktuellerRahmen.style.position = 'relative';
+
+      const ankerId = 'abschnitt-' + zaehler;
+      aktuellerRahmen.id = ankerId;
+
+      const versatz = document.createElement('span');
+      versatz.style.cssText = 'position:absolute; top:-120px; display:block; visibility:hidden;';
+      versatz.id = ankerId + '-anker';
+      aktuellerRahmen.appendChild(versatz);
+
       const nummer = document.createElement('span');
       nummer.className = 'artikel-rahmen-nummer';
       nummer.textContent = zaehler;
+      nummer.title = 'Link kopieren';
+      nummer.style.cursor = 'pointer';
+      nummer.addEventListener('click', function() {
+        const url = window.location.origin + window.location.pathname + '#' + ankerId;
+        navigator.clipboard.writeText(url).then(function() {
+          nummer.textContent = '✓';
+          setTimeout(function() { nummer.textContent = zaehler; }, 1500);
+        });
+      });
+
       aktuellerRahmen.appendChild(nummer);
       inhalt.insertBefore(aktuellerRahmen, kind);
     }
