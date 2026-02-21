@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Automatisierung"
-tag: "Automatisierung"
+title: "Automatisierung (Tag)"
+tag: "automatisierung"
 permalink: /tags/automatisierung/
 ---
