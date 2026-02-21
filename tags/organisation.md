@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Organisation"
-tag: "Organisation"
+title: "Organisation (Tag)"
+tag: "organisation"
 permalink: /tags/organisation/
 ---
