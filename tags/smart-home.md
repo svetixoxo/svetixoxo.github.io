@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Smart Home"
-tag: smart-home
+tag: "Smart Home"
 permalink: /tags/smart-home/
 ---
