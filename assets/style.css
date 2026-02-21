@@ -825,6 +825,7 @@ nav a:hover {
 .artikel-navigation {
   display: flex;
   gap: 1em;
+  margin-bottom: 2.5rem;
 }
 
 .artikel-navigation .schaltflaeche {
