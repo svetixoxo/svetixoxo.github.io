@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Nextcloud"
-tag: "Nextcloud"
+title: "Nextcloud (Tag)"
+tag: "nextcloud"
 permalink: /tags/nextcloud/
 ---
