@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Medien"
-tag: "Medien"
+title: "Medien (Tag)"
+tag: "medien"
 permalink: /tags/medien/
 ---
