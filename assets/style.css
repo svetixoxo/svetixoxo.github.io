@@ -718,8 +718,14 @@ nav a:hover {
    padding: 0.2em 0.6em;
 }
 
-.artikel-meta-thema {
+.artikel-meta-thema,
+.artikel-meta-thema a {
    color: var(--tuerkis);
+   text-decoration: none;
+}
+
+.artikel-meta-thema a:hover {
+   color: var(--lila);
 }
 
 .artikel-einleitung {
