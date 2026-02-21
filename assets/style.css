@@ -2,7 +2,12 @@
    svetixoxo.github.io
 ───────────────────────────────────────────── */
 
-/* ── Schriftart ── */
+
+/* ══════════════════════════════════════════
+   SCHRIFTARTEN
+══════════════════════════════════════════ */
+
+/* ── IBM Plex Sans ── */
 @font-face {
   font-family: "IBM Plex Sans";
   src: url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff2") format("woff2"),
@@ -76,6 +81,11 @@
   font-display: swap;
 }
 
+
+/* ══════════════════════════════════════════
+   VARIABLEN
+══════════════════════════════════════════ */
+
 :root {
   /* ── Farben ── */
   --hintergrund: #f8f6f0;
@@ -85,13 +95,13 @@
   --gedimmt: #666680;
   --linie: #d8d4cc;
 
-  --tuerkis: #00b8d9; /* 549fea / 3e92e5 */
+  --tuerkis: #00b8d9;
   --tuerkis-hell: #e0f8ff;
   --orange: #ff8700;
   --orange-hell: #fff1eb;
   --gelb: #ffd52b;
   --gelb-hell: #fffbe0;
-  --lila: #d36ff9; /* c133f7 / 7c3aed */
+  --lila: #d36ff9;
   --lila-hell: #f0ebff;
   --magenta: #ff2b6b;
   --gruen: #00a878;
@@ -106,7 +116,11 @@
   --rahmen: 2px solid var(--tinte);
 }
 
-/* ── Reset ── */
+
+/* ══════════════════════════════════════════
+   RESET & BASIS
+══════════════════════════════════════════ */
+
 *,
 *::before,
 *::after {
@@ -130,49 +144,36 @@ body {
   line-height: 1.6;
 }
 
-a, .schaltflaeche {
+/* ── Cursor ── */
+a,
+.schaltflaeche {
   cursor: url('/assets/cursors/hand2.png') 4 4, pointer !important;
 }
 
 p, h1, h2, h3, h4, h5, li {
-   cursor: url('/assets/cursors/xterm.png') 12 12, text;
+  cursor: url('/assets/cursors/xterm.png') 12 12, text;
 }
 
-.schrift-tuerkis {
-   color: var(--tuerkis);
+/* ── Auswahl ── */
+::selection {
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
-.schrift-orange {
-   color: var(--orange);
-}
+/* ── Hilfsklassen Schriftfarbe ── */
+.schrift-tuerkis { color: var(--tuerkis); }
+.schrift-orange  { color: var(--orange); }
+.schrift-lila    { color: var(--lila); }
+.schrift-magenta { color: var(--magenta); }
+.schrift-gelb    { color: var(--gelb); }
+.schrift-gruen   { color: var(--gruen); }
 
-.schrift-lila {
-   color: var(--lila);
-}
 
-.schrift-magenta {
-   color: var(--magenta);
-}
+/* ══════════════════════════════════════════
+   SEITENKOPF
+══════════════════════════════════════════ */
 
-.schrift-gelb {
-   color: var(--gelb);
-}
-
-.schrift-gruen {
-   color: var(--gruen);
-}
-
-/*
-.aufmacher-etikett,
-.etikett,
-.schaltflaeche,
-.seitenkopf-oben,
-.seitenkopf-haupt,
-.seitenfuss {
-   user-select: none;
-}
-*/
-/* ── Seitenkopf ── */
+/* ── Obere Leiste ── */
 .seitenkopf-oben {
   background: var(--tinte);
   color: var(--weiss);
@@ -183,10 +184,10 @@ p, h1, h2, h3, h4, h5, li {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
   z-index: 1323;
 }
 
@@ -207,6 +208,7 @@ p, h1, h2, h3, h4, h5, li {
   color: var(--lila);
 }
 
+/* ── Hauptkopf ── */
 .seitenkopf-haupt {
   background: var(--hintergrund-karte);
   border-bottom: var(--rahmen);
@@ -224,17 +226,18 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .seitenkopf-haupt.kompakt {
-   padding: 0.8em 2em;
+  padding: 0.8em 2em;
 }
 
 .seitenkopf-haupt.kompakt .logo-titel {
-   font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .seitenkopf-haupt.kompakt .logo-untertitel {
-   display: none;
+  display: none;
 }
 
+/* ── Logo ── */
 .logo-block {
   display: flex;
   flex-direction: column;
@@ -257,7 +260,7 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .logo-titel em:hover {
-   color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 .logo-untertitel {
@@ -271,9 +274,10 @@ p, h1, h2, h3, h4, h5, li {
 
 .logo-posttitel {
   color: var(--weiss);
-  text-tranform: none;
+  text-transform: none;
 }
 
+/* ── Navigation ── */
 nav {
   margin-left: auto;
   display: flex;
@@ -300,11 +304,15 @@ nav a:last-child {
 }
 
 nav a:hover {
-   background: var(--tuerkis);
-   color: var(--weiss);
+  background: var(--tuerkis);
+  color: var(--weiss);
 }
 
-/* ── Seiteninhalt ── */
+
+/* ══════════════════════════════════════════
+   SEITENINHALT & LAYOUT
+══════════════════════════════════════════ */
+
 .seiteninhalt {
   max-width: 1200px;
   margin: 0 auto;
@@ -313,7 +321,51 @@ nav a:hover {
   top: 2rem;
 }
 
-/* ── Aufmacher ── */
+/* ── Abschnittsüberschrift ── */
+.abschnitt-kopf {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.2em;
+  border-top: 3px solid var(--tinte);
+  padding-top: 0.6em;
+}
+
+.abschnitt-kopf h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--tinte);
+}
+
+.abschnitt-akzent {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.abschnitt-kopf a {
+  margin-left: auto;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gedimmt);
+  text-decoration: none;
+}
+
+.abschnitt-kopf a:hover {
+  color: var(--orange);
+}
+
+
+/* ══════════════════════════════════════════
+   AUFMACHER
+══════════════════════════════════════════ */
+
 .aufmacher {
   display: grid;
   grid-template-columns: 1fr 280px;
@@ -321,6 +373,10 @@ nav a:hover {
   box-shadow: var(--schatten-gross);
   margin-bottom: 2.5em;
   background: var(--hintergrund-karte);
+}
+
+.aufmacher-profil {
+  grid-template-columns: 280px 1fr;
 }
 
 .aufmacher-haupt {
@@ -350,7 +406,7 @@ nav a:hover {
   letter-spacing: -0.02em;
   color: var(--tinte);
   margin-bottom: 0.7em;
-  max-width: 100%; /* 480px */
+  max-width: 100%;
 }
 
 .aufmacher-trennlinie {
@@ -364,10 +420,11 @@ nav a:hover {
   font-size: 0.97rem;
   color: var(--gedimmt);
   margin-bottom: 1.2em;
-  max-width: 100%; /* 440px */
+  max-width: 100%;
   text-align: justify;
 }
 
+/* ── Seitenleiste im Aufmacher ── */
 .aufmacher-seite {
   padding: 1.5em;
   display: flex;
@@ -424,23 +481,28 @@ nav a:hover {
   text-decoration-thickness: 2px;
 }
 
+/* ── Profilbild ── */
 .profilbild {
-   width: 280px;
-   aspect-ratio: 1;
-   overflow: hidden;
-   padding: 2em;
-   vertical-align: top;
+  width: 280px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  padding: 2em;
+  vertical-align: top;
 }
 
 .profilbild img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   display: block;
-   border: var(--border);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: var(--border);
 }
 
-/* ── Etiketten ── */
+
+/* ══════════════════════════════════════════
+   ETIKETTEN
+══════════════════════════════════════════ */
+
 .etikett {
   display: inline-block;
   font-family: "IBM Plex Mono", monospace;
@@ -453,31 +515,47 @@ nav a:hover {
   box-shadow: var(--schatten-klein);
   margin-right: 0.3em;
   margin-bottom: 0.3em;
+  user-select: none;
 }
 
+.etiketten-zeile {
+  margin: 0.5em 0;
+}
+
+.artikel-kopf .etiketten-zeile {
+  margin: 0;
+}
+
+/* ── Etikett-Farben ── */
 .etikett-tuerkis,
 .etikett-home-assistant,
-.homekit {
+.etikett-homekit,
+.etikett-zigbee,
+.etikett-netzwerk {
   background: var(--tuerkis-hell);
   color: #006b80;
 }
 
 .etikett-orange,
-.etikett-hardware {
+.etikett-hardware,
+.etikett-infrastruktur {
   background: var(--orange-hell);
   color: var(--orange);
 }
 
 .etikett-gelb,
 .etikett-yaml,
-.etikett-blueprint {
+.etikett-blueprint,
+.etikett-automatisierung {
   background: var(--gelb);
   color: var(--tinte);
 }
 
 .etikett-lila,
 .etikett-matter,
-.etikett-energie {
+.etikett-energie,
+.etikett-docker,
+.etikett-self-hosting {
   background: var(--lila-hell);
   color: var(--lila);
 }
@@ -485,12 +563,25 @@ nav a:hover {
 .etikett-gruen,
 .etikett-diy,
 .etikett-pv,
-.etikett-python {
+.etikett-python,
+.etikett-linux,
+.etikett-backups {
   background: var(--gruen-hell);
   color: var(--gruen);
 }
 
-/* ── Schaltflächen ── */
+.etikett-magenta,
+.etikett-sicherheit,
+.etikett-smart-home {
+  background: #ffe0ec;
+  color: var(--magenta);
+}
+
+
+/* ══════════════════════════════════════════
+   SCHALTFLÄCHEN
+══════════════════════════════════════════ */
+
 .schaltflaeche {
   display: inline-block;
   font-family: "IBM Plex Mono", monospace;
@@ -505,6 +596,7 @@ nav a:hover {
   transition: transform 0.1s, box-shadow 0.1s;
   cursor: pointer;
   max-width: 50%;
+  user-select: none;
 }
 
 .schaltflaeche:hover {
@@ -512,82 +604,20 @@ nav a:hover {
   box-shadow: var(--schatten);
 }
 
-.schaltflaeche-orange {
-  background: var(--orange);
-  color: var(--weiss);
-}
+.schaltflaeche-orange  { background: var(--orange);  color: var(--weiss); }
+.schaltflaeche-tuerkis { background: var(--tuerkis); color: var(--weiss); }
+.schaltflaeche-lila    { background: var(--lila);    color: var(--weiss); }
+.schaltflaeche-gruen   { background: var(--gruen);   color: var(--weiss); }
+.schaltflaeche-magenta { background: var(--magenta); color: var(--weiss); }
+.schaltflaeche-gelb    { background: var(--gelb);    color: var(--tinte); }
+.schaltflaeche-weiss   { background: var(--weiss);   color: var(--tinte); }
 
-.schaltflaeche-magenta {
-  background: var(--magenta);
-  color: var(--weiss);
-}
 
-.schaltflaeche-tuerkis {
-  background: var(--tuerkis);
-  color: var(--weiss);
-}
+/* ══════════════════════════════════════════
+   BEITRAGSLISTE
+══════════════════════════════════════════ */
 
-.schaltflaeche-lila {
-  background: var(--lila);
-  color: var(--weiss);
-}
-
-.schaltflaeche-gruen {
-  background: var(--gruen);
-  color: var(--weiss);
-}
-
-.schaltflaeche-magenta {
-  background: var(--magenta);
-  color: var(--weiss);
-}
-
-.schaltflaeche-weiss {
-   background: var(--weiss);
-   color: var(--tinte);
-}
-
-/* ── Abschnittsüberschrift ── */
-.abschnitt-kopf {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  margin-bottom: 1.2em;
-  border-top: 3px solid var(--tinte);
-  padding-top: 0.6em;
-}
-
-.abschnitt-kopf h2 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--tinte);
-}
-
-.abschnitt-akzent {
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-}
-
-.abschnitt-kopf a {
-  margin-left: auto;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--gedimmt);
-  text-decoration: none;
-}
-
-.abschnitt-kopf a:hover {
-  color: var(--orange);
-}
-
-/* ── Beitragsliste als Raster (3 Spalten) ── */
+/* ── Raster (3 Spalten) ── */
 .beitragsliste-raster {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -605,7 +635,7 @@ nav a:hover {
   flex-shrink: 0;
 }
 
-/* ── Beitragsliste ── */
+/* ── Liste (1 Spalte) ── */
 .beitragsliste {
   display: flex;
   flex-direction: column;
@@ -613,6 +643,7 @@ nav a:hover {
   margin-bottom: 2.5em;
 }
 
+/* ── Beitragskarte ── */
 .beitragskarte {
   background: var(--hintergrund-karte);
   border: var(--rahmen);
@@ -621,12 +652,14 @@ nav a:hover {
   transition: transform 0.1s, box-shadow 0.1s;
   position: relative;
 }
+
 /*
 .beitragskarte:hover {
   transform: translate(-2px, -2px);
   box-shadow: var(--schatten-gross);
 }
 */
+
 .beitragskarte-streifen {
   width: 6px;
   flex-shrink: 0;
@@ -675,16 +708,25 @@ nav a:hover {
 }
 
 .beitragskarte-etikett {
-   display: inline flow-root;
+  display: inline flow-root;
 }
 
-/* ── Artikel-Einzelansicht ── */
+
+/* ══════════════════════════════════════════
+   ARTIKEL-EINZELANSICHT
+══════════════════════════════════════════ */
+
+/* ── Rahmen ── */
 .artikel-rahmen {
   background: var(--hintergrund-karte);
   border: var(--rahmen);
   box-shadow: var(--schatten-gross);
   padding: 2.5em;
   margin-bottom: 2em;
+}
+
+.artikel-kopf.artikel-rahmen {
+  background: var(--tuerkis-hell);
 }
 
 .artikel-rahmen-nummer {
@@ -699,10 +741,19 @@ nav a:hover {
   padding: 0.5em 0.8em;
 }
 
-.artikel-kopf.artikel-rahmen {
-   background: var(--tuerkis-hell);
+/* ── Zweispaltig ── */
+.artikel-inhalt.zweispaltig {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  align-items: start;
 }
 
+.artikel-inhalt.zweispaltig .artikel-rahmen {
+  display: block;
+}
+
+/* ── Meta ── */
 .artikel-meta {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.8rem !important;
@@ -714,25 +765,26 @@ nav a:hover {
 }
 
 .artikel-meta-datum {
-   background: var(--tuerkis);
-   color: var(--tuerkis-hell);
-   display: inline;
-   padding: 0.2em 0.6em;
+  background: var(--tuerkis);
+  color: var(--tuerkis-hell);
+  display: inline;
+  padding: 0.2em 0.6em;
 }
 
 .artikel-meta-thema {
-   color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 .artikel-meta-thema a {
-   color: var(--tinte);
-   text-decoration: none;
+  color: var(--tinte);
+  text-decoration: none;
 }
 
 .artikel-meta-thema a:hover {
-   color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
+/* ── Einleitung ── */
 .artikel-einleitung {
   font-size: 1.05rem;
   color: var(--tinte);
@@ -742,14 +794,7 @@ nav a:hover {
   line-height: 1.65;
 }
 
-.etiketten-zeile {
-  margin: 0.5em 0;
-}
-
-.artikel-kopf .etiketten-zeile {
-   margin: 0;
-}
-
+/* ── Überschriften ── */
 .artikel-rahmen h1 {
   font-size: 2.1rem;
   font-weight: 800;
@@ -780,6 +825,7 @@ nav a:hover {
   padding-left: 0.6em;
 }
 
+/* ── Fließtext ── */
 .artikel-rahmen p {
   margin-bottom: 1em;
   font-size: 1rem;
@@ -797,33 +843,19 @@ nav a:hover {
   margin-bottom: 0.4em;
   font-size: 0.97rem;
 }
+
 .artikel-rahmen ul li::marker {
   color: var(--orange);
 }
 
-.artikel-inhalt.zweispaltig .artikel-rahmen {
-  display: block;
-}
-
-.artikel-inhalt.zweispaltig {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2em;
-  align-items: start;
-}
-
-@media (max-width: 700px) {
-  .artikel-inhalt.zweispaltig {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* ── Trennlinie ── */
 .artikel-trennlinie {
   border: none;
   border-top: 2px dashed var(--linie);
   margin: 2em 0 1.5em;
 }
 
+/* ── Navigation ── */
 .artikel-navigation {
   display: flex;
   gap: 1em;
@@ -831,8 +863,7 @@ nav a:hover {
 }
 
 .artikel-navigation .schaltflaeche {
-  display: grid;/*
-  flex: 1;*/
+  display: grid;
   padding: 0.8em 1.2em;
   align-items: center;
   margin: auto;
@@ -860,14 +891,17 @@ nav a:hover {
 }
 
 .artikel-nav-text {
-  text-align: left;
   display: flex;
   flex-direction: column;
   line-height: 1.3;
   font-size: 1rem;
 }
 
-/* ── Hinweisboxen ── */
+
+/* ══════════════════════════════════════════
+   HINWEISBOXEN
+══════════════════════════════════════════ */
+
 .hinweisbox {
   border: var(--rahmen);
   box-shadow: var(--schatten);
@@ -904,31 +938,14 @@ blockquote.hinweisbox strong:first-child,
   margin-bottom: 0.2em;
 }
 
-.hinweisbox-tipp {
-  background: var(--gruen-hell);
-}
+.hinweisbox-tipp              { background: var(--gruen-hell); }
+.hinweisbox-tipp::before      { background: var(--gruen); }
+.hinweisbox-warnung           { background: var(--gelb-hell); }
+.hinweisbox-warnung::before   { background: var(--gelb); }
+.hinweisbox-info              { background: var(--tuerkis-hell); }
+.hinweisbox-info::before      { background: var(--tuerkis); }
 
-.hinweisbox-tipp::before {
-  background: var(--gruen);
-}
-
-.hinweisbox-warnung {
-  background: var(--gelb-hell);
-}
-
-.hinweisbox-warnung::before {
-  background: var(--gelb);
-}
-
-.hinweisbox-info {
-  background: var(--tuerkis-hell);
-}
-
-.hinweisbox-info::before {
-  background: var(--tuerkis);
-}
-
-/* Normales Blockquote */
+/* ── Normales Blockquote ── */
 blockquote:not(.hinweisbox) {
   border-left: 4px solid var(--linie);
   padding: 0.5em 1em;
@@ -937,7 +954,11 @@ blockquote:not(.hinweisbox) {
   font-style: italic;
 }
 
-/* ── Code ── */
+
+/* ══════════════════════════════════════════
+   CODE
+══════════════════════════════════════════ */
+
 pre {
   background: #0d0d1a;
   color: #e8e8f8;
@@ -967,47 +988,32 @@ code {
   font-size: 0.86em;
 }
 
-/* Syntax-Highlighting */
+/* ── Syntax-Highlighting ── */
 .highlight .k,
 .highlight .kd,
-.highlight .kn {
-  color: #ff9060;
-  font-weight: 700;
-}
+.highlight .kn  { color: #ff9060; font-weight: 700; }
 
 .highlight .s,
 .highlight .s1,
-.highlight .s2 {
-  color: #68d391;
-}
+.highlight .s2  { color: #68d391; }
 
 .highlight .c,
 .highlight .c1,
-.highlight .cm {
-  color: #555;
-}
+.highlight .cm  { color: #555; }
 
 .highlight .nf,
-.highlight .nb {
-  color: #b794f4;
-}
+.highlight .nb  { color: #b794f4; }
 
 .highlight .mi,
-.highlight .mf {
-  color: #ffd700;
-}
+.highlight .mf  { color: #ffd700; }
 
-.highlight .na {
-  color: #79c0ff;
-}
+.highlight .na  { color: #79c0ff; }
 
-/* ── Auswahl ── */
-::selection {
-  background: var(--gelb);
-  color: var(--tinte);
-}
 
-/* ── Seitenfuss ── */
+/* ══════════════════════════════════════════
+   SEITENFUSS
+══════════════════════════════════════════ */
+
 .seitenfuss {
   background: var(--tinte);
   color: rgba(255, 255, 255, 0.5);
@@ -1021,24 +1027,45 @@ code {
   border-top: 3px solid var(--tuerkis);
 }
 
-.seitenfuss a {
-   text-transform: none;
-}
+.seitenfuss a    { text-transform: none; }
+.seitenfuss span { color: var(--weiss); }
+.seitenfuss em   { color: var(--rot); }
 
-.seitenfuss span {
-  color: var(--weiss);
-}
 
-.seitenfuss em {
-   color: var(--rot);
-}
+/* ══════════════════════════════════════════
+   MOBILANSICHT
+══════════════════════════════════════════ */
 
-/* ── Mobilansicht ── */
 @media (max-width: 700px) {
+  .seitenkopf-oben {
+    display: none;
+  }
+
+  .seitenkopf-haupt {
+    padding: 0.8em 1em;
+  }
+
+  .logo-titel {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    padding: 0.4em 0.6em;
+    font-size: 0.7rem;
+  }
+
+  .seiteninhalt {
+    padding: 1.5em 1em;
+  }
+
   .aufmacher {
     grid-template-columns: 1fr;
   }
-   
+
+  .aufmacher-profil {
+    grid-template-columns: 1fr;
+  }
+
   .aufmacher-seite {
     border-top: var(--rahmen);
   }
@@ -1046,32 +1073,15 @@ code {
   .beitragsliste-raster {
     grid-template-columns: 1fr;
   }
-   
-  .seitenkopf-oben {
-    display: none;
-  }
-   
-  .seitenkopf-haupt {
-    padding: 0.8em 1em;
-  }
-   
-  .logo-titel {
-    font-size: 1.4rem;
-  }
-   
-  nav a {
-    padding: 0.4em 0.6em;
-    font-size: 0.7rem;
-  }
-   
-  .seiteninhalt {
-    padding: 1.5em 1em;
-  }
-   
+
   .artikel-rahmen {
     padding: 1.5em;
   }
-   
+
+  .artikel-inhalt.zweispaltig {
+    grid-template-columns: 1fr;
+  }
+
   .seitenfuss {
     flex-direction: column;
     gap: 0.3em;
