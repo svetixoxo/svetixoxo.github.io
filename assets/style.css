@@ -712,14 +712,14 @@ nav a:hover {
 }
 
 .artikel-meta-datum {
-   background: var(--lila);
-   color: var(--lila-hell);
+   background: var(--tuerkis);
+   color: var(--tuerkis-hell);
    display: inline;
    padding: 0.2em 0.6em;
 }
 
 .artikel-meta-thema {
-   color: var(--lila);
+   color: var(--tuerkis);
 }
 
 .artikel-einleitung {
