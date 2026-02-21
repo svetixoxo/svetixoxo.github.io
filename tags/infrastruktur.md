@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Infrastruktur"
-tag: infrastruktur
+tag: "Infrastruktur"
 permalink: /tags/infrastruktur/
 ---
