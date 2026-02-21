@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Hardware (Tag)"
+title: "hardware"
 tag: "hardware"
 permalink: /tags/hardware/
 ---
