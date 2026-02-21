@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+<style>
+  .beitragskarte-meta {
+    display: flex;
+    gap: 0.8em;
+    align-items: baseline;
+  }
+
+  .beitragskarte-meta-titel {
+    color: var(--tinte);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .beitragskarte-meta-titel:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 2px;
+  }
+</style>
 
 <div class="artikel-kopf artikel-rahmen">
   <p class="artikel-meta">Tag</p>
@@ -17,13 +37,10 @@ layout: default
   <div class="beitragskarte">
     <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
     <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Allgemein" }}</div>
-      <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
-      <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
-      {% for etikett in beitrag.tags %}
-        <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
-      {% endfor %}
-      <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ farbe }}" style="margin-top:auto;font-size:0.75rem;align-self:flex-start">Lesen →</a>
+      <div class="beitragskarte-meta">
+        {{ beitrag.date | date: "%Y-%m-%d" }}
+        <a href="{{ beitrag.url | relative_url }}" class="beitragskarte-meta-titel">{{ beitrag.title }}</a>
+      </div>
     </div>
   </div>
   {% endfor %}
