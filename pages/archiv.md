@@ -1,7 +1,5 @@
 ---
-layout: seite
+layout: archiv
 title: "Archiv"
 permalink: "/archiv/"
 ---
-
-test
