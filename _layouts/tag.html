@@ -33,25 +33,19 @@ layout: default
   }
 </style>
 
-<div class="artikel-kopf artikel-rahmen">
-  <p class="artikel-meta">Tag</p>
-  <h1># {{ page.title }}</h1>
-</div>
-
 <div class="beitragsliste">
-  {% assign gefundene = site.posts | where_exp: "beitrag", "beitrag.tags contains page.tag" %}
-  {% for beitrag in gefundene %}
-  {% assign farbindex = forloop.index0 | modulo: 5 %}
-  {% assign farbe = streifenfarben[farbindex] %}
   <div class="artikel-rahmen">
+  <h1>#{{ page.title }}</h1>
+    {% assign gefundene = site.posts | where_exp: "beitrag", "beitrag.tags contains page.tag" %}
+    {% for beitrag in gefundene %}
     <div class="beitragskarte-inhalt">
       <div class="beitragskarte-meta">
         {{ beitrag.date | date: "%Y-%m-%d" }}
         <a href="{{ beitrag.url | relative_url }}" class="beitragskarte-meta-titel">{{ beitrag.title }}</a>
       </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 
   {% if gefundene.size == 0 %}
   <div class="artikel-rahmen">
