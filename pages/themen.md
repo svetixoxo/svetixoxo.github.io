@@ -1,7 +1,7 @@
 ---
 layout: seite
 title: "Themen"
-permalink: /themen/
+permalink: /thema/
 excerpt: "Was hier steht, kommt aus dem Alltag: Self-Hosting, Infrastruktur, Smart Home und Sicherheit – vier Bereiche, die sich bei mir gegenseitig bedingen. Ich schreibe, was ich einsetze und was ich dabei mitnehme. Nicht immer geradlinig, aber immer ehrlich."
 zweispaltig: true
 ---
