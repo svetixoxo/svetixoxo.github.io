@@ -14,13 +14,13 @@ zweispaltig: true
 </div>
 
 ## Self-Hosting & Dienste
-**Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben und zu verstehen, statt sie nur zu konsumieren. **Self-Hosting ist kein Selbstzweck.** Es geht nicht darum, möglichst viel selbst zu machen. Saubere Container-Strukturen spielen dabei eine größere Rolle als das reine „es läuft bei mir“. **Komfort ist nett, Kontrolle ist besser.**
+**Eigene Services statt irgendwelcher Abos.** Nextcloud, Container, Medienserver, Apps und digitale Organisation. Hier geht es darum, Dienste selbst zu betreiben und zu verstehen, statt sie nur zu konsumieren. Self-Hosting ist kein Selbstzweck. Es geht nicht darum, möglichst viel selbst zu machen. Saubere Container-Strukturen spielen dabei eine größere Rolle als das reine „es läuft bei mir“. Komfort ist nett, Kontrolle ist besser.
 
-## Infrastruktur & Technik
+## Netzwerk & Infrastruktur
 **Das Fundament hinter allem.** Hardware, Netzwerk und Speicher bilden die Basis für alles andere. Es geht um Planung, sinnvolle Dimensionierung und die Frage, wie viel Technik wirklich nötig ist. Eine saubere Infrastruktur entscheidet darüber, ob Dienste stabil laufen oder bei der ersten Lastspitze einknicken. Netzwerkdesign und ein solides Host-System sind keine Nebensache. **Wer hier sauber arbeitet, hat später weniger Probleme.**
 
 ## Smart Home & Automatisierung
 **Technik, die nicht nur läuft, sondern reagiert.** Einzelne Geräte und Automationen ergeben zusammen ein Gesamtsystem, ob durch einfache Zeitpläne oder komplexe Abhängigkeiten zwischen Diensten und Geräten. Dabei geht nicht um bunte Dashboards, sondern um sinnvolle Abläufe. **Automatisierung sollte den Alltag vereinfachen.** Wenn ein Prozess stabil im Hintergrund funktioniert, ohne ständig Aufmerksamkeit zu brauchen, ist das Ziel erreicht.
 
-## Sicherheit & Daten
-**Ohne Backup ist alles nur eine Leihgabe.** Datensicherung, Redundanz, Zugriffskontrolle und Netzwerksegmentierung gehören von Anfang an ins Konzept. Sicherheit entsteht nicht durch ein einzelnes Tool, sondern durch eine durchdachte Struktur. Welche Daten sind wirklich kritisch, welche Systeme müssen abgesichert werden und was passiert, wenn doch etwas schiefgeht? **Wer das durchdacht hat, muss im Ernstfall nicht improvisieren.**
+## Proberaum & Musikmachen
+**Gitarre, Bandprobe, Home-Recording und alles, was dazugehört.** Hier geht es darum, wie Proberaum und Home-Studio aufgebaut sind, welches Equipment läuft und was dabei klingt – und was nicht. Raumakustik, Signalkette, Pedale, Interfaces, PA-Technik und Remote-Proben: Alles Themen, bei denen Musik und Technik untrennbar zusammenhängen. Wer einen guten Sound will, kommt um die Technik dahinter nicht herum. **Musik ist auch immer ein bisschen Technik.**
