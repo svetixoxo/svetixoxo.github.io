@@ -2,7 +2,11 @@
 layout: default
 title: Startseite
 ---
-
+<style>
+  .beitragsliste-raster {
+    grid-template-columns: repeat(4, 1fr);
+  }
+</style>
 {% assign aufmacher-beitrag = site.posts.first %}
 {% if aufmacher-beitrag %}
 <div class="aufmacher">
