@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <div class="artikel-kopf artikel-rahmen">
-  <p class="artikel-meta"><span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span> <span class="artikel-meta-thema">// {{ page.category | default: "Allgemein" }}</span></p>
+  <p class="artikel-meta"><span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span> <span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a></span></p>
   <h1>{{ page.title }}</h1>
   {% if page.excerpt %}
     <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
