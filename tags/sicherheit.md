@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Sicherheit (Tag)"
+title: "sicherheit"
 tag: "sicherheit"
 permalink: /tags/sicherheit/
 ---
