@@ -709,6 +709,7 @@ nav a:hover {
 
 .beitragskarte-etikett {
   display: inline flow-root;
+  margin-bottom: 0.9em;
 }
 
 
