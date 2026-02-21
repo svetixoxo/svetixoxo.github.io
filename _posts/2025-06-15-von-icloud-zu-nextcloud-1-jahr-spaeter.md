@@ -2,7 +2,8 @@
 layout: post
 title: "Von iCloud zu Nextcloud: 1 Jahr später – ein ehrliches Review"
 date: 2025-06-15
-categories: [speicher]
+categories: "Self-Hosting & Dienste"
+tags: [self-hosted, nas, apps]
 excerpt: "Ein Jahr ist vergangen, seit ich den Sprung von iCloud Drive zu Nextcloud gewagt habe. Zeit für ein ehrliches Fazit: Was funktioniert besser als erwartet, wo hakt es noch und würde ich es wieder machen?"
 ---
 
@@ -34,7 +35,7 @@ Mit meinem strukturierten Ansatz für mein Archiv bleibt die Performance auch be
 
 ## Was immer noch nervt (und meine Workarounds)
 
-### macOS-App Probleme
+### Probleme mit macOS-App
 
 Die größte Baustelle ist leider die macOS-App. Sie hängt sich regelmäßig beim Öffnen auf, besonders bei der Einrichtung verschiedener Ordnerfreigaben. Das liegt hauptsächlich daran, dass bei der Fülle an Ordnern das Scrollen in der Auswahl laggt und die App überfordert ist. Das liegt hauptsächlich daran, dass für jedes Jahr im Fotoarchiv ein eigener Ordner als Sync-Ordner hinzugefügt wurde, damit bei einer Änderungen an einzelnen Dateien nicht gleich der gesamte Ordner abgeblichen werden muss. Auch das Ignorieren von bestimmten Ordnern oder Dateien funktioniert leider nicht, wie es sein sollte; hier geht es insb. um Vorschaubilder und Cache-Dateien von Capture One.
 
