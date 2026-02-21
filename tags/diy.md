@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "DIY (Tag)"
+title: "diy"
 tag: "diy"
 permalink: /tags/diy/
 ---
