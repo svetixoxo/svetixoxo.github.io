@@ -19,20 +19,22 @@ document.addEventListener('DOMContentLoaded', function() {
       aktuellerRahmen.id = ankerId;
 
       const versatz = document.createElement('span');
-      versatz.style.cssText = 'position:absolute; top:-120px; display:block; visibility:hidden;';
+      versatz.style.cssText = 'position:absolute; top:-250px; display:block; visibility:hidden;';
       versatz.id = ankerId + '-anker';
       aktuellerRahmen.appendChild(versatz);
 
       const nummer = document.createElement('span');
       nummer.className = 'artikel-rahmen-nummer';
       nummer.textContent = zaehler;
+      nummer.dataset.zahl = zaehler;
       nummer.title = 'Link kopieren';
       nummer.style.cursor = 'pointer';
       nummer.addEventListener('click', function() {
+        const aktuelleZahl = parseInt(nummer.dataset.zahl);
         const url = window.location.origin + window.location.pathname + '#' + ankerId;
         navigator.clipboard.writeText(url).then(function() {
           nummer.textContent = '✓';
-          setTimeout(function() { nummer.textContent = zaehler; }, 1500);
+          setTimeout(function() { nummer.textContent = aktuelleZahl; }, 1500);
         });
       });
 
