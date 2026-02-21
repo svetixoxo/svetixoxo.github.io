@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "NAS (Tag)"
+title: "nas"
 tag: "nas"
 permalink: /tags/nas/
 ---
