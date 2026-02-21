@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       aktuellerRahmen.id = ankerId;
 
       const versatz = document.createElement('span');
-      versatz.style.cssText = 'position:absolute; top:-250px; display:block; visibility:hidden;';
+      versatz.style.cssText = 'position:absolute; top:-350px; display:block; visibility:hidden;';
       versatz.id = ankerId + '-anker';
       aktuellerRahmen.appendChild(versatz);
 
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
       nummer.addEventListener('click', function() {
         const aktuelleZahl = parseInt(nummer.dataset.zahl);
         const url = window.location.origin + window.location.pathname + '#' + ankerId;
+        window.location.hash = ankerId;
         navigator.clipboard.writeText(url).then(function() {
           nummer.textContent = '✓';
           setTimeout(function() { nummer.textContent = aktuelleZahl; }, 1500);
