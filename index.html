@@ -14,12 +14,12 @@ title: Startseite
     <div class="aufmacher-etikett">&#x2770;&#x2f;&#x2771; Neuester Artikel</div>
     <h1>{{ aufmacher-beitrag.title }}</h1>
     <hr class="aufmacher-trennlinie">
-    <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 180 }}</p>
+    <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 180 }}</p><!--
     <div style="margin-bottom:1.2em">
       {% for etikett in aufmacher-beitrag.tags %}
         <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
       {% endfor %}
-    </div>
+    </div>-->
     <a href="{{ aufmacher-beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-orange">Artikel lesen →</a>
   </div>
   <div class="aufmacher-seite">
@@ -37,12 +37,12 @@ title: Startseite
 <div class="abschnitt-kopf"></div>
 
 <div class="beitragsliste-raster">
-  <div class="beitragskarte" style="background: var(--orange-hell)">
-    <div class="beitragskarte-streifen" style="background: var(--orange)"></div>
+  <div class="beitragskarte" style="background: var(--magenta-hell)">
+    <div class="beitragskarte-streifen" style="background: var(--magenta)"></div>
     <div class="beitragskarte-inhalt">
       <div class="beitragskarte-titel">Self-Hosting<br />& Dienste</div>
       <p class="beitragskarte-auszug">Eigene Dienste statt fremder Abos.</p>
-      <a href="javascript:;" class="schaltflaeche schaltflaeche-orange" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
+      <a href="javascript:;" class="schaltflaeche schaltflaeche-magenta" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
     </div>
   </div>
   <div class="beitragskarte" style="background: var(--tuerkis-hell)">
