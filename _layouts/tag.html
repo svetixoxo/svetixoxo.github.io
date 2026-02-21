@@ -13,7 +13,7 @@ layout: default
   <div class="beitragskarte">
     <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
     <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Allgemein" }}</div>
+      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Sonstiges" }}</div>
       <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
       <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
       <div class="beitragskarte-etikett">
