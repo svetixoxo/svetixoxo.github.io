@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Backups"
-tag: "Backups"
+title: "Backups (Tag)"
+tag: "backups"
 permalink: /tags/backups/
 ---
