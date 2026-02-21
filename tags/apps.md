@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Apps"
-tag: apps
+tag: "Apps"
 permalink: /tags/apps/
 ---
