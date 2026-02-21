@@ -703,7 +703,7 @@ nav a:hover {
 
 .artikel-meta {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 0.8rem !important;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -780,7 +780,7 @@ nav a:hover {
 
 .artikel-rahmen p {
   margin-bottom: 1em;
-  font-size: 0.97rem;
+  font-size: 1rem;
   line-height: 1.75;
   text-align: justify;
 }
