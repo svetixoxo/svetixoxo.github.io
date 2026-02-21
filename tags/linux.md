@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Linux"
-tag: linux
+tag: "Linux"
 permalink: /tags/linux/
 ---
