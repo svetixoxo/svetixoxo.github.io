@@ -33,16 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <div class="artikel-kopf artikel-rahmen">
-  <p class="artikel-meta">{{ page.date | date: "%Y-%m-%d" }} // {{ page.category | default: "Allgemein" }}</p>
   <h1>{{ page.title }}</h1>
   {% if page.excerpt %}
     <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
   {% endif %}
-  <div class="etiketten-zeile">
-    {% for etikett in page.tags %}
-      <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
-    {% endfor %}
-  </div>
 </div>
 
 <div class="artikel-inhalt {% if page.zweispaltig %}zweispaltig{% endif %}">
