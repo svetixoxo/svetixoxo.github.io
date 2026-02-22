@@ -5,24 +5,26 @@ layout: default
   .artikel-rahmen h1 {
     margin-bottom: 0;
   }
+
+  .beitragskarte-meta-titel {
+    color: var(--tinte);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .beitragskarte-meta-titel:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+  }
 </style>
 <div class="artikel-rahmen">
   <h1>{{ page.title }}</h1>
 </div>
-<div class="beitragsliste-raster">
-  {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %}
-  {% assign gefundene = site.posts %}
+<div class="artikel-rahmen">
   {% for beitrag in gefundene %}
-  {% assign farbindex = forloop.index0 | modulo: 5 %}
-  {% assign farbe = streifenfarben[farbindex] %}
-  <div class="beitragskarte">
-    <div class="beitragskarte-streifen" style="background:var(--{{ farbe }})"></div>
-    <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }} · {{ beitrag.category | default: "Sonstiges" }}</div>
-      <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
-      <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
-      <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ farbe }}" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">Lesen →</a>
-    </div>
+  <div class="beitragskarte-meta">
+    {{ beitrag.date | date: "%Y-%m-%d" }}
+    <a href="{{ beitrag.url | relative_url }}" class="beitragskarte-meta-titel">{{ beitrag.title }}</a>
   </div>
-  {% endfor %}
 </div>
+{% endfor %}
