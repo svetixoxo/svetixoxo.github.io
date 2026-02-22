@@ -1,12 +1,18 @@
 name: deploy jekyll (mac)
 
 on:
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -18,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Install dependencies
         run: |
           export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
@@ -28,9 +37,15 @@ jobs:
           export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
           bundle exec jekyll build
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
   deploy:
     runs-on: [self-hosted, macOS, ARM64]
     needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
