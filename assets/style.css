@@ -179,6 +179,7 @@ p, h1, h2, h3, h4, h5, li {
   background: var(--tinte);
   color: var(--weiss);
   padding: 0.3rem 2rem;
+  border-bottom: 2px solid var(--orange);
   display: flex;
   align-items: center;
   justify-content: space-between;
