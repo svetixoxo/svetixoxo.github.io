@@ -9,7 +9,7 @@ excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer u
 
 ## Das Netzwerk als Grundlage
 
-Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 3000 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten. Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
+Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 1200 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten. Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
 
 Für die kabelgebundene Infrastruktur kommen zwei managed Netgear-Switches mit je 24 Ports zum Einsatz. Die eine ist für die LAN-Buchsen im Haus sowie Geräte in Netzwerkschrank zuständig, während an der anderen die Komponenten des Smart Homes (insb. die Gateways) zusammenlaufen. Beide Switches sind über redundante Verbindungen miteinander gekoppelt, um bei Ausfall einer Switch den Betrieb aufrechtzuerhalten.
 
