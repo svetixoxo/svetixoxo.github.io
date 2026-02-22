@@ -169,6 +169,11 @@ p, h1, h2, h3, h4, h5, li {
 .schrift-gelb    { color: var(--gelb); }
 .schrift-gruen   { color: var(--gruen); }
 
+.schrift-regular { font-weight: 400 !important; }
+.schrift-medium { font-weight: 500 !important; }
+.schrift-semibold { font-weight: 600 !important; }
+.schrift-bold { font-weight: 700 !important; }
+
 
 /* ══════════════════════════════════════════
    SEITENKOPF
@@ -409,6 +414,10 @@ nav a:hover span::after {
   box-shadow: var(--schatten-gross);
   margin-bottom: 2.5em;
   background: var(--hintergrund-karte);
+}
+
+.aufmacher:last-of-type {
+  margin-bottom: 0;
 }
 
 .aufmacher-profil {
