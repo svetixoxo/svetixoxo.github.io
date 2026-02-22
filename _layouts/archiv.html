@@ -22,6 +22,7 @@ layout: default
 </div>
 <div class="artikel-rahmen">
   {% assign gefundene = site.posts %}
+  {% for beitrag in gefundene %}
   <div class="beitragskarte-meta">
     {{ beitrag.date | date: "%Y-%m-%d" }}
     <a href="{{ beitrag.url | relative_url }}" class="beitragskarte-meta-titel">{{ beitrag.title }}</a>
