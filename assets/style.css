@@ -193,7 +193,7 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .seitenkopf-oben .ausgabe {
-  color: var(--lila);
+  color: var(--orange);
   text-transform: uppercase;
 }
 
@@ -1048,6 +1048,10 @@ code {
 
   .seitenkopf-haupt {
     padding: 0.8em 1em;
+  }
+   
+  .seitenkopf-oben .ausgabe {
+     text-align: center;
   }
 
   .logo-titel {
