@@ -300,16 +300,51 @@ nav a {
   padding: 0.4em 1em;
   border-right: var(--rahmen);
   transition: background 0.1s, color 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav a:last-child {
   border-right: none;
 }
 
-nav a:hover {
-  background: var(--tuerkis);
-  color: var(--weiss);
+nav a span {
+  position: relative;
 }
+
+nav a span::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  transition: width 0.2s ease, left 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover span::after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-self-hosting:hover  { background: var(--magenta); color: var(--weiss); }
+.nav-netzwerk:hover      { background: var(--tuerkis); color: var(--weiss); }
+.nav-smart-home:hover    { background: var(--gruen);   color: var(--weiss); }
+.nav-musikmachen:hover   { background: var(--lila);    color: var(--weiss); }
+.nav-archiv:hover        { background: var(--gelb);  color: var(--tinte); }
+
+.nav-self-hosting span::after  { background: var(--magenta); }
+.nav-netzwerk span::after      { background: var(--tuerkis); }
+.nav-smart-home span::after    { background: var(--gruen); }
+.nav-musikmachen span::after   { background: var(--lila); }
+.nav-archiv span::after        { background: var(--tinte); }
+
+.nav-self-hosting:hover span::after  { background: var(--magenta-hell); }
+.nav-netzwerk:hover span::after      { background: var(--tuerkis-hell); }
+.nav-smart-home:hover span::after    { background: var(--gruen-hell); }
+.nav-musikmachen:hover span::after   { background: var(--lila-hell); }
+.nav-archiv:hover span::after        { background: var(--tinte); }
 
 
 /* ══════════════════════════════════════════
