@@ -836,13 +836,13 @@ nav a:hover span::after {
 
 /* ── Hintergrund Artikelkopf ── */
 .kategorie-self-hosting-dienste.artikel-kopf       { background: var(--magenta-hell); }
-.kategorie-netzwerk-infrastruktur.artikel-kopf     { background: var(--tuerkis-hell); }
+.kategorie-netzwerk-infrastruktur.artikel-kopf     { background: var(--orange-hell); }
 .kategorie-smart-home-automatisierung.artikel-kopf { background: var(--gruen-hell); }
 .kategorie-proberaum-musikmachen.artikel-kopf      { background: var(--lila-hell); }
 
 /* ── Datum ── */
 .kategorie-self-hosting-dienste .artikel-meta-datum       { background: var(--magenta); color: var(--magenta-hell); }
-.kategorie-netzwerk-infrastruktur .artikel-meta-datum     { background: var(--tuerkis); color: var(--tuerkis-hell); }
+.kategorie-netzwerk-infrastruktur .artikel-meta-datum     { background: var(--orange); color: var(--orange-hell); }
 .kategorie-smart-home-automatisierung .artikel-meta-datum { background: var(--gruen);   color: var(--gruen-hell); }
 .kategorie-proberaum-musikmachen .artikel-meta-datum      { background: var(--lila);    color: var(--lila-hell); }
 
@@ -850,7 +850,7 @@ nav a:hover span::after {
 .kategorie-self-hosting-dienste .artikel-meta-thema,
 .kategorie-self-hosting-dienste .artikel-meta-thema a:hover       { color: var(--magenta); }
 .kategorie-netzwerk-infrastruktur .artikel-meta-thema,
-.kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover     { color: var(--tuerkis); }
+.kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover     { color: var(--orange); }
 .kategorie-smart-home-automatisierung .artikel-meta-thema,
 .kategorie-smart-home-automatisierung .artikel-meta-thema a:hover { color: var(--gruen); }
 .kategorie-proberaum-musikmachen .artikel-meta-thema,

@@ -5,6 +5,9 @@ permalink: /stats/
 ---
 
 <style>
+  .artikel-rahmen h1 {
+    margin-bottom: 0;
+  }
   .artikel-rahmen p {
     margin-bottom: 0;
   }
@@ -77,7 +80,6 @@ permalink: /stats/
 
 <div class="artikel-rahmen">
   <h1>Statistiken</h1>
-  <p class="artikel-einleitung">Statistiken und Infos über diesen Blog – automatisch aus dem Repository berechnet.</p>
 </div>
 
 {% assign alle_posts = site.posts %}
