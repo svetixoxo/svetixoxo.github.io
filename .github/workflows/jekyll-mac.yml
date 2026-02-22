@@ -39,6 +39,8 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: /Volumes/TR-002/github/02 svetixoxo/svetixoxo.github.io/_site
 
   deploy:
     runs-on: [self-hosted, macOS, ARM64]
