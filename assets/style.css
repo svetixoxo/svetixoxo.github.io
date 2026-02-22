@@ -263,7 +263,7 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .logo-titel em:hover {
-  color: var(--gedimmt);
+  color: var(--tinte);
 }
 
 .logo-untertitel {
@@ -767,7 +767,7 @@ nav a:hover span::after {
 }
 
 .artikel-kopf.artikel-rahmen {
-  background: var(--orange-hell);
+  background: var(--tuerkis-hell);
 }
 
 .artikel-rahmen-nummer {
@@ -806,14 +806,14 @@ nav a:hover span::after {
 }
 
 .artikel-meta-datum {
-  background: var(--orange);
-  color: var(--orange-hell);
+  background: var(--tuerkis);
+  color: var(--tuerkis-hell);
   display: inline;
   padding: 0.2em 0.6em;
 }
 
 .artikel-meta-thema {
-  color: var(--orange);
+  color: var(--tuerkis);
 }
 
 .artikel-meta-thema a {
@@ -822,8 +822,30 @@ nav a:hover span::after {
 }
 
 .artikel-meta-thema a:hover {
-  color: var(--orange);
+  color: var(--tuerkis);
 }
+
+/* ── Hintergrund Artikelkopf ── */
+.kategorie-self-hosting-dienste.artikel-kopf       { background: var(--magenta-hell); }
+.kategorie-netzwerk-infrastruktur.artikel-kopf     { background: var(--tuerkis-hell); }
+.kategorie-smart-home-automatisierung.artikel-kopf { background: var(--gruen-hell); }
+.kategorie-proberaum-musikmachen.artikel-kopf      { background: var(--lila-hell); }
+
+/* ── Datum ── */
+.kategorie-self-hosting-dienste .artikel-meta-datum       { background: var(--magenta); color: var(--magenta-hell); }
+.kategorie-netzwerk-infrastruktur .artikel-meta-datum     { background: var(--tuerkis); color: var(--tuerkis-hell); }
+.kategorie-smart-home-automatisierung .artikel-meta-datum { background: var(--gruen);   color: var(--gruen-hell); }
+.kategorie-proberaum-musikmachen .artikel-meta-datum      { background: var(--lila);    color: var(--lila-hell); }
+
+/* ── Thema ── */
+.kategorie-self-hosting-dienste .artikel-meta-thema,
+.kategorie-self-hosting-dienste .artikel-meta-thema a:hover       { color: var(--magenta); }
+.kategorie-netzwerk-infrastruktur .artikel-meta-thema,
+.kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover     { color: var(--tuerkis); }
+.kategorie-smart-home-automatisierung .artikel-meta-thema,
+.kategorie-smart-home-automatisierung .artikel-meta-thema a:hover { color: var(--gruen); }
+.kategorie-proberaum-musikmachen .artikel-meta-thema,
+.kategorie-proberaum-musikmachen .artikel-meta-thema a:hover      { color: var(--lila); }
 
 /* ── Einleitung ── */
 .artikel-einleitung {
@@ -853,7 +875,7 @@ nav a:hover span::after {
   font-weight: 800;
   color: var(--tinte);
   margin: 0 0 1em;
-  border-left: 4px solid var(--orange);
+  border-left: 4px solid var(--tuerkis);
   padding-left: 0.7em;
 }
 
@@ -862,9 +884,14 @@ nav a:hover span::after {
   font-weight: 800;
   color: var(--tinte);
   margin: 1.4em 0 0.4em;
-  border-left: 3px solid var(--tuerkis);
+  border-left: 4px solid var(--tuerkis);
   padding-left: 0.6em;
 }
+
+.kategorie-self-hosting-dienste .artikel-rahmen h2    { border-left-color: var(--magenta); }
+.kategorie-netzwerk-infrastruktur .artikel-rahmen h2  { border-left-color: var(--tuerkis); }
+.kategorie-smart-home-automatisierung .artikel-rahmen h2 { border-left-color: var(--gruen); }
+.kategorie-proberaum-musikmachen .artikel-rahmen h2   { border-left-color: var(--lila); }
 
 /* ── Fließtext ── */
 .artikel-rahmen p {
