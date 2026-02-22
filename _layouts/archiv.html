@@ -11,7 +11,7 @@ layout: default
 </div>
 <div class="beitragsliste-raster">
   {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %}
-  {% assign gefundene = site.posts | where_exp: "beitrag", "beitrag.category contains page.category" %}
+  {% assign gefundene = site.posts %}
   {% for beitrag in gefundene %}
   {% assign farbindex = forloop.index0 | modulo: 5 %}
   {% assign farbe = streifenfarben[farbindex] %}
