@@ -161,13 +161,14 @@ p, h1, h2, h3, h4, h5, li {
   color: var(--tinte);
 }
 
-/* ── Hilfsklassen Schriftfarbe ── */
-.schrift-tuerkis { color: var(--orange); }
-.schrift-orange  { color: var(--tuerkis); }
-.schrift-lila    { color: var(--lila); }
-.schrift-magenta { color: var(--magenta); }
-.schrift-gelb    { color: var(--gelb); }
-.schrift-gruen   { color: var(--gruen); }
+/* ── Hilfsklassen Schrift ── */
+.schrift-tuerkis { color: var(--orange) !important; }
+.schrift-orange  { color: var(--tuerkis) !important; }
+.schrift-lila    { color: var(--lila) !important; }
+.schrift-magenta { color: var(--magenta) !important; }
+.schrift-gruen   { color: var(--gruen) !important; }
+.schrift-gelb    { color: var(--gelb) !important; }
+.schrift-tinte    { color: var(--tinte) !important; }
 
 .schrift-regular { font-weight: 400 !important; }
 .schrift-medium { font-weight: 500 !important; }
