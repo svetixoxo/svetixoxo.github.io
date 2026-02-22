@@ -206,8 +206,9 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 .seitenkopf-oben .ausgabe a:hover,
-.seitenfuss a:hover {
-  color: var(--lila);
+.seitenfuss a:hover,
+.seitenkopf-oben em {
+  color: var(--orange);
 }
 
 /* ── Hauptkopf ── */
