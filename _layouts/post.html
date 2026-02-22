@@ -2,86 +2,89 @@
 layout: default
 ---
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const inhalt = document.querySelector('.artikel-inhalt');
-  if (!inhalt) return;
-  const kinder = Array.from(inhalt.childNodes);
-  let aktuellerRahmen = null;
-  let zaehler = 0;
-  kinder.forEach(function(kind) {
-    if (kind.nodeType === 1 && kind.tagName === 'H2') {
-      zaehler++;
-      aktuellerRahmen = document.createElement('div');
-      aktuellerRahmen.className = 'artikel-rahmen';
-      aktuellerRahmen.style.position = 'relative';
+    document.addEventListener('DOMContentLoaded', function() {
+        const inhalt = document.querySelector('.artikel-inhalt');
+        if (!inhalt) return;
+        const kinder = Array.from(inhalt.childNodes);
+        let aktuellerRahmen = null;
+        let zaehler = 0;
+        kinder.forEach(function(kind) {
+            if (kind.nodeType === 1 && kind.tagName === 'H2') {
+                zaehler++;
+                aktuellerRahmen = document.createElement('div');
+                aktuellerRahmen.className = 'artikel-rahmen';
+                aktuellerRahmen.style.position = 'relative';
 
-      const ankerId = 'abschnitt-' + zaehler;
-      aktuellerRahmen.id = ankerId;
+                const ankerId = 'abschnitt-' + zaehler;
+                aktuellerRahmen.id = ankerId;
 
-      const versatz = document.createElement('span');
-      versatz.style.cssText = 'position:absolute; top:-200px; display:block; visibility:hidden;';
-      versatz.id = ankerId;
-      aktuellerRahmen.appendChild(versatz);
+                const versatz = document.createElement('span');
+                versatz.style.cssText = 'position:absolute; top:-200px; display:block; visibility:hidden;';
+                versatz.id = ankerId;
+                aktuellerRahmen.appendChild(versatz);
 
-      const nummer = document.createElement('span');
-      nummer.className = 'artikel-rahmen-nummer';
-      nummer.textContent = zaehler;
-      nummer.dataset.zahl = zaehler;
-      nummer.title = 'Link kopieren';
-      nummer.style.cursor = 'pointer';
-      nummer.addEventListener('click', function() {
-        const aktuelleZahl = parseInt(nummer.dataset.zahl);
-        const url = window.location.origin + window.location.pathname + '#' + ankerId;
-        navigator.clipboard.writeText(url).then(function() {
-          nummer.textContent = '¶';
-          setTimeout(function() { nummer.textContent = aktuelleZahl; }, 1500);
+                const nummer = document.createElement('span');
+                nummer.className = 'artikel-rahmen-nummer';
+                nummer.textContent = zaehler;
+                nummer.dataset.zahl = zaehler;
+                nummer.title = 'Link kopieren';
+                nummer.style.cursor = 'pointer';
+                nummer.addEventListener('click', function() {
+                    const aktuelleZahl = parseInt(nummer.dataset.zahl);
+                    const url = window.location.origin + window.location.pathname + '#' + ankerId;
+                    navigator.clipboard.writeText(url).then(function() {
+                        nummer.textContent = '¶';
+                        setTimeout(function() {
+                            nummer.textContent = aktuelleZahl;
+                        }, 1500);
+                    });
+                });
+
+                aktuellerRahmen.appendChild(nummer);
+                inhalt.insertBefore(aktuellerRahmen, kind);
+            }
+            if (aktuellerRahmen) {
+                aktuellerRahmen.appendChild(kind);
+            }
         });
-      });
+    });
 
-      aktuellerRahmen.appendChild(nummer);
-      inhalt.insertBefore(aktuellerRahmen, kind);
-    }
-    if (aktuellerRahmen) {
-      aktuellerRahmen.appendChild(kind);
-    }
-  });
-});
 </script>
 
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-  <p class="artikel-meta"><span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span> <span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a></span></p>
-  <h1>{{ page.title }}</h1>
-  {% if page.excerpt %}
+    <p class="artikel-meta"><span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span> <span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a></span></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.excerpt %}
     <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
-  {% endif %}
+    {% endif %}
 </div>
 
 <div class="artikel-inhalt kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-  {{ content }}
+    {{ content }}
 </div>
 
 <div class="artikel-navigation">
-  {% if page.previous.url %}
+    {% if page.previous.url %}
     {% assign vorheriger-titel = page.previous.title | split: ": " %}
     <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
-      <span class="artikel-nav-pfeil">←</span>
-      <span class="artikel-nav-text">
-        <span>{{ vorheriger-titel[0] }}{% if vorheriger-titel[1] %}:{% endif %}</span>
-        {% if vorheriger-titel[1] %}<span>{{ vorheriger-titel[1] }}</span>{% endif %}
-      </span>
+        <span class="artikel-nav-pfeil">←</span>
+        <span class="artikel-nav-text">
+            <span>{{ vorheriger-titel[0] }}{% if vorheriger-titel[1] %}:{% endif %}</span>
+            {% if vorheriger-titel[1] %}<span>{{ vorheriger-titel[1] }}</span>{% endif %}
+        </span>
     </a>
-  {% else %}
+    {% else %}
     <div style="flex:1"></div>
-  {% endif %}
+    {% endif %}
 
-  {% if page.next.url %}
+    {% if page.next.url %}
     {% assign naechster-titel = page.next.title | split: ": " %}
     <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta artikel-nav">
-      <span class="artikel-nav-text">
-        <span>{{ naechster-titel[0] }}{% if naechster-titel[1] %}:{% endif %}</span>
-        {% if naechster-titel[1] %}<span>{{ naechster-titel[1] }}</span>{% endif %}
-      </span>
-      <span class="artikel-nav-pfeil">→</span>
+        <span class="artikel-nav-text">
+            <span>{{ naechster-titel[0] }}{% if naechster-titel[1] %}:{% endif %}</span>
+            {% if naechster-titel[1] %}<span>{{ naechster-titel[1] }}</span>{% endif %}
+        </span>
+        <span class="artikel-nav-pfeil">→</span>
     </a>
-  {% endif %}
+    {% endif %}
 </div>
