@@ -2,7 +2,6 @@
    svetixoxo.github.io
 ───────────────────────────────────────────── */
 
-
 /* ══════════════════════════════════════════
    SCHRIFTARTEN
 ══════════════════════════════════════════ */
@@ -11,7 +10,7 @@
 @font-face {
   font-family: "IBM Plex Sans";
   src: url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,7 +19,7 @@
 @font-face {
   font-family: "IBM Plex Sans";
   src: url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -29,7 +28,7 @@
 @font-face {
   font-family: "IBM Plex Sans";
   src: url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -38,7 +37,7 @@
 @font-face {
   font-family: "IBM Plex Sans";
   src: url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -48,7 +47,7 @@
 @font-face {
   font-family: "IBM Plex Mono";
   src: url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -57,7 +56,7 @@
 @font-face {
   font-family: "IBM Plex Mono";
   src: url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -66,7 +65,7 @@
 @font-face {
   font-family: "IBM Plex Mono";
   src: url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -75,12 +74,11 @@
 @font-face {
   font-family: "IBM Plex Mono";
   src: url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff2") format("woff2"),
-       url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff") format("woff");
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 
 /* ══════════════════════════════════════════
    VARIABLEN
@@ -117,7 +115,6 @@
   --rahmen: 2px solid var(--tinte);
 }
 
-
 /* ══════════════════════════════════════════
    RESET & BASIS
 ══════════════════════════════════════════ */
@@ -137,7 +134,7 @@ html {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  cursor: url('/assets/cursors/left_ptr.png') 4 4, auto;
+  cursor: url("/assets/cursors/left_ptr.png") 4 4, auto;
   background: var(--hintergrund);
   background-image: radial-gradient(circle, #c8c0b0 1px, transparent 1px);
   background-size: 22px 22px;
@@ -148,11 +145,17 @@ body {
 /* ── Cursor ── */
 a,
 .schaltflaeche {
-  cursor: url('/assets/cursors/hand2.png') 4 4, pointer !important;
+  cursor: url("/assets/cursors/hand2.png") 4 4, pointer !important;
 }
 
-p, h1, h2, h3, h4, h5, li {
-  cursor: url('/assets/cursors/xterm.png') 12 12, text;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li {
+  cursor: url("/assets/cursors/xterm.png") 12 12, text;
 }
 
 /* ── Auswahl ── */
@@ -162,19 +165,40 @@ p, h1, h2, h3, h4, h5, li {
 }
 
 /* ── Hilfsklassen Schrift ── */
-.schrift-tuerkis { color: var(--orange) !important; }
-.schrift-orange  { color: var(--tuerkis) !important; }
-.schrift-lila    { color: var(--lila) !important; }
-.schrift-magenta { color: var(--magenta) !important; }
-.schrift-gruen   { color: var(--gruen) !important; }
-.schrift-gelb    { color: var(--gelb) !important; }
-.schrift-tinte    { color: var(--tinte) !important; }
+.schrift-tuerkis {
+  color: var(--orange) !important;
+}
+.schrift-orange {
+  color: var(--tuerkis) !important;
+}
+.schrift-lila {
+  color: var(--lila) !important;
+}
+.schrift-magenta {
+  color: var(--magenta) !important;
+}
+.schrift-gruen {
+  color: var(--gruen) !important;
+}
+.schrift-gelb {
+  color: var(--gelb) !important;
+}
+.schrift-tinte {
+  color: var(--tinte) !important;
+}
 
-.schrift-regular { font-weight: 400 !important; }
-.schrift-medium { font-weight: 500 !important; }
-.schrift-semibold { font-weight: 600 !important; }
-.schrift-bold { font-weight: 700 !important; }
-
+.schrift-regular {
+  font-weight: 400 !important;
+}
+.schrift-medium {
+  font-weight: 500 !important;
+}
+.schrift-semibold {
+  font-weight: 600 !important;
+}
+.schrift-bold {
+  font-weight: 700 !important;
+}
 
 /* ══════════════════════════════════════════
    SEITENKOPF
@@ -333,24 +357,58 @@ nav a:hover span::after {
   left: 0;
 }
 
-.nav-self-hosting:hover  { background: var(--magenta); color: var(--weiss); }
-.nav-netzwerk:hover      { background: var(--orange); color: var(--weiss); }
-.nav-smart-home:hover    { background: var(--gruen);   color: var(--weiss); }
-.nav-musikmachen:hover   { background: var(--lila);    color: var(--weiss); }
-.nav-archiv:hover        { background: var(--gelb);  color: var(--tinte); }
+.nav-self-hosting:hover {
+  background: var(--magenta);
+  color: var(--weiss);
+}
+.nav-netzwerk:hover {
+  background: var(--orange);
+  color: var(--weiss);
+}
+.nav-smart-home:hover {
+  background: var(--gruen);
+  color: var(--weiss);
+}
+.nav-musikmachen:hover {
+  background: var(--lila);
+  color: var(--weiss);
+}
+.nav-archiv:hover {
+  background: var(--gelb);
+  color: var(--tinte);
+}
 
-.nav-self-hosting span::after  { background: var(--magenta); }
-.nav-netzwerk span::after      { background: var(--orange); }
-.nav-smart-home span::after    { background: var(--gruen); }
-.nav-musikmachen span::after   { background: var(--lila); }
-.nav-archiv span::after        { background: var(--tinte); }
+.nav-self-hosting span::after {
+  background: var(--magenta);
+}
+.nav-netzwerk span::after {
+  background: var(--orange);
+}
+.nav-smart-home span::after {
+  background: var(--gruen);
+}
+.nav-musikmachen span::after {
+  background: var(--lila);
+}
+.nav-archiv span::after {
+  background: var(--tinte);
+}
 
-.nav-self-hosting:hover span::after  { background: var(--magenta-hell); }
-.nav-netzwerk:hover span::after      { background: var(--orange-hell); }
-.nav-smart-home:hover span::after    { background: var(--gruen-hell); }
-.nav-musikmachen:hover span::after   { background: var(--lila-hell); }
-.nav-archiv:hover span::after        { background: var(--tinte); }
-
+.nav-self-hosting:hover span::after {
+  background: var(--magenta-hell);
+}
+.nav-netzwerk:hover span::after {
+  background: var(--orange-hell);
+}
+.nav-smart-home:hover span::after {
+  background: var(--gruen-hell);
+}
+.nav-musikmachen:hover span::after {
+  background: var(--lila-hell);
+}
+.nav-archiv:hover span::after {
+  background: var(--tinte);
+}
 
 /* ══════════════════════════════════════════
    SEITENINHALT & LAYOUT
@@ -402,7 +460,6 @@ nav a:hover span::after {
 .abschnitt-kopf a:hover {
   color: var(--tuerkis);
 }
-
 
 /* ══════════════════════════════════════════
    AUFMACHER
@@ -544,7 +601,6 @@ nav a:hover span::after {
   border: var(--border);
 }
 
-
 /* ══════════════════════════════════════════
    ETIKETTEN
 ══════════════════════════════════════════ */
@@ -623,7 +679,6 @@ nav a:hover span::after {
   color: var(--magenta);
 }
 
-
 /* ══════════════════════════════════════════
    SCHALTFLÄCHEN
 ══════════════════════════════════════════ */
@@ -650,14 +705,34 @@ nav a:hover span::after {
   box-shadow: var(--schatten);
 }
 
-.schaltflaeche-orange  { background: var(--tuerkis);  color: var(--weiss); }
-.schaltflaeche-tuerkis { background: var(--orange); color: var(--weiss); }
-.schaltflaeche-lila    { background: var(--lila);    color: var(--weiss); }
-.schaltflaeche-gruen   { background: var(--gruen);   color: var(--weiss); }
-.schaltflaeche-magenta { background: var(--magenta); color: var(--weiss); }
-.schaltflaeche-gelb    { background: var(--gelb);    color: var(--tinte); }
-.schaltflaeche-weiss   { background: var(--weiss);   color: var(--tinte); }
-
+.schaltflaeche-orange {
+  background: var(--tuerkis);
+  color: var(--weiss);
+}
+.schaltflaeche-tuerkis {
+  background: var(--orange);
+  color: var(--weiss);
+}
+.schaltflaeche-lila {
+  background: var(--lila);
+  color: var(--weiss);
+}
+.schaltflaeche-gruen {
+  background: var(--gruen);
+  color: var(--weiss);
+}
+.schaltflaeche-magenta {
+  background: var(--magenta);
+  color: var(--weiss);
+}
+.schaltflaeche-gelb {
+  background: var(--gelb);
+  color: var(--tinte);
+}
+.schaltflaeche-weiss {
+  background: var(--weiss);
+  color: var(--tinte);
+}
 
 /* ══════════════════════════════════════════
    BEITRAGSLISTE
@@ -758,7 +833,6 @@ nav a:hover span::after {
   margin-bottom: 0.9em;
 }
 
-
 /* ══════════════════════════════════════════
    ARTIKEL-EINZELANSICHT
 ══════════════════════════════════════════ */
@@ -773,7 +847,7 @@ nav a:hover span::after {
 }
 
 .artikel-rahmen:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .artikel-kopf.artikel-rahmen {
@@ -836,26 +910,54 @@ nav a:hover span::after {
 }
 
 /* ── Hintergrund Artikelkopf ── */
-.kategorie-self-hosting-dienste.artikel-kopf       { background: var(--magenta-hell); }
-.kategorie-netzwerk-infrastruktur.artikel-kopf     { background: var(--orange-hell); }
-.kategorie-smart-home-automatisierung.artikel-kopf { background: var(--gruen-hell); }
-.kategorie-proberaum-musikmachen.artikel-kopf      { background: var(--lila-hell); }
+.kategorie-self-hosting-dienste.artikel-kopf {
+  background: var(--magenta-hell);
+}
+.kategorie-netzwerk-infrastruktur.artikel-kopf {
+  background: var(--orange-hell);
+}
+.kategorie-smart-home-automatisierung.artikel-kopf {
+  background: var(--gruen-hell);
+}
+.kategorie-proberaum-musikmachen.artikel-kopf {
+  background: var(--lila-hell);
+}
 
 /* ── Datum ── */
-.kategorie-self-hosting-dienste .artikel-meta-datum       { background: var(--magenta); color: var(--magenta-hell); }
-.kategorie-netzwerk-infrastruktur .artikel-meta-datum     { background: var(--orange); color: var(--orange-hell); }
-.kategorie-smart-home-automatisierung .artikel-meta-datum { background: var(--gruen);   color: var(--gruen-hell); }
-.kategorie-proberaum-musikmachen .artikel-meta-datum      { background: var(--lila);    color: var(--lila-hell); }
+.kategorie-self-hosting-dienste .artikel-meta-datum {
+  background: var(--magenta);
+  color: var(--magenta-hell);
+}
+.kategorie-netzwerk-infrastruktur .artikel-meta-datum {
+  background: var(--orange);
+  color: var(--orange-hell);
+}
+.kategorie-smart-home-automatisierung .artikel-meta-datum {
+  background: var(--gruen);
+  color: var(--gruen-hell);
+}
+.kategorie-proberaum-musikmachen .artikel-meta-datum {
+  background: var(--lila);
+  color: var(--lila-hell);
+}
 
 /* ── Thema ── */
 .kategorie-self-hosting-dienste .artikel-meta-thema,
-.kategorie-self-hosting-dienste .artikel-meta-thema a:hover       { color: var(--magenta); }
+.kategorie-self-hosting-dienste .artikel-meta-thema a:hover {
+  color: var(--magenta);
+}
 .kategorie-netzwerk-infrastruktur .artikel-meta-thema,
-.kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover     { color: var(--orange); }
+.kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover {
+  color: var(--orange);
+}
 .kategorie-smart-home-automatisierung .artikel-meta-thema,
-.kategorie-smart-home-automatisierung .artikel-meta-thema a:hover { color: var(--gruen); }
+.kategorie-smart-home-automatisierung .artikel-meta-thema a:hover {
+  color: var(--gruen);
+}
 .kategorie-proberaum-musikmachen .artikel-meta-thema,
-.kategorie-proberaum-musikmachen .artikel-meta-thema a:hover      { color: var(--lila); }
+.kategorie-proberaum-musikmachen .artikel-meta-thema a:hover {
+  color: var(--lila);
+}
 
 /* ── Einleitung ── */
 .artikel-einleitung {
@@ -874,7 +976,7 @@ nav a:hover span::after {
   letter-spacing: -0.02em;
   line-height: 1.15;
   color: var(--tinte);
-  margin-bottom: 0.3em;/*
+  margin-bottom: 0.3em; /*
   background: var(--gelb);
   padding: 0.2em;
   display: inline-block;*/
@@ -898,10 +1000,18 @@ nav a:hover span::after {
   padding-left: 0.6em;
 }
 
-.kategorie-self-hosting-dienste .artikel-rahmen h2    { border-left-color: var(--magenta); }
-.kategorie-netzwerk-infrastruktur .artikel-rahmen h2  { border-left-color: var(--tuerkis); }
-.kategorie-smart-home-automatisierung .artikel-rahmen h2 { border-left-color: var(--gruen); }
-.kategorie-proberaum-musikmachen .artikel-rahmen h2   { border-left-color: var(--lila); }
+.kategorie-self-hosting-dienste .artikel-rahmen h2 {
+  border-left-color: var(--magenta);
+}
+.kategorie-netzwerk-infrastruktur .artikel-rahmen h2 {
+  border-left-color: var(--tuerkis);
+}
+.kategorie-smart-home-automatisierung .artikel-rahmen h2 {
+  border-left-color: var(--gruen);
+}
+.kategorie-proberaum-musikmachen .artikel-rahmen h2 {
+  border-left-color: var(--lila);
+}
 
 /* ── Fließtext ── */
 .artikel-rahmen p {
@@ -978,7 +1088,6 @@ nav a:hover span::after {
   font-size: 1rem;
 }
 
-
 /* ══════════════════════════════════════════
    HINWEISBOXEN
 ══════════════════════════════════════════ */
@@ -1019,12 +1128,24 @@ blockquote.hinweisbox strong:first-child,
   margin-bottom: 0.2em;
 }
 
-.hinweisbox-tipp              { background: var(--gruen-hell); }
-.hinweisbox-tipp::before      { background: var(--gruen); }
-.hinweisbox-warnung           { background: var(--gelb-hell); }
-.hinweisbox-warnung::before   { background: var(--gelb); }
-.hinweisbox-info              { background: var(--orange-hell); }
-.hinweisbox-info::before      { background: var(--orange); }
+.hinweisbox-tipp {
+  background: var(--gruen-hell);
+}
+.hinweisbox-tipp::before {
+  background: var(--gruen);
+}
+.hinweisbox-warnung {
+  background: var(--gelb-hell);
+}
+.hinweisbox-warnung::before {
+  background: var(--gelb);
+}
+.hinweisbox-info {
+  background: var(--orange-hell);
+}
+.hinweisbox-info::before {
+  background: var(--orange);
+}
 
 /* ── Normales Blockquote ── */
 blockquote:not(.hinweisbox) {
@@ -1034,7 +1155,6 @@ blockquote:not(.hinweisbox) {
   color: var(--gedimmt);
   font-style: italic;
 }
-
 
 /* ══════════════════════════════════════════
    CODE
@@ -1072,24 +1192,36 @@ code {
 /* ── Syntax-Highlighting ── */
 .highlight .k,
 .highlight .kd,
-.highlight .kn  { color: #ff9060; font-weight: 700; }
+.highlight .kn {
+  color: #ff9060;
+  font-weight: 700;
+}
 
 .highlight .s,
 .highlight .s1,
-.highlight .s2  { color: #68d391; }
+.highlight .s2 {
+  color: #68d391;
+}
 
 .highlight .c,
 .highlight .c1,
-.highlight .cm  { color: #555; }
+.highlight .cm {
+  color: #555;
+}
 
 .highlight .nf,
-.highlight .nb  { color: #b794f4; }
+.highlight .nb {
+  color: #b794f4;
+}
 
 .highlight .mi,
-.highlight .mf  { color: #ffd700; }
+.highlight .mf {
+  color: #ffd700;
+}
 
-.highlight .na  { color: #79c0ff; }
-
+.highlight .na {
+  color: #79c0ff;
+}
 
 /* ══════════════════════════════════════════
    SEITENFUSS
@@ -1108,19 +1240,24 @@ code {
   border-top: 3px solid var(--tuerkis);
 }
 
-.seitenfuss a    { text-transform: none; }
-.seitenfuss span { color: var(--weiss); }
-.seitenfuss em   { color: var(--rot); }
-
+.seitenfuss a {
+  text-transform: none;
+}
+.seitenfuss span {
+  color: var(--weiss);
+}
+.seitenfuss em {
+  color: var(--rot);
+}
 
 /* ══════════════════════════════════════════
    MOBILANSICHT
 ══════════════════════════════════════════ */
 
 @media (max-width: 700px) {
-   .nur-desktop {
-      display: none;
-   }
+  .nur-desktop {
+    display: none;
+  }
   .seitenkopf-oben {
     display: none;
   }
@@ -1128,9 +1265,9 @@ code {
   .seitenkopf-haupt {
     padding: 0.8em 1em;
   }
-   
+
   .seitenkopf-oben .ausgabe {
-     text-align: center;
+    text-align: center;
   }
 
   .logo-titel {
