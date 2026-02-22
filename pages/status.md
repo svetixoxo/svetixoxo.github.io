@@ -202,27 +202,40 @@ permalink: /status/
     fetch('https://api.github.com/repos/svetixoxo/svetixoxo.github.io')
       .then(r => r.json())
       .then(data => {
-        document.getElementById('repo-groesse').textContent = (data.size / 1024).toFixed(2) + ' MB';
+        if (data.size) {
+          document.getElementById('repo-groesse').textContent = (data.size / 1024).toFixed(2) + ' MB';
+        } else {
+          document.getElementById('repo-groesse').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+        }
       })
       .catch(() => {
-        document.getElementById('repo-groesse').textContent = '–';
+        document.getElementById('repo-groesse').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
       });
 
     fetch('https://api.github.com/repos/svetixoxo/svetixoxo.github.io/git/trees/main?recursive=1')
       .then(r => r.json())
       .then(data => {
-        const anzahl = data.tree.filter(i => i.type === 'blob').length;
-        document.getElementById('repo-dateien').textContent = '(' + anzahl + ' Dateien)';
+        if (data.tree) {
+          const anzahl = data.tree.filter(i => i.type === 'blob').length;
+          document.getElementById('repo-dateien').textContent = '(' + anzahl + ' Dateien)';
+        } else {
+          document.getElementById('repo-dateien').textContent = '';
+        }
       })
       .catch(() => {
         document.getElementById('repo-dateien').textContent = '';
       });
-  }, 666);
+  });
 </script>
+
 <script>
   fetch('https://api.github.com/repos/svetixoxo/svetixoxo.github.io/languages')
     .then(r => r.json())
     .then(data => {
+      if (data.message || Object.keys(data).length === 0) {
+        document.getElementById('repo-sprachen').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+        return;
+      }
       const gesamt = Object.values(data).reduce((a, b) => a + b, 0);
       const teile = Object.entries(data).map(([sprache, bytes]) => {
         const prozent = ((bytes / gesamt) * 100).toFixed(1);
@@ -231,9 +244,10 @@ permalink: /status/
       document.getElementById('repo-sprachen').textContent = teile.join(', ');
     })
     .catch(() => {
-      document.getElementById('repo-sprachen').textContent = '–';
-    }, 666);
+      document.getElementById('repo-sprachen').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+    });
 </script>
+
 <script>
   fetch('https://api.github.com/repos/svetixoxo/svetixoxo.github.io/commits?per_page=1')
     .then(r => {
@@ -241,12 +255,16 @@ permalink: /status/
       const match = linkHeader && linkHeader.match(/page=(\d+)>; rel="last"/);
       const anzahl = match ? match[1] : '1';
       return r.json().then(data => {
-        const datum = new Date(data[0].commit.author.date);
-        const formatiert = datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
-        document.getElementById('repo-commits-info').textContent = anzahl + ' (letzter Commit: ' + formatiert + ')';
+        if (data[0] && data[0].commit) {
+          const datum = new Date(data[0].commit.author.date);
+          const formatiert = datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+          document.getElementById('repo-commits-info').textContent = anzahl + ' (letzter Commit: ' + formatiert + ')';
+        } else {
+          document.getElementById('repo-commits-info').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+        }
       });
     })
     .catch(() => {
-      document.getElementById('repo-commits-info').textContent = '–';
-    }, 666);
+      document.getElementById('repo-commits-info').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+    });
 </script>
