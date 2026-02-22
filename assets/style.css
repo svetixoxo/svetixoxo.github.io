@@ -355,7 +355,6 @@ nav a:hover span::after {
   margin: 0 auto;
   padding: 2.5em 1.5em;
   position: relative;
-  top: 2rem;
 }
 
 /* ── Abschnittsüberschrift ── */
@@ -763,6 +762,10 @@ nav a:hover span::after {
   margin-bottom: 2em;
 }
 
+.artikel-rahmen:last-of-type {
+    margin-bottom: 0;
+}
+
 .artikel-kopf.artikel-rahmen {
   background: var(--orange-hell);
 }
@@ -870,6 +873,9 @@ nav a:hover span::after {
   line-height: 1.75;
   text-align: justify;
 }
+.artikel-rahmen p:last-child {
+  margin-bottom: 0em;
+}
 
 .artikel-rahmen ul,
 .artikel-rahmen ol {
@@ -897,7 +903,7 @@ nav a:hover span::after {
 .artikel-navigation {
   display: flex;
   gap: 1em;
-  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .artikel-navigation .schaltflaeche {

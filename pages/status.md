@@ -257,14 +257,23 @@ permalink: /status/
       return r.json().then(data => {
         if (data[0] && data[0].commit) {
           const datum = new Date(data[0].commit.author.date);
-          const formatiert = datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
-          document.getElementById('repo-commits-info').textContent = anzahl + ' (letzter Commit: ' + formatiert + ')';
+
+          // yyyy-mm-dd Format
+          const jahr = datum.getFullYear();
+          const monat = String(datum.getMonth() + 1).padStart(2, '0');
+          const tag = String(datum.getDate()).padStart(2, '0');
+          const formatiert = `${jahr}-${monat}-${tag}`;
+
+          document.getElementById('repo-commits-info').textContent =
+            anzahl + ' (letzter Commit: ' + formatiert + ')';
         } else {
-          document.getElementById('repo-commits-info').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+          document.getElementById('repo-commits-info').textContent =
+            'Daten können nicht abgerufen werden (API-Limit erreicht)';
         }
       });
     })
     .catch(() => {
-      document.getElementById('repo-commits-info').textContent = 'Daten können nicht abgerufen werden (API-Limit erreicht)';
+      document.getElementById('repo-commits-info').textContent =
+        'Daten können nicht abgerufen werden (API-Limit erreicht)';
     });
 </script>

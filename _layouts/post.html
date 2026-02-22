@@ -54,11 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
   {% if page.excerpt %}
     <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
   {% endif %}
-  <div class="etiketten-zeile">
-    {% for etikett in page.tags %}
-      <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
-    {% endfor %}
-  </div>
 </div>
 
 <div class="artikel-inhalt">
