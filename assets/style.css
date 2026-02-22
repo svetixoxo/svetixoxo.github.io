@@ -257,11 +257,11 @@ p, h1, h2, h3, h4, h5, li {
 
 .logo-titel em {
   font-style: normal;
-  color: var(--magenta);
+  color: var(--orange);
 }
 
 .logo-titel em:hover {
-  color: var(--tuerkis);
+  color: var(--gedimmt);
 }
 
 .logo-untertitel {
