@@ -1,26 +1,26 @@
 ---
 layout: default
-title: "Status"
-permalink: /status/
+title: "Statistiken"
+permalink: /stats/
 ---
 
 <style>
   .artikel-rahmen p {
     margin-bottom: 0;
   }
-  .status-raster {
+  .stats-raster {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2em;
     margin-bottom: 2em;
   }
-  .status-kachel {
+  .stats-kachel {
     background: var(--hintergrund-karte);
     border: var(--rahmen);
     box-shadow: var(--schatten);
     padding: 1.5em;
   }
-  .status-kachel-label {
+  .stats-kachel-label {
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.68rem;
     font-weight: 700;
@@ -29,38 +29,38 @@ permalink: /status/
     color: var(--gedimmt);
     margin-bottom: 0.4em;
   }
-  .status-kachel-wert {
+  .stats-kachel-wert {
     font-family: "IBM Plex Mono", monospace;
     font-size: 2rem;
     font-weight: 700;
     color: var(--tinte);
     line-height: 1;
   }
-  .status-kachel-wert.klein {
+  .stats-kachel-wert.klein {
     font-size: 1rem;
   }
-  .status-kachel-akzent {
+  .stats-kachel-akzent {
     width: 4px;
     height: 2rem;
     display: inline-block;
     margin-right: 0.5em;
     vertical-align: middle;
   }
-  .status-tabelle {
+  .stats-tabelle {
     width: 100%;
     border-collapse: collapse;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.82rem;
   }
-  .status-tabelle td {
+  .stats-tabelle td {
     padding: 0.6em 0.8em;
     border-bottom: 1px solid var(--linie);
   }
-  .status-tabelle tr:last-child td {
+  .stats-tabelle tr:last-child td {
     padding-bottom: 0;
     border-bottom: none;
   }
-  .status-tabelle td:first-child {
+  .stats-tabelle td:first-child {
     color: var(--gedimmt);
     font-weight: 700;
     text-transform: uppercase;
@@ -69,14 +69,14 @@ permalink: /status/
     width: 40%;
   }
   @media (max-width: 700px) {
-    .status-raster {
+    .stats-raster {
       grid-template-columns: 1fr 1fr;
     }
   }
 </style>
 
 <div class="artikel-rahmen">
-  <h1>Status</h1>
+  <h1>Statistiken</h1>
   <p class="artikel-einleitung">Statistiken und Infos über diesen Blog – automatisch aus dem Repository berechnet.</p>
 </div>
 
@@ -96,26 +96,26 @@ permalink: /status/
   {% assign woerter_schnitt = 0 %}
 {% endif %}
 
-<div class="status-raster">
-  <div class="status-kachel">
-    <div class="status-kachel-label">Beiträge gesamt</div>
-    <div class="status-kachel-wert" style="color:var(--tuerkis)">{{ site.posts.size }}</div>
+<div class="stats-raster">
+  <div class="stats-kachel">
+    <div class="stats-kachel-label">Beiträge gesamt</div>
+    <div class="stats-kachel-wert" style="color:var(--tuerkis)">{{ site.posts.size }}</div>
   </div>
-  <div class="status-kachel">
-    <div class="status-kachel-label">Ø Wörter pro Beitrag</div>
-    <div class="status-kachel-wert" style="color:var(--lila)">{{ woerter_schnitt }}</div>
+  <div class="stats-kachel">
+    <div class="stats-kachel-label">Ø Wörter pro Beitrag</div>
+    <div class="stats-kachel-wert" style="color:var(--lila)">{{ woerter_schnitt }}</div>
   </div>
-  <div class="status-kachel">
-    <div class="status-kachel-label">Wörter gesamt</div>
-    <div class="status-kachel-wert" style="color:var(--gruen)">{{ woerter_gesamt }}</div>
+  <div class="stats-kachel">
+    <div class="stats-kachel-label">Wörter gesamt</div>
+    <div class="stats-kachel-wert" style="color:var(--gruen)">{{ woerter_gesamt }}</div>
   </div><!--
-  <div class="status-kachel">
-    <div class="status-kachel-label">Tags</div>
-    <div class="status-kachel-wert" style="color:var(--orange)">{{ site.tags.size }}</div>
+  <div class="stats-kachel">
+    <div class="stats-kachel-label">Tags</div>
+    <div class="stats-kachel-wert" style="color:var(--orange)">{{ site.tags.size }}</div>
   </div>-->
-  <div class="status-kachel">
-    <div class="status-kachel-label">Letzter/Erster Beitrag</div>
-    <div class="status-kachel-wert klein">{{ erster_post.date | date: "%Y-%m-%d" }}<br />{{ letzter_post.date | date: "%Y-%m-%d" }}</div>
+  <div class="stats-kachel">
+    <div class="stats-kachel-label">Letzter/Erster Beitrag</div>
+    <div class="stats-kachel-wert klein">{{ erster_post.date | date: "%Y-%m-%d" }}<br />{{ letzter_post.date | date: "%Y-%m-%d" }}</div>
   </div>
 </div>
 <!--
@@ -125,7 +125,7 @@ permalink: /status/
 </div>
 --><!--
 <div class="artikel-rahmen">
-  <table class="status-tabelle">
+  <table class="stats-tabelle">
     {% assign kategorien = site.posts | map: "category" | uniq %}
     {% for kat in kategorien %}
       {% assign kat_posts = site.posts | where: "category", kat %}
@@ -143,7 +143,7 @@ permalink: /status/
 </div>
 --><!--
 <div class="artikel-rahmen">
-  <table class="status-tabelle">
+  <table class="stats-tabelle">
     {% assign sortierte_tags = site.tags | sort %}
     {% for tag in sortierte_tags %}
       {% assign tag_name = tag | first %}
@@ -158,7 +158,7 @@ permalink: /status/
 -->
 
 <div class="artikel-rahmen">
-  <table class="status-tabelle">
+  <table class="stats-tabelle">
     <tr>
       <td>Generator</td>
       <td>Jekyll {{ jekyll.version }}</td>
