@@ -14,17 +14,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+          bundle install
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: |
+          export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+          bundle exec jekyll build
 
   deploy:
     runs-on: [self-hosted, macOS, ARM64]
     needs: build
-    defaults:
-      run:
-        working-directory: /Volumes/TR-002/github/02 svetixoxo/svetixoxo.github.io
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
