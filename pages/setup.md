@@ -148,7 +148,7 @@ permalink: /setup/
     <table class="setup-tabelle">
       <tr><td>Heimserver</td><td>QNAP TS-873AeU-RP</td></tr>
       <tr><td>RAM</td><td>64 GB</td></tr>
-      <tr><td>Festplatten</td><td>8× 12 TB Seagate Exos HDD<br>2× &nbsp;2 TB Samsung SSD (OS/Cache)</td></tr>
+      <tr><td>Festplatten</td><td>8× 12 TB Seagate Exos HDD (RAID 6)<br>2× &nbsp;2 TB Samsung SSD (OS/Cache)</td></tr>
       <tr><td>Erweiterungskarte</td><td>QNAP QXG-10G2T-X710</td></tr>
     </table>
   </div>
@@ -156,14 +156,14 @@ permalink: /setup/
     <table class="setup-tabelle">
       <tr><td>Überwachungs-NAS</td><td>QNAP TS-1273AU-RP</td></tr>
       <tr><td>RAM</td><td>64 GB</td></tr>
-      <tr><td>Festplatten</td><td>12× 24 TB Seagate Exos HDD<br>&nbsp;2× &nbsp;4 TB Samsung SSD (OS/Cache)</td></tr>
+      <tr><td>Festplatten</td><td>12× 24 TB Seagate Exos HDD (RAID 6)<br>&nbsp;2× &nbsp;4 TB Samsung SSD (OS/Cache)</td></tr>
       <tr><td>Erweiterungskarten</td><td>QNAP QXG-10G2T-X710<br>NVIDIA Quadro P1000</td></tr>
     </table>
   </div>
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>Backup-NAS #1</td><td>Raspberry Pi 5 + QNAP TR-004<br>4× &nbsp;12 TB Seagate Exos HDD<br>1× 512 GB SSD (OS/Cache)</td></tr>
-      <tr><td>Backup-NAS #2</td><td>WD EX2 Ultra<br>2× 4 TB WD Red HDD</td></tr>
+      <tr><td>Backup-NAS #1</td><td>Raspberry Pi 5 + QNAP TR-004<br>4× &nbsp;12 TB Seagate Exos HDD (RAID 10)<br>1× 512 GB SSD (OS/Cache)</td></tr>
+      <tr><td>Backup-NAS #2</td><td>WD EX2 Ultra<br>2× 4 TB WD Red HDD (RAID 1)</td></tr>
     </table>
   </div>
   <div class="artikel-rahmen">
