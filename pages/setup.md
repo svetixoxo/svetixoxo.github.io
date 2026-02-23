@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Setup"
+title: "IT-Setup"
 permalink: /setup/
 ---
 
@@ -102,7 +102,7 @@ permalink: /setup/
 </style>
 
 <div class="artikel-rahmen" id="einleitung">
-  <h1>Setup</h1>
+  <h1>Meine IT-Infrastruktur</h1>
   <p class="artikel-einleitung">Was bei mir läuft und wie es aufgebaut ist. Diese Seite gibt einen Überblick über Hardware, Netzwerk und Software, ohne dass ich in jedem Beitrag von vorne anfangen muss. Kein Anspruch auf Vollständigkeit, aber nah dran. Was sich ändert, wird hier aktualisiert.</p>
 </div>
 
