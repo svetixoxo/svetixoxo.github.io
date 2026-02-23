@@ -142,13 +142,13 @@ body {
   line-height: 1.6;
 }
 
-a {
+.aufmacher-profil a {
     font-weight: 700;
     color: var(--tuerkis);
     text-decoration: none;
 }
 
-a:hover {
+.aufmacher-profil a:hover {
     text-decoration: underline;
     text-decoration-color: var(--orange);
     text-decoration-thickness: 2px;
