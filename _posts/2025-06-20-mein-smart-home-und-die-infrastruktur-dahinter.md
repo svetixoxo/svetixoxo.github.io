@@ -9,9 +9,9 @@ excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer u
 
 ## Das Netzwerk als Grundlage
 
-Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 1200 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten. Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
+Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 1200 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten (Anmerkung: Das Netzwerk wurde 2026 auf eine Lösung von Ubiquiti UniFi umgestellt, die die bisherigen Fritz-Geräte ersetzt). Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
 
-Für die kabelgebundene Infrastruktur kommen zwei managed Netgear-Switches mit je 24 Ports zum Einsatz. Die eine ist für die LAN-Buchsen im Haus sowie Geräte in Netzwerkschrank zuständig, während an der anderen die Komponenten des Smart Homes (insb. die Gateways) zusammenlaufen. Beide Switches sind über redundante Verbindungen miteinander gekoppelt, um bei Ausfall einer Switch den Betrieb aufrechtzuerhalten.
+Für die kabelgebundene Infrastruktur kommen zwei managed Netgear-Switches mit je 24 Ports zum Einsatz (dazu gibt es pro Stockwerk noch je eine Switch). Die eine ist für die LAN-Buchsen im Haus sowie Geräte in Netzwerkschrank zuständig, während an der anderen die Komponenten des Smart Homes zusammenlaufen. Beide Switches sind über redundante Verbindungen miteinander gekoppelt, um bei Ausfall einer Switch den Betrieb aufrechtzuerhalten.
 
 Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox als Firewall-Lösung.
 
@@ -20,10 +20,10 @@ Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox als Firewall-Lösung.
 Ein wichtiger Sicherheitsaspekt in der Smart-Home-Infrastruktur ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit der Firebox und den Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
 
 - Management und Infrastruktur (3 VLANs)
-- Smart Home, funktionsbasiert (9 VLANs)
-- Sicherheit und Überwachung (3 VLANs)
-- Client-Geräte (4 VLANs)
-- Services und Server (2 VLANs)
+- Smart Home, funktionsbasiert (10 VLANs)
+- Client-Geräte (3 VLANs)
+- Sicherheit und Überwachung (5 VLANs)
+- Services (2 VLANs)
 - Fernzugriff und Gäste (3 VLANs)
 - Sonstiges / Reserve (2 VLANs)
 
@@ -68,7 +68,7 @@ Die **Beleuchtung** ist vollständig automatisiert – sowohl die Außenbeleucht
 
 Die **Audio-Integration** wird oft übersehen, zumindest kam ich da vergleichsweise spät drauf, obwohl ich viel und gerne Musik höre. In jedem Raum sind Einbaulautsprecher von KEF installiert, die über einen Multiroom-Verstärker von Yamaha ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System existiert zwar, läuft aber unabhängig vom Smart-Home-System. Sprachsteuerung kommt bewusst nicht zum Einsatz.
 
-Darüber hinaus werden 44 **elektrische Jalousien** ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden.
+Darüber hinaus werden 44 **elektrische Außenjalousien** ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden.
 
 Eine **Wetterstation** liefert darüber hinaus Wetterdaten für die Automatisierung. So werden etwa alle Jalousien bei starkem Wind hochgefahren oder die Klimaanlagen (je nach Anwesenheit) bei hohen Außentemperaturen eingeschaltet; dies gilt entsprechend auch für die Heizung. Darüber hinaus wird über den Stromverbrauch bestimmter Steckdosen (Computer im Arbeitszimmer, Fernseher im Wohnzimmer, Nachtlicht im Schlafzimmer usw.) erkannt, in welchem Raum bzw. Stockwerk ich gerade unterwegs bin und Klimaanlage bzw. Heizung dort dementsprechend auch etwas stärker eingesetzt.
 
@@ -76,7 +76,7 @@ Eine **Wetterstation** liefert darüber hinaus Wetterdaten für die Automatisier
 
 Die Videoüberwachung umfasst 26 Kameras, aufgeteilt in drei verschiedene Typen je nach Einsatzgebiet. Dazu zählen 12 bispektrale Tube-Kameras (Wärmebild) im Außenbereich sowie 8 bispektrale Dome-Kameras (schwenkbar und neigbar) und 6 Fisheye-Kameras (360 Grad) im Innen- und Außenbereich.
 
-Die Kameras laufen an zwei 16-Kanal-NVR-Systemen zusammen, die Speicherung der Aufzeichnungen erfolgt jedoch auf dem 12-Bay-NAS, was eine zentrale Verwaltung, reaktionsfreudigere Handhabung, längere Speicherdauer und bessere Integration via Homebridge ermöglicht.
+Die Kameras laufen an zwei 16-Port-Switches zusammen, die Speicherung der Aufzeichnungen erfolgt über QVR Pro auf dem 12-Bay-NAS, was eine zentrale Verwaltung, reaktionsfreudigere Handhabung, lange Speicherdauer und gute Integration via Homebridge ermöglicht.
 
 ## Zentrale Steuerung und Monitoring
 

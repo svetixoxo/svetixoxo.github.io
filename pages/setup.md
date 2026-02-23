@@ -5,6 +5,22 @@ permalink: /setup/
 ---
 
 <style>
+  .artikel-rahmen {
+    margin-bottom: 0;
+  }
+    #einleitung {
+        margin-bottom: 2em;
+        }
+    .abschnitt-kopf {
+        border-top: none;
+        padding-top: 0;
+        }
+  .abschnitt-kopf h2 {
+    color: var(--weiss);
+    border: var(--rahmen);
+    box-shadow: var(--schatten-gross);
+    padding: 1rem;
+  }
   .setup-raster {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -85,10 +101,9 @@ permalink: /setup/
   }
 </style>
 
-<div class="artikel-rahmen">
-  <p class="artikel-meta">Übersicht</p>
+<div class="artikel-rahmen" id="einleitung">
   <h1>Setup</h1>
-  <p class="artikel-einleitung">Was bei mir läuft – Hardware, Software und Netzwerk. Stand: {{ site.time | date: "%B %Y" }}.</p>
+  <p class="artikel-einleitung">Was bei mir läuft und wie es aufgebaut ist. Diese Seite gibt einen Überblick über Hardware, Netzwerk und Software, ohne dass ich in jedem Beitrag von vorne anfangen muss. Kein Anspruch auf Vollständigkeit, aber nah dran. Was sich ändert, wird hier aktualisiert.</p>
 </div>
 
 
@@ -97,29 +112,125 @@ permalink: /setup/
 ══════════════════════════════════════════ -->
 
 <div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="var(--tuerkis)"/></svg>
-  <h2>Netzwerk</h2>
+  <h2 style="background:var(--orange)">Netzwerk</h2>
 </div>
 
 <div class="setup-raster">
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>Router (Haupt)</td><td>AVM Fritz!Box 6690 Cable</td></tr>
-      <tr><td>Router (Mesh)</td><td>5× AVM Fritz!Box 7590 AX</td></tr>
-      <tr><td>Repeater</td><td>4× FRITZ!Repeater 6000<br>2× FRITZ!Repeater 3000</td></tr>
-      <tr><td>Switches</td><td>2× Netgear 24-Port (managed)</td></tr>
-      <tr><td>Firewall</td><td>WatchGuard Firebox</td></tr>
-      <tr><td>VLANs</td><td>26 konfiguriert</td></tr>
+      <tr><td>Firewall</td><td>WatchGuard Firebox M390</td></tr>
+      <tr><td>Router</td><td>UniFi Cable Internet</td></tr>
+      <tr><td>Repeater</td><td>4× UniFi U7 Pro XGS<br>2× UniFi U7 Pro Outdoor</td></tr>
+      <tr><td>Switches</td><td>2× Netgear 24-Port (managed)<br>5× Netgear 16-Port (managed)</td></tr>
     </table>
   </div>
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>VPN</td><td>VLAN 70 · 10.70.0.0/24</td></tr>
-      <tr><td>Gäste-WLAN</td><td>VLAN 72 · 10.72.0.0/24</td></tr>
+      <tr><td>VLANs</td><td>28 konfiguriert</td></tr>
       <tr><td>IP-Schema</td><td>10.[VLAN-ID].0.0/24</td></tr>
-      <tr><td>Nutzbare IPs</td><td>6.604 Adressen gesamt</td></tr>
+      <tr><td>Nutzbare IPs</td><td>7.112 Adressen gesamt</td></tr>
+      <tr><td>Netzwerkgeräte</td><td>ca. 320 angebunden</td></tr>
     </table>
   </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     SERVER & SPEICHER
+══════════════════════════════════════════ -->
+
+<div class="abschnitt-kopf">
+  <h2 style="background:var(--magenta)">Server &amp; Speicher</h2>
+</div>
+
+<div class="setup-raster">
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Heimserver</td><td>QNAP TS-873AeU-RP</td></tr>
+      <tr><td>RAM</td><td>64 GB</td></tr>
+      <tr><td>Festplatten</td><td>8× 12 TB Seagate Exos HDD<br>2× &nbsp;2 TB Samsung SSD (OS/Cache)</td></tr>
+      <tr><td>Erweiterungskarte</td><td>QNAP QXG-10G2T-X710</td></tr>
+    </table>
+  </div>
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Überwachungs-NAS</td><td>QNAP TS-1273AU-RP</td></tr>
+      <tr><td>RAM</td><td>64 GB</td></tr>
+      <tr><td>Festplatten</td><td>12× 24 TB Seagate Exos HDD<br>&nbsp;2× &nbsp;4 TB Samsung SSD (OS/Cache)</td></tr>
+      <tr><td>Erweiterungskarten</td><td>QNAP QXG-10G2T-X710<br>NVIDIA Quadro P1000</td></tr>
+    </table>
+  </div>
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Backup-NAS #1</td><td>Raspberry Pi 5 + QNAP TR-004<br>4× &nbsp;12 TB Seagate Exos HDD<br>1× 512 GB SSD (OS/Cache)</td></tr>
+      <tr><td>Backup-NAS #2</td><td>WD EX2 Ultra<br>2× 4 TB WD Red HDD</td></tr>
+    </table>
+  </div>
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Heimserver</td><td>Nextcloud, Navidrome, Homebridge</td></tr>
+      <tr><td>Überwachungs-NAS</td><td>QVR Pro, 26 Kameras</td></tr>
+      <tr><td>Backup-NAS</td><td>QNAP HBS (Raspberry Pi)<br>rsync (WD)</td></tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     SMART HOME
+══════════════════════════════════════════ -->
+
+<div class="abschnitt-kopf">
+  <h2 style="background:var(--gruen)">Smart Home</h2>
+</div>
+
+<div class="setup-raster">
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Plattform</td><td>Apple HomeKit via Homebridge</td></tr>
+      <tr><td>Protokolle</td><td>WLAN, Zigbee, Matter/Thread</td></tr>
+      <tr><td>Klimaanlage</td><td>8× Mitsubishi Electric, Multi-Split</td></tr>
+      <tr><td>Lüftung</td><td>Viessmann Vitovent 300-W</td></tr>
+      <tr><td>Heizung</td><td>Fußbodenheizung, 9 Räume</td></tr>
+      <tr><td>Außenjalousien</td><td>44× elektrisch</td></tr>
+      <tr><td>Steckdosen</td><td>83× smart</td></tr>
+      <tr><td>Lichtschalter</td><td>25× smart (Dimmer)</td></tr>
+    </table>
+  </div>
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Wetterstation</td><td>Gira Wetterstation Plus</td></tr>
+      <tr><td>Audio</td><td>Einbaulautsprecher KEF, 9 Räume<br>3× Yamaha Multiroom-Verstärker</td></tr>
+      <tr><td>Alarmanlage</td><td>16× Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>15× Rauchmelder<br>&nbsp;4× Gasmelder</td></tr>
+      <tr><td>Kameras</td><td>12× bispektral Tube<br>&nbsp;8× bispektral Dome<br>&nbsp;6× Fisheye 360°</td></tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     CLIENT-GERÄTE
+══════════════════════════════════════════ -->
+
+<div class="abschnitt-kopf">
+  <h2 style="background:var(--tuerkis)">Client-Geräte</h2>
+</div>
+
+<div class="setup-raster">
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Desktop</td><td>Mac Studio M2<br>iMac M4</td></tr>
+      <tr><td>Gaming-Server</td><td>Mini-ITX-Tower (Linux/AMD)</td></tr>
+      <tr><td>Laptops</td><td>ThinkPad T14 Gen 3 (Linux/AMD)<br>MacBook Pro M4</td></tr>
+    </table>
+  </div>
+<div class="artikel-rahmen">
+  <table class="setup-tabelle">
+      <tr><td>Mobil</td><td>iPhone 12 Pro<br>iPad Pro A10X</td></tr>
+      <tr><td>Entertainment</td><td>2× Apple TV 4K</td></tr>
+      <tr><td>Steuerung</td><td>3× iPad Air M1<br>iMac M1</td></tr>
+  </table>
+</div>
 </div>
 
 
@@ -128,8 +239,7 @@ permalink: /setup/
 ══════════════════════════════════════════ -->
 
 <div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="var(--tuerkis)"/></svg>
-  <h2>VLAN-Struktur</h2>
+  <h2 style="background:var(--orange)">VLAN-Struktur</h2>
 </div>
 
 <div class="artikel-rahmen">
@@ -148,26 +258,28 @@ permalink: /setup/
       <tr><td>19</td><td>10.19.0.0/24</td><td>Onboarding</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Smart Home</td></tr>
-      <tr><td>20</td><td>10.20.0.0/24</td><td>Klimatisierung</td></tr>
-      <tr><td>21</td><td>10.21.0.0/24</td><td>Heizung</td></tr>
-      <tr><td>22</td><td>10.22.0.0/24</td><td>Beleuchtung innen</td></tr>
-      <tr><td>23</td><td>10.23.0.0/24</td><td>Beleuchtung außen</td></tr>
-      <tr><td>24</td><td>10.24.0.0/24</td><td>Jalousien / Beschattung</td></tr>
-      <tr><td>25</td><td>10.25.0.0/24</td><td>Steckdosen</td></tr>
-      <tr><td>26</td><td>10.26.0.0/24</td><td>Audio / Entertainment</td></tr>
-      <tr><td>27</td><td>10.27.0.0/24</td><td>Sensoren</td></tr>
+      <tr><td>20</td><td>10.20.0.0/24</td><td>Klimatisierung / Heizung</td></tr>
+      <tr><td>21</td><td>10.21.0.0/24</td><td>Beleuchtung innen</td></tr>
+      <tr><td>22</td><td>10.22.0.0/24</td><td>Beleuchtung außen</td></tr>
+      <tr><td>23</td><td>10.23.0.0/24</td><td>Außenjalousien / Beschattung</td></tr>
+      <tr><td>24</td><td>10.24.0.0/24</td><td>Steckdosen</td></tr>
+      <tr><td>25</td><td>10.25.0.0/24</td><td>Audio / Entertainment</td></tr>
+      <tr><td>26</td><td>10.26.0.0/24</td><td>Sensoren</td></tr>
+      <tr><td>27</td><td>10.27.0.0/24</td><td>Bewässerung / Garten</td></tr>
       <tr><td>28</td><td>10.28.0.0/24</td><td>Smart-Home-Control</td></tr>
+      <tr><td>29</td><td>10.29.0.0/24</td><td>Sonstiges</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Client-Geräte</td></tr>
-      <tr><td>40</td><td>10.40.0.0/24</td><td>Feste Geräte</td></tr>
+      <tr><td>40</td><td>10.40.0.0/24</td><td>Stationäre Geräte</td></tr>
       <tr><td>41</td><td>10.41.0.0/24</td><td>Mobile Geräte</td></tr>
       <tr><td>42</td><td>10.42.0.0/24</td><td>Sonstiges</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Sicherheit & Überwachung</td></tr>
-      <tr><td>50</td><td>10.50.0.0/24</td><td>Kameras außen</td></tr>
-      <tr><td>51</td><td>10.51.0.0/24</td><td>Kameras innen</td></tr>
-      <tr><td>52</td><td>10.52.0.0/24</td><td>Aufnahme</td></tr>
-      <tr><td>53</td><td>10.53.0.0/24</td><td>Alarmanlage</td></tr>
+      <tr><td>50</td><td>10.50.0.0/24</td><td>Überwachungs-NAS</td></tr>
+      <tr><td>51</td><td>10.51.0.0/24</td><td>DMZ</td></tr>
+      <tr><td>52</td><td>10.52.0.0/24</td><td>Kameras außen</td></tr>
+      <tr><td>53</td><td>10.53.0.0/24</td><td>Kameras innen</td></tr>
+      <tr><td>54</td><td>10.54.0.0/24</td><td>Alarmanlage</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Services</td></tr>
       <tr><td>60</td><td>10.60.0.0/24</td><td>Haupt-NAS</td></tr>
@@ -182,130 +294,5 @@ permalink: /setup/
       <tr><td>80</td><td>10.80.0.0/24</td><td>Reserve 1</td></tr>
       <tr><td>90</td><td>10.90.0.0/24</td><td>Reserve 2</td></tr>
     </tbody>
-  </table>
-</div>
-
-
-<!-- ══════════════════════════════════════════
-     SERVER & SPEICHER
-══════════════════════════════════════════ -->
-
-<div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="var(--orange)"/></svg>
-  <h2>Server & Speicher</h2>
-</div>
-
-<div class="setup-raster">
-  <div class="artikel-rahmen">
-    <table class="setup-tabelle">
-      <tr><td>Heimserver</td><td>QNAP TS-873AeU-RP</td></tr>
-      <tr><td>RAM</td><td>64 GB</td></tr>
-      <tr><td>Festplatten</td><td>8× 12 TB (Seagate Exos X14)</td></tr>
-      <tr><td>SSD-Cache</td><td>2× Samsung 980 Pro 2 TB</td></tr>
-      <tr><td>VLAN</td><td>60 · 10.60.0.10</td></tr>
-      <tr><td>Dienste</td><td>Nextcloud, Homebridge, Docker</td></tr>
-    </table>
-  </div>
-  <div class="artikel-rahmen">
-    <table class="setup-tabelle">
-      <tr><td>Überwachungs-NAS</td><td>QNAP TS-1273AU-RP</td></tr>
-      <tr><td>RAM</td><td>64 GB</td></tr>
-      <tr><td>Festplatten</td><td>12× 24 TB (Seagate Exos X24)</td></tr>
-      <tr><td>SSD-Cache</td><td>2× Samsung 990 Pro 4 TB</td></tr>
-      <tr><td>GPU</td><td>NVIDIA Quadro P1000</td></tr>
-      <tr><td>VLAN</td><td>52 · 10.52.0.20</td></tr>
-    </table>
-  </div>
-  <div class="artikel-rahmen">
-    <table class="setup-tabelle">
-      <tr><td>Backup-NAS</td><td>WD EX2 Ultra</td></tr>
-      <tr><td>VLAN</td><td>60 · 10.60.0.20</td></tr>
-    </table>
-  </div>
-  <div class="artikel-rahmen">
-    <table class="setup-tabelle">
-      <tr><td>NVR #1</td><td>16-Kanal · 10.52.0.10</td></tr>
-      <tr><td>NVR #2</td><td>16-Kanal · 10.52.0.11</td></tr>
-      <tr><td>Kameras gesamt</td><td>26</td></tr>
-    </table>
-  </div>
-</div>
-
-
-<!-- ══════════════════════════════════════════
-     CLIENT-GERÄTE
-══════════════════════════════════════════ -->
-
-<div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="var(--lila)"/></svg>
-  <h2>Client-Geräte</h2>
-</div>
-
-<div class="artikel-rahmen">
-  <table class="setup-tabelle">
-    <tr><td>Desktop</td><td>Mac Studio · VLAN 40 · 10.40.0.10 (Ethernet) / 10.40.0.40 (WLAN)</td></tr>
-    <tr><td>Laptop</td><td>MacBook · VLAN 41 · 10.41.0.10</td></tr>
-    <tr><td>Linux</td><td>Lenovo ThinkPad · Arch Linux · Hyprland · VLAN 41 · 10.41.0.11</td></tr>
-    <tr><td>Gaming</td><td>Gaming-Server · VLAN 40 · 10.40.0.11</td></tr>
-    <tr><td>Mobil</td><td>iPhone · VLAN 41 · 10.41.0.20</td></tr>
-    <tr><td>Tablet</td><td>iPad · VLAN 41 · 10.41.0.30</td></tr>
-    <tr><td>Steuerung</td><td>3× iPad (EG, OG, Souterrain) · VLAN 28</td></tr>
-    <tr><td>Sonstiges</td><td>iMac · VLAN 52 · 10.52.0.30</td></tr>
-    <tr><td>Raspberry Pi</td><td>Pi Zero · Pi Zero 2 · Pi 5 · VLAN 42</td></tr>
-  </table>
-</div>
-
-
-<!-- ══════════════════════════════════════════
-     SMART HOME
-══════════════════════════════════════════ -->
-
-<div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="var(--gruen)"/></svg>
-  <h2>Smart Home</h2>
-</div>
-
-<div class="setup-raster">
-  <div class="artikel-rahmen">
-    <table class="setup-tabelle">
-      <tr><td>Plattform</td><td>Apple HomeKit via Homebridge</td></tr>
-      <tr><td>Protokolle</td><td>WLAN, Zigbee, Matter/Thread</td></tr>
-      <tr><td>Klimaanlage</td><td>8× Mitsubishi Electric Multi-Split</td></tr>
-      <tr><td>Lüftung</td><td>Viessmann Vitovent 300-W</td></tr>
-      <tr><td>Heizung</td><td>Fußbodenheizung 9 Räume</td></tr>
-      <tr><td>Jalousien</td><td>44× elektrisch</td></tr>
-      <tr><td>Steckdosen</td><td>83× smart</td></tr>
-      <tr><td>Lichtschalter</td><td>25× smart (Dimmer)</td></tr>
-    </table>
-  </div>
-  <div class="artikel-rahmen">
-    <table class="setup-tabelle">
-      <tr><td>Audio</td><td>Einbaulautsprecher KEF, 9 Räume<br>3× Yamaha Multiroom-Verstärker</td></tr>
-      <tr><td>Alarmanlage</td><td>16× Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>15× Rauchmelder<br>4× Gasmelder</td></tr>
-      <tr><td>Wetterstation</td><td>VLAN 27 · 10.27.0.10</td></tr>
-      <tr><td>Kameras außen</td><td>12× bispektral Tube<br>4× bispektral Dome</td></tr>
-      <tr><td>Kameras innen</td><td>4× bispektral Dome<br>6× Fisheye 360°</td></tr>
-    </table>
-  </div>
-</div>
-
-
-<!-- ══════════════════════════════════════════
-     SOFTWARE
-══════════════════════════════════════════ -->
-
-<div class="abschnitt-kopf">
-  <svg class="abschnitt-akzent" viewBox="0 0 14 14"><rect width="14" height="14" fill="var(--magenta)"/></svg>
-  <h2>Software & Dienste</h2>
-</div>
-
-<div class="artikel-rahmen">
-  <table class="setup-tabelle">
-    <tr><td>OS (Desktop)</td><td>macOS</td></tr>
-    <tr><td>OS (Laptop)</td><td>Arch Linux · Hyprland</td></tr>
-    <tr><td>Cloud</td><td>Nextcloud (self-hosted, Docker)</td></tr>
-    <tr><td>Smart Home</td><td>Homebridge · Apple HomeKit</td></tr>
-    <tr><td>Container</td><td>Docker</td></tr>
-    <tr><td>Blog</td><td>Jekyll · GitHub Pages</td></tr>
   </table>
 </div>
