@@ -48,8 +48,73 @@ layout: default
             }
         });
     });
-
 </script>
+<style>
+    .artikel-mehr-raster {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+    .artikel-mehr {
+        margin-top: 2rem;
+    }
+.artikel-mehr-kopf {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gedimmt);
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--linie);
+}
+    .artikel-mehr-kopf a {
+        text-decoration: none;
+    }
+    .artikel-mehr-kopf a:hover {
+        color: var(--tuerkis) !important;
+    }
+.artikel-mehr-eintrag {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+  font-size: 0.88rem;
+}
+.artikel-mehr-datum {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  color: var(--gedimmt);
+}
+.artikel-mehr-eintrag a {
+  color: var(--tinte);
+  text-decoration: none;
+  font-weight: 700;
+}
+.artikel-mehr-eintrag a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+    text-decoration-thickness: 2px;
+}
+    .artikel-mehr-eintrag:last-child {
+        margin-bottom: 0;
+    }
+    .artikel-mehr-alle {
+  margin-top: 0.8em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.artikel-mehr-alle a {
+  text-decoration: none;
+}
+.artikel-mehr-alle a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .artikel-mehr-raster { grid-template-columns: 1fr; }
+}
+</style>
 
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
     <p class="artikel-meta"><span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span> <span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a></span></p>
@@ -87,4 +152,69 @@ layout: default
         <span class="artikel-nav-pfeil">→</span>
     </a>
     {% endif %}
+</div>
+
+{% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %}
+{% assign andere-beitraege = site.posts | where_exp: "b", "b.url != page.url" | limit: 5 %}
+
+{% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %}
+{% assign andere-beitraege = site.posts | where_exp: "b", "b.category != page.category and b.url != page.url" | limit: 5 %}
+
+{% if page.category == "Self-Hosting & Dienste" %}
+  {% assign mehr-farbe = "var(--magenta)" %}
+  {% assign mehr-link = "/thema/self-hosting-und-dienste/" %}
+{% elsif page.category == "Netzwerk & Infrastruktur" %}
+  {% assign mehr-farbe = "var(--orange)" %}
+  {% assign mehr-link = "/thema/netzwerk-und-infrastruktur/" %}
+{% elsif page.category == "Smart Home & Automatisierung" %}
+  {% assign mehr-farbe = "var(--gruen)" %}
+  {% assign mehr-link = "/thema/smart-home-und-automatisierung/" %}
+{% elsif page.category == "Proberaum & Musikmachen" %}
+  {% assign mehr-farbe = "var(--lila)" %}
+  {% assign mehr-link = "/thema/proberaum-und-musikmachen/" %}
+{% else %}
+  {% assign mehr-farbe = "var(--gedimmt)" %}
+  {% assign mehr-link = "/themen/" %}
+{% endif %}
+
+<div class="artikel-rahmen artikel-mehr">
+  <div class="artikel-mehr-raster">
+    <div>
+      <div class="artikel-mehr-kopf">
+        Weitere Beiträge aus <a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a>
+      </div>
+      {% if gleiche-kategorie.size > 0 %}
+        {% for b in gleiche-kategorie %}
+        <div class="artikel-mehr-eintrag">
+          <span class="artikel-mehr-datum">{{ b.date | date: "%Y-%m-%d" }}</span>
+          <a href="{{ b.url | relative_url }}">{{ b.title }}</a>
+        </div>
+        {% endfor %}
+      {% else %}
+        <p style="color:var(--gedimmt); font-size:0.85rem">Noch keine weiteren Beiträge in dieser Kategorie vorhanden.</p>
+      {% endif %}
+    </div>
+    <div>
+      <div class="artikel-mehr-kopf">Zuletzt erschienen</div>
+      {% for b in andere-beitraege %}
+      <div class="artikel-mehr-eintrag">
+<span class="artikel-mehr-datum">
+  {{ b.date | date: "%Y-%m-%d" }}
+  {% if b.category == "Self-Hosting & Dienste" %}
+    <span style="color:var(--magenta)">¶</span> {{ b.category }}
+  {% elsif b.category == "Netzwerk & Infrastruktur" %}
+    <span style="color:var(--orange)">¶</span> {{ b.category }}
+  {% elsif b.category == "Smart Home & Automatisierung" %}
+    <span style="color:var(--gruen)">¶</span> {{ b.category }}
+  {% elsif b.category == "Proberaum & Musikmachen" %}
+    <span style="color:var(--lila)">¶</span> {{ b.category }}
+  {% else %}
+    · {{ b.category | default: "Sonstiges" }}
+  {% endif %}
+</span>
+  <a href="{{ b.url | relative_url }}">{{ b.title }}</a>
+</div>
+      {% endfor %}
+    </div>
+  </div>
 </div>

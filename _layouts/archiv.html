@@ -2,42 +2,75 @@
 layout: default
 ---
 <style>
-  .artikel-rahmen h1 {
-    margin-bottom: 0;
+  .archiv-jahr {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--tinte);
+    margin: 0 0 0.5em;
   }
-
-  .beitragskarte-meta {
-    font-size: 0.8rem;
+  .archiv-eintrag {
+    display: grid;
+    grid-template-columns: auto 8px 1fr;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.4em 0;
+    border-bottom: 1px solid var(--linie);
   }
-
-  .beitragskarte-meta-titel {
+  .archiv-eintrag:last-child {
+    border-bottom: none;
+  }
+  .archiv-datum {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    color: var(--gedimmt);
+    white-space: nowrap;
+  }
+  .archiv-farbe {
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    flex-shrink: 0;
+  }
+  .archiv-titel {
     color: var(--tinte);
     font-weight: 700;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: "IBM Plex Sans", sans-serif;
-    text-transform: none;
   }
-
-  .beitragskarte-meta-titel:last-child {
-    margin-bottom: 0;
-  }
-
-  .beitragskarte-meta-titel:hover {
+  .archiv-titel:hover {
     text-decoration: underline;
     text-decoration-color: var(--tuerkis);
     text-decoration-thickness: 2px;
   }
 </style>
+
 <div class="artikel-rahmen">
   <h1>{{ page.title }}</h1>
 </div>
+
+{% assign beitraege-nach-jahr = site.posts | group_by_exp: "beitrag", "beitrag.date | date: '%Y'" %}
+{% for jahr-gruppe in beitraege-nach-jahr %}
 <div class="artikel-rahmen">
-  {% assign gefundene = site.posts %}
-  {% for beitrag in gefundene %}
-  <div class="beitragskarte-meta">
-    {{ beitrag.date | date: "%Y-%m-%d" }}
-    <a href="{{ beitrag.url | relative_url }}" class="beitragskarte-meta-titel">{{ beitrag.title }}</a>
+  <div class="archiv-jahr">{{ jahr-gruppe.name }}</div>
+  {% for beitrag in jahr-gruppe.items %}
+    {% if beitrag.category == "Self-Hosting & Dienste" %}
+      {% assign archiv-farbe = "var(--magenta)" %}
+    {% elsif beitrag.category == "Netzwerk & Infrastruktur" %}
+      {% assign archiv-farbe = "var(--orange)" %}
+    {% elsif beitrag.category == "Smart Home & Automatisierung" %}
+      {% assign archiv-farbe = "var(--gruen)" %}
+    {% elsif beitrag.category == "Proberaum & Musikmachen" %}
+      {% assign archiv-farbe = "var(--lila)" %}
+    {% else %}
+      {% assign archiv-farbe = "var(--gedimmt)" %}
+    {% endif %}
+  <div class="archiv-eintrag">
+    <span class="archiv-datum">{{ beitrag.date | date: "%Y-%m-%d" }}</span>
+    <span class="archiv-farbe" style="background: {{ archiv-farbe }}"></span>
+    <a href="{{ beitrag.url | relative_url }}" class="archiv-titel">{{ beitrag.title }}</a>
   </div>
   {% endfor %}
 </div>
+{% endfor %}

@@ -429,7 +429,7 @@ nav a:hover span::after {
 .seiteninhalt {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2.5em 1.5em;
+  padding: 2em 1.5em;
   position: relative;
 }
 
@@ -482,7 +482,7 @@ nav a:hover span::after {
   grid-template-columns: 3fr 1fr;
   border: var(--rahmen);
   box-shadow: var(--schatten-gross);
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
   background: var(--hintergrund-karte);
 }
 
@@ -537,6 +537,10 @@ nav a:hover span::after {
   margin-bottom: 1.2em;
   max-width: 100%;
   text-align: justify;
+}
+
+. aufmacher p:last-child {
+    margin-bottom: 0;
 }
 
 /* ── Seitenleiste im Aufmacher ── */
@@ -755,7 +759,7 @@ nav a:hover span::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2em;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 .beitragsliste-raster .beitragskarte {
@@ -773,7 +777,7 @@ nav a:hover span::after {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 /* ── Beitragskarte ── */
@@ -854,7 +858,7 @@ nav a:hover span::after {
   background: var(--hintergrund-karte);
   border: var(--rahmen);
   box-shadow: var(--schatten-gross);
-  padding: 2.5em;
+  padding: 2em;
   margin-bottom: 2em;
 }
 
@@ -1062,7 +1066,7 @@ nav a:hover span::after {
 .artikel-navigation {
   display: flex;
   gap: 1em;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .artikel-navigation .schaltflaeche {

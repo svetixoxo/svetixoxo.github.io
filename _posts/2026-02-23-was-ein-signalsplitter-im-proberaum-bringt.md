@@ -9,7 +9,7 @@ excerpt: "Kabel umstecken, Mikrofone umstellen, dann wieder zurück — so hat e
 
 ## Wie es angefangen hat
 
-Am Anfang war es wie bei den meisten Bands im Proberaum: Ein Mischpult, ein paar Mikrofone, eine PA. Wenn wir proben wollten, war alles so verkabelt dass es für die PA funktioniert. Wenn wir aufnehmen wollten, fingen wir an, Kabel umzustecken, Mikrofone neu auszurichten, Signalwege umzubauen. Und danach wieder zurück.
+Okay… der Grund dafür hängt nicht an der Wand, sondern im Rack. Jedenfalls… am Anfang war es bei uns wie bei den meisten Bands im Proberaum: Ein Mischpult, ein paar Mikrofone, eine PA. Wenn wir proben wollten, war alles so verkabelt dass es für die PA funktioniert. Wenn wir aufnehmen wollten, fingen wir an, Kabel umzustecken, Mikrofone neu auszurichten, Signalwege umzubauen. Und danach wieder zurück.
 
 Das funktioniert, solange man es nicht zu oft macht. Bei einer Band die auf Dauer angelegt ist und seit fast 15 Jahren zusammenspielt, wird es irgendwann mühsam. Irgendwann haben wir angefangen zu schauen, wie das besser geht.
 

@@ -6,15 +6,35 @@ title: Startseite
   .beitragsliste-raster {
     grid-template-columns: repeat(4, 1fr);
   }
+    .link-titel {
+        color: var(--tinte);
+        text-decoration: none;
+    }
+    .link-titel:hover {
+        text-decoration: underline;
+        text-decoration-color: var(--tuerkis);
+        text-decoration-thickness: 3px;
+    }
 </style>
 {% assign aufmacher-beitrag = site.posts.first %}
 {% if aufmacher-beitrag %}
+{% if aufmacher-beitrag.category == "Self-Hosting & Dienste" %}
+  {% assign aufmacher-farbe = "magenta" %}
+{% elsif aufmacher-beitrag.category == "Netzwerk & Infrastruktur" %}
+  {% assign aufmacher-farbe = "orange" %}
+{% elsif aufmacher-beitrag.category == "Smart Home & Automatisierung" %}
+  {% assign aufmacher-farbe = "gruen" %}
+{% elsif aufmacher-beitrag.category == "Proberaum & Musikmachen" %}
+  {% assign aufmacher-farbe = "lila" %}
+{% else %}
+  {% assign aufmacher-farbe = "orange" %}
+{% endif %}
 <div class="aufmacher">
   <div class="aufmacher-haupt">
-    <div class="aufmacher-etikett">&#x2770;&#x2f;&#x2771; Neuester Artikel</div>
-    <h1>{{ aufmacher-beitrag.title }}</h1>
+    <div class="aufmacher-etikett" style="background: var(--{{ aufmacher-farbe }})">&#x2770;&#x2f;&#x2771; {{ aufmacher-beitrag.category | default: "Allgemein" }}</div>
+    <h1><a href="{{ aufmacher-beitrag.url | relative_url }}" class="link-titel">{{ aufmacher-beitrag.title }}</a></h1>
     <hr class="aufmacher-trennlinie">
-    <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 180 }}</p><!--
+    <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 220 }}</p><!--
     <div style="margin-bottom:1.2em">
       {% for etikett in aufmacher-beitrag.tags %}
         <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
