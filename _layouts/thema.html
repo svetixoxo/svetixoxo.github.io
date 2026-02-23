@@ -17,7 +17,7 @@ layout: default
 {% endif %}
 
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-  <p class="artikel-meta">Thema · <span style="color:var(--{{ thema-farbe }})">{{ gefundene.size }} {% if gefundene.size == 1 %}Artikel{% else %}Artikel{% endif %}</span></p>
+  <p class="artikel-meta">Thema » <span style="color:var(--{{ thema-farbe }})">{{ gefundene.size }} {% if gefundene.size == 1 %}Artikel{% else %}Artikel{% endif %}</span></p>
   <h1>{{ page.title }}</h1>
   {% if page.excerpt %}
   <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
@@ -36,11 +36,6 @@ layout: default
       <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }}</div>
       <div class="beitragskarte-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
       <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
-      <div class="beitragskarte-etikett">
-        {% for etikett in beitrag.tags %}
-          <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
-        {% endfor %}
-      </div>
       <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ thema-farbe }}" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">Lesen →</a>
     </div>
   </div>

@@ -722,11 +722,11 @@ nav a:hover span::after {
 }
 
 .schaltflaeche-orange {
-  background: var(--tuerkis);
+  background: var(--orange);
   color: var(--weiss);
 }
 .schaltflaeche-tuerkis {
-  background: var(--orange);
+  background: var(--tuerkis);
   color: var(--weiss);
 }
 .schaltflaeche-lila {

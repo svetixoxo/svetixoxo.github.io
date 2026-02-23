@@ -7,15 +7,13 @@ layout: default
     font-size: 2rem;
     font-weight: 700;
     color: var(--tinte);
-    margin: 0 0 0.5em;
   }
   .archiv-eintrag {
     display: grid;
     grid-template-columns: auto 8px 1fr;
     align-items: center;
     gap: 0.6em;
-    padding: 0.4em 0;
-    border-bottom: 1px solid var(--linie);
+    padding: 0.1em 0;
   }
   .archiv-eintrag:last-child {
     border-bottom: none;
@@ -46,8 +44,9 @@ layout: default
   }
 </style>
 
-<div class="artikel-rahmen">
-  <h1>{{ page.title }}</h1>
+<div class="artikel-rahmen" style="background: var(--gelb)">
+    <h1>{{ page.title }} <span class="schrift-regular" style="font-size: 0.7em">({{ site.posts.size }} Artikel)</span></h1>
+  <p class="artikel-einleitung">Alle Beiträge in chronologischer Reihenfolge — von neu nach alt. Das farbige Quadrat zeigt die jeweilige Kategorie.</p>
 </div>
 
 {% assign beitraege-nach-jahr = site.posts | group_by_exp: "beitrag", "beitrag.date | date: '%Y'" %}
