@@ -137,13 +137,13 @@ layout: default
 <div class="artikel-inhalt kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
 	{{ content }}
 </div>
-<div class="artikel-navigation"> {% if page.previous.url %} {% assign vorheriger-titel = page.previous.title | split: ": " %} <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
+<div class="artikel-navigation"> {% if page.previous.url %} {% assign vorheriger_titel = page.previous.title | split: ": " %} <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
 		<span class="artikel-nav-pfeil">←</span>
 		<span class="artikel-nav-text">
-			<span>{{ vorheriger-titel[0] }}{% if vorheriger-titel[1] %}:{% endif %}</span> {% if vorheriger-titel[1] %} <span>{{ vorheriger-titel[1] }}</span>{% endif %} </span>
-	</a> {% else %} <div style="flex:1"></div> {% endif %} {% if page.next.url %} {% assign naechster-titel = page.next.title | split: ": " %} <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta artikel-nav">
+			<span>{{ vorheriger_titel[0] }}{% if vorheriger_titel[1] %}:{% endif %}</span> {% if vorheriger_titel[1] %} <span>{{ vorheriger_titel[1] }}</span>{% endif %} </span>
+	</a> {% else %} <div style="flex:1"></div> {% endif %} {% if page.next.url %} {% assign naechster_titel = page.next.title | split: ": " %} <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta artikel-nav">
 		<span class="artikel-nav-text">
-			<span>{{ naechster-titel[0] }}{% if naechster-titel[1] %}:{% endif %}</span> {% if naechster-titel[1] %} <span>{{ naechster-titel[1] }}</span>{% endif %} </span>
+			<span>{{ naechster_titel[0] }}{% if naechster_titel[1] %}:{% endif %}</span> {% if naechster_titel[1] %} <span>{{ naechster_titel[1] }}</span>{% endif %} </span>
 		<span class="artikel-nav-pfeil">→</span>
 	</a> {% endif %} </div> {% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %} {% assign andere-beitraege = site.posts | where_exp: "b", "b.url != page.url" | limit: 5 %} {% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %} {% assign andere-beitraege = site.posts | where_exp: "b", "b.category != page.category and b.url != page.url" | limit: 5 %} {% if page.category == "Self-Hosting & Dienste" %} {% assign mehr-farbe = "var(--magenta)" %} {% assign mehr-link = "/thema/self-hosting-und-dienste/" %} {% elsif page.category == "Netzwerk & Infrastruktur" %} {% assign mehr-farbe = "var(--orange)" %} {% assign mehr-link = "/thema/netzwerk-und-infrastruktur/" %} {% elsif page.category == "Smart Home & Automatisierung" %} {% assign mehr-farbe = "var(--gruen)" %} {% assign mehr-link = "/thema/smart-home-und-automatisierung/" %} {% elsif page.category == "Proberaum & Musikmachen" %} {% assign mehr-farbe = "var(--lila)" %} {% assign mehr-link = "/thema/proberaum-und-musikmachen/" %} {% else %} {% assign mehr-farbe = "var(--gedimmt)" %} {% assign mehr-link = "/themen/" %} {% endif %} <div class="artikel-rahmen artikel-mehr">
 	<div class="artikel-mehr-raster">
