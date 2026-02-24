@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#ff6b2b" />
-		<title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-		<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
-		<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"> {% seo %} {% feed_meta %}
-	</head>
-	<body>
-		<div class="seitenkopf-haupt">
-			<div class="logo-block">
-				<a class="logo-titel" href="{{ '/' | relative_url }}">
-					<em>svetis</em>Blog </a>
-				<!--
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ff6b2b" />
+    <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"> {% seo %} {% feed_meta %}
+</head>
+
+<body>
+    <div class="seitenkopf-haupt">
+        <div class="logo-block">
+            <a class="logo-titel" href="{{ '/' | relative_url }}">
+                <em>svetis</em>Blog </a>
+            <!--
             <span class="logo-untertitel">svetixoxo.github.io</span>-->
-			</div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% else %} {% endif %} <nav>
-				<a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting {% if nav-aktiv == 'self-hosting' %}aktiv{% endif %}">
-					<span>Self-Hosting</span>
-				</a>
-				<a href="/thema/netzwerk-und-infrastruktur/" class="nav-netzwerk {% if nav-aktiv == 'netzwerk' %}aktiv{% endif %}">
-					<span>Netzwerk</span>
-				</a>
-				<a href="/thema/smart-home-und-automatisierung/" class="nav-smart-home {% if nav-aktiv == 'smart-home' %}aktiv{% endif %}">
-					<span>Smart Home</span>
-				</a>
-				<a href="/thema/proberaum-und-musikmachen/" class="nav-musikmachen {% if nav-aktiv == 'musikmachen' %}aktiv{% endif %}">
-					<span>Musikmachen</span>
-				</a>
-				<a href="/archiv/" class="nav-archiv {% if nav-aktiv == 'archiv' %}aktiv{% endif %}">
-					<span>Archiv</span>
-				</a>
-			</nav>
-		</div>
-		<div class="seiteninhalt">
-			{{ content }}
-		</div>
-		<footer class="seitenfuss">
-			<span class="schrift-gelb">
-				<a href="https://svetixoxo.github.io">svetixoxo.github.io</a> » <a href="https://github.com/svetixoxo/svetixoxo.github.io" class="schrift-regular" target="_blank">source</a> / <a href="/stats/" class="schrift-regular">stats</a>
-			</span>
-			<span>mit <em>♥</em> gebaut </span>
-		</footer>
-	</body>
+        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% else %} {% endif %} <nav>
+            <a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting {% if nav-aktiv == 'self-hosting' %}aktiv{% endif %}">
+                <span>Self-Hosting</span>
+            </a>
+            <a href="/thema/netzwerk-und-infrastruktur/" class="nav-netzwerk {% if nav-aktiv == 'netzwerk' %}aktiv{% endif %}">
+                <span>Netzwerk</span>
+            </a>
+            <a href="/thema/smart-home-und-automatisierung/" class="nav-smart-home {% if nav-aktiv == 'smart-home' %}aktiv{% endif %}">
+                <span>Smart Home</span>
+            </a>
+            <a href="/thema/proberaum-und-musikmachen/" class="nav-musikmachen {% if nav-aktiv == 'musikmachen' %}aktiv{% endif %}">
+                <span>Musikmachen</span>
+            </a>
+            <a href="/archiv/" class="nav-archiv {% if nav-aktiv == 'archiv' %}aktiv{% endif %}">
+                <span>Archiv</span>
+            </a>
+        </nav>
+
+        <!-- Hamburger-Button im Header -->
+        <button class="mobil-btn" onclick="document.getElementById('m7-overlay').classList.toggle('offen')" aria-label="Menü">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="seiteninhalt">
+        {{ content }}
+    </div>
+    <footer class="seitenfuss">
+        <span class="schrift-gelb">
+            <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> » <a href="https://github.com/svetixoxo/svetixoxo.github.io" class="schrift-regular" target="_blank">source</a> / <a href="/stats/" class="schrift-regular">stats</a>
+        </span>
+        <span>mit <em>♥</em> gebaut </span>
+    </footer>
+</body>
+
 </html>

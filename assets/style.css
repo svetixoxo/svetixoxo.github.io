@@ -115,6 +115,7 @@
     --schatten-gross: 6px 6px 0 var(--tinte);
     --schatten-klein: 2px 2px 0 var(--tinte);
     --rahmen: 2px solid var(--tinte);
+    --rahmen-gross: 3px solid var(--tinte);
 }
 
 /* ══════════════════════════════════════════
@@ -460,6 +461,7 @@ nav a:hover span::after {
     background: var(--tinte);
 }
 
+
 /* ══════════════════════════════════════════
    SEITENINHALT & LAYOUT
 ══════════════════════════════════════════ */
@@ -519,7 +521,7 @@ nav a:hover span::after {
 .aufmacher {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    border: var(--rahmen);
+    border: var(--rahmen-gross);
     box-shadow: var(--schatten-gross);
     margin-bottom: 2em;
     background: var(--hintergrund-karte);
@@ -534,7 +536,7 @@ nav a:hover span::after {
 }
 
 .aufmacher-haupt {
-    border-right: var(--rahmen);
+    border-right: var(--rahmen-gross);
     padding: 2em;
 }
 
@@ -822,7 +824,7 @@ nav a:hover span::after {
 /* ── Beitragskarte ── */
 .beitragskarte {
     background: var(--hintergrund-karte);
-    border: var(--rahmen);
+    border: var(--rahmen-gross);
     box-shadow: var(--schatten);
     display: flex;
     transition: transform 0.1s, box-shadow 0.1s;
@@ -895,7 +897,7 @@ nav a:hover span::after {
 /* ── Rahmen ── */
 .artikel-rahmen {
     background: var(--hintergrund-karte);
-    border: var(--rahmen);
+    border: var(--rahmen-gross);
     box-shadow: var(--schatten-gross);
     padding: 2em;
     margin-bottom: 2em;
@@ -1309,6 +1311,12 @@ code {
    MOBILANSICHT
 ══════════════════════════════════════════ */
 
+@media (min-width: 701px) {
+    .nur-mobil {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .nur-desktop {
         display: none;
@@ -1347,7 +1355,7 @@ code {
     }
 
     .aufmacher-seite {
-        border-top: var(--rahmen);
+        border-top: var(--rahmen-gross);
     }
 
     .beitragsliste-raster {
