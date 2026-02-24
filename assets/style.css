@@ -135,8 +135,12 @@ html {
 body {
   font-family: "IBM Plex Sans", sans-serif;
   cursor: url("/assets/cursors/left_ptr.png") 4 4, auto;
-  background: var(--hintergrund);
-  background-image: radial-gradient(circle, #c8c0b0 1px, transparent 1px);
+  background: var(--tuerkis);
+  background-image: repeating-linear-gradient(315deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 1) 20px,
+      rgba(0, 0, 0, 1) 21px);
   background-size: 22px 22px;
   color: var(--text);
   line-height: 1.6;
