@@ -383,6 +383,27 @@ nav a:hover span::after {
     left: 0;
 }
 
+.nav-self-hosting.aktiv {
+    background: var(--magenta);
+    color: var(--weiss);
+}
+.nav-netzwerk.aktiv {
+    background: var(--orange);
+    color: var(--weiss);
+}
+.nav-smart-home.aktiv {
+    background: var(--gruen);
+    color: var(--weiss);
+}
+.nav-musikmachen.aktiv {
+    background: var(--lila);
+    color: var(--weiss);
+}
+.nav-archiv.aktiv {
+    background: var(--gelb);
+    color: var(--tinbte);
+}
+
 .nav-self-hosting:hover {
     background: var(--magenta);
     color: var(--weiss);
@@ -1267,7 +1288,7 @@ code {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 3px solid var(--tuerkis);
+    border-top: 3px solid var(--gelb);
 }
 
 .seitenfuss a {

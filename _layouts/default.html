@@ -15,21 +15,20 @@
 					<em>svetis</em>Blog </a>
 				<!--
             <span class="logo-untertitel">svetixoxo.github.io</span>-->
-			</div>
-			<nav>
-				<a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting">
+			</div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% else %} {% endif %} <nav>
+				<a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting {% if nav-aktiv == 'self-hosting' %}aktiv{% endif %}">
 					<span>Self-Hosting</span>
 				</a>
-				<a href="/thema/netzwerk-und-infrastruktur/" class="nav-netzwerk">
+				<a href="/thema/netzwerk-und-infrastruktur/" class="nav-netzwerk {% if nav-aktiv == 'netzwerk' %}aktiv{% endif %}">
 					<span>Netzwerk</span>
 				</a>
-				<a href="/thema/smart-home-und-automatisierung/" class="nav-smart-home">
+				<a href="/thema/smart-home-und-automatisierung/" class="nav-smart-home {% if nav-aktiv == 'smart-home' %}aktiv{% endif %}">
 					<span>Smart Home</span>
 				</a>
-				<a href="/thema/proberaum-und-musikmachen/" class="nav-musikmachen">
+				<a href="/thema/proberaum-und-musikmachen/" class="nav-musikmachen {% if nav-aktiv == 'musikmachen' %}aktiv{% endif %}">
 					<span>Musikmachen</span>
 				</a>
-				<a href="/archiv/" class="nav-archiv">
+				<a href="/archiv/" class="nav-archiv {% if nav-aktiv == 'archiv' %}aktiv{% endif %}">
 					<span>Archiv</span>
 				</a>
 			</nav>
