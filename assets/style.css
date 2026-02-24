@@ -1073,8 +1073,8 @@ nav a:hover span::after {
 /* ── Fließtext ── */
 .artikel-rahmen p {
     margin-bottom: 1em;
-    font-size: 1rem;
-    line-height: 1.75;
+    font-size: 1rem;/*
+    line-height: 1.75;*/
     text-align: justify;
 }
 .artikel-rahmen p:last-child {
