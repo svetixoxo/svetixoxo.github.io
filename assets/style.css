@@ -27,8 +27,7 @@
 
 @font-face {
     font-family: "IBM Plex Sans";
-    src: url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff2")
-            format("woff2"),
+    src: url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff2") format("woff2"),
         url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
@@ -65,8 +64,7 @@
 
 @font-face {
     font-family: "IBM Plex Mono";
-    src: url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff2")
-            format("woff2"),
+    src: url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff2") format("woff2"),
         url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
@@ -139,13 +137,11 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
     cursor: url("/assets/cursors/left_ptr.png") 4 4, auto;
     background: var(--tuerkis);
-    background-image: repeating-linear-gradient(
-        315deg,
-        transparent,
-        transparent 20px,
-        rgba(0, 0, 0, 1) 20px,
-        rgba(0, 0, 0, 1) 21px
-    );
+    background-image: repeating-linear-gradient(315deg,
+            transparent,
+            transparent 20px,
+            rgba(0, 0, 0, 1) 20px,
+            rgba(0, 0, 0, 1) 21px);
     background-size: 22px 22px;
     color: var(--text);
     line-height: 1.6;
@@ -155,12 +151,14 @@ body {
 }
 
 body.kein-scroll {
-  overflow: hidden;
-    scrollbar-width: none; /* Firefox */
+    overflow: hidden;
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 body.kein-scroll::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+    display: none;
+    /* Chrome, Safari */
 }
 
 .aufmacher-profil a {
@@ -201,21 +199,27 @@ li {
 .schrift-tuerkis {
     color: var(--orange) !important;
 }
+
 .schrift-orange {
     color: var(--tuerkis) !important;
 }
+
 .schrift-lila {
     color: var(--lila) !important;
 }
+
 .schrift-magenta {
     color: var(--magenta) !important;
 }
+
 .schrift-gruen {
     color: var(--gruen) !important;
 }
+
 .schrift-gelb {
     color: var(--gelb) !important;
 }
+
 .schrift-tinte {
     color: var(--tinte) !important;
 }
@@ -223,12 +227,15 @@ li {
 .schrift-regular {
     font-weight: 400 !important;
 }
+
 .schrift-medium {
     font-weight: 500 !important;
 }
+
 .schrift-semibold {
     font-weight: 600 !important;
 }
+
 .schrift-bold {
     font-weight: 700 !important;
 }
@@ -330,6 +337,7 @@ li {
     font-style: normal;
     color: var(--tuerkis);
 }
+
 /*
 .logo-titel em:hover {
   color: var(--tinte);
@@ -400,18 +408,22 @@ nav a:hover span::after {
     background: var(--magenta);
     color: var(--weiss);
 }
+
 .nav-netzwerk.aktiv {
     background: var(--orange);
     color: var(--weiss);
 }
+
 .nav-smart-home.aktiv {
     background: var(--gruen);
     color: var(--weiss);
 }
+
 .nav-musikmachen.aktiv {
     background: var(--lila);
     color: var(--weiss);
 }
+
 .nav-archiv.aktiv {
     background: var(--gelb);
     color: var(--tinbte);
@@ -421,18 +433,22 @@ nav a:hover span::after {
     background: var(--magenta);
     color: var(--weiss);
 }
+
 .nav-netzwerk:hover {
     background: var(--orange);
     color: var(--weiss);
 }
+
 .nav-smart-home:hover {
     background: var(--gruen);
     color: var(--weiss);
 }
+
 .nav-musikmachen:hover {
     background: var(--lila);
     color: var(--weiss);
 }
+
 .nav-archiv:hover {
     background: var(--gelb);
     color: var(--tinte);
@@ -441,15 +457,19 @@ nav a:hover span::after {
 .nav-self-hosting span::after {
     background: var(--magenta);
 }
+
 .nav-netzwerk span::after {
     background: var(--orange);
 }
+
 .nav-smart-home span::after {
     background: var(--gruen);
 }
+
 .nav-musikmachen span::after {
     background: var(--lila);
 }
+
 .nav-archiv span::after {
     background: var(--tinte);
 }
@@ -457,129 +477,171 @@ nav a:hover span::after {
 .nav-self-hosting:hover span::after {
     background: var(--magenta-hell);
 }
+
 .nav-netzwerk:hover span::after {
     background: var(--orange-hell);
 }
+
 .nav-smart-home:hover span::after {
     background: var(--gruen-hell);
 }
+
 .nav-musikmachen:hover span::after {
     background: var(--lila-hell);
 }
+
 .nav-archiv:hover span::after {
     background: var(--tinte);
 }
 
 /* ── Mobile Navigation ── */
-nav .mobil-menu {
-    border: var(--rahmen-gross);
+#mobil-menu,
+nav a.mobil-menu-kachel {
+    border-left: none !important;
+    border-right: none !important;
 }
+
 .mobil-menu-btn {
-  display: none;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3px;
-  width: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 2px;
-  flex-shrink: 0;
-  margin-left: auto;
-  position: relative;
-  z-index: 333;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    width: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    flex-shrink: 0;
+    margin-left: auto;
+    position: relative;
+    z-index: 333;
 }
+
 .mobil-menu-btn span {
-  width: 6px;
-  height: 6px;
-  background: var(--tinte);
-  display: block;
-  transition: opacity 0.2s, transform 0.2s;
+    width: 6px;
+    height: 6px;
+    background: var(--tinte);
+    display: block;
+    transition: opacity 0.2s, transform 0.2s;
 }
-.mobil-menu-btn.offen span:nth-child(1) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(2) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(3) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(4) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(5) { opacity: 1; transform: rotate(45deg) scale(1.5); }
-.mobil-menu-btn.offen span:nth-child(6) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(7) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(8) { opacity: 0; }
-.mobil-menu-btn.offen span:nth-child(9) { opacity: 0; }
+
+.mobil-menu-btn.offen span:nth-child(1) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(3) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(4) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(5) {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.5);
+}
+
+.mobil-menu-btn.offen span:nth-child(6) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(7) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(8) {
+    opacity: 0;
+}
+
+.mobil-menu-btn.offen span:nth-child(9) {
+    opacity: 0;
+}
 
 .mobil-menu {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 59px;
-  left: 0;
-  width: 100vw;
-  max-width: 100%;
-  height: calc(100dvh - 59px);
-  z-index: 332;
-  overflow: hidden;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 59px;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: calc(100dvh - 59px);
+    z-index: 332;
+    overflow: hidden;
 }
+
 .mobil-menu.offen {
-  display: flex;
+    display: flex;
 }
+
 .mobil-menu-kachel {
-  flex: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.1em;
-  padding: 0 1.5em;
-  text-decoration: none;
-  border-bottom: var(--rahmen);
-  transition: opacity 0.15s;
-  min-height: 0;
-  width: 100%;
-  overflow: hidden;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1em;
+    padding: 0 1.5em;
+    text-decoration: none;
+    border-bottom: 0.35rem solid var(--tinte);
+    min-height: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 2.5rem;
 }
+
 .mobil-menu-und {
-  position: absolute;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 6rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.25);
-  pointer-events: none;
-  line-height: 1;
+    position: absolute;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.25);
+    pointer-events: none;
+    line-height: 1;
 }
+
 .mobil-menu-zeile1,
 .mobil-menu-zeile2 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--weiss);
-  position: relative;
-  z-index: 1;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: none;
+    color: var(--weiss);
+    position: relative;
+    z-index: 1;
 }
+
 .mobil-menu-kachel:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
+
 .mobil-menu-kachel:hover {
-  text-decoration: underline;
-    text-decoration-color: var(--weiss);
 }
+
 .mobil-menu-archiv {
-  background: var(--gelb) !important;
+    background: var(--gelb) !important;
 }
+
 .mobil-menu-nr {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
+
 .mobil-menu-text {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--weiss);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--weiss);
 }
 
 .mobil-menu-archiv .mobil-menu-zeile1,
@@ -588,8 +650,13 @@ nav .mobil-menu {
 }
 
 @media (max-width: 700px) {
-  nav { display: none; }
-  .mobil-menu-btn { display: grid; }
+    nav {
+        display: none;
+    }
+
+    .mobil-menu-btn {
+        display: grid;
+    }
 }
 
 
@@ -897,26 +964,32 @@ nav .mobil-menu {
     background: var(--orange);
     color: var(--weiss);
 }
+
 .schaltflaeche-tuerkis {
     background: var(--tuerkis);
     color: var(--weiss);
 }
+
 .schaltflaeche-lila {
     background: var(--lila);
     color: var(--weiss);
 }
+
 .schaltflaeche-gruen {
     background: var(--gruen);
     color: var(--weiss);
 }
+
 .schaltflaeche-magenta {
     background: var(--magenta);
     color: var(--weiss);
 }
+
 .schaltflaeche-gelb {
     background: var(--gelb);
     color: var(--tinte);
 }
+
 .schaltflaeche-weiss {
     background: var(--weiss);
     color: var(--tinte);
@@ -1101,12 +1174,15 @@ nav .mobil-menu {
 .kategorie-self-hosting-dienste.artikel-kopf {
     background: var(--magenta-hell);
 }
+
 .kategorie-netzwerk-infrastruktur.artikel-kopf {
     background: var(--orange-hell);
 }
+
 .kategorie-smart-home-automatisierung.artikel-kopf {
     background: var(--gruen-hell);
 }
+
 .kategorie-proberaum-musikmachen.artikel-kopf {
     background: var(--lila-hell);
 }
@@ -1116,14 +1192,17 @@ nav .mobil-menu {
     background: var(--magenta);
     color: var(--magenta-hell);
 }
+
 .kategorie-netzwerk-infrastruktur .artikel-meta-datum {
     background: var(--orange);
     color: var(--orange-hell);
 }
+
 .kategorie-smart-home-automatisierung .artikel-meta-datum {
     background: var(--gruen);
     color: var(--gruen-hell);
 }
+
 .kategorie-proberaum-musikmachen .artikel-meta-datum {
     background: var(--lila);
     color: var(--lila-hell);
@@ -1134,14 +1213,17 @@ nav .mobil-menu {
 .kategorie-self-hosting-dienste .artikel-meta-thema a:hover {
     color: var(--magenta);
 }
+
 .kategorie-netzwerk-infrastruktur .artikel-meta-thema,
 .kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover {
     color: var(--orange);
 }
+
 .kategorie-smart-home-automatisierung .artikel-meta-thema,
 .kategorie-smart-home-automatisierung .artikel-meta-thema a:hover {
     color: var(--gruen);
 }
+
 .kategorie-proberaum-musikmachen .artikel-meta-thema,
 .kategorie-proberaum-musikmachen .artikel-meta-thema a:hover {
     color: var(--lila);
@@ -1164,7 +1246,8 @@ nav .mobil-menu {
     letter-spacing: -0.02em;
     line-height: 1.15;
     color: var(--tinte);
-    margin-bottom: 0.3em; /*
+    margin-bottom: 0.3em;
+    /*
   background: var(--gelb);
   padding: 0.2em;
   display: inline-block;*/
@@ -1191,12 +1274,15 @@ nav .mobil-menu {
 .kategorie-self-hosting-dienste .artikel-rahmen h2 {
     border-left-color: var(--magenta);
 }
+
 .kategorie-netzwerk-infrastruktur .artikel-rahmen h2 {
     border-left-color: var(--tuerkis);
 }
+
 .kategorie-smart-home-automatisierung .artikel-rahmen h2 {
     border-left-color: var(--gruen);
 }
+
 .kategorie-proberaum-musikmachen .artikel-rahmen h2 {
     border-left-color: var(--lila);
 }
@@ -1204,10 +1290,12 @@ nav .mobil-menu {
 /* ── Fließtext ── */
 .artikel-rahmen p {
     margin-bottom: 1em;
-    font-size: 1rem;/*
+    font-size: 1rem;
+    /*
     line-height: 1.75;*/
     text-align: justify;
 }
+
 .artikel-rahmen p:last-child {
     margin-bottom: 0em;
 }
@@ -1319,18 +1407,23 @@ blockquote.hinweisbox strong:first-child,
 .hinweisbox-tipp {
     background: var(--gruen-hell);
 }
+
 .hinweisbox-tipp::before {
     background: var(--gruen);
 }
+
 .hinweisbox-warnung {
     background: var(--gelb-hell);
 }
+
 .hinweisbox-warnung::before {
     background: var(--gelb);
 }
+
 .hinweisbox-info {
     background: var(--orange-hell);
 }
+
 .hinweisbox-info::before {
     background: var(--orange);
 }
@@ -1431,9 +1524,11 @@ code {
 .seitenfuss a {
     text-transform: none;
 }
+
 .seitenfuss span {
     color: var(--weiss);
 }
+
 .seitenfuss em {
     color: var(--rot);
 }
@@ -1452,6 +1547,7 @@ code {
     .nur-desktop {
         display: none;
     }
+
     .seitenkopf-oben {
         display: none;
     }
