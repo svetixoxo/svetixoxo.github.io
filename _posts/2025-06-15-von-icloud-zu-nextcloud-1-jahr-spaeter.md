@@ -67,7 +67,7 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 
 1. Umstellung auf WireGuard: Bessere Performance und modernere Verschlüsselung
 2. Eingeschränkter VPN-Zugriff für Familienmitglieder: Statt Vollzugriff aufs Netzwerk nur Port-Forwarding für Nextcloud
-3. Erweiterte Backup-Strategie: Automatisierung von Backups nach der 3-2-1-Regel
+3. Erweiterte Backup-Strategie: Automatisierung von Backups nach der „3-2-1-Regel“
 
 ## Kosten vs. Nutzen nach einem Jahr
 
