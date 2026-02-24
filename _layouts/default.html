@@ -8,6 +8,14 @@
     <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"> {% seo %} {% feed_meta %}
+    <script>
+        var menu = document.getElementById('mobil-menu');
+        var btn = document.getElementById('mobil-menu-btn');
+        menu.classList.toggle('offen');
+        btn.classList.toggle('offen');
+        document.body.classList.toggle('kein-scroll');
+
+    </script>
 </head>
 
 <body>
@@ -33,6 +41,47 @@
             <a href="/archiv/" class="nav-archiv {% if nav-aktiv == 'archiv' %}aktiv{% endif %}">
                 <span>Archiv</span>
             </a>
+        </nav>
+        <button class="mobil-menu-btn" id="mobil-menu-btn" onclick="
+  var menu = document.getElementById('mobil-menu');
+  var btn = document.getElementById('mobil-menu-btn');
+  menu.classList.toggle('offen');
+  btn.classList.toggle('offen');
+" aria-label="Menü">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </button>
+
+        <!-- Mobiles Menü -->
+        <nav class="mobil-menu" id="mobil-menu">
+<a class="mobil-menu-kachel" href="/thema/self-hosting-und-dienste/" style="background:var(--magenta)">
+  <span class="mobil-menu-und">&</span>
+  <span class="mobil-menu-zeile1">Self-Hosting</span>
+  <span class="mobil-menu-zeile2">Dienste</span>
+</a>
+
+<a class="mobil-menu-kachel" href="/thema/netzwerk-und-infrastruktur/" style="background:var(--orange)">
+  <span class="mobil-menu-und">&</span>
+  <span class="mobil-menu-zeile1">Netzwerk</span>
+  <span class="mobil-menu-zeile2">Infrastruktur</span>
+</a>
+
+<a class="mobil-menu-kachel" href="/thema/smart-home-und-automatisierung/" style="background:var(--gruen)">
+  <span class="mobil-menu-und">&</span>
+  <span class="mobil-menu-zeile1">Smart Home</span>
+  <span class="mobil-menu-zeile2">Automatisierung</span>
+</a>
+
+<a class="mobil-menu-kachel" href="/thema/proberaum-und-musikmachen/" style="background:var(--lila)">
+  <span class="mobil-menu-und">&</span>
+  <span class="mobil-menu-zeile1">Proberaum</span>
+  <span class="mobil-menu-zeile2">Musikmachen</span>
+</a>
+
+<a class="mobil-menu-kachel mobil-menu-archiv" href="/archiv/">
+  <span class="mobil-menu-zeile1">Archiv</span>
+</a>
         </nav>
     </div>
     <div class="seiteninhalt">
