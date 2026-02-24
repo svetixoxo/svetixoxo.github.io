@@ -3,124 +3,98 @@ layout: default
 title: Startseite
 ---
 <style>
-  .beitragsliste-raster {
-    grid-template-columns: repeat(4, 1fr);
-  }
-    .link-titel {
-        color: var(--tinte);
-        text-decoration: none;
-    }
-    .link-titel:hover {
-        text-decoration: underline;
-        text-decoration-color: var(--tuerkis);
-        text-decoration-thickness: 3px;
-    }
-</style>
-{% assign aufmacher-beitrag = site.posts.first %}
-{% if aufmacher-beitrag %}
-{% if aufmacher-beitrag.category == "Self-Hosting & Dienste" %}
-  {% assign aufmacher-farbe = "magenta" %}
-{% elsif aufmacher-beitrag.category == "Netzwerk & Infrastruktur" %}
-  {% assign aufmacher-farbe = "orange" %}
-{% elsif aufmacher-beitrag.category == "Smart Home & Automatisierung" %}
-  {% assign aufmacher-farbe = "gruen" %}
-{% elsif aufmacher-beitrag.category == "Proberaum & Musikmachen" %}
-  {% assign aufmacher-farbe = "lila" %}
-{% else %}
-  {% assign aufmacher-farbe = "orange" %}
-{% endif %}
-<div class="aufmacher">
-  <div class="aufmacher-haupt">
-    <div class="aufmacher-etikett" style="background: var(--{{ aufmacher-farbe }})">&#x2770;&#x2f;&#x2771; {{ aufmacher-beitrag.category | default: "Allgemein" }}</div>
-    <h1><a href="{{ aufmacher-beitrag.url | relative_url }}" class="link-titel">{{ aufmacher-beitrag.title }}</a></h1>
-    <hr class="aufmacher-trennlinie">
-    <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 220 }}</p><!--
+	.beitragsliste-raster {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.link-titel {
+		color: var(--tinte);
+		text-decoration: none;
+	}
+
+	.link-titel:hover {
+		text-decoration: underline;
+		text-decoration-color: var(--tuerkis);
+		text-decoration-thickness: 3px;
+	}
+</style> {% assign aufmacher-beitrag = site.posts.first %} {% if aufmacher-beitrag %} {% if aufmacher-beitrag.category == "Self-Hosting & Dienste" %} {% assign aufmacher-farbe = "magenta" %} {% elsif aufmacher-beitrag.category == "Netzwerk & Infrastruktur" %} {% assign aufmacher-farbe = "orange" %} {% elsif aufmacher-beitrag.category == "Smart Home & Automatisierung" %} {% assign aufmacher-farbe = "gruen" %} {% elsif aufmacher-beitrag.category == "Proberaum & Musikmachen" %} {% assign aufmacher-farbe = "lila" %} {% else %} {% assign aufmacher-farbe = "orange" %} {% endif %} <div class="aufmacher">
+	<div class="aufmacher-haupt">
+		<div class="aufmacher-etikett" style="background: var(--{{ aufmacher-farbe }})">&#x2770;&#x2f;&#x2771; {{ aufmacher-beitrag.category | default: "Allgemein" }}</div>
+		<h1>
+			<a href="{{ aufmacher-beitrag.url | relative_url }}" class="link-titel">{{ aufmacher-beitrag.title }}</a>
+		</h1>
+		<hr class="aufmacher-trennlinie">
+		<p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 220 }}</p>
+		<!--
     <div style="margin-bottom:1.2em">
       {% for etikett in aufmacher-beitrag.tags %}
         <a href="/tags/{{ etikett | downcase | replace: ' ', '-' }}/" class="etikett etikett-{{ etikett | downcase | replace: ' ', '-' }}">{{ etikett }}</a>
       {% endfor %}
     </div>-->
-    <a href="{{ aufmacher-beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis">Artikel lesen →</a>
-  </div>
-  <div class="aufmacher-seite">
-    <div class="aufmacher-seite-titel">Weitere Artikel</div>
-    {% for beitrag in site.posts limit:3 offset:1 %}
-    <div class="seitenleiste-eintrag">
-      {% if beitrag.category == "Self-Hosting & Dienste" %}
-        {% assign katfarbe = "var(--magenta)" %}
-      {% elsif beitrag.category == "Netzwerk & Infrastruktur" %}
-        {% assign katfarbe = "var(--orange)" %}
-      {% elsif beitrag.category == "Smart Home & Automatisierung" %}
-        {% assign katfarbe = "var(--gruen)" %}
-      {% elsif beitrag.category == "Proberaum & Musikmachen" %}
-        {% assign katfarbe = "var(--lila)" %}
-      {% else %}
-        {% assign katfarbe = "" %}
-      {% endif %}
-      <div class="seitenleiste-kategorie" style="color: {{ katfarbe }}">{{ beitrag.category | default: "Sonstiges" }}</div>
-      <div class="seitenleiste-titel"><a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a></div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-
-<div class="abschnitt-kopf"></div>
-
+		<a href="{{ aufmacher-beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis">Artikel lesen →</a>
+	</div>
+	<div class="aufmacher-seite">
+		<div class="aufmacher-seite-titel">Weitere Artikel</div> {% for beitrag in site.posts limit:3 offset:1 %} <div class="seitenleiste-eintrag"> {% if beitrag.category == "Self-Hosting & Dienste" %} {% assign katfarbe = "var(--magenta)" %} {% elsif beitrag.category == "Netzwerk & Infrastruktur" %} {% assign katfarbe = "var(--orange)" %} {% elsif beitrag.category == "Smart Home & Automatisierung" %} {% assign katfarbe = "var(--gruen)" %} {% elsif beitrag.category == "Proberaum & Musikmachen" %} {% assign katfarbe = "var(--lila)" %} {% else %} {% assign katfarbe = "" %} {% endif %} <div class="seitenleiste-kategorie" style="color: {{ katfarbe }}">{{ beitrag.category | default: "Sonstiges" }}</div>
+			<div class="seitenleiste-titel">
+				<a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a>
+			</div>
+		</div> {% endfor %}
+	</div>
+</div> {% endif %} <div class="abschnitt-kopf"></div>
 <div class="beitragsliste-raster">
-  <div class="beitragskarte" style="background: var(--magenta-hell)">
-    <div class="beitragskarte-streifen" style="background: var(--magenta)"></div>
-    <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-titel">Self-Hosting <br class="nur-desktop" />& Dienste</div>
-      <p class="beitragskarte-auszug">Eigene Dienste statt fremder Abos.</p>
-      <a href="/thema/self-hosting-und-dienste/" class="schaltflaeche schaltflaeche-magenta" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
-    </div>
-  </div>
-  <div class="beitragskarte" style="background: var(--orange-hell)">
-    <div class="beitragskarte-streifen" style="background: var(--orange)"></div>
-    <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-titel">Netzwerk <br class="nur-desktop" />& Infrastruktur</div>
-      <p class="beitragskarte-auszug">Das Fundament hinter allem.</p>
-      <a href="/thema/netzwerk-und-infrastruktur/" class="schaltflaeche schaltflaeche-orange" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
-    </div>
-  </div>
-  <div class="beitragskarte" style="background: var(--gruen-hell)">
-    <div class="beitragskarte-streifen" style="background: var(--gruen)"></div>
-    <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-titel">Smart Home <br class="nur-desktop" />& Automatisierung</div>
-      <p class="beitragskarte-auszug">Technik, die den Alltag vereinfacht.</p>
-      <a href="/thema/smart-home-und-automatisierung/" class="schaltflaeche schaltflaeche-gruen" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
-    </div>
-  </div>
-  <div class="beitragskarte" style="background: var(--lila-hell)">
-    <div class="beitragskarte-streifen" style="background: var(--lila)"></div>
-    <div class="beitragskarte-inhalt">
-      <div class="beitragskarte-titel">Proberaum <br class="nur-desktop" />& Musikmachen</div>
-      <p class="beitragskarte-auszug">Gitarre, Proberaum und Recording.</p>
-      <a href="/thema/proberaum-und-musikmachen/" class="schaltflaeche schaltflaeche-lila" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
-    </div>
-  </div>
+	<div class="beitragskarte" style="background: var(--magenta-hell)">
+		<div class="beitragskarte-streifen" style="background: var(--magenta)"></div>
+		<div class="beitragskarte-inhalt">
+			<div class="beitragskarte-titel">Self-Hosting <br class="nur-desktop" />& Dienste </div>
+			<p class="beitragskarte-auszug">Eigene Dienste statt fremder Abos.</p>
+			<a href="/thema/self-hosting-und-dienste/" class="schaltflaeche schaltflaeche-magenta" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
+		</div>
+	</div>
+	<div class="beitragskarte" style="background: var(--orange-hell)">
+		<div class="beitragskarte-streifen" style="background: var(--orange)"></div>
+		<div class="beitragskarte-inhalt">
+			<div class="beitragskarte-titel">Netzwerk <br class="nur-desktop" />& Infrastruktur </div>
+			<p class="beitragskarte-auszug">Das Fundament hinter allem.</p>
+			<a href="/thema/netzwerk-und-infrastruktur/" class="schaltflaeche schaltflaeche-orange" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
+		</div>
+	</div>
+	<div class="beitragskarte" style="background: var(--gruen-hell)">
+		<div class="beitragskarte-streifen" style="background: var(--gruen)"></div>
+		<div class="beitragskarte-inhalt">
+			<div class="beitragskarte-titel">Smart Home <br class="nur-desktop" />& Automatisierung </div>
+			<p class="beitragskarte-auszug">Technik, die den Alltag vereinfacht.</p>
+			<a href="/thema/smart-home-und-automatisierung/" class="schaltflaeche schaltflaeche-gruen" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
+		</div>
+	</div>
+	<div class="beitragskarte" style="background: var(--lila-hell)">
+		<div class="beitragskarte-streifen" style="background: var(--lila)"></div>
+		<div class="beitragskarte-inhalt">
+			<div class="beitragskarte-titel">Proberaum <br class="nur-desktop" />& Musikmachen </div>
+			<p class="beitragskarte-auszug">Gitarre, Proberaum und Recording.</p>
+			<a href="/thema/proberaum-und-musikmachen/" class="schaltflaeche schaltflaeche-lila" style="margin-top: auto; font-size: 0.75rem; align-self: flex-start;">mehr →</a>
+		</div>
+	</div>
 </div>
-
 <div class="abschnitt-kopf"></div>
-
 <div class="aufmacher" style="grid-template-columns:none">
-  <div class="aufmacher-haupt">
-    <h1>Was ist denn hier los?!</h1>
-    <p><strong>Dieser Blog dokumentiert, was bei mir Zuhause läuft und wie es dahin gekommen ist.</strong> Self-Hosting, Smart Home, Netzwerk, Sicherheit: Bereiche, die bei mir eng zusammenhängen und sich gegenseitig bedingen. Es geht nicht um isolierte Einzellösungen, sondern um ein Gesamtsystem, das im Alltag funktioniert, ohne sich ständig damit beschäftigen zu müssen. Die Beiträge sind keine Tutorials oder Rezensionen, sondern eher als Dokumentation von Entscheidungen zu verstehen: Was habe ich eingesetzt, warum habe ich mich so entschieden und was würde ich beim nächsten Mal anders machen? Was funktioniert hat, steht hier – und was nicht funktioniert hat auch.</p>
-    <p>Was hier dokumentiert ist, hängt enger zusammen, als es auf den ersten Blick wirkt. Es handelt sich um Teile eines Systems, das als Ganzes funktionieren muss. Ein Beitrag über einen selbst gehosteten Dienst setzt ein funktionierendes Netzwerk voraus, eine Automatisierung im Smart Home steht und fällt mit der Infrastruktur dahinter. Kurz gesagt: Alles hängt mit allem zusammen, was manchmal praktisch ist und manchmal weniger.</p>
-    <p>Daneben gibt es eine kleine Nische, die damit wenig zu tun hat: Musikmachen. Einfach, weil das hier ein persönlicher Blog ist und nicht alles, womit ich mich beschäftige, in ein Rack passt.</p>
-  </div>
+	<div class="aufmacher-haupt">
+		<h1>Was ist denn hier los?!</h1>
+		<p>
+			<strong>Dieser Blog dokumentiert, was bei mir Zuhause läuft und wie es dahin gekommen ist.</strong> Self-Hosting, Smart Home, Netzwerk, Sicherheit: Bereiche, die bei mir eng zusammenhängen und sich gegenseitig bedingen. Es geht nicht um isolierte Einzellösungen, sondern um ein Gesamtsystem, das im Alltag funktioniert, ohne sich ständig damit beschäftigen zu müssen. Die Beiträge sind keine Tutorials oder Rezensionen, sondern eher als Dokumentation von Entscheidungen zu verstehen: Was habe ich eingesetzt, warum habe ich mich so entschieden und was würde ich beim nächsten Mal anders machen? Was funktioniert hat, steht hier – und was nicht funktioniert hat auch.
+		</p>
+		<p>Was hier dokumentiert ist, hängt enger zusammen, als es auf den ersten Blick wirkt. Es handelt sich um Teile eines Systems, das als Ganzes funktionieren muss. Ein Beitrag über einen selbst gehosteten Dienst setzt ein funktionierendes Netzwerk voraus, eine Automatisierung im Smart Home steht und fällt mit der Infrastruktur dahinter. Kurz gesagt: Alles hängt mit allem zusammen, was manchmal praktisch ist und manchmal weniger.</p>
+		<p>Daneben gibt es eine kleine Nische, die damit wenig zu tun hat: Musikmachen. Einfach, weil das hier ein persönlicher Blog ist und nicht alles, womit ich mich beschäftige, in ein Rack passt.</p>
+	</div>
 </div>
-
 <div class="abschnitt-kopf"></div>
-
 <div class="aufmacher aufmacher-profil">
-  <div>
-    <img src="/assets/profilbild-klein.png" class="profilbild">
-  </div>
-  <div class="aufmacher-haupt">
-    <h1>Wer tippt hier eigentlich?</h1>
-    <p><strong>Das bin ich, Svetlana – irgendwo zwischen neugierig und überfordert.</strong> Daher bin ich auch auf Arch Linux unterwegs. Self-Hosting und Smart Home sind Dinge, die mich <a href="/setup/">in meinem Alltag</a> begleiten – genauso wie die Gitarre, der Proberaum sowie gelegentlich ein Aufnahmeprojekt Zuhause – und über die ich hier schreibe. Meistens aus Neugier, manchmal aus Trotz. Dass dieser Blog so aussieht, wie er aussieht, liegt daran, dass mir HTML und CSS mehr Spaß machen, als erwartet. Und weil Aufschreiben mir hilft, meine Gedanken zu ordnen und zu verstehen, was ich eigentlich tue, gibt es ihn.</p>
-  </div>
+	<div>
+		<img src="/assets/profilbild-klein.png" class="profilbild">
+	</div>
+	<div class="aufmacher-haupt">
+		<h1>Wer tippt hier eigentlich?</h1>
+		<p>
+			<strong>Das bin ich, Svetlana – irgendwo zwischen neugierig und überfordert.</strong> Daher bin ich auch auf Arch Linux unterwegs. Self-Hosting und Smart Home sind Dinge, die mich <a href="/setup/">in meinem Alltag</a> begleiten – genauso wie die Gitarre, der Proberaum sowie gelegentlich ein Aufnahmeprojekt Zuhause – und über die ich hier schreibe. Meistens aus Neugier, manchmal aus Trotz. Dass dieser Blog so aussieht, wie er aussieht, liegt daran, dass mir HTML und CSS mehr Spaß machen, als erwartet. Und weil Aufschreiben mir hilft, meine Gedanken zu ordnen und zu verstehen, was ich eigentlich tue, gibt es ihn.
+		</p>
+	</div>
 </div>

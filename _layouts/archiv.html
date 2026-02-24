@@ -2,74 +2,62 @@
 layout: default
 ---
 <style>
-  .archiv-jahr {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--tinte);
-  }
-  .archiv-eintrag {
-    display: grid;
-    grid-template-columns: auto 8px 1fr;
-    align-items: center;
-    gap: 0.6em;
-    padding: 0.1em 0;
-  }
-  .archiv-eintrag:last-child {
-    border-bottom: none;
-  }
-  .archiv-datum {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    color: var(--gedimmt);
-    white-space: nowrap;
-  }
-  .archiv-farbe {
-    width: 8px;
-    height: 8px;
-    border-radius: 0;
-    flex-shrink: 0;
-  }
-  .archiv-titel {
-    color: var(--tinte);
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-family: "IBM Plex Sans", sans-serif;
-  }
-  .archiv-titel:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--tuerkis);
-    text-decoration-thickness: 2px;
-  }
+	.archiv-jahr {
+		font-family: "IBM Plex Mono", monospace;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--tinte);
+	}
+
+	.archiv-eintrag {
+		display: grid;
+		grid-template-columns: auto 8px 1fr;
+		align-items: center;
+		gap: 0.6em;
+		padding: 0.1em 0;
+	}
+
+	.archiv-eintrag:last-child {
+		border-bottom: none;
+	}
+
+	.archiv-datum {
+		font-family: "IBM Plex Mono", monospace;
+		font-size: 0.78rem;
+		color: var(--gedimmt);
+		white-space: nowrap;
+	}
+
+	.archiv-farbe {
+		width: 8px;
+		height: 8px;
+		border-radius: 0;
+		flex-shrink: 0;
+	}
+
+	.archiv-titel {
+		color: var(--tinte);
+		font-weight: 700;
+		text-decoration: none;
+		font-size: 0.95rem;
+		font-family: "IBM Plex Sans", sans-serif;
+	}
+
+	.archiv-titel:hover {
+		text-decoration: underline;
+		text-decoration-color: var(--tuerkis);
+		text-decoration-thickness: 2px;
+	}
 </style>
-
 <div class="artikel-rahmen" style="background: var(--gelb)">
-    <h1>{{ page.title }} <span class="schrift-regular" style="font-size: 0.7em">({{ site.posts.size }} Artikel)</span></h1>
-  <p class="artikel-einleitung">Alle Beiträge in chronologischer Reihenfolge — von neu nach alt. Das farbige Quadrat zeigt die jeweilige Kategorie.</p>
-</div>
-
-{% assign beitraege-nach-jahr = site.posts | group_by_exp: "beitrag", "beitrag.date | date: '%Y'" %}
-{% for jahr-gruppe in beitraege-nach-jahr %}
-<div class="artikel-rahmen">
-  <div class="archiv-jahr">{{ jahr-gruppe.name }}</div>
-  {% for beitrag in jahr-gruppe.items %}
-    {% if beitrag.category == "Self-Hosting & Dienste" %}
-      {% assign archiv-farbe = "var(--magenta)" %}
-    {% elsif beitrag.category == "Netzwerk & Infrastruktur" %}
-      {% assign archiv-farbe = "var(--orange)" %}
-    {% elsif beitrag.category == "Smart Home & Automatisierung" %}
-      {% assign archiv-farbe = "var(--gruen)" %}
-    {% elsif beitrag.category == "Proberaum & Musikmachen" %}
-      {% assign archiv-farbe = "var(--lila)" %}
-    {% else %}
-      {% assign archiv-farbe = "var(--gedimmt)" %}
-    {% endif %}
-  <div class="archiv-eintrag">
-    <span class="archiv-datum">{{ beitrag.date | date: "%Y-%m-%d" }}</span>
-    <span class="archiv-farbe" style="background: {{ archiv-farbe }}"></span>
-    <a href="{{ beitrag.url | relative_url }}" class="archiv-titel">{{ beitrag.title }}</a>
-  </div>
-  {% endfor %}
-</div>
-{% endfor %}
+	<h1>{{ page.title }}
+		<span class="schrift-regular" style="font-size: 0.7em">({{ site.posts.size }} Artikel)</span>
+	</h1>
+	<p class="artikel-einleitung">Alle Beiträge in chronologischer Reihenfolge — von neu nach alt. Das farbige Quadrat zeigt die jeweilige Kategorie.</p>
+</div> {% assign beitraege-nach-jahr = site.posts | group_by_exp: "beitrag", "beitrag.date | date: '%Y'" %} {% for jahr-gruppe in beitraege-nach-jahr %} <div class="artikel-rahmen">
+	<div class="archiv-jahr">{{ jahr-gruppe.name }}</div> {% for beitrag in jahr-gruppe.items %} {% if beitrag.category == "Self-Hosting & Dienste" %} {% assign archiv-farbe = "var(--magenta)" %} {% elsif beitrag.category == "Netzwerk & Infrastruktur" %} {% assign archiv-farbe = "var(--orange)" %} {% elsif beitrag.category == "Smart Home & Automatisierung" %} {% assign archiv-farbe = "var(--gruen)" %} {% elsif beitrag.category == "Proberaum & Musikmachen" %} {% assign archiv-farbe = "var(--lila)" %} {% else %} {% assign archiv-farbe = "var(--gedimmt)" %} {% endif %} <div class="archiv-eintrag">
+		<span class="archiv-datum">{{ beitrag.date | date: "%Y-%m-%d" }}</span>
+		<span class="archiv-farbe" style="background: {{ archiv-farbe }}"></span>
+		<a href="{{ beitrag.url | relative_url }}" class="archiv-titel">{{ beitrag.title }}</a>
+	</div> {% endfor %}
+</div> {% endfor %}

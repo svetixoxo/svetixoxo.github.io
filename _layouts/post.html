@@ -2,219 +2,164 @@
 layout: default
 ---
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const inhalt = document.querySelector('.artikel-inhalt');
-        if (!inhalt) return;
-        const kinder = Array.from(inhalt.childNodes);
-        let aktuellerRahmen = null;
-        let zaehler = 0;
-        kinder.forEach(function(kind) {
-            if (kind.nodeType === 1 && kind.tagName === 'H2') {
-                zaehler++;
-                aktuellerRahmen = document.createElement('div');
-                aktuellerRahmen.className = 'artikel-rahmen';
-                aktuellerRahmen.style.position = 'relative';
-
-                const ankerId = 'abschnitt-' + zaehler;
-                aktuellerRahmen.id = ankerId;
-
-                const versatz = document.createElement('span');
-                versatz.style.cssText = 'position:absolute; top:-200px; display:block; visibility:hidden;';
-                versatz.id = ankerId;
-                aktuellerRahmen.appendChild(versatz);
-
-                const nummer = document.createElement('span');
-                nummer.className = 'artikel-rahmen-nummer';
-                nummer.textContent = zaehler;
-                nummer.dataset.zahl = zaehler;
-                nummer.title = 'Link kopieren';
-                nummer.style.cursor = 'pointer';
-                nummer.addEventListener('click', function() {
-                    const aktuelleZahl = parseInt(nummer.dataset.zahl);
-                    const url = window.location.origin + window.location.pathname + '#' + ankerId;
-                    navigator.clipboard.writeText(url).then(function() {
-                        nummer.textContent = '¶';
-                        setTimeout(function() {
-                            nummer.textContent = aktuelleZahl;
-                        }, 1500);
-                    });
-                });
-
-                aktuellerRahmen.appendChild(nummer);
-                inhalt.insertBefore(aktuellerRahmen, kind);
-            }
-            if (aktuellerRahmen) {
-                aktuellerRahmen.appendChild(kind);
-            }
-        });
-    });
+	document.addEventListener('DOMContentLoaded', function() {
+		const inhalt = document.querySelector('.artikel-inhalt');
+		if (!inhalt) return;
+		const kinder = Array.from(inhalt.childNodes);
+		let aktuellerRahmen = null;
+		let zaehler = 0;
+		kinder.forEach(function(kind) {
+			if (kind.nodeType === 1 && kind.tagName === 'H2') {
+				zaehler++;
+				aktuellerRahmen = document.createElement('div');
+				aktuellerRahmen.className = 'artikel-rahmen';
+				aktuellerRahmen.style.position = 'relative';
+				const ankerId = 'abschnitt-' + zaehler;
+				aktuellerRahmen.id = ankerId;
+				const versatz = document.createElement('span');
+				versatz.style.cssText = 'position:absolute; top:-200px; display:block; visibility:hidden;';
+				versatz.id = ankerId;
+				aktuellerRahmen.appendChild(versatz);
+				const nummer = document.createElement('span');
+				nummer.className = 'artikel-rahmen-nummer';
+				nummer.textContent = zaehler;
+				nummer.dataset.zahl = zaehler;
+				nummer.title = 'Link kopieren';
+				nummer.style.cursor = 'pointer';
+				nummer.addEventListener('click', function() {
+					const aktuelleZahl = parseInt(nummer.dataset.zahl);
+					const url = window.location.origin + window.location.pathname + '#' + ankerId;
+					navigator.clipboard.writeText(url).then(function() {
+						nummer.textContent = '¶';
+						setTimeout(function() {
+							nummer.textContent = aktuelleZahl;
+						}, 1500);
+					});
+				});
+				aktuellerRahmen.appendChild(nummer);
+				inhalt.insertBefore(aktuellerRahmen, kind);
+			}
+			if (aktuellerRahmen) {
+				aktuellerRahmen.appendChild(kind);
+			}
+		});
+	});
 </script>
 <style>
-    .artikel-mehr-raster {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
-}
-    .artikel-mehr {
-        margin-top: 2rem;
-    }
-.artikel-mehr-kopf {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--gedimmt);
-  margin-bottom: 0.8em;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid var(--linie);
-}
-    .artikel-mehr-kopf a {
-        text-decoration: none;
-    }
-    .artikel-mehr-kopf a:hover {
-        color: var(--tuerkis) !important;
-    }
-.artikel-mehr-eintrag {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.8em;
-  font-size: 0.88rem;
-}
-.artikel-mehr-datum {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.72rem;
-  color: var(--gedimmt);
-}
-.artikel-mehr-eintrag a {
-  color: var(--tinte);
-  text-decoration: none;
-  font-weight: 700;
-}
-.artikel-mehr-eintrag a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--orange);
-    text-decoration-thickness: 2px;
-}
-    .artikel-mehr-eintrag:last-child {
-        margin-bottom: 0;
-    }
-    .artikel-mehr-alle {
-  margin-top: 0.8em;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-.artikel-mehr-alle a {
-  text-decoration: none;
-}
-.artikel-mehr-alle a:hover {
-  text-decoration: underline;
-}
-@media (max-width: 700px) {
-  .artikel-mehr-raster { grid-template-columns: 1fr; }
-}
+	.artikel-mehr-raster {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+	}
+
+	.artikel-mehr {
+		margin-top: 2rem;
+	}
+
+	.artikel-mehr-kopf {
+		font-family: "IBM Plex Mono", monospace;
+		font-size: 0.72rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--gedimmt);
+		margin-bottom: 0.8em;
+		padding-bottom: 0.4em;
+		border-bottom: 1px solid var(--linie);
+	}
+
+	.artikel-mehr-kopf a {
+		text-decoration: none;
+	}
+
+	.artikel-mehr-kopf a:hover {
+		color: var(--tuerkis) !important;
+	}
+
+	.artikel-mehr-eintrag {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0.8em;
+		font-size: 0.88rem;
+	}
+
+	.artikel-mehr-datum {
+		font-family: "IBM Plex Mono", monospace;
+		font-size: 0.72rem;
+		color: var(--gedimmt);
+	}
+
+	.artikel-mehr-eintrag a {
+		color: var(--tinte);
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.artikel-mehr-eintrag a:hover {
+		text-decoration: underline;
+		text-decoration-color: var(--orange);
+		text-decoration-thickness: 2px;
+	}
+
+	.artikel-mehr-eintrag:last-child {
+		margin-bottom: 0;
+	}
+
+	.artikel-mehr-alle {
+		margin-top: 0.8em;
+		font-family: "IBM Plex Mono", monospace;
+		font-size: 0.78rem;
+		font-weight: 700;
+	}
+
+	.artikel-mehr-alle a {
+		text-decoration: none;
+	}
+
+	.artikel-mehr-alle a:hover {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 700px) {
+		.artikel-mehr-raster {
+			grid-template-columns: 1fr;
+		}
+	}
 </style>
-
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-    <p class="artikel-meta"><span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span> <span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a></span></p>
-    <h1>{{ page.title }}</h1>
-    {% if page.excerpt %}
-    <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
-    {% endif %}
+	<p class="artikel-meta">
+		<span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span>
+		<span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a>
+		</span>
+	</p>
+	<h1>{{ page.title }}</h1> {% if page.excerpt %} <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p> {% endif %}
 </div>
-
 <div class="artikel-inhalt kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-    {{ content }}
+	{{ content }}
 </div>
-
-<div class="artikel-navigation">
-    {% if page.previous.url %}
-    {% assign vorheriger-titel = page.previous.title | split: ": " %}
-    <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
-        <span class="artikel-nav-pfeil">←</span>
-        <span class="artikel-nav-text">
-            <span>{{ vorheriger-titel[0] }}{% if vorheriger-titel[1] %}:{% endif %}</span>
-            {% if vorheriger-titel[1] %}<span>{{ vorheriger-titel[1] }}</span>{% endif %}
-        </span>
-    </a>
-    {% else %}
-    <div style="flex:1"></div>
-    {% endif %}
-
-    {% if page.next.url %}
-    {% assign naechster-titel = page.next.title | split: ": " %}
-    <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta artikel-nav">
-        <span class="artikel-nav-text">
-            <span>{{ naechster-titel[0] }}{% if naechster-titel[1] %}:{% endif %}</span>
-            {% if naechster-titel[1] %}<span>{{ naechster-titel[1] }}</span>{% endif %}
-        </span>
-        <span class="artikel-nav-pfeil">→</span>
-    </a>
-    {% endif %}
-</div>
-
-{% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %}
-{% assign andere-beitraege = site.posts | where_exp: "b", "b.url != page.url" | limit: 5 %}
-
-{% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %}
-{% assign andere-beitraege = site.posts | where_exp: "b", "b.category != page.category and b.url != page.url" | limit: 5 %}
-
-{% if page.category == "Self-Hosting & Dienste" %}
-  {% assign mehr-farbe = "var(--magenta)" %}
-  {% assign mehr-link = "/thema/self-hosting-und-dienste/" %}
-{% elsif page.category == "Netzwerk & Infrastruktur" %}
-  {% assign mehr-farbe = "var(--orange)" %}
-  {% assign mehr-link = "/thema/netzwerk-und-infrastruktur/" %}
-{% elsif page.category == "Smart Home & Automatisierung" %}
-  {% assign mehr-farbe = "var(--gruen)" %}
-  {% assign mehr-link = "/thema/smart-home-und-automatisierung/" %}
-{% elsif page.category == "Proberaum & Musikmachen" %}
-  {% assign mehr-farbe = "var(--lila)" %}
-  {% assign mehr-link = "/thema/proberaum-und-musikmachen/" %}
-{% else %}
-  {% assign mehr-farbe = "var(--gedimmt)" %}
-  {% assign mehr-link = "/themen/" %}
-{% endif %}
-
-<div class="artikel-rahmen artikel-mehr">
-  <div class="artikel-mehr-raster">
-    <div>
-      <div class="artikel-mehr-kopf">
-        Weitere Beiträge aus <a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a>
-      </div>
-      {% if gleiche-kategorie.size > 0 %}
-        {% for b in gleiche-kategorie %}
-        <div class="artikel-mehr-eintrag">
-          <span class="artikel-mehr-datum">{{ b.date | date: "%Y-%m-%d" }}</span>
-          <a href="{{ b.url | relative_url }}">{{ b.title }}</a>
-        </div>
-        {% endfor %}
-      {% else %}
-        <p style="color:var(--gedimmt); font-size:0.85rem">Noch keine weiteren Beiträge in dieser Kategorie vorhanden.</p>
-      {% endif %}
-    </div>
-    <div>
-      <div class="artikel-mehr-kopf">Zuletzt erschienen</div>
-      {% for b in andere-beitraege %}
-      <div class="artikel-mehr-eintrag">
-<span class="artikel-mehr-datum">
-  {{ b.date | date: "%Y-%m-%d" }}
-  {% if b.category == "Self-Hosting & Dienste" %}
-    <span style="color:var(--magenta)">¶</span> {{ b.category }}
-  {% elsif b.category == "Netzwerk & Infrastruktur" %}
-    <span style="color:var(--orange)">¶</span> {{ b.category }}
-  {% elsif b.category == "Smart Home & Automatisierung" %}
-    <span style="color:var(--gruen)">¶</span> {{ b.category }}
-  {% elsif b.category == "Proberaum & Musikmachen" %}
-    <span style="color:var(--lila)">¶</span> {{ b.category }}
-  {% else %}
-    · {{ b.category | default: "Sonstiges" }}
-  {% endif %}
-</span>
-  <a href="{{ b.url | relative_url }}">{{ b.title }}</a>
-</div>
-      {% endfor %}
-    </div>
-  </div>
+<div class="artikel-navigation"> {% if page.previous.url %} {% assign vorheriger-titel = page.previous.title | split: ": " %} <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
+		<span class="artikel-nav-pfeil">←</span>
+		<span class="artikel-nav-text">
+			<span>{{ vorheriger-titel[0] }}{% if vorheriger-titel[1] %}:{% endif %}</span> {% if vorheriger-titel[1] %} <span>{{ vorheriger-titel[1] }}</span>{% endif %} </span>
+	</a> {% else %} <div style="flex:1"></div> {% endif %} {% if page.next.url %} {% assign naechster-titel = page.next.title | split: ": " %} <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta artikel-nav">
+		<span class="artikel-nav-text">
+			<span>{{ naechster-titel[0] }}{% if naechster-titel[1] %}:{% endif %}</span> {% if naechster-titel[1] %} <span>{{ naechster-titel[1] }}</span>{% endif %} </span>
+		<span class="artikel-nav-pfeil">→</span>
+	</a> {% endif %} </div> {% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %} {% assign andere-beitraege = site.posts | where_exp: "b", "b.url != page.url" | limit: 5 %} {% assign gleiche-kategorie = site.posts | where: "category", page.category | where_exp: "b", "b.url != page.url" | limit: 5 %} {% assign andere-beitraege = site.posts | where_exp: "b", "b.category != page.category and b.url != page.url" | limit: 5 %} {% if page.category == "Self-Hosting & Dienste" %} {% assign mehr-farbe = "var(--magenta)" %} {% assign mehr-link = "/thema/self-hosting-und-dienste/" %} {% elsif page.category == "Netzwerk & Infrastruktur" %} {% assign mehr-farbe = "var(--orange)" %} {% assign mehr-link = "/thema/netzwerk-und-infrastruktur/" %} {% elsif page.category == "Smart Home & Automatisierung" %} {% assign mehr-farbe = "var(--gruen)" %} {% assign mehr-link = "/thema/smart-home-und-automatisierung/" %} {% elsif page.category == "Proberaum & Musikmachen" %} {% assign mehr-farbe = "var(--lila)" %} {% assign mehr-link = "/thema/proberaum-und-musikmachen/" %} {% else %} {% assign mehr-farbe = "var(--gedimmt)" %} {% assign mehr-link = "/themen/" %} {% endif %} <div class="artikel-rahmen artikel-mehr">
+	<div class="artikel-mehr-raster">
+		<div>
+			<div class="artikel-mehr-kopf"> Weitere Beiträge aus <a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a>
+			</div> {% if gleiche-kategorie.size > 0 %} {% for b in gleiche-kategorie %} <div class="artikel-mehr-eintrag">
+				<span class="artikel-mehr-datum">{{ b.date | date: "%Y-%m-%d" }}</span>
+				<a href="{{ b.url | relative_url }}">{{ b.title }}</a>
+			</div> {% endfor %} {% else %} <p style="color:var(--gedimmt); font-size:0.85rem">Noch keine weiteren Beiträge in dieser Kategorie vorhanden.</p> {% endif %}
+		</div>
+		<div>
+			<div class="artikel-mehr-kopf">Zuletzt erschienen</div> {% for b in andere-beitraege %} <div class="artikel-mehr-eintrag">
+				<span class="artikel-mehr-datum">
+					{{ b.date | date: "%Y-%m-%d" }} {% if b.category == "Self-Hosting & Dienste" %} <span style="color:var(--magenta)">¶</span> {{ b.category }} {% elsif b.category == "Netzwerk & Infrastruktur" %} <span style="color:var(--orange)">¶</span> {{ b.category }} {% elsif b.category == "Smart Home & Automatisierung" %} <span style="color:var(--gruen)">¶</span> {{ b.category }} {% elsif b.category == "Proberaum & Musikmachen" %} <span style="color:var(--lila)">¶</span> {{ b.category }} {% else %} · {{ b.category | default: "Sonstiges" }} {% endif %} </span>
+				<a href="{{ b.url | relative_url }}">{{ b.title }}</a>
+			</div> {% endfor %}
+		</div>
+	</div>
 </div>
