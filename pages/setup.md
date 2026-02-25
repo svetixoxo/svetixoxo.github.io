@@ -200,7 +200,7 @@ permalink: /setup/
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
       <tr><td>Wetterstation</td><td>Gira Wetterstation Plus</td></tr>
-      <tr><td>Audio</td><td>Einbaulautsprecher KEF, 9 Räume<br>3× Yamaha Multiroom-Verstärker</td></tr>
+      <tr><td>Audio</td><td>KEF Einbaulautsprecher, 9 Räume<br>3× Yamaha Multiroom-Verstärker</td></tr>
       <tr><td>Alarmanlage</td><td>16× Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>15× Rauchmelder<br>&nbsp;4× Gasmelder</td></tr>
       <tr><td>Kameras</td><td>12× bispektral Tube<br>&nbsp;8× bispektral Dome<br>&nbsp;6× Fisheye 360°</td></tr>
     </table>
@@ -227,7 +227,7 @@ permalink: /setup/
 <div class="artikel-rahmen">
   <table class="setup-tabelle">
       <tr><td>Mobil</td><td>iPhone 12 Pro<br>iPad Pro A10X</td></tr>
-      <tr><td>Entertainment</td><td>2× Apple TV 4K</td></tr>
+      <tr><td>Entertainment</td><td>3× Apple TV 4K</td></tr>
       <tr><td>Steuerung</td><td>3× iPad Air M1<br>iMac M1</td></tr>
   </table>
 </div>
