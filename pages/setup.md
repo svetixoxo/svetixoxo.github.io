@@ -252,7 +252,7 @@ permalink: /setup/
       </tr>
     </thead>
     <tbody>
-      <tr class="vlan-kategorie-kopf"><td colspan="3">Management & Infrastruktur</td></tr>
+      <tr class="vlan-kategorie-kopf"><td colspan="3">Management &amp; Infrastruktur</td></tr>
       <tr><td>10</td><td>10.10.0.0/24</td><td>Netzwerk-Management</td></tr>
       <tr><td>11</td><td>10.11.0.0/24</td><td>WLAN-Infrastruktur</td></tr>
       <tr><td>19</td><td>10.19.0.0/24</td><td>Onboarding</td></tr>
