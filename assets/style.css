@@ -622,6 +622,7 @@ nav a.mobil-menu-kachel {
 
 .mobil-menu-archiv {
     background: var(--gelb) !important;
+    flex: 0.5;
 }
 
 .mobil-menu-nr {
@@ -1593,15 +1594,13 @@ code {
         right: 0;
     }
 
-    .artikel-inhalt.zweispaltig {
-        grid-template-columns: 1fr;
-    }
-
+    .artikel-inhalt.zweispaltig,
     .aufmacher {
         grid-template-columns: 1fr;
     }
 
-    .aufmacher-etikett {
+    .aufmacher-etikett,
+    .aufmacher-seite-titel {
         font-size: 0.8rem;
     }
 
