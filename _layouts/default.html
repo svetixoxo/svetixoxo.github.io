@@ -7,13 +7,7 @@
     <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"> {% seo %} {% feed_meta %}
-    <script>
-        var menu = document.getElementById('mobil-menu');
-        var btn = document.getElementById('mobil-menu-btn');
-        menu.classList.toggle('offen');
-        btn.classList.toggle('offen');
-        document.body.classList.toggle('kein-scroll');
-    </script>
+    <script src="{{ '/assets/skript.js' | relative_url }}"></script>
 </head>
 
 <body>

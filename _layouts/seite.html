@@ -1,44 +1,16 @@
 ---
 layout: default
 ---
-<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		const tagListe = document.getElementById('tag-liste');
-		const kopf = document.querySelector('.artikel-kopf');
-		if (tagListe && kopf) {
-			kopf.appendChild(tagListe);
-		}
-		const inhalt = document.querySelector('.artikel-inhalt');
-		if (!inhalt) return;
-		const kinder = Array.from(inhalt.childNodes);
-		let aktuellerRahmen = null;
-		let zaehler = 0;
-		kinder.forEach(function(kind) {
-			if (kind.nodeType === 1 && kind.tagName === 'H2') {
-				zaehler++;
-				aktuellerRahmen = document.createElement('div');
-				aktuellerRahmen.className = 'artikel-rahmen';
-				aktuellerRahmen.style.position = 'relative';
-				const nummer = document.createElement('span');
-				nummer.className = 'artikel-rahmen-nummer';
-				nummer.textContent = zaehler;
-				aktuellerRahmen.appendChild(nummer);
-				inhalt.insertBefore(aktuellerRahmen, kind);
-			}
-			if (aktuellerRahmen) {
-				aktuellerRahmen.appendChild(kind);
-			}
-		});
-	});
-</script>
 <style>
-	.artikel-rahmen p {
-		margin-bottom: 0;
-	}
+    .artikel-rahmen p {
+        margin-bottom: 0;
+    }
+
 </style>
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-	<h1>{{ page.title }}</h1> {% if page.excerpt %} <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p> {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.excerpt %}<p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>{% endif %}
 </div>
-<div class="artikel-inhalt {% if page.zweispaltig %}zweispaltig{% endif %} kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-	{{ content }}
+<div class="artikel-inhalt js-seite {% if page.zweispaltig %}zweispaltig{% endif %} kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
+    {{ content }}
 </div>

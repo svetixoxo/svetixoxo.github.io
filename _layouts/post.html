@@ -226,7 +226,7 @@ layout: default
 						{% elsif b.category == "Proberaum & Musikmachen" %}
 							<span style="color:var(--lila)">¶</span> {{ b.category }}
 						{% else %}
-							· {{ b.category | default: "Sonstiges" }}
+							¶ {{ b.category | default: "Sonstiges" }}
 						{% endif %}
 					</span>
 					<a href="{{ b.url | relative_url }}">{{ b.title }}</a>
