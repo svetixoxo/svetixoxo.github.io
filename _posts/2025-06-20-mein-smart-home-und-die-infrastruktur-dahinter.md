@@ -42,13 +42,13 @@ Die Server-Infrastruktur besteht aus zwei QNAP-Systemen.
 
 Das erste ist ein TS-1273AU-RP mit einer GPGPU (NVIDIA Quadro P1000), 64 GB Arbeitsspeicher und 12 Festplatten zu je 24 TB (Seagate Exos X24). Diese Konfiguration ist ausschließlich für die Videoüberwachung ausgelegt – die Grafikkarte übernimmt dabei das Transcoding von Videos, während der große Speicherplatz die Aufzeichnung von 26 Kameras über längere Zeiträume ermöglicht. Das SSD-Caching übernehmen zwei Samsung 990 Pro mit je 4 TB.
 
-Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten zu je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch meine eigene Daten-Cloud (siehe auch: *[Von iCloud zu Nextcloud: 1 Jahr später – ein ehrliches Review](https://svetixoxo.github.io/2025/06/22/von-icloud-zu-nextcloud-1-jahr-spaeter/)*).
+Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten zu je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch <a href="/von-icloud-zu-nextcloud-1-jahr-spaeter/">meine eigene Daten-Cloud</a>.
 
 Für Nextcloud und ähnliche Anwendungen setze ich bereits auf Docker-Container, was sich als sehr praktisch erwiesen hat. Für die restlichen Services stellt sich die Frage: Virtualisierung oder Container? Container bieten den Vorteil geringerer Ressourcennutzung und einfacherer Verwaltung, während Virtualisierung eine stärkere Isolation bietet. Bei der aktuellen Hardware-Ausstattung wäre beides problemlos möglich – für die meisten Smart-Home-Dienste sind Container jedoch die elegantere Lösung.
 
 ## Protokolle und Standards: Warum Apple HomeKit?
 
-Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus mehreren Gründen. Als ausschließlicher Nutzer von Apple-Geräten war die nahtlose Integration ein wichtiger Faktor. Die Home-App bietet dabei eine sehr übersichtliche Benutzeroberfläche, die auch bei der Vielzahl an Geräten nicht unübersichtlich wird. (Gesendet von meinem Lenovo ThinkPad mit Arch Linux)
+Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus mehreren Gründen. Als ausschließliche Nutzerin von Apple-Geräten war die nahtlose Integration ein wichtiger Faktor. Die Home-App bietet dabei eine sehr übersichtliche Benutzeroberfläche, die auch bei der Vielzahl an Geräten nicht unübersichtlich wird. (Gesendet von meinem Lenovo ThinkPad mit Arch Linux)
 
 In meiner vorherigen Wohnung hatte ich bereits Erfahrungen mit der Smart-Home-App von Fritz gesammelt, jedoch stellte sich schnell heraus, dass dieses System auf deutlich weniger Geräte ausgelegt und komplett geschlossen ist. Apple HomeKit bietet im Gegensatz dazu ein offenes System, das Geräte verschiedenster Hersteller problemlos einbinden kann. Über Homebridge lassen sich auch Geräte integrieren, die ursprünglich nicht HomeKit-kompatibel sind. HomeKit nutzt dabei verschiedene Protokolle wie WLAN, Zigbee und das neuere Matter/Thread, was eine hohe Flexibilität bei der Auswahl der Geräte ermöglicht.
 
@@ -86,7 +86,7 @@ An den Treppenaufgängen jedes Stockwerks ist je ein iPad in der Wand installier
 
 Ein kritischer Aspekt bei einer so umfassenden Automatisierung ist die Ausfallsicherheit. Für alle wesentlichen Systeme existieren Redundanz-Konzepte: Die Beleuchtung kann bei Ausfall der Smart-Home-Zentrale über konventionelle Lichtschalter gesteuert werden. Heizung und Klimaanlage behalten ihre ursprünglichen Steuereinheiten als Fallback-Option. Die Alarmanlage funktioniert auch bei Netzwerkausfall autonom und die Jalousien lassen sich über separate Gateways auch manuell bedienen. Die Kameras sind zusätzlich über die NVR-Systeme abgesichert, sodass die Aufzeichnung auch bei Ausfall des Heimservers weiterläuft.
 
-Grundsätzlich gilt: Alle Geräte, die über Gateways eingebunden wurden, verfügen über eine Fallback-Funktionalität, die den Grundbetrieb auch bei Smart-Home-Ausfall gewährleistet.
+Grundsätzlich gilt: Alle Geräte, die über Bridges oder ähnliches eingebunden wurden, verfügen über eine Fallback-Funktionalität, die den Grundbetrieb auch bei Smart-Home-Ausfall gewährleistet.
 
 ## Sicherheit und Datenschutz
 
