@@ -2,192 +2,209 @@
 layout: default
 ---
 <style>
-	.artikel-mehr-raster {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2em;
-	}
+    .artikel-mehr-raster {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
 
-	.artikel-mehr {
-		margin-top: 2rem;
-	}
+    .artikel-mehr {
+        margin-top: 2rem;
+    }
 
-	.artikel-mehr-kopf {
-		font-family: "IBM Plex Mono", monospace;
-		font-size: 0.72rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: var(--gedimmt);
-		margin-bottom: 0.8em;
-		padding-bottom: 0.4em;
-		border-bottom: 1px solid var(--linie);
-	}
+    .artikel-mehr-kopf {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--gedimmt);
+        margin-bottom: 0.8em;
+        padding-bottom: 0.4em;
+        border-bottom: 1px solid var(--linie);
+    }
 
-	.artikel-mehr-kopf a {
-		text-decoration: none;
-	}
+    .artikel-mehr-kopf a {
+        text-decoration: none;
+    }
 
-	.artikel-mehr-kopf a:hover {
-		color: var(--tuerkis) !important;
-	}
+    .artikel-mehr-kopf a:hover {
+        color: var(--tuerkis) !important;
+    }
 
-	.artikel-mehr-eintrag {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 0.8em;
-		font-size: 0.88rem;
-	}
+    .artikel-mehr-datum {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.72rem;
+        color: var(--gedimmt);
+    }
 
-	.artikel-mehr-datum {
-		font-family: "IBM Plex Mono", monospace;
-		font-size: 0.72rem;
-		color: var(--gedimmt);
-	}
+    .artikel-mehr-eintrag {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.8em;
+        font-size: 0.88rem;
+    }
 
-	.artikel-mehr-eintrag a {
-		color: var(--tinte);
-		text-decoration: none;
-		font-weight: 700;
-	}
+    .artikel-mehr-eintrag a {
+        color: var(--tinte);
+        text-decoration: none;
+        font-weight: 700;
+    }
 
-	.artikel-mehr-eintrag a:hover {
-		text-decoration: underline;
-		text-decoration-color: var(--orange);
-		text-decoration-thickness: 2px;
-	}
+    .artikel-mehr-eintrag a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
 
-	.artikel-mehr-eintrag:last-child {
-		margin-bottom: 0;
-	}
+    .artikel-mehr-eintrag a.artikel-mehr-link-self-hosting-dienste:hover {
+        text-decoration-color: var(--magenta);
+    }
 
-	.artikel-mehr-alle {
-		margin-top: 0.8rem;
-		font-family: "IBM Plex Mono", monospace;
-		font-size: 0.78rem;
-		font-weight: 700;
-	}
+    .artikel-mehr-eintrag a.artikel-mehr-link-netzwerk-infrastruktur:hover {
+        text-decoration-color: var(--orange);
+    }
 
-	.artikel-mehr-alle a {
-		text-decoration: none;
-	}
+    .artikel-mehr-eintrag a.artikel-mehr-link-smart-home-automatisierung:hover {
+        text-decoration-color: var(--gruen);
+    }
 
-	.artikel-mehr-alle a:hover {
-		text-decoration: underline;
-	}
+    .artikel-mehr-eintrag a.artikel-mehr-link-proberaum-musikmachen:hover {
+        text-decoration-color: var(--lila);
+    }
 
-	@media (max-width: 700px) {
-		.artikel-mehr-raster {
-			grid-template-columns: 1fr;
-		}
-	}
+    .artikel-mehr-eintrag:last-child {
+        margin-bottom: 0;
+    }
+
+    .artikel-mehr-alle {
+        margin-top: 0.8rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.78rem;
+        font-weight: 700;
+    }
+
+    .artikel-mehr-alle a {
+        text-decoration: none;
+    }
+
+    .artikel-mehr-alle a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 992px) {
+        .artikel-mehr-raster {
+            grid-template-columns: 1fr;
+        }
+    }
+
 </style>
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-	<p class="artikel-meta">
-		<span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span><br class="nur-mobil" />
-		<span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a>
-		</span>
-	</p>
-	<h1>{{ page.title }}</h1> {% if page.excerpt %} <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p> {% endif %}
+    <p class="artikel-meta">
+        <span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span><br class="nur-mobil" />
+        <span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a>
+        </span>
+    </p>
+    <h1>{{ page.title }}</h1> {% if page.excerpt %} <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p> {% endif %}
 </div>
 <div class="artikel-inhalt kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-	{{ content }}
+    {{ content }}
 </div>
 <div class="artikel-navigation">
-	{% if page.previous.url %}
-		{% assign vorheriger_titel = page.previous.title | split: ": " %}
-		<a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-tuerkis artikel-nav">
-			<span class="artikel-nav-pfeil">←</span>
-			<span class="artikel-nav-text">
-				<span>{{ vorheriger_titel[0] }}{% if vorheriger_titel[1] %}:{% endif %}</span> {% if vorheriger_titel[1] %} <span>{{ vorheriger_titel[1] }}</span>{% endif %}
-			</span>
-		</a>
-	{% else %}
-		<div style="flex:1"></div>
-	{% endif %}
-	{% if page.next.url %}
-		{% assign naechster_titel = page.next.title | split: ": " %}
-		<a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-magenta artikel-nav">
-			<span class="artikel-nav-text">
-				<span>{{ naechster_titel[0] }}{% if naechster_titel[1] %}:{% endif %}</span> {% if naechster_titel[1] %} <span>{{ naechster_titel[1] }}</span>{% endif %}
-			</span>
-			<span class="artikel-nav-pfeil">→</span>
-		</a>
-	{% endif %}
+    {% if page.previous.url %}
+    {% assign vorheriger_titel = page.previous.title | split: ": " %}
+    <a href="{{ page.previous.url | relative_url }}" class="schaltflaeche schaltflaeche-gelb-links artikel-nav">
+        <span class="artikel-nav-pfeil">←</span>
+        <span class="artikel-nav-text">
+            <span>{{ vorheriger_titel[0] }}{% if vorheriger_titel[1] %}:{% endif %}</span> {% if vorheriger_titel[1] %} <span>{{ vorheriger_titel[1] }}</span>{% endif %}
+        </span>
+    </a>
+    {% else %}
+    <div style="flex:1"></div>
+    {% endif %}
+    {% if page.next.url %}
+    {% assign naechster_titel = page.next.title | split: ": " %}
+    <a href="{{ page.next.url | relative_url }}" class="schaltflaeche schaltflaeche-gelb-rechts artikel-nav">
+        <span class="artikel-nav-text">
+            <span>{{ naechster_titel[0] }}{% if naechster_titel[1] %}:{% endif %}</span> {% if naechster_titel[1] %} <span>{{ naechster_titel[1] }}</span>{% endif %}
+        </span>
+        <span class="artikel-nav-pfeil">→</span>
+    </a>
+    {% endif %}
 </div>
 
 {%- comment -%} Filter für gleiche Kategorie {% endcomment -%}
 {% assign gleiche_kategorie = site.posts | where: "category", page.category %}
 {% assign gefiltert_gleiche = "" | split: "" %}
 {% for b in gleiche_kategorie %}
-  {% if b.url != page.url %}
-    {% assign gefiltert_gleiche = gefiltert_gleiche | push: b %}
-  {% endif %}
+{% if b.url != page.url %}
+{% assign gefiltert_gleiche = gefiltert_gleiche | push: b %}
+{% endif %}
 {% endfor %}
 {% assign gleiche_kategorie = gefiltert_gleiche | slice: 0,5 %}
 
 {%- comment -%} Filter für andere Beiträge {% endcomment -%}
 {% assign andere_beitraege = "" | split: "" %}
 {% for b in site.posts %}
-  {% if b.category != page.category and b.url != page.url %}
-    {% assign andere_beitraege = andere_beitraege | push: b %}
-  {% endif %}
+{% if b.category != page.category and b.url != page.url %}
+{% assign andere_beitraege = andere_beitraege | push: b %}
+{% endif %}
 {% endfor %}
 {% assign andere_beitraege = andere_beitraege | slice: 0,5 %}
 
 {% if page.category == "Self-Hosting & Dienste" %}
-	{% assign mehr-farbe = "var(--magenta)" %}
-	{% assign mehr-link = "/thema/self-hosting-und-dienste/" %}
+{% assign mehr-farbe = "var(--magenta)" %}
+{% assign mehr-link = "/thema/self-hosting-und-dienste/" %}
 {% elsif page.category == "Netzwerk & Infrastruktur" %}
-	{% assign mehr-farbe = "var(--orange)" %}
-	{% assign mehr-link = "/thema/netzwerk-und-infrastruktur/" %}
+{% assign mehr-farbe = "var(--orange)" %}
+{% assign mehr-link = "/thema/netzwerk-und-infrastruktur/" %}
 {% elsif page.category == "Smart Home & Automatisierung" %}
-	{% assign mehr-farbe = "var(--gruen)" %}
-	{% assign mehr-link = "/thema/smart-home-und-automatisierung/" %}
+{% assign mehr-farbe = "var(--gruen)" %}
+{% assign mehr-link = "/thema/smart-home-und-automatisierung/" %}
 {% elsif page.category == "Proberaum & Musikmachen" %}
-	{% assign mehr-farbe = "var(--lila)" %}
-	{% assign mehr-link = "/thema/proberaum-und-musikmachen/" %}
+{% assign mehr-farbe = "var(--lila)" %}
+{% assign mehr-link = "/thema/proberaum-und-musikmachen/" %}
 {% else %}
-	{% assign mehr-farbe = "var(--gedimmt)" %}
-	{% assign mehr-link = "/themen/" %}
+{% assign mehr-farbe = "var(--gedimmt)" %}
+{% assign mehr-link = "/themen/" %}
 {% endif %}
 
-<div class="artikel-rahmen artikel-mehr">
-	<div class="artikel-mehr-raster">
-		<div>
-			<div class="artikel-mehr-kopf">Weitere Beiträge aus <br class="nur-mobil" /><a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a></div>
-			{% if gleiche_kategorie.size > 0 %}
-				{% for b in gleiche_kategorie %}
-					<div class="artikel-mehr-eintrag">
-						<span class="artikel-mehr-datum">{{ b.date | date: "%Y-%m-%d" }}</span>
-						<a href="{{ b.url | relative_url }}">{{ b.title }}</a>
-					</div>
-				{% endfor %}
-			{% else %}
-				<p style="color:var(--gedimmt); font-size:0.85rem">Noch keine weiteren Beiträge in dieser Kategorie vorhanden.</p>
-			{% endif %}
-		</div>
-		<div>
-			<div class="artikel-mehr-kopf">Zuletzt erschienen</div>
-			{% for b in andere_beitraege %}
-				<div class="artikel-mehr-eintrag">
-					<span class="artikel-mehr-datum">
-						{{ b.date | date: "%Y-%m-%d" }}
-						{% if b.category == "Self-Hosting & Dienste" %}
-							<span style="color:var(--magenta)">¶</span> {{ b.category }}
-						{% elsif b.category == "Netzwerk & Infrastruktur" %}
-							<span style="color:var(--orange)">¶</span> {{ b.category }}
-						{% elsif b.category == "Smart Home & Automatisierung" %}
-							<span style="color:var(--gruen)">¶</span> {{ b.category }}
-						{% elsif b.category == "Proberaum & Musikmachen" %}
-							<span style="color:var(--lila)">¶</span> {{ b.category }}
-						{% else %}
-							¶ {{ b.category | default: "Sonstiges" }}
-						{% endif %}
-					</span>
-					<a href="{{ b.url | relative_url }}">{{ b.title }}</a>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
+<div class="artikel-rahmen artikel-mehr kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
+    <div class="artikel-mehr-raster">
+        <div>
+            <div class="artikel-mehr-kopf">Weitere Beiträge aus <br class="nur-mobil" /><a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a></div>
+            {% if gleiche_kategorie.size > 0 %}
+            {% for b in gleiche_kategorie %}
+            <div class="artikel-mehr-eintrag">
+                <span class="artikel-mehr-datum">{{ b.date | date: "%Y-%m-%d" }}</span>
+                <a href="{{ b.url | relative_url }}" class="artikel-mehr-link-{{ b.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">{{ b.title }}</a>
+            </div>
+            {% endfor %}
+            {% else %}
+            <p style="color:var(--gedimmt); font-size:0.85rem">Noch keine weiteren Beiträge in dieser Kategorie vorhanden.</p>
+            {% endif %}
+        </div>
+        <div>
+            <div class="artikel-mehr-kopf">Zuletzt erschienen</div>
+            {% for b in andere_beitraege %}
+            {% if b.category == "Self-Hosting & Dienste" %}
+            {% assign b-quadrat = "var(--magenta)" %}
+            {% elsif b.category == "Netzwerk & Infrastruktur" %}
+            {% assign b-quadrat = "var(--orange)" %}
+            {% elsif b.category == "Smart Home & Automatisierung" %}
+            {% assign b-quadrat = "var(--gruen)" %}
+            {% elsif b.category == "Proberaum & Musikmachen" %}
+            {% assign b-quadrat = "var(--lila)" %}
+            {% else %}
+            {% assign b-quadrat = "var(--gedimmt)" %}
+            {% endif %}
+            <div class="artikel-mehr-eintrag">
+                <span class="artikel-mehr-datum">
+                    {{ b.date | date: "%Y-%m-%d" }}
+                    <span class="quadrat-farbe" style="background: {{ b-quadrat }}"></span> {{ b.category | default: "Sonstiges" }}
+                </span>
+                <a href="{{ b.url | relative_url }}" class="artikel-mehr-link-{{ b.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">{{ b.title }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>

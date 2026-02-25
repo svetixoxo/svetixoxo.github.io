@@ -1,22 +1,41 @@
 ---
 layout: default
 ---
+<style>
+    @media (max-width: 992px) {
+        .beitragsliste-raster .beitragskarte-inhalt {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            justify-content: flex-start !important;
+        }
+
+        .beitragsliste-raster .beitragskarte-inhalt .schaltflaeche {
+            display: inline-block !important;
+            align-self: flex-end !important;
+        }
+        
+        .beitragskarte-inhalt {
+            gap: 0;
+        }
+    }
+</style>
 {% assign gefundene = site.posts | where: "category", page.category %} {% if page.category == "Self-Hosting & Dienste" %} {% assign thema-farbe = "magenta" %} {% elsif page.category == "Netzwerk & Infrastruktur" %} {% assign thema-farbe = "orange" %} {% elsif page.category == "Smart Home & Automatisierung" %} {% assign thema-farbe = "gruen" %} {% elsif page.category == "Proberaum & Musikmachen" %} {% assign thema-farbe = "lila" %} {% else %} {% assign thema-farbe = "tuerkis" %} {% endif %} <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
     <p class="artikel-meta">Thema » <span style="color:var(--{{ thema-farbe }})">{{ gefundene.size }} {% if gefundene.size == 1 %}Artikel{% else %}Artikel{% endif %}</span>
     </p>
     <h1>{{ page.title }}</h1> {% if page.excerpt %} <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p> {% endif %}
-</div> {% if gefundene.size > 0 %} <div class="beitragsliste-raster"> {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %} {% for beitrag in gefundene %} {% assign farbindex = forloop.index0 | modulo: 5 %} {% assign farbe = streifenfarben[farbindex] %} <div class="beitragskarte">
+</div> {% if gefundene.size > 0 %} <div class="beitragsliste-raster"> {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %} {% for beitrag in gefundene %} {% assign farbindex = forloop.index0 | modulo: 5 %} {% assign farbe = streifenfarben[farbindex] %}
+    <div class="beitragskarte">
         <div class="beitragskarte-streifen" style="background:var(--{{ thema-farbe }})"></div>
-            <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }}</div>
         <div class="beitragskarte-inhalt">
-            <div class="beitragskarte-titel-zeile">
-                <div class="beitragskarte-titel">
-                    <a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a>
-                </div>
-                <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ thema-farbe }}" style="font-size: 0.75rem; flex-shrink: 0;">Lesen →</a>
+            <div class="beitragskarte-meta">{{ beitrag.date | date: "%Y-%m-%d" }}</div>
+            <div class="beitragskarte-titel">
+                <a href="{{ beitrag.url | relative_url }}" class="link-{{ thema-farbe }}">{{ beitrag.title }}</a>
             </div>
             <p class="beitragskarte-auszug">{{ beitrag.excerpt | strip_html | truncate: 160 }}</p>
+            <a href="{{ beitrag.url | relative_url }}" class="schaltflaeche schaltflaeche-{{ thema-farbe }}" style="font-size: 0.75rem; align-self: flex-end; margin-top: auto;">Lesen →</a>
         </div>
-    </div> {% endfor %} </div> {% else %} <div class="artikel-rahmen">
+    </div>
+    {% endfor %}
+</div> {% else %} <div class="artikel-rahmen">
     <p>Noch keine Artikel in dieser Kategorie.</p>
 </div> {% endif %}

@@ -98,7 +98,7 @@
     --tuerkis-hell: #e0f8ff;
     --orange: #ff8700;
     --orange-hell: #fff1eb;
-    --gelb: #ffd52b;
+    --gelb: #fecc02;
     --gelb-hell: #fffbe0;
     --lila: #d36ff9;
     --lila-hell: #f0ebff;
@@ -168,7 +168,7 @@ body.kein-scroll::-webkit-scrollbar {
 
 .aufmacher-profil a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--orange);
+    text-decoration-color: var(--gelb);
     text-decoration-thickness: 2px;
 }
 
@@ -196,7 +196,7 @@ p a {
 
 p a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--orange);
+    text-decoration-color: var(--gelb);
     text-decoration-thickness: 2px;
 }
 
@@ -304,7 +304,7 @@ p a:hover {
 .link-tinte:hover,
 .link-weiss:hover {
     text-decoration: underline;
-    text-decoration-color: var(--orange);
+    text-decoration-color: var(--gelb);
     text-decoration-thickness: 2px;
 }
 
@@ -323,7 +323,7 @@ p a:hover {
     justify-content: space-between;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.72rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.08rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -698,7 +698,7 @@ nav a.mobil-menu-kachel {
     color: var(--tinte);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     nav {
         display: none;
         border: none;
@@ -715,8 +715,7 @@ nav a.mobil-menu-kachel {
 ══════════════════════════════════════════ */
 
 .seiteninhalt {
-    min-width: 1200px;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
     position: relative;
@@ -754,7 +753,7 @@ nav a.mobil-menu-kachel {
     font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.08rem;
     color: var(--gedimmt);
     text-decoration: none;
 }
@@ -1059,7 +1058,9 @@ nav a.mobil-menu-kachel {
     color: var(--weiss);
 }
 
-.schaltflaeche-gelb {
+.schaltflaeche-gelb,
+.schaltflaeche-gelb-links,
+.schaltflaeche-gelb-rechts {
     background: var(--gelb);
     color: var(--tinte);
 }
@@ -1135,9 +1136,9 @@ nav a.mobil-menu-kachel {
     font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.08rem;
     color: var(--gedimmt);
-    padding: 1.3rem 1.6rem 0 1.6rem;
+    padding: 1.3rem 1.6rem 0 0;
 }
 
 .beitragskarte-titel {
@@ -1157,6 +1158,26 @@ nav a.mobil-menu-kachel {
     text-decoration: underline;
     text-decoration-color: var(--tuerkis);
     text-decoration-thickness: 2px;
+}
+
+.beitragskarte-titel a.link-magenta:hover {
+    text-decoration-color: var(--magenta);
+}
+
+.beitragskarte-titel a.link-orange:hover {
+    text-decoration-color: var(--orange);
+}
+
+.beitragskarte-titel a.link-gruen:hover {
+    text-decoration-color: var(--gruen);
+}
+
+.beitragskarte-titel a.link-lila:hover {
+    text-decoration-color: var(--lila);
+}
+
+.beitragskarte-titel a.link-tuerkis:hover {
+    text-decoration-color: var(--tuerkis);
 }
 
 .beitragskarte-titel-zeile {
@@ -1194,7 +1215,7 @@ nav a.mobil-menu-kachel {
     align-items: center;
     justify-content: space-between;
     gap: 1em;
-    padding: 1.3em 1.3em;
+    padding: 1rem;
 }
 
 .startseite-kacheln .beitragskarte-inhalt .schaltflaeche {
@@ -1290,7 +1311,7 @@ nav a.mobil-menu-kachel {
 }
 
 .artikel-rahmen:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .artikel-kopf.artikel-rahmen {
@@ -1469,6 +1490,23 @@ nav a.mobil-menu-kachel {
     border-left-color: var(--lila);
 }
 
+.quadrat-farbe {
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    flex-shrink: 0;
+}
+
+.artikel-mehr-datum .quadrat-farbe {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
 /* ── Fließtext ── */
 .artikel-rahmen p {
     margin-bottom: 1rem;
@@ -1519,12 +1557,14 @@ nav a.mobil-menu-kachel {
     width: fit-content;
 }
 
-.schaltflaeche-tuerkis.artikel-nav {
+.schaltflaeche-tuerkis.artikel-nav,
+.schaltflaeche-gelb-links.artikel-nav {
     grid-template-columns: 24px 1fr;
     gap: 0.8em;
 }
 
-.schaltflaeche-magenta.artikel-nav {
+.schaltflaeche-magenta.artikel-nav,
+.schaltflaeche-gelb-rechts.artikel-nav {
     grid-template-columns: 1fr 24px;
     gap: 0.8em;
     text-align: right;
@@ -1581,7 +1621,7 @@ blockquote.hinweisbox strong:first-child,
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.78rem;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.08rem;
     display: block;
     margin-bottom: 0.2em;
 }
@@ -1725,7 +1765,7 @@ code {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     h1 {
         font-size: 1.68rem !important;
         line-height: 2rem;
@@ -1781,7 +1821,7 @@ code {
     .aufmacher {
         grid-template-columns: 1fr;
     }
-    
+
     .aufmacher:last-of-type {
         margin-bottom: 2rem;
     }
