@@ -238,6 +238,63 @@ li {
     font-weight: 700 !important;
 }
 
+.link-magenta {
+    color: var(--magenta);
+}
+
+.link-orange {
+    color: var(--orange);
+}
+
+.link-gruen {
+    color: var(--gruen);
+}
+
+.link-lila {
+    color: var(--lila);
+}
+
+.link-tuerkis {
+    color: var(--tuerkis);
+}
+
+.link-gelb {
+    color: var(--gelb);
+}
+
+.link-tinte {
+    color: var(--tinte);
+}
+
+.link-weiss {
+    color: var(--weiss);
+}
+
+.link-magenta,
+.link-orange,
+.link-gruen,
+.link-lila,
+.link-tuerkis,
+.link-gelb,
+.link-tinte,
+.link-weiss {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-magenta:hover,
+.link-orange:hover,
+.link-gruen:hover,
+.link-lila:hover,
+.link-tuerkis:hover,
+.link-gelb:hover,
+.link-tinte:hover,
+.link-weiss:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 2px;
+}
+
 /* ══════════════════════════════════════════
    SEITENKOPF
 ══════════════════════════════════════════ */
@@ -647,7 +704,7 @@ nav a.mobil-menu-kachel {
     color: var(--tinte);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     nav {
         display: none;
         border: none;
@@ -1536,13 +1593,13 @@ code {
    MOBILANSICHT
 ══════════════════════════════════════════ */
 
-@media (min-width: 701px) {
+@media (min-width: 993px) {
     .nur-mobil {
         display: none;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 1.68rem !important;
         line-height: 2rem;
