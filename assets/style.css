@@ -763,10 +763,6 @@ nav a.mobil-menu-kachel {
     background: var(--hintergrund-karte);
 }
 
-.aufmacher:last-of-type {
-    margin-bottom: 0;
-}
-
 .aufmacher-profil {
     grid-template-columns: 280px 1fr;
 }
