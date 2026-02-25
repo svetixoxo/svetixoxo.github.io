@@ -90,7 +90,7 @@ Grundsätzlich gilt: Alle Geräte, die über Gateways eingebunden wurden, verfü
 
 ## Sicherheit und Datenschutz
 
-Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal. Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht. Lediglich die Kameras sind über die NVR-Systeme auch von außen erreichbar, was für Überwachungszwecke notwendig ist.
+Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal. Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht.
 
 Die Zugriffskontrolle erfolgt über differenzierte Benutzerrechte: Die fest installierten iPads haben eigene Apple IDs, können jedoch keine Geräte hinzufügen oder entfernen. Besonders sensible Bereiche wie die Kameras oder Alarmanlage sind über diese Terminals nicht zugänglich – darauf haben ausschließlich meine Admin-Geräte Zugriff.
 
