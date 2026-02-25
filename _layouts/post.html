@@ -128,7 +128,7 @@ layout: default
 </style>
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
 	<p class="artikel-meta">
-		<span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span>
+		<span class="artikel-meta-datum">{{ page.date | date: "%Y-%m-%d" }}</span><br class="nur-mobil" />
 		<span class="artikel-meta-thema">// <a href="/{{ page.category }}/">{{ page.category | default: "Allgemein" }}</a>
 		</span>
 	</p>
@@ -199,7 +199,7 @@ layout: default
 <div class="artikel-rahmen artikel-mehr">
 	<div class="artikel-mehr-raster">
 		<div>
-			<div class="artikel-mehr-kopf">Weitere Beiträge aus <a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a></div>
+			<div class="artikel-mehr-kopf">Weitere Beiträge aus <br class="nur-mobil" /><a href="{{ mehr-link }}" style="color:{{ mehr-farbe }}">{{ page.category }}</a></div>
 			{% if gleiche_kategorie.size > 0 %}
 				{% for b in gleiche_kategorie %}
 					<div class="artikel-mehr-eintrag">

@@ -1544,9 +1544,69 @@ code {
 }
 
 @media (max-width: 700px) {
+    h1 {
+        font-size: 1.68rem !important;
+        line-height: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem !important;
+        line-height: 1.68rem;
+    }
+    
+    h3, h4 {
+        font-size: 1.2rem !important;
+        line-height: 1.44rem;
+    }
+    
+    h5 {
+        font-size: 1rem !important;
+        line-height: 1.2rem;
+    }
+    
     .nur-desktop {
         display: none;
     }
+    
+    .artikel-mehr-kopf,
+    .artikel-mehr-eintrag {
+        font-size: 1rem !important;
+    }
+    
+    .artikel-meta-datum {
+        line-height: 2rem !important;
+    }
+    
+    .artikel-navigation {
+        flex-direction: column;
+    }
+    
+    .artikel-navigation .schaltflaeche {
+        width: 100%;
+    }
+    
+    .beitragskarte-auszug {
+        display: none;
+    }
+    
+    .beitragskarte-inhalt {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+    
+    .beitragskarte-titel {
+        font-size: 1.4rem;
+    margin-bottom: 0;
+    flex: 1;
+    }
+    
+     .beitragskarte-inhalt .schaltflaeche {
+    margin-top: 0 !important;
+    align-self: center !important;
+    flex-shrink: 0;
+  }
 
     .seitenkopf-oben {
         display: none;
@@ -1576,6 +1636,14 @@ code {
     .aufmacher {
         grid-template-columns: 1fr;
     }
+    
+    .aufmacher-etikett {
+        font-size: 0.8rem;
+    }
+    
+    .aufmacher-haupt {
+        border-right: none;
+    }
 
     .aufmacher-profil {
         grid-template-columns: 1fr;
@@ -1592,14 +1660,42 @@ code {
     .artikel-rahmen {
         padding: 1.5em;
     }
+    
+    .artikel-rahmen-nummer {
+    top: 0;
+    right: 0;
+}
 
     .artikel-inhalt.zweispaltig {
         grid-template-columns: 1fr;
+    }
+    
+    .profilbild {
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    
+    .schaltflaeche {
+        max-width: none;
+        font-size: 1rem !important;
     }
 
     .seitenfuss {
         flex-direction: column;
         gap: 0.3em;
         text-align: center;
+    }
+    
+    .seiteninhalt {
+        max-width: 100%;
+    }
+    
+    .seitenleiste-kategorie {
+        font-size: 0.8rem;
+    }
+    
+    .seitenleiste-titel {
+        font-size: 1.2rem;
     }
 }
