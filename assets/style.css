@@ -1734,36 +1734,65 @@ code {
 
     .beitragskarte {
         overflow: hidden;
+        box-shadow: none;
+        border: none;
+        border-right: var(--rahmen-gross);
+        border-bottom: var(--rahmen-gross);
+    }
+
+    .beitragskarte:nth-child(2n) {
+        border-right: none;
+    }
+
+    .beitragskarte:nth-last-child(-n+2) {
+        border-bottom: none;
     }
 
     .beitragskarte-auszug {
         display: none;
     }
 
-    .beitragskarte-inhalt {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1em;
+    .beitragsliste-raster {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0;
+        border: var(--rahmen-gross);
+        box-shadow: var(--schatten);
     }
 
-    .beitragskarte-titel {
-        position: relative;
-        overflow: visible;
-        display: flex;
+    .beitragskarte-inhalt {
         flex-direction: column;
-        gap: 0;
-        margin-bottom: 0.45em;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        min-height: auto;
     }
 
     .beitragskarte-inhalt .schaltflaeche {
-        margin-top: 0;
-        align-self: center;
-        flex-shrink: 0;
+        display: none;
     }
 
-    .beitragsliste-raster {
-        grid-template-columns: 1fr !important;
+    .beitragskarte-titel {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .beitragskarte-titel a {
+        align-items: center;
+    }
+
+    .beitragskarte-zeile1,
+    .beitragskarte-zeile2 {
+        font-size: 1.1rem;
+    }
+
+    .beitragskarte-und {
+        font-size: 6rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .seitenkopf-oben {
