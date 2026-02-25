@@ -1105,7 +1105,7 @@ nav a.mobil-menu-kachel {
 }
 
 .beitragskarte-inhalt {
-    padding: 1.3em 1.6em;
+    padding: 1.3em 1.3em;
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -1142,14 +1142,37 @@ nav a.mobil-menu-kachel {
 }
 
 .beitragskarte-titel a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
 }
 
-.beitragskarte-titel a:hover {
+.beitragskarte-titel a:hover .beitragskarte-zeile1,
+.beitragskarte-titel a:hover .beitragskarte-zeile2 {
     text-decoration: underline;
-    text-decoration-color: var(--tuerkis);
     text-decoration-thickness: 2px;
+}
+
+.beitragskarte-titel a.unterstrich-magenta:hover .beitragskarte-zeile1,
+.beitragskarte-titel a.unterstrich-magenta:hover .beitragskarte-zeile2 {
+    text-decoration-color: var(--magenta);
+}
+
+.beitragskarte-titel a.unterstrich-orange:hover .beitragskarte-zeile1,
+.beitragskarte-titel a.unterstrich-orange:hover .beitragskarte-zeile2 {
+    text-decoration-color: var(--orange);
+}
+
+.beitragskarte-titel a.unterstrich-gruen:hover .beitragskarte-zeile1,
+.beitragskarte-titel a.unterstrich-gruen:hover .beitragskarte-zeile2 {
+    text-decoration-color: var(--gruen);
+}
+
+.beitragskarte-titel a.unterstrich-lila:hover .beitragskarte-zeile1,
+.beitragskarte-titel a.unterstrich-lila:hover .beitragskarte-zeile2 {
+    text-decoration-color: var(--lila);
 }
 
 .beitragskarte-auszug {
