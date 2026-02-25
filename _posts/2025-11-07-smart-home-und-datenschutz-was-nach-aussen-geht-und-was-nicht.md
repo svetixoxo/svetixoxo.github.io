@@ -9,7 +9,7 @@ excerpt: "Ein smartes Zuhause bedeutet nicht zwangsläufig ein gläsernes. Wie i
 
 ## Datenschutz als Ausgangspunkt, nicht als Nachgedanke
 
-Ich gehöre zu den Menschen, denen Datenschutz und Privatsphäre wirklich wichtig sind. Vielleicht sogar etwas zu wichtig – zumindest würden das wohl einige sagen, die mich kennen. Deswegen war für mich von Anfang an klar: Wenn ich ein Smart Home aufbaue, dann so, dass ich weiß, was mit den Daten passiert. Und das bedeutet vor allem: lokal, lokal, lokal.
+Ich gehöre zu den Menschen, denen Datenschutz und Privatsphäre wirklich wichtig sind. Vielleicht sogar etwas zu wichtig – zumindest würden das wohl einige sagen, die mich kennen. Deswegen war für mich von Anfang an klar: <a href="/mein-smart-home-und-die-infrastruktur-dahinter/">Wenn ich ein Smart Home aufbaue</a>, dann so, dass ich weiß, was mit den Daten passiert. Und das bedeutet vor allem: lokal, lokal, lokal.
 
 Das klingt nach Aufwand. Ist es auch. Aber weniger nach Aufwand als es zunächst erscheint, jedenfalls wenn man die Weichen von vornherein richtig stellt.
 
@@ -53,7 +53,7 @@ Der Unterschied liegt oft weniger in der Technologie als in der Bereitschaft, be
 
 ## Was das in der Praxis bedeutet
 
-Mein Smart Home läuft vollständig lokal. Temperatur, Beleuchtung, Jalousien, Audio – alles wird innerhalb des Netzwerks gesteuert, ohne dass auch nur ein Paket das Haus verlässt. Fällt der Internetzugang aus, läuft alles weiter wie gewohnt.
+<a href="/setup/">Mein Smart Home</a> läuft vollständig lokal. Temperatur, Beleuchtung, Jalousien, Audio – alles wird innerhalb des Netzwerks gesteuert, ohne dass auch nur ein Paket das Haus verlässt. Fällt der Internetzugang aus, läuft alles weiter wie gewohnt.
 
 Das ist nicht nur eine Datenschutzentscheidung, sondern auch eine praktische: Keine Abhängigkeit von externen Diensten bedeutet keine Ausfälle, wenn ein Hersteller seine Server abschaltet, seinen Dienst einstellt oder einfach eine schlechte Nacht hat.
 

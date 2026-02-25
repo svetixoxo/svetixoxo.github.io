@@ -188,6 +188,18 @@ li {
     cursor: url("/assets/cursors/xterm.png") 12 12, text;
 }
 
+p a {
+    font-weight: 700;
+    color: var(--tuerkis);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 2px;
+}
+
 /* ── Auswahl ── */
 ::selection {
     background: var(--gelb);

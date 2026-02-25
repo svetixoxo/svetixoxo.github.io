@@ -9,7 +9,7 @@ excerpt: "Nach einem Jahr mit meinem QNAP-System stelle ich mir die Frage: Würd
 
 ## Die große Entscheidung
 
-Als ich vor gut einem Jahr meinen Heimserver geplant habe, war die Entscheidung eigentlich schnell getroffen: QNAP TS-873AeU-RP, fertig. Plug-and-Play, redundante Stromversorgung (RP), professionell aussehend, alle Features aus einer Hand. Heute, nach einem Jahr intensiver Nutzung und deutlich mehr Erfahrung mit Heimservern, würde ich diese Entscheidung kritischer betrachten.
+Als ich vor gut einem Jahr <a href="/mein-smart-home-und-die-infrastruktur-dahinter/">meinen Heimserver geplant</a> habe, war die Entscheidung eigentlich schnell getroffen: QNAP TS-873AeU-RP, fertig. Plug-and-Play, redundante Stromversorgung (RP), professionell aussehend, alle Features aus einer Hand. Heute, nach einem Jahr intensiver Nutzung und deutlich mehr Erfahrung mit Heimservern, würde ich diese Entscheidung kritischer betrachten.
 
 Die Frage „Fertig-NAS oder DIY-Server?“ beschäftigt jeden, der mehr als nur einen einfachen Cloud-Ersatz sucht. Geht es nur um Nextcloud für die Familie? Oder sollen später auch Virtualisierung, erweiterte Netzwerkfunktionen und experimentelle Services dazukommen? Die Antwort darauf entscheidet über die optimale Lösung.
 

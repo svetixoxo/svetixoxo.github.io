@@ -9,7 +9,7 @@ excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer u
 
 ## Das Netzwerk als Grundlage
 
-Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 1200 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten (Anmerkung: Das Netzwerk wurde 2026 auf eine Lösung von Ubiquiti UniFi umgestellt, die die bisherigen Fritz-Geräte ersetzt). Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
+Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. <s>Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 1200 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten.</s> (Anmerkung: Das Netzwerk wurde 2026 auf eine Lösung von Ubiquiti UniFi umgestellt, die die bisherigen Fritz-Geräte ersetzt) Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
 
 Für die kabelgebundene Infrastruktur kommen zwei managed Netgear-Switches mit je 24 Ports zum Einsatz (dazu gibt es pro Stockwerk noch je eine Switch). Die eine ist für die LAN-Buchsen im Haus sowie Geräte in Netzwerkschrank zuständig, während an der anderen die Komponenten des Smart Homes zusammenlaufen. Beide Switches sind über redundante Verbindungen miteinander gekoppelt, um bei Ausfall einer Switch den Betrieb aufrechtzuerhalten.
 
@@ -17,7 +17,7 @@ Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox als Firewall-Lösung.
 
 ## Netzwerksegmentierung und VLANs: Sicherheit durch Trennung
 
-Ein wichtiger Sicherheitsaspekt in der Smart-Home-Infrastruktur ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit der Firebox und den Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
+Ein wichtiger Sicherheitsaspekt in der <a href="/setup/">Smart-Home-Infrastruktur</a> ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit der Firebox und den Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
 
 - Management und Infrastruktur (3 VLANs)
 - Smart Home, funktionsbasiert (10 VLANs)
@@ -90,7 +90,7 @@ Grundsätzlich gilt: Alle Geräte, die über Gateways eingebunden wurden, verfü
 
 ## Sicherheit und Datenschutz
 
-Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal. Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht.
+Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. <a href="/smart-home-und-datenschutz-was-nach-aussen-geht-und-was-nicht/">Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal.</a> Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht.
 
 Die Zugriffskontrolle erfolgt über differenzierte Benutzerrechte: Die fest installierten iPads haben eigene Apple IDs, können jedoch keine Geräte hinzufügen oder entfernen. Besonders sensible Bereiche wie die Kameras oder Alarmanlage sind über diese Terminals nicht zugänglich – darauf haben ausschließlich meine Admin-Geräte Zugriff.
 
