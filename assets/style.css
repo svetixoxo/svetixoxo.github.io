@@ -715,9 +715,10 @@ nav a.mobil-menu-kachel {
 ══════════════════════════════════════════ */
 
 .seiteninhalt {
+    min-width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2em 1.5em;
+    padding: 2rem 1.5rem;
     position: relative;
     flex: 1;
 }
@@ -727,7 +728,7 @@ nav a.mobil-menu-kachel {
     display: flex;
     align-items: center;
     gap: 1em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1rem;
     border-top: 3px solid var(--tinte);
     padding-top: 0.6em;
 }
@@ -771,8 +772,12 @@ nav a.mobil-menu-kachel {
     grid-template-columns: 3fr 1fr;
     border: var(--rahmen-gross);
     box-shadow: var(--schatten-gross);
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     background: var(--hintergrund-karte);
+}
+
+.aufmacher:last-of-type {
+    margin-bottom: 0;
 }
 
 .aufmacher-profil {
@@ -842,7 +847,7 @@ nav a.mobil-menu-kachel {
 .aufmacher p {
     font-size: 0.97rem;
     color: var(--gedimmt);
-    margin-bottom: 1.2em;
+    margin-bottom: 1.2rem;
     max-width: 100%;
     text-align: justify;
 }
@@ -1073,8 +1078,8 @@ nav a.mobil-menu-kachel {
 .beitragsliste-raster {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.2em;
-    margin-bottom: 1.5em;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .beitragsliste-raster .beitragskarte {
@@ -1092,7 +1097,7 @@ nav a.mobil-menu-kachel {
     display: flex;
     flex-direction: column;
     gap: 1.2em;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 /* ── Beitragskarte ── */
@@ -1281,7 +1286,7 @@ nav a.mobil-menu-kachel {
     border: var(--rahmen-gross);
     box-shadow: var(--schatten-gross);
     padding: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2rem;
 }
 
 .artikel-rahmen:last-of-type {
@@ -1466,7 +1471,7 @@ nav a.mobil-menu-kachel {
 
 /* ── Fließtext ── */
 .artikel-rahmen p {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     font-size: 1rem;
     /*
     line-height: 1.75;*/
@@ -1480,7 +1485,7 @@ nav a.mobil-menu-kachel {
 .artikel-rahmen ul,
 .artikel-rahmen ol {
     padding-left: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .artikel-rahmen li {
@@ -1776,6 +1781,10 @@ code {
     .aufmacher {
         grid-template-columns: 1fr;
     }
+    
+    .aufmacher:last-of-type {
+        margin-bottom: 2rem;
+    }
 
     .aufmacher-etikett,
     .aufmacher-seite-titel {
@@ -1881,7 +1890,7 @@ code {
     }
 
     .seiteninhalt {
-        padding: 1.5em 1em 0 1em;
+        padding: 1.5rem 1rem 0 1rem;
     }
 
     .profilbild {

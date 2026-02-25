@@ -9,7 +9,7 @@ permalink: /setup/
     margin-bottom: 0;
   }
     #einleitung {
-        margin-bottom: 2em;
+        margin-bottom: 2rem;
         }
     .abschnitt-kopf {
         border-top: none;
@@ -24,8 +24,8 @@ permalink: /setup/
   .setup-raster {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.2em;
-    margin-bottom: 2em;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
   .setup-tabelle {
     width: 100%;
@@ -59,8 +59,8 @@ permalink: /setup/
     letter-spacing: 0.07em;
     padding: 0.1em 0.5em;
     border: 1.5px solid var(--tinte);
-    margin-right: 0.3em;
-    margin-bottom: 0.2em;
+    margin-right: 0.3rem;
+    margin-bottom: 0.2rem;
   }
   .vlan-tabelle {
     width: 100%;
@@ -96,7 +96,7 @@ permalink: /setup/
     color: var(--gedimmt);
     padding-top: 0.8em;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 992px) {
     .setup-raster { grid-template-columns: 1fr; }
   }
 </style>

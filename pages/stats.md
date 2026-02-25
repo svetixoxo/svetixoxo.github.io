@@ -14,14 +14,14 @@ permalink: /stats/
   .stats-raster {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.2em;
-    margin-bottom: 2em;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
   .stats-kachel {
     background: var(--hintergrund-karte);
     border: var(--rahmen);
     box-shadow: var(--schatten);
-    padding: 1.5em;
+    padding: 2rem;
   }
   .stats-kachel-label {
     font-family: "IBM Plex Mono", monospace;
@@ -71,7 +71,7 @@ permalink: /stats/
     font-size: 0.72rem;
     width: 40%;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 992px) {
     .stats-raster {
       grid-template-columns: 1fr 1fr;
     }
