@@ -6,31 +6,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   /* ══════════════════════════════════════════
-     MOBILES MENÜ
-  ══════════════════════════════════════════ */
-
-  var menu = document.getElementById('mobil-menu');
-  var btn = document.getElementById('mobil-menu-btn');
-  var scrollY = 0;
-
-  if (btn && menu) {
-    btn.addEventListener('click', function() {
-      menu.classList.toggle('offen');
-      btn.classList.toggle('offen');
-
-      if (menu.classList.contains('offen')) {
-        scrollY = window.scrollY;
-        document.body.style.top = '-' + scrollY + 'px';
-        document.body.classList.add('kein-scroll');
-      } else {
-        document.body.classList.remove('kein-scroll');
-        document.body.style.top = '';
-        window.scrollTo(0, scrollY);
-      }
-    });
-  }
-
-  /* ══════════════════════════════════════════
      H2 → ARTIKEL-RAHMEN (post.html)
   ══════════════════════════════════════════ */
 
