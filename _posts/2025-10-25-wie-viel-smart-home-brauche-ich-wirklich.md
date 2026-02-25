@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wie viel Smart Home brauche ich wirklich?"
-date: 2026-02-25
+date: 2025-10-25
 category: "Smart Home & Automatisierung"
 tags: [smart-home, einstieg, automatisierung, planung]
 excerpt: "Smart Home kann schnell eskalieren. Zwischen „ganz nett“ und „völlig übertrieben“ liegen oft nur ein paar Impulskäufe. Was braucht man wirklich und wo fängt man sinnvoll an?"
