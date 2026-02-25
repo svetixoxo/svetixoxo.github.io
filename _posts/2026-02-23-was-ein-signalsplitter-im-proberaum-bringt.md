@@ -21,7 +21,7 @@ Ein Mischpult für die PA – bei uns das Yamaha MG20XU – ist auf Live-Sound a
 
 Der Signalsplitter Art S8 nimmt ein Eingangssignal und gibt es auf zwei komplett voneinander unabhängige Ausgänge weiter. Kein Pegelunterschied, keine Beeinflussung, kein gemeinsamer Signalweg. Was auf Ausgang A passiert, interessiert Ausgang B nicht.
 
-Bei uns hängen zwei davon im Rack — einer für das Schlagzeug, einer für den Rest der Band. Das Schlagzeug allein braucht schon sieben Kanäle: Kick, drei Toms, Snare, zwei Overheads. Der zweite S8 nimmt die restlichen Kanäle auf — Gitarren, Bass, Keys, Gesang.
+Bei uns hängen zwei davon im Rack — einer für das Schlagzeug, einer für den Rest der Band. Das Schlagzeug allein braucht schon sieben Kanäle: Kick, drei Toms, Snare, zwei Overheads. Der zweite S8 nimmt die restlichen Kanäle auf — Gitarren, Bass und Keys. Der Gesang geht direkt ins Mischpult, einfach weil für geplante Aufnahmen ohnehin andere Mikrofone verwendet werden.
 
 ## Was das konkret bedeutet
 
