@@ -150,15 +150,13 @@ body {
     flex-direction: column;
 }
 
-body.kein-scroll {
-    overflow: hidden;
-    scrollbar-width: none;
-    /* Firefox */
-}
-
+body.kein-scroll,
 body.kein-scroll::-webkit-scrollbar {
+    overflow: hidden;
     display: none;
-    /* Chrome, Safari */
+    position: fixed;
+    width: 100%;
+    scrollbar-width: none;
 }
 
 .aufmacher-profil a {
