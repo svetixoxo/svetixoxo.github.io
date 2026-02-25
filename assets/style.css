@@ -620,8 +620,7 @@ nav a.mobil-menu-kachel {
     border-bottom: none;
 }
 
-.mobil-menu-kachel:hover {
-}
+.mobil-menu-kachel:hover {}
 
 .mobil-menu-archiv {
     background: var(--gelb) !important;
@@ -652,6 +651,7 @@ nav a.mobil-menu-kachel {
 @media (max-width: 700px) {
     nav {
         display: none;
+        border: none;
     }
 
     .mobil-menu-btn {
@@ -1548,65 +1548,133 @@ code {
         font-size: 1.68rem !important;
         line-height: 2rem;
     }
-    
+
     h2 {
         font-size: 1.4rem !important;
         line-height: 1.68rem;
     }
-    
-    h3, h4 {
+
+    h3,
+    h4 {
         font-size: 1.2rem !important;
         line-height: 1.44rem;
     }
-    
+
     h5 {
         font-size: 1rem !important;
         line-height: 1.2rem;
     }
-    
+
     .nur-desktop {
         display: none;
     }
-    
+
     .artikel-mehr-kopf,
     .artikel-mehr-eintrag {
         font-size: 1rem !important;
     }
-    
+
     .artikel-meta-datum {
         line-height: 2rem !important;
     }
-    
+
     .artikel-navigation {
         flex-direction: column;
     }
-    
+
     .artikel-navigation .schaltflaeche {
         width: 100%;
     }
-    
+
+    .artikel-rahmen {
+        padding: 1.5em;
+    }
+
+    .artikel-rahmen-nummer {
+        top: 0;
+        right: 0;
+    }
+
+    .artikel-inhalt.zweispaltig {
+        grid-template-columns: 1fr;
+    }
+
+    .aufmacher {
+        grid-template-columns: 1fr;
+    }
+
+    .aufmacher-etikett {
+        font-size: 0.8rem;
+    }
+
+    .aufmacher-haupt {
+        border-right: none;
+    }
+
+    .aufmacher-profil {
+        grid-template-columns: 1fr;
+    }
+
+    .aufmacher-seite {
+        border-top: var(--rahmen-gross);
+    }
+
+    .beitragskarte {
+        overflow: hidden;
+    }
+
     .beitragskarte-auszug {
         display: none;
     }
-    
+
     .beitragskarte-inhalt {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
-  }
-    
-    .beitragskarte-titel {
-        font-size: 1.4rem;
-    margin-bottom: 0;
-    flex: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
     }
-    
-     .beitragskarte-inhalt .schaltflaeche {
-    margin-top: 0 !important;
-    align-self: center !important;
-    flex-shrink: 0;
-  }
+
+    .beitragskarte-titel {
+        position: relative;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0.45em;
+    }
+
+    .beitragskarte-inhalt .schaltflaeche {
+        margin-top: 0 !important;
+        align-self: center !important;
+        flex-shrink: 0;
+    }
+
+    .beitragskarte-und {
+        position: absolute;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .beitragskarte-zeile1,
+    .beitragskarte-zeile2 {
+        font-size: 1.1rem;
+        font-weight: 800;
+        line-height: 1.2;
+        position: relative;
+        z-index: 1;
+        color: var(--tinte);
+    }
+
+    .beitragsliste-raster {
+        grid-template-columns: 1fr !important;
+    }
 
     .seitenkopf-oben {
         display: none;
@@ -1633,49 +1701,12 @@ code {
         padding: 1.5em 1em;
     }
 
-    .aufmacher {
-        grid-template-columns: 1fr;
-    }
-    
-    .aufmacher-etikett {
-        font-size: 0.8rem;
-    }
-    
-    .aufmacher-haupt {
-        border-right: none;
-    }
-
-    .aufmacher-profil {
-        grid-template-columns: 1fr;
-    }
-
-    .aufmacher-seite {
-        border-top: var(--rahmen-gross);
-    }
-
-    .beitragsliste-raster {
-        grid-template-columns: 1fr !important;
-    }
-
-    .artikel-rahmen {
-        padding: 1.5em;
-    }
-    
-    .artikel-rahmen-nummer {
-    top: 0;
-    right: 0;
-}
-
-    .artikel-inhalt.zweispaltig {
-        grid-template-columns: 1fr;
-    }
-    
     .profilbild {
         width: 100%;
         height: auto;
         padding-bottom: 0;
     }
-    
+
     .schaltflaeche {
         max-width: none;
         font-size: 1rem !important;
@@ -1686,15 +1717,15 @@ code {
         gap: 0.3em;
         text-align: center;
     }
-    
+
     .seiteninhalt {
         max-width: 100%;
     }
-    
+
     .seitenleiste-kategorie {
         font-size: 0.8rem;
     }
-    
+
     .seitenleiste-titel {
         font-size: 1.2rem;
     }
