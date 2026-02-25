@@ -803,6 +803,25 @@ nav a.mobil-menu-kachel {
     box-shadow: var(--schatten-klein);
 }
 
+.aufmacher-etikett-zeile {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    margin-bottom: 0.7em;
+    flex-wrap: wrap;
+}
+
+.aufmacher-etikett-zeile .aufmacher-etikett {
+    margin-bottom: 0;
+}
+
+.aufmacher-datum {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--gedimmt);
+}
+
 .aufmacher h1 {
     font-size: 2.4rem;
     font-weight: 800;
@@ -1761,6 +1780,12 @@ code {
     .aufmacher-etikett,
     .aufmacher-seite-titel {
         font-size: 0.8rem;
+    }
+
+    .aufmacher-etikett-zeile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4em;
     }
 
     .aufmacher-haupt {
