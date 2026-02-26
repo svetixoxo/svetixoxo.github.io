@@ -17,16 +17,67 @@ title: Startseite
         text-decoration-color: var(--tuerkis);
         text-decoration-thickness: 3px;
     }
-        h1 span {
-            background:var(--gelb);
-            padding: 0.25rem 0.5rem;
-        }
+
+    h1 span {
+        background: var(--gelb);
+        padding: 0.25rem 0.5rem;
+    }
+
+    h1 a.artikel-mehr-link-self-hosting-dienste:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 6px;
+        text-decoration-color: var(--magenta);
+    }
+
+    h1 a.artikel-mehr-link-netzwerk-infrastruktur:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 6px;
+        text-decoration-color: var(--orange);
+    }
+
+    h1 a.artikel-mehr-link-smart-home-automatisierung:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 6px;
+        text-decoration-color: var(--gruen);
+    }
+
+    h1 a.artikel-mehr-link-proberaum-musikmachen:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 6px;
+        text-decoration-color: var(--lila);
+    }
+
+    .seitenleiste-titel a.artikel-mehr-link-self-hosting-dienste:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--magenta);
+    }
+
+    .seitenleiste-titel a.artikel-mehr-link-netzwerk-infrastruktur:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--orange);
+    }
+
+    .seitenleiste-titel a.artikel-mehr-link-smart-home-automatisierung:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--gruen);
+    }
+
+    .seitenleiste-titel a.artikel-mehr-link-proberaum-musikmachen:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--lila);
+    }
+
     @media (max-width: 992px) {
         h1 span {
-            background:none;
+            background: none;
             padding: 0;
         }
     }
+
 </style> {% assign aufmacher-beitrag = site.posts.first %} {% if aufmacher-beitrag %} {% if aufmacher-beitrag.category == "Self-Hosting & Dienste" %} {% assign aufmacher-farbe = "magenta" %} {% elsif aufmacher-beitrag.category == "Netzwerk & Infrastruktur" %} {% assign aufmacher-farbe = "orange" %} {% elsif aufmacher-beitrag.category == "Smart Home & Automatisierung" %} {% assign aufmacher-farbe = "gruen" %} {% elsif aufmacher-beitrag.category == "Proberaum & Musikmachen" %} {% assign aufmacher-farbe = "lila" %} {% else %} {% assign aufmacher-farbe = "orange" %} {% endif %} <div class="aufmacher">
     <div class="aufmacher-haupt">
         <div class="aufmacher-etikett-zeile">
@@ -34,7 +85,7 @@ title: Startseite
             <span class="aufmacher-datum">{{ aufmacher-beitrag.date | date: "%Y-%m-%d" }}</span>
         </div>
         <h1>
-            <a href="{{ aufmacher-beitrag.url | relative_url }}" class="link-titel">{{ aufmacher-beitrag.title }}</a>
+            <a href="{{ aufmacher-beitrag.url | relative_url }}" class="link-titel artikel-mehr-link-{{ aufmacher-beitrag.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">{{ aufmacher-beitrag.title }}</a>
         </h1>
         <hr class="aufmacher-trennlinie">
         <p>{{ aufmacher-beitrag.excerpt | strip_html | truncate: 220 }}</p>
@@ -49,7 +100,7 @@ title: Startseite
     <div class="aufmacher-seite">
         <div class="aufmacher-seite-titel">Weitere Artikel</div> {% for beitrag in site.posts limit:3 offset:1 %} <div class="seitenleiste-eintrag"> {% if beitrag.category == "Self-Hosting & Dienste" %} {% assign katfarbe = "var(--magenta)" %} {% elsif beitrag.category == "Netzwerk & Infrastruktur" %} {% assign katfarbe = "var(--orange)" %} {% elsif beitrag.category == "Smart Home & Automatisierung" %} {% assign katfarbe = "var(--gruen)" %} {% elsif beitrag.category == "Proberaum & Musikmachen" %} {% assign katfarbe = "var(--lila)" %} {% else %} {% assign katfarbe = "" %} {% endif %} <div class="seitenleiste-kategorie" style="color: {{ katfarbe }}">{{ beitrag.category | default: "Sonstiges" }}</div>
             <div class="seitenleiste-titel">
-                <a href="{{ beitrag.url | relative_url }}">{{ beitrag.title }}</a>
+                <a href="{{ beitrag.url | relative_url }}" class="artikel-mehr-link-{{ beitrag.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">{{ beitrag.title }}</a>
             </div>
         </div> {% endfor %}
     </div>
@@ -109,7 +160,8 @@ title: Startseite
 
         <!-- Desktop -->
         <p class="nur-desktop">
-            <strong>Dieser Blog dokumentiert, <a href="/setup/">was bei mir Zuhause läuft</a> und wie es dahin gekommen ist.</strong> Self-Hosting, Smart Home, Netzwerk, Sicherheit: Bereiche, die bei mir eng zusammenhängen und sich gegenseitig bedingen. Es geht nicht um isolierte Einzellösungen, sondern um ein Gesamtsystem, das im Alltag funktioniert, ohne sich ständig damit beschäftigen zu müssen. Daneben gibt es eine kleine Nische, die damit wenig zu tun hat: Musikmachen. Einfach, weil das hier ein persönlicher Blog ist und nicht alles, womit ich mich beschäftige, in ein Rack passt.</p>
+            <strong>Dieser Blog dokumentiert, <a href="/setup/">was bei mir Zuhause läuft</a> und wie es dahin gekommen ist.</strong> Self-Hosting, Smart Home, Netzwerk, Sicherheit: Bereiche, die bei mir eng zusammenhängen und sich gegenseitig bedingen. Es geht nicht um isolierte Einzellösungen, sondern um ein Gesamtsystem, das im Alltag funktioniert, ohne sich ständig damit beschäftigen zu müssen. Daneben gibt es eine kleine Nische, die damit wenig zu tun hat: Musikmachen. Einfach, weil das hier ein persönlicher Blog ist und nicht alles, womit ich mich beschäftige, in ein Rack passt.
+        </p>
 
         <!-- Mobil -->
         <p class="nur-mobil"><strong>Dieser Blog dokumentiert, <a href="/setup/">was bei mir Zuhause läuft</a> und wie es dahin gekommen ist.</strong></p>
