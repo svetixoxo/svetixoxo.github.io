@@ -17,7 +17,16 @@ title: Startseite
         text-decoration-color: var(--tuerkis);
         text-decoration-thickness: 3px;
     }
-
+        h1 span {
+            background:var(--gelb);
+            padding: 0.25rem 0.5rem;
+        }
+    @media (max-width: 992px) {
+        h1 span {
+            background:none;
+            padding: 0;
+        }
+    }
 </style> {% assign aufmacher-beitrag = site.posts.first %} {% if aufmacher-beitrag %} {% if aufmacher-beitrag.category == "Self-Hosting & Dienste" %} {% assign aufmacher-farbe = "magenta" %} {% elsif aufmacher-beitrag.category == "Netzwerk & Infrastruktur" %} {% assign aufmacher-farbe = "orange" %} {% elsif aufmacher-beitrag.category == "Smart Home & Automatisierung" %} {% assign aufmacher-farbe = "gruen" %} {% elsif aufmacher-beitrag.category == "Proberaum & Musikmachen" %} {% assign aufmacher-farbe = "lila" %} {% else %} {% assign aufmacher-farbe = "orange" %} {% endif %} <div class="aufmacher">
     <div class="aufmacher-haupt">
         <div class="aufmacher-etikett-zeile">
@@ -96,7 +105,7 @@ title: Startseite
 </div>
 <div class="aufmacher" style="grid-template-columns:none">
     <div class="aufmacher-haupt">
-        <h1>Was ist denn hier los?!</h1>
+        <h1><span>Was ist denn hier los?!</span></h1>
 
         <!-- Desktop -->
         <p class="nur-desktop">
@@ -116,7 +125,7 @@ title: Startseite
         <img src="/assets/profilbild-klein.png" class="profilbild">
     </div>
     <div class="aufmacher-haupt">
-        <h1>Wer tippt hier eigentlich?</h1>
+        <h1><span>Wer tippt hier eigentlich?</span></h1>
 
         <!-- Desktop -->
         <p class="nur-desktop">

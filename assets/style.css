@@ -99,7 +99,7 @@
     --orange: #ff8700;
     --orange-hell: #fff1eb;
     --gelb: #fecc02;
-    --gelb-hell: #fffbe0;
+    --gelb-hell: #fef4cc;
     --lila: #d36ff9;
     --lila-hell: #f0ebff;
     --magenta: #ff2b6b;
@@ -917,7 +917,6 @@ nav a.mobil-menu-kachel {
     width: 280px;
     aspect-ratio: 1;
     overflow: hidden;
-    padding: 2em;
     vertical-align: top;
 }
 
@@ -925,8 +924,6 @@ nav a.mobil-menu-kachel {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    border: var(--border);
 }
 
 /* ══════════════════════════════════════════
@@ -1105,7 +1102,7 @@ nav a.mobil-menu-kachel {
 .beitragskarte {
     background: var(--hintergrund-karte);
     border: var(--rahmen-gross);
-    box-shadow: var(--schatten);
+    box-shadow: var(--schatten-gross);
     display: flex;
     transition: transform 0.1s, box-shadow 0.1s;
     position: relative;
@@ -1936,6 +1933,7 @@ code {
     .profilbild {
         width: 100%;
         height: auto;
+        padding: 2rem;
         padding-bottom: 0;
     }
 

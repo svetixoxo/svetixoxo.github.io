@@ -79,25 +79,55 @@ permalink: /setup/
   }
   .vlan-tabelle td {
     padding: 0.4em 0.8em;
-    border-bottom: 1px solid var(--linie);
+    border-bottom: 1px solid var(--tinte);
   }
   .vlan-tabelle tr:last-child td {
     border-bottom: none;
   }
-  .vlan-tabelle tr:hover td {
-    background: var(--hintergrund);
+  .vlan-tabelle tr:not(.vlan-kategorie-kopf):hover td {
+    background: var(--orange-hell);
+    color: var(--tinte);
   }
   .vlan-kategorie-kopf td {
-    background: var(--hintergrund);
+    background: var(--orange);
     font-weight: 700;
     font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--gedimmt);
-    padding-top: 0.8em;
+    color: var(--weiss);
   }
   @media (max-width: 992px) {
-    .setup-raster { grid-template-columns: 1fr; }
+  .artikel-rahmen {
+    margin-bottom: 2rem;
+  }
+    .setup-raster {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 0;
+    }
+    .setup-tabelle tr {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em 0;
+        border-bottom: 1px solid var(--linie);
+    }
+    .setup-tabelle tr:last-child {
+        border-bottom: none;
+    }
+    .setup-tabelle td {
+        border-bottom: none;
+        padding: 0.1em 0.8em;
+        width: 100% !important;
+        white-space: normal !important;
+    }
+    .setup-tabelle td:first-child {
+        padding-bottom: 0;
+        font-size: 0.68rem;
+    }
+    .vlan-tabelle th:nth-child(2),
+    .vlan-tabelle td:nth-child(2) {
+        display: none;
+    }
   }
 </style>
 
@@ -213,7 +243,7 @@ permalink: /setup/
 ══════════════════════════════════════════ -->
 
 <div class="abschnitt-kopf">
-  <h2 style="background:var(--tuerkis)">Client-Geräte</h2>
+  <h2 style="background:var(--gelb); color:var(--tinte)">Client-Geräte</h2>
 </div>
 
 <div class="setup-raster">
