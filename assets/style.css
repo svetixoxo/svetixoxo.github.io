@@ -779,8 +779,12 @@ nav a.mobil-menu-kachel {
     margin-bottom: 0;
 }
 
-.aufmacher-profil {
-    grid-template-columns: 280px 1fr;
+.aufmacher-profil-bild-links {
+    grid-template-columns: 1fr 3fr;
+}
+
+.aufmacher-profil-bild-rechts {
+    grid-template-columns: 3fr 1fr;
 }
 
 .aufmacher-haupt {
@@ -912,15 +916,15 @@ nav a.mobil-menu-kachel {
     text-decoration-thickness: 2px;
 }
 
-/* ── Profilbild ── */
-.profilbild {
-    width: 280px;
+/* ── Bild ── */
+.bild {
+    width: 100%;
     aspect-ratio: 1;
     overflow: hidden;
     vertical-align: top;
 }
 
-.profilbild img {
+.bild img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1930,10 +1934,10 @@ code {
         padding: 1.5rem 1rem 0 1rem;
     }
 
-    .profilbild {
+    .bild {
         width: 100%;
         height: auto;
-        padding: 2rem;
+        padding: 0;
         padding-bottom: 0;
     }
 
