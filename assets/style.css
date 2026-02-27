@@ -304,7 +304,7 @@ p a:hover {
 .link-tinte:hover,
 .link-weiss:hover {
     text-decoration: underline;
-    text-decoration-color: var(--gelb);
+    text-decoration-color: var(--tinte);
     text-decoration-thickness: 2px;
 }
 
