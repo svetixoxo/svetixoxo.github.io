@@ -89,6 +89,21 @@ title: Startseite
             background: none;
             padding: 0;
         }
+        .bild {
+            padding: 1.3rem;
+        }
+        .aufmacher-profil-bild-links .aufmacher-haupt {
+            border-left: none !important;
+        }
+        .aufmacher-profil-bild-rechts .aufmacher-haupt {
+            border-right: none !important;
+        }
+        .aufmacher-profil-bild-links .bild {
+            border-bottom: var(--rahmen-gross);
+        }
+        .aufmacher-profil-bild-rechts .bild {
+            border-top: var(--rahmen-gross);
+        }
     }
 
 </style> {% assign aufmacher-beitrag = site.posts.first %} {% if aufmacher-beitrag %} {% if aufmacher-beitrag.category == "Self-Hosting & Dienste" %} {% assign aufmacher-farbe = "magenta" %} {% elsif aufmacher-beitrag.category == "Netzwerk & Infrastruktur" %} {% assign aufmacher-farbe = "orange" %} {% elsif aufmacher-beitrag.category == "Smart Home & Automatisierung" %} {% assign aufmacher-farbe = "gruen" %} {% elsif aufmacher-beitrag.category == "Proberaum & Musikmachen" %} {% assign aufmacher-farbe = "lila" %} {% else %} {% assign aufmacher-farbe = "orange" %} {% endif %} <div class="aufmacher">

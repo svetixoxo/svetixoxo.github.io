@@ -3,6 +3,7 @@ layout: post
 title: "Fertig-NAS oder DIY-Server: Was würde ich heute wählen?"
 date: 2025-06-30
 category: "Self-Hosting & Dienste"
+bild: /assets/img/posts/250630-fertig-nas-oder-diy-server.png
 tags: [self-hosting, nas, hardware, raspberry-pi]
 excerpt: "Nach einem Jahr mit meinem QNAP-System stelle ich mir die Frage: Würde ich heute wieder ein Fertig-NAS kaufen oder doch lieber einen DIY-Server bauen?"
 ---

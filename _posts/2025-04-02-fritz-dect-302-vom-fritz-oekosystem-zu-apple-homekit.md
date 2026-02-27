@@ -3,6 +3,7 @@ layout: post
 title: "Fritz DECT 302: Vom Fritz-Ökosystem zu Apple HomeKit"
 date: 2025-04-02
 category: "Smart Home & Automatisierung"
+bild: /assets/img/posts/250402-fritz-dect-302.png
 tags: [smart-home, heizung, fritz, homekit, homebridge, raspberry-pi, dect]
 excerpt: "Drei Heizthermostate, eine Fritz-App die gut funktioniert hat und trotzdem der Wunsch nach HomeKit. Wie das gelaufen ist — und warum die Fritz-App am Ende trotzdem nicht ganz von der Rolle verschwunden ist."
 ---

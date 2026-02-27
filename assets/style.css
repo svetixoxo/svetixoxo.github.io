@@ -1472,6 +1472,22 @@ nav a.mobil-menu-kachel {
     background: var(--lila-hell);
 }
 
+.kategorie-bild-self-hosting-dienste {
+    background: var(--magenta);
+}
+
+.kategorie-bild-netzwerk-infrastruktur {
+    background: var(--orange);
+}
+
+.kategorie-bild-smart-home-automatisierung {
+    background: var(--gruen);
+}
+
+.kategorie-bild-proberaum-musikmachen {
+    background: var(--lila);
+}
+
 /* ── Datum ── */
 .kategorie-self-hosting-dienste .artikel-meta-datum {
     background: var(--magenta);
@@ -1551,7 +1567,7 @@ nav a.mobil-menu-kachel {
     font-size: 1rem;
     font-weight: 800;
     color: var(--tinte);
-    margin: 1.4em 0 0.4em;
+    margin: 0em 0 0.4em 0;
     border-left: 4px solid var(--tuerkis);
     padding-left: 0.6em;
 }
@@ -1611,6 +1627,10 @@ nav a.mobil-menu-kachel {
 .artikel-rahmen li {
     margin-bottom: 0.4em;
     font-size: 0.97rem;
+}
+
+.artikel-rahmen li:last-child {
+    margin-bottom: 0em;
 }
 
 .artikel-rahmen ul li::marker {
@@ -1871,6 +1891,16 @@ code {
 
     .nur-desktop {
         display: none;
+    }
+
+    .artikel-kopf[style*="grid"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    .artikel-kopf[style*="grid"] > div:last-child {
+        height: auto;
+        border-left: none !important;
+        border-top: var(--rahmen-gross);
     }
 
     .artikel-mehr-kopf,
