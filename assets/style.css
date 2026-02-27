@@ -779,6 +779,26 @@ nav a.mobil-menu-kachel {
     margin-bottom: 0;
 }
 
+.aufmacher-profil-bild-rechts > div:last-child,
+.aufmacher-profil-bild-links > div:first-child {
+    display: flex;
+}
+
+.aufmacher-profil-bild-rechts .bild,
+.aufmacher-profil-bild-links .bild {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: unset;
+    object-fit: cover;
+}
+
+.aufmacher-profil-bild-rechts .bild img,
+.aufmacher-profil-bild-links .bild img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .aufmacher-profil-bild-links {
     grid-template-columns: 1fr 3fr;
 }
