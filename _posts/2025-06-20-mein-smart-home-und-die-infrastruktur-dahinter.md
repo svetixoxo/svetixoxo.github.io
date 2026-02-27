@@ -15,7 +15,7 @@ Für die kabelgebundene Infrastruktur kommen zwei managed Netgear-Switches mit j
 
 Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox als Firewall-Lösung.
 
-## Netzwerksegmentierung und VLANs: Sicherheit durch Trennung
+## Netzwerksegmentierung & VLANs
 
 Ein wichtiger Sicherheitsaspekt in der <a href="/setup/">Smart-Home-Infrastruktur</a> ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit der Firebox und den Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
 
@@ -36,7 +36,7 @@ Vorteile der Segmentierung:
 
 Diese Struktur hat sich für mich als sehr effektiv erwiesen – sowohl für die Sicherheit als auch für die Netzwerk-Performance bei der Vielzahl vernetzter Geräte. Außerdem habe ich solche Sachen gerne ordentlich strukturiert.
 
-## Server-Landschaft: Getrennte Aufgaben
+## Getrennte Server-Aufgaben
 
 Die Server-Infrastruktur besteht aus zwei QNAP-Systemen.
 
@@ -46,7 +46,7 @@ Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten 
 
 Für Nextcloud und ähnliche Anwendungen setze ich bereits auf Docker-Container, was sich als sehr praktisch erwiesen hat. Für die restlichen Services stellt sich die Frage: Virtualisierung oder Container? Container bieten den Vorteil geringerer Ressourcennutzung und einfacherer Verwaltung, während Virtualisierung eine stärkere Isolation bietet. Bei der aktuellen Hardware-Ausstattung wäre beides problemlos möglich – für die meisten Smart-Home-Dienste sind Container jedoch die elegantere Lösung.
 
-## Protokolle und Standards: Warum Apple HomeKit?
+## Warum Apple HomeKit?
 
 Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus mehreren Gründen. Als ausschließliche Nutzerin von Apple-Geräten war die nahtlose Integration ein wichtiger Faktor. Die Home-App bietet dabei eine sehr übersichtliche Benutzeroberfläche, die auch bei der Vielzahl an Geräten nicht unübersichtlich wird. (Gesendet von meinem Lenovo ThinkPad mit Arch Linux)
 
@@ -56,7 +56,7 @@ Herausforderungen bei der Interoperabilität verschiedener Hersteller sind mit H
 
 Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin aber mit HomeKit soweit sehr zufrieden gewesen. Wer weiß – vielleicht steige ich ja irgendwann um. Bisher ist das aber nicht geplant. Noch nicht.
 
-## Smart Home: Vollständige Automatisierung
+## Vollständige Automatisierung
 
 Die **Klimatisierung** des Hauses übernehmen 8 Multi-Split-Klimaanlagen von Mitsubishi Electric, 2 mit je 6,8 kW und 6 mit je 4,2 kW Leistung. Über WLAN-Brücken sind diese in das Smart Home eingebunden. Ergänzt wird das System durch verschiedene Steuermodule und eine Lüftungsanlage (Viessmann Vitovent 300-W).
 
@@ -72,29 +72,29 @@ Darüber hinaus werden 44 **elektrische Außenjalousien** ebenfalls über separa
 
 Eine **Wetterstation** liefert darüber hinaus Wetterdaten für die Automatisierung. So werden etwa alle Jalousien bei starkem Wind hochgefahren oder die Klimaanlagen (je nach Anwesenheit) bei hohen Außentemperaturen eingeschaltet; dies gilt entsprechend auch für die Heizung. Darüber hinaus wird über den Stromverbrauch bestimmter Steckdosen (Computer im Arbeitszimmer, Fernseher im Wohnzimmer, Nachtlicht im Schlafzimmer usw.) erkannt, in welchem Raum bzw. Stockwerk ich gerade unterwegs bin und Klimaanlage bzw. Heizung dort dementsprechend auch etwas stärker eingesetzt.
 
-## Videoüberwachung: Professionelle Sicherheit
+## Videoüberwachung
 
 Die Videoüberwachung umfasst 26 Kameras, aufgeteilt in drei verschiedene Typen je nach Einsatzgebiet. Dazu zählen 12 bispektrale Tube-Kameras (Wärmebild) im Außenbereich sowie 8 bispektrale Dome-Kameras (schwenkbar und neigbar) und 6 Fisheye-Kameras (360 Grad) im Innen- und Außenbereich.
 
 Die Kameras laufen an zwei 16-Port-Switches zusammen, die Speicherung der Aufzeichnungen erfolgt über QVR Pro auf dem 12-Bay-NAS, was eine zentrale Verwaltung, reaktionsfreudigere Handhabung, lange Speicherdauer und gute Integration via Homebridge ermöglicht.
 
-## Zentrale Steuerung und Monitoring
+## Zentrale Steuerung & Monitoring
 
 An den Treppenaufgängen jedes Stockwerks ist je ein iPad in der Wand installiert, die als weitere Steuereinheiten dienen. Sie zeigen den Status der jeweiligen Systeme an und ermöglichen die manuelle Steuerung einzelner Komponenten. Darüber hinaus ist eine Steuerung über iPhone, Mac usw. möglich.
 
-## Redundanz und Ausfallsicherheit
+## Redundanz & Ausfallsicherheit
 
 Ein kritischer Aspekt bei einer so umfassenden Automatisierung ist die Ausfallsicherheit. Für alle wesentlichen Systeme existieren Redundanz-Konzepte: Die Beleuchtung kann bei Ausfall der Smart-Home-Zentrale über konventionelle Lichtschalter gesteuert werden. Heizung und Klimaanlage behalten ihre ursprünglichen Steuereinheiten als Fallback-Option. Die Alarmanlage funktioniert auch bei Netzwerkausfall autonom und die Jalousien lassen sich über separate Gateways auch manuell bedienen. Die Kameras sind zusätzlich über die NVR-Systeme abgesichert, sodass die Aufzeichnung auch bei Ausfall des Heimservers weiterläuft.
 
 Grundsätzlich gilt: Alle Geräte, die über Bridges oder ähnliches eingebunden wurden, verfügen über eine Fallback-Funktionalität, die den Grundbetrieb auch bei Smart-Home-Ausfall gewährleistet.
 
-## Sicherheit und Datenschutz
+## Sicherheit & Datenschutz
 
 Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. <a href="/smart-home-und-datenschutz-was-nach-aussen-geht-und-was-nicht/">Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal.</a> Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht.
 
 Die Zugriffskontrolle erfolgt über differenzierte Benutzerrechte: Die fest installierten iPads haben eigene Apple IDs, können jedoch keine Geräte hinzufügen oder entfernen. Besonders sensible Bereiche wie die Kameras oder Alarmanlage sind über diese Terminals nicht zugänglich – darauf haben ausschließlich meine Admin-Geräte Zugriff.
 
-## Kosten und Wirtschaftlichkeit
+## Kosten & Wirtschaftlichkeit
 
 Die Hardware-Investition in das Smart Home bewegt sich im mittleren fünfstelligen Bereich. Die Kosten beziehen sich dabei nicht auf die Endgeräte (Klimageräte, Heizungen, NAS etc.), sondern auf die dafür notwendige smarte Infrastruktur wie Gateways, Bridges und Steuerungskomponenten zur Einbindung in das vernetzte Gesamtsystem. Im Grunde also auf den Aufpreis dafür, dass bestimmte Komponenten smart sind oder werden.
 

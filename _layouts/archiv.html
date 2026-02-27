@@ -59,6 +59,83 @@ layout: default
         text-decoration-color: var(--lila);
     }
 
+    .archiv-kategorien-box {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 2px dashed var(--linie);
+        font-family: "IBM Plex Mono", monospace;
+    }
+
+    .archiv-kategorien-box {
+        background: var(--hintergrund-karte);
+        border: var(--rahmen-gross);
+        box-shadow: var(--schatten-gross);
+        padding: 1.6em 2em;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .archiv-kategorien-rechnung {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 700;
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .archiv-kategorien-zeile {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+        align-items: center;
+        column-gap: 0.6rem;
+    }
+
+    .archiv-kategorien-zeile>button.archiv-kategorie-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .archiv-kategorien-zeile.zweite-zeile {
+        display: inline-block;
+    }
+
+    .archiv-kategorie-item {
+        padding: 0.25em 0.6em;
+        border: 1.5px solid var(--tinte);
+        box-shadow: var(--schatten-klein);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    button.archiv-kategorie-item {
+        cursor: pointer;
+        font: inherit;
+        border-radius: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        border: 1.5px solid var(--tinte);
+    }
+
+    button.archiv-kategorie-item:focus {
+        outline: 2px solid var(--tinte);
+        outline-offset: 2px;
+    }
+
+    button.archiv-kategorie-item.aktiv-filter {
+        background: #fff !important;
+    }
+
+    .artikel-rahmen h1 {
+        margin-bottom: 0;
+    }
+
     @media (max-width: 992px) {
         .archiv-eintrag {
             grid-template-columns: 1fr;
@@ -82,6 +159,23 @@ layout: default
             text-transform: uppercase;
             letter-spacing: 0.08rem;
         }
+
+        .archiv-kategorien-rechnung {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .archiv-kategorien-zeile {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            gap: 0.6rem;
+        }
+
+        .archiv-plus {
+            display: none;
+        }
     }
 
     @media (min-width: 992px) {
@@ -91,13 +185,67 @@ layout: default
     }
 
 </style>
+
 <div class="artikel-rahmen" style="background: var(--gelb)">
-    <h1>{{ page.title }}
-        <span class="schrift-regular" style="font-size: 0.7em">({{ site.posts.size }} Artikel)</span>
-    </h1>
-    <p class="artikel-einleitung">Alle Beiträge in chronologischer Reihenfolge — von neu nach alt. Das farbige Quadrat zeigt die jeweilige Kategorie.</p>
-</div> {% assign beitraege-nach-jahr = site.posts | group_by_exp: "beitrag", "beitrag.date | date: '%Y'" %} {% for jahr-gruppe in beitraege-nach-jahr %} <div class="artikel-rahmen">
-    <div class="archiv-jahr">{{ jahr-gruppe.name }}</div> {% for beitrag in jahr-gruppe.items %}
+    <h1>{{ page.title }}</h1>
+</div>
+
+{% assign kat_self = site.posts | where: "category", "Self-Hosting & Dienste" %}
+{% assign kat_netz = site.posts | where: "category", "Netzwerk & Infrastruktur" %}
+{% assign kat_smart = site.posts | where: "category", "Smart Home & Automatisierung" %}
+{% assign kat_proberaum = site.posts | where: "category", "Proberaum & Musikmachen" %}
+
+{% assign gesamt_berechnet = kat_self.size 
+  | plus: kat_netz.size 
+  | plus: kat_smart.size 
+  | plus: kat_proberaum.size %}
+
+<div class="archiv-kategorien-box rahmen-mit-sticker">
+    <div class="rahmen-sticker sticker-gelb">
+        Kategorien
+    </div>
+
+    <div class="archiv-kategorien-rechnung">
+        <div class="archiv-kategorien-zeile erste-zeile">
+            <button type="button" class="archiv-kategorie-item schaltflaeche-magenta" data-category="Self-Hosting & Dienste" data-farbe="magenta">
+                Self-Hosting &amp; Dienste ({{ kat_self.size }})
+            </button>
+
+            <span class="archiv-plus">+</span>
+
+            <button type="button" class="archiv-kategorie-item schaltflaeche-orange" data-category="Netzwerk & Infrastruktur" data-farbe="orange">
+                Netzwerk &amp; Infrastruktur ({{ kat_netz.size }})
+            </button>
+
+            <span class="archiv-plus">+</span>
+
+            <button type="button" class="archiv-kategorie-item schaltflaeche-gruen" data-category="Smart Home & Automatisierung" data-farbe="gruen">
+                Smart Home &amp; Automatisierung ({{ kat_smart.size }})
+            </button>
+
+            <span class="archiv-plus">+</span>
+
+            <button type="button" class="archiv-kategorie-item schaltflaeche-lila" data-category="Proberaum & Musikmachen" data-farbe="lila">
+                Proberaum &amp; Musikmachen ({{ kat_proberaum.size }})
+            </button>
+        </div>
+
+        <div class="archiv-kategorien-zeile zweite-zeile">
+            <button type="button" class="archiv-kategorie-item schaltflaeche-gelb" data-category="__all__" data-farbe="gelb">
+                {{ gesamt_berechnet }} Artikel
+            </button>
+        </div>
+    </div>
+</div>
+
+{% assign beitraege-nach-jahr = site.posts | group_by_exp: "beitrag", "beitrag.date | date: '%Y'" %}
+{% for jahr-gruppe in beitraege-nach-jahr %}
+<div class="artikel-rahmen rahmen-mit-sticker">
+    <div class="rahmen-sticker sticker-gelb">
+        {{ jahr-gruppe.name }}
+    </div>
+
+    {% for beitrag in jahr-gruppe.items %}
     {% if beitrag.category == "Self-Hosting & Dienste" %}
     {% assign quadrat-farbe = "var(--magenta)" %}
     {% assign kategorie-klasse = "self-hosting-dienste" %}
@@ -114,11 +262,94 @@ layout: default
     {% assign quadrat-farbe = "var(--gedimmt)" %}
     {% assign kategorie-klasse = "sonstiges" %}
     {% endif %}
-    <div class="archiv-eintrag">
+
+    <div class="archiv-eintrag" data-category="{{ beitrag.category | default: 'Sonstiges' }}">
         <span class="archiv-datum">{{ beitrag.date | date: "%Y-%m-%d" }}</span>
         <span class="quadrat-farbe archiv-quadrat-desktop" style="background: {{ quadrat-farbe }}"></span>
         <span class="archiv-kategorie-mobil" style="color: {{ quadrat-farbe }}">{{ beitrag.category | default: "Sonstiges" }}</span>
         <a href="{{ beitrag.url | relative_url }}" class="archiv-titel archiv-titel-{{ kategorie-klasse }}">{{ beitrag.title }}</a>
     </div>
+
     {% endfor %}
-</div> {% endfor %}
+</div>
+{% endfor %}
+
+<script>
+    (function() {
+        const filterButtons = document.querySelectorAll('.archiv-kategorie-item[data-category]');
+        const entries = document.querySelectorAll('.archiv-eintrag');
+        const yearBoxes = document.querySelectorAll('.artikel-rahmen.rahmen-mit-sticker');
+
+        let activeCategory = '__all__';
+
+        function farbKlasse(farbe) {
+            return farbe ? ('schrift-' + farbe) : '';
+        }
+
+        function clearActiveState() {
+            filterButtons.forEach(btn => {
+                btn.classList.remove('aktiv-filter');
+                const farbe = btn.getAttribute('data-farbe');
+                const cls = farbKlasse(farbe);
+                if (cls) btn.classList.remove(cls);
+            });
+        }
+
+        function setActiveButton(btn) {
+            clearActiveState();
+            const cat = btn.getAttribute('data-category');
+            const farbe = btn.getAttribute('data-farbe');
+
+            if (cat !== '__all__') {
+                btn.classList.add('aktiv-filter');
+                const cls = farbKlasse(farbe);
+                if (cls) btn.classList.add(cls);
+            }
+        }
+
+        function applyFilter(category) {
+            activeCategory = category;
+
+            entries.forEach(entry => {
+                const entryCat = entry.getAttribute('data-category') || 'Sonstiges';
+                const show = (category === '__all__') || (entryCat === category);
+                entry.style.display = show ? '' : 'none';
+            });
+
+            yearBoxes.forEach(box => {
+                const boxEntries = box.querySelectorAll('.archiv-eintrag');
+                if (boxEntries.length === 0) return;
+
+                const visible = Array.from(boxEntries).some(e => e.style.display !== 'none');
+                box.style.display = visible ? '' : 'none';
+            });
+        }
+
+        function resetToAll() {
+            clearActiveState();
+            applyFilter('__all__');
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const cat = btn.getAttribute('data-category');
+
+                if (cat === '__all__') {
+                    resetToAll();
+                    return;
+                }
+
+                if (activeCategory === cat) {
+                    resetToAll();
+                    return;
+                }
+
+                setActiveButton(btn);
+                applyFilter(cat);
+            });
+        });
+
+        resetToAll();
+    })();
+
+</script>

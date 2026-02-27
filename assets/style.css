@@ -212,7 +212,7 @@ p a:hover {
 }
 
 .schrift-orange {
-    color: var(--tuerkis) !important;
+    color: var(--orange) !important;
 }
 
 .schrift-lila {
@@ -1009,6 +1009,77 @@ nav a.mobil-menu-kachel {
 }
 
 /* ══════════════════════════════════════════
+   STICKER / RAHMEN-LABEL
+══════════════════════════════════════════ */
+
+.rahmen-mit-sticker {
+    position: relative;
+}
+
+.rahmen-sticker {
+    position: absolute;
+    top: -0.85rem;
+    left: 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 0.25em 0.7em;
+    border: var(--rahmen);
+    box-shadow: var(--schatten-klein);
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.sticker-gelb {
+    background: var(--gelb);
+    color: var(--tinte);
+}
+
+.sticker-magenta {
+    background: var(--magenta);
+    color: var(--weiss);
+}
+
+.sticker-orange {
+    background: var(--orange);
+    color: var(--weiss);
+}
+
+.sticker-gruen {
+    background: var(--gruen);
+    color: var(--weiss);
+}
+
+.sticker-lila {
+    background: var(--lila);
+    color: var(--weiss);
+}
+
+.sticker-tuerkis {
+    background: var(--tuerkis);
+    color: var(--weiss);
+}
+
+.artikel-rahmen-nummer {
+    position: absolute;
+    top: -0.85rem;
+    right: 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.25em 0.7em;
+    border: var(--rahmen);
+    box-shadow: var(--schatten-klein);
+    background: var(--gelb);
+    color: var(--tinte);
+    text-transform: uppercase;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* ══════════════════════════════════════════
    SCHALTFLÄCHEN
 ══════════════════════════════════════════ */
 
@@ -1319,18 +1390,6 @@ nav a.mobil-menu-kachel {
     background: var(--tuerkis-hell);
 }
 
-.artikel-rahmen-nummer {
-    position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--tinte);
-    background: var(--gelb);
-    padding: 0.5em 0.8em;
-}
-
 /* ── Zweispaltig ── */
 .artikel-inhalt.zweispaltig {
     display: grid;
@@ -1355,10 +1414,12 @@ nav a.mobil-menu-kachel {
 }
 
 .artikel-meta-datum {
-    background: var(--tuerkis);
-    color: var(--tuerkis-hell);
+    background: var(--gelb);
+    color: var(--tinte);
     display: inline;
     padding: 0.2em 0.6em;
+    border: var(--rahmen);
+    box-shadow: var(--schatten-klein);
 }
 
 .artikel-meta-thema {
@@ -1394,22 +1455,22 @@ nav a.mobil-menu-kachel {
 /* ── Datum ── */
 .kategorie-self-hosting-dienste .artikel-meta-datum {
     background: var(--magenta);
-    color: var(--magenta-hell);
+    color: var(--weiss);
 }
 
 .kategorie-netzwerk-infrastruktur .artikel-meta-datum {
     background: var(--orange);
-    color: var(--orange-hell);
+    color: var(--weiss);
 }
 
 .kategorie-smart-home-automatisierung .artikel-meta-datum {
     background: var(--gruen);
-    color: var(--gruen-hell);
+    color: var(--weiss);
 }
 
 .kategorie-proberaum-musikmachen .artikel-meta-datum {
     background: var(--lila);
-    color: var(--lila-hell);
+    color: var(--weiss);
 }
 
 /* ── Thema ── */
@@ -1813,11 +1874,6 @@ code {
         padding: 1.5em;
     }
 
-    .artikel-rahmen-nummer {
-        top: 0;
-        right: 0;
-    }
-
     .artikel-inhalt.zweispaltig,
     .aufmacher {
         grid-template-columns: 1fr;
@@ -1907,6 +1963,13 @@ code {
         font-size: 6rem;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .rahmen-sticker {
+        max-width: 75%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .seitenkopf-oben {
