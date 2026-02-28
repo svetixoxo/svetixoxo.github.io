@@ -3,8 +3,9 @@ layout: post
 title: "Band-Proberaum: PA und Recording auf getrennten Wegen"
 date: 2026-02-28
 category: "Proberaum & Musikmachen"
+bild: /assets/img/posts/260228-band-proberaum-pa-und-recording-auf-getrennten-wegen.png
 tags: [proberaum, recording, pa, signalkette, mischpult, interface, mikrofon]
-excerpt: "95 qm, zwei Mischpulte, zwei Interfaces, zwei Signalsplitter — und ein Keyboarder, der das alles zusammenhält. Ein Überblick über unser Band-Setup: wie es gewachsen ist, wie es funktioniert und warum PA und Recording bei uns seit Jahren getrennte Wege gehen."
+excerpt: "95 qm, zwei Mischpulte, zwei Interfaces, zwei Signalsplitter – und ein Keyboarder, der das alles zusammenhält. Ein Überblick über unser Band-Setup: wie es gewachsen ist, wie es funktioniert und warum PA und Recording bei uns seit Jahren getrennte Wege gehen."
 ---
 
 <style>
