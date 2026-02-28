@@ -12,7 +12,7 @@ excerpt: "Smart Home kann schnell eskalieren. Zwischen „ganz nett“ und „v�
 
 Wer sich mit Smart Home beschäftigt, stellt sich selten die Frage: Wie viel brauche ich eigentlich? Stattdessen lautet die Frage meistens: Was kann ich noch automatisieren? Das ist ein fundamentaler Unterschied. Die erste Frage führt zu einem durchdachten System. Die zweite zu einem Haufen vernetzter Geräte, die irgendwann niemand mehr versteht.
 
-Ich habe ein <a href="/setup/">umfangreiches Smart-Home-System</a>. Beleuchtung überall, Klimaanlagen, Heizungssteuerung, Jalousien, Steckdosen, Audio, Sicherheit. Das ganze Haus ist vernetzt. Würde ich das einem Einsteiger empfehlen? Nein. Würde ich heute nochmal so anfangen? Auch nein.
+Ich habe ein <a href="/it-infrastruktur/">umfangreiches Smart-Home-System</a>. Beleuchtung überall, Klimaanlagen, Heizungssteuerung, Jalousien, Steckdosen, Audio, Sicherheit. Das ganze Haus ist vernetzt. Würde ich das einem Einsteiger empfehlen? Nein. Würde ich heute nochmal so anfangen? Auch nein.
 
 Nicht, weil es nicht funktioniert. Sondern weil der Weg dorthin ein anderer sein sollte. Nach dem Hauskauf habe ich das System zusammen mit entsprechenden Fachfirmen geplant und einrichten lassen. Alles auf einmal, alles durchdacht, alles nach meinen Vorgaben. Das Ergebnis funktioniert hervorragend.
 

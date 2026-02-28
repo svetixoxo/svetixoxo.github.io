@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "IT-Setup"
-permalink: /setup/
+title: "Meine IT-Infrastruktur"
+permalink: /it-infrastruktur/
 ---
 
 <style>

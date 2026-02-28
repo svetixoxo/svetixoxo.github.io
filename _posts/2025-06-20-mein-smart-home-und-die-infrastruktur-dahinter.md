@@ -18,7 +18,7 @@ Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox als Firewall-Lösung.
 
 ## Netzwerksegmentierung & VLANs
 
-Ein wichtiger Sicherheitsaspekt in der <a href="/setup/">Smart-Home-Infrastruktur</a> ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit der Firebox und den Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
+Ein wichtiger Sicherheitsaspekt in der <a href="/it-infrastruktur/">Smart-Home-Infrastruktur</a> ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit der Firebox und den Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
 
 - Management und Infrastruktur (3 VLANs)
 - Smart Home, funktionsbasiert (10 VLANs)

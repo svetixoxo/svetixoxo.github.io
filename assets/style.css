@@ -788,15 +788,15 @@ nav a.mobil-menu-kachel {
 .aufmacher-profil-bild-links .bild {
     width: 100%;
     height: 100%;
-    aspect-ratio: unset;
-    object-fit: cover;
+    aspect-ratio: unset;/*
+    object-fit: cover;*/
 }
 
 .aufmacher-profil-bild-rechts .bild img,
 .aufmacher-profil-bild-links .bild img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100%;/*
+    object-fit: cover;*/
 }
 
 .aufmacher-profil-bild-links {
