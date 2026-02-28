@@ -3,6 +3,7 @@ layout: post
 title: "Smart Home und Datenschutz: Was nach außen geht und was nicht"
 date: 2025-11-07
 category: "Smart Home & Automatisierung"
+bild: /assets/img/posts/251107-smart-home-und-datenschutz.png
 tags: [smart-home, datenschutz, netzwerk, vlan, homekit, sicherheit, infrastruktur]
 excerpt: "Ein smartes Zuhause bedeutet nicht zwangsläufig ein gläsernes. Wie ich von Anfang an dafür gesorgt habe, dass meine Geräte lokal bleiben – und warum das leichter ist als es klingt."
 ---

@@ -3,6 +3,7 @@ layout: post
 title: "Steinberg UR44C im Alltag"
 date: 2026-01-16
 category: "Proberaum & Musikmachen"
+bild: /assets/img/posts/260116-steinberg-ur44c-im-alltag.png
 tags: [recording, interface, steinberg, mikrofon, logic-pro, home-recording]
 excerpt: "Seit 2019 ist das Steinberg UR44C unser Interface für Aufnahmen zu zweit — und inzwischen auch fester Bestandteil meines Schreibtischs. Was dazu geführt hat, warum es geblieben ist und was ich daran schätze."
 ---

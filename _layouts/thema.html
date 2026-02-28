@@ -19,12 +19,25 @@ layout: default
         }
     }
 </style>
-{% assign gefundene = site.posts | where: "category", page.category %} {% if page.category == "Self-Hosting & Dienste" %} {% assign thema-farbe = "magenta" %} {% elsif page.category == "Netzwerk & Infrastruktur" %} {% assign thema-farbe = "orange" %} {% elsif page.category == "Smart Home & Automatisierung" %} {% assign thema-farbe = "gruen" %} {% elsif page.category == "Proberaum & Musikmachen" %} {% assign thema-farbe = "lila" %} {% else %} {% assign thema-farbe = "tuerkis" %} {% endif %} 
+{% assign gefundene = site.posts | where: "category", page.category %} {% if page.category == "Self-Hosting & Dienste" %} {% assign thema-farbe = "magenta" %} {% elsif page.category == "Netzwerk & Infrastruktur" %} {% assign thema-farbe = "orange" %} {% elsif page.category == "Smart Home & Automatisierung" %} {% assign thema-farbe = "gruen" %} {% elsif page.category == "Proberaum & Musikmachen" %} {% assign thema-farbe = "lila" %} {% else %} {% assign thema-farbe = "tuerkis" %} {% endif %}
+{% if page.bild %}
+<div class="aufmacher aufmacher-profil-bild-rechts artikel-kopf kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
+    <div class="aufmacher-haupt" style="border-right: var(--rahmen-gross)">
+        <p class="artikel-meta">Thema » <span style="color:var(--{{ thema-farbe }})">{{ gefundene.size }} Artikel</span></p>
+        <h1>{{ page.title }}</h1>
+        {% if page.excerpt %}<p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>{% endif %}
+    </div>
+    <div style="background:var(--{{ thema-farbe }})">
+        <img src="{{ page.bild }}" class="bild">
+    </div>
+</div>
+{% else %}
 <div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
     <p class="artikel-meta">Thema » <span style="color:var(--{{ thema-farbe }})">{{ gefundene.size }} Artikel</span></p>
     <h1>{{ page.title }}</h1>
     {% if page.excerpt %}<p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>{% endif %}
 </div>
+{% endif %}
 {% if gefundene.size > 0 %} <div class="beitragsliste-raster"> {% assign streifenfarben = "tuerkis,orange,lila,magenta,gruen" | split: "," %} {% for beitrag in gefundene %} {% assign farbindex = forloop.index0 | modulo: 5 %} {% assign farbe = streifenfarben[farbindex] %}
     <div class="beitragskarte">
         <div class="beitragskarte-streifen" style="background:var(--{{ thema-farbe }})"></div>
