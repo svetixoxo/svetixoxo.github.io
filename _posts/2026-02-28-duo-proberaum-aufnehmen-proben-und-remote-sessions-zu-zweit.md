@@ -56,7 +56,7 @@ excerpt: "Ein Proberaum für zwei Personen, der gleichzeitig Aufnahmestudio und 
 
 ## Der Raum
 
-Der Duo-Proberaum liegt im Souterrain meines Hauses — kleiner als der <a href="/bandproberaum-wie-wir-gleichzeitiges-proben-und-aufnehmen-geloest-haben/" class="link-lila">Band-Proberaum</a>, aber deutlich näher. Wir sind auch als Duo außerhalb der Band aktiv das meiste, was für uns mit Musik zu tun hat, findet von hier aus statt. Der Raum muss deshalb mehrere Dinge gleichzeitig können: Als Aufnahmestudio für Duo-Sessions, als Proberaum für zwei Personen und als technische Basis für Remote-Proben mit der Band funktionieren.
+Der Duo-Proberaum liegt im Souterrain meines Hauses — kleiner als der <a href="/band-proberaum-wie-wir-gleichzeitiges-proben-und-aufnehmen-geloest-haben/" class="link-lila">Band-Proberaum</a>, aber deutlich näher. Wir sind auch als Duo außerhalb der Band aktiv das meiste, was für uns mit Musik zu tun hat, findet von hier aus statt. Der Raum muss deshalb mehrere Dinge gleichzeitig können: Als Aufnahmestudio für Duo-Sessions, als Proberaum für zwei Personen und als technische Basis für Remote-Proben mit der Band funktionieren.
 
 Das setzt andere Prioritäten als der große Bandproberaum. Hier steht nicht die PA im Vordergrund, sondern das saubere Aufnehmen mehrerer Signale und das Routing eingehender Signale auf separate Boxen — so dass der Raum bei Remote-Proben räumlich klingt und nicht wie ein Stereo-Mix aus zwei Lautsprechern.
 
@@ -64,7 +64,7 @@ Das setzt andere Prioritäten als der große Bandproberaum. Hier steht nicht die
 
 Sechs Mikrofone für zwei Personen klingt nach viel — ist aber auf zwei verschiedene Szenarien aufgeteilt, die unterschiedliche Signalwege nutzen.
 
-Für Aufnahmen läuft alles über das Steinberg UR44C. Ein Neumann TLM 102 geht auf Eingang 1 und übernimmt Gesang in der Recording-Situation. Das Shure SM57 auf Eingang 2 wird für E-Gitarre (oder wahlweise akustische Gitarre) genutzt, sein Signal wird vorher per DI-Box gesplittet — so liegt es gleichzeitig am Interface und am Mischpult an. Zwei Rode M5 MP gehen auf die Eingänge 3 und 4 und werden für akustische Gitarren oder Percussion eingesetzt, je nachdem was gebraucht wird.
+Für Aufnahmen läuft alles über das <a href="/steinberg-ur44c-im-alltag/" class="link-lila">Steinberg UR44C</a>. Ein Neumann TLM 102 geht auf Eingang 1 und übernimmt Gesang in der Recording-Situation. Das Shure SM57 auf Eingang 2 wird für E-Gitarre (oder wahlweise akustische Gitarre) genutzt, sein Signal wird vorher per DI-Box gesplittet — so liegt es gleichzeitig am Interface und am Mischpult an. Zwei Rode M5 MP gehen auf die Eingänge 3 und 4 und werden für akustische Gitarren oder Percussion eingesetzt, je nachdem was gebraucht wird.
 
 Für Remote-Proben und Live-Mitschnitte läuft der Signalweg über das Yamaha MG10X. Zwei Sennheiser-Mikrofone – ein e 865-S und ein e 835-S – übernehmen Gesang und Kommunikation. Das „S“ steht übrigens nicht für „Sport“, sondern für „mit Schalter“. Die akustische Gitarre kommt bei Remote-Proben über einen magnetischen Tonabnehmer direkt ins Mischpult. Das SM57 ist, wie oben beschrieben, über die DI-Box auf beiden Wegen gleichzeitig aktiv.
 

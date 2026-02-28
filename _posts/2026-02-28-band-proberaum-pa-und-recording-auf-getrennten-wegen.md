@@ -106,7 +106,7 @@ excerpt: "95 qm, zwei Mischpulte, zwei Interfaces, zwei Signalsplitter — und e
 
 ## Der Raum
 
-Wir haben zwei Proberäume – <a href="/duoproberaum-aufnehmen-proben-und-remote-sessions-zu-zweit" class="link-lila">einen kleinen bei mir Zuhause für Duo-Sessions</a> und diesen hier: Den Band-Proberaum im Souterrain eines Bungalows. Rund 95 qm groß, akustisch behandelt und schallisoliert. Eine halbhohe Mauer teilt den Raum in zwei Bereiche: Den eigentlichen Proberaum und einen separaten Technikbereich, wo Computer und Geräteracks stehen.
+Wir haben zwei Proberäume – <a href="/duo-proberaum-aufnehmen-proben-und-remote-sessions-zu-zweit" class="link-lila">einen kleinen bei mir Zuhause für Duo-Sessions</a> und diesen hier: Den Band-Proberaum im Souterrain eines Bungalows. Rund 95 qm groß, akustisch behandelt und schallisoliert. Eine halbhohe Mauer teilt den Raum in zwei Bereiche: Den eigentlichen Proberaum und einen separaten Technikbereich, wo Computer und Geräteracks stehen.
 
 Das aktuelle Setup mit zwei Mischpulten und zwei Interfaces ist über die Zeit gewachsen — nicht nach einem großen Plan, sondern Stück für Stück mit jeder neuen Anforderung. Früher lief das Schlagzeug über ein Mischpult mit USB-Ausgang, der Rest der Band über ein kleines Interface. Das hat funktioniert, solange man nicht gleichzeitig aufnehmen und proben wollte. Die heutige Aufteilung gibt deutlich mehr Spielraum. Gemischt wird von unserem Keyboarder, sowohl bei Proben als auch bei Aufnahmen.
 

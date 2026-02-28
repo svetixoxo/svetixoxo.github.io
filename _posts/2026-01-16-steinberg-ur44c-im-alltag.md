@@ -18,7 +18,7 @@ Das UR44C habe ich mir direkt gekauft, sobald es verfügbar war. Seitdem ist es 
 
 ## Was daran hängt
 
-Für Aufnahmen zu zweit braucht es nicht unbedingt mehr als einen einzelnen Eingang, jedoch ist es so komfortabler. Das UR44C bietet mit seinen vier Combo-Eingängen genug Spielraum für das, was wir machen. Konkret sieht das so aus:
+Für <a href="/duo-proberaum-aufnehmen-proben-und-remote-sessions-zu-zweit/" class="link-lila">Aufnahmen zu zweit</a> braucht es nicht unbedingt mehr als einen einzelnen Eingang, jedoch ist es so komfortabler. Das UR44C bietet mit seinen vier Combo-Eingängen genug Spielraum für das, was wir machen. Konkret sieht das so aus:
 
 Für E-Gitarre kommt ein Shure SM57 zum Einsatz, das auch für gelegentliche Percussion oder andere spontane Aufnahmen herhalten muss — weil es halt immer da ist. Für Akustikgitarre arbeiten wir entweder mit zwei Rode M5 im Stereopaar (MP = Matched Pair) oder, je nach Situation, mit einer Kombination aus SM57 und Neumann TLM 102. Letzteres klingt schön, braucht aber etwas mehr Aufwand beim Aufbau. Für Gesang hängt entweder das TLM 102 oder ein Rode NTR dran — beides Großmembrankondensatoren.
 
@@ -36,7 +36,7 @@ Was beim ersten Anfassen auffällt und bis heute so geblieben ist: Das Gerät f�
 
 Anfangs stand das UR44C in einer Ecke des Schreibtischs, gut erreichbar und nicht störend. Inzwischen hat es einen anderen Platz: Es steht unter meinem Monitor, der darauf gestellt ist. Das ist nicht die ursprüngliche Verwendung des Geräts, aber es passt von der Höhe gut und hat sich so eingependelt.
 
-Dass ich es inzwischen ein zweites Mal gekauft habe, sagt vielleicht am meisten. Seit wir zuhause einen kleinen Proberaum haben, wollte ich das Interface nicht mehr hin- und herschleppen. Also hat das erste Exemplar seinen Platz am Schreibtisch behalten — mit 2.1-Anlage und Mikrofon für Discord daran — und das zweite ist jetzt im kleinen Proberaum. Für den größeren Aufnahmekontext mit der Band haben wir außerdem ein UR816C, über das ich irgendwann noch separat schreiben werde.
+Dass ich es inzwischen ein zweites Mal gekauft habe, sagt vielleicht am meisten. Seit wir zuhause einen kleinen Proberaum haben, wollte ich das Interface nicht mehr hin- und herschleppen. Also hat das erste Exemplar seinen Platz am Schreibtisch behalten — mit 2.1-Anlage und Mikrofon für Discord daran — und das zweite ist jetzt im kleinen Proberaum. Für den größeren <a href="/band-proberaum-pa-und-recording-auf-getrennten-wegen/" class="link-lila">Aufnahmekontext mit der Band</a> haben wir außerdem ein UR816C, über das ich irgendwann noch separat schreiben werde.
 
 ## Fazit nach sechs Jahren
 
