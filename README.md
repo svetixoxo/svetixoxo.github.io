@@ -1,15 +1,20 @@
 # svetis Blog
+
 Persönlicher Blog über Self-Hosting, Netzwerk & Infrastruktur, Smart Home & Automatisierung sowie Proberaum & Musikmachen. Gebaut mit HTML und CSS, gehostet mit Jekyll und GitHub Pages. Erreichbar unter: **[svetixoxo.github.io](https://svetixoxo.github.io)**
+
 ## Farben
-| Farbe   | HEX     | Bereich                      |
-|---------|---------|------------------------------|
+
+| Farbe   | HEX       | Bereich                      |
+|---------|-----------|------------------------------|
 | Türkis  | `#00b8d9` | Primärfarbe                  |
 | Gelb    | `#fecc02` | Sekundärfarbe                |
 | Magenta | `#ff2b6b` | Self-Hosting & Dienste       |
 | Orange  | `#ff8700` | Netzwerk & Infrastruktur     |
 | Grün    | `#00a878` | Smart Home & Automatisierung |
 | Lila    | `#d36ff9` | Proberaum & Musikmachen      |
+
 ## Struktur
+
 ```
 ├── _layouts/          # Layout-Templates (default, post, thema, archiv …)
 ├── _posts/            # Blogbeiträge als Markdown
@@ -25,12 +30,16 @@ Persönlicher Blog über Self-Hosting, Netzwerk & Infrastruktur, Smart Home & Au
 └── _config.yml        # Jekyll-Konfiguration
 └── index.html         # Startseite
 ```
+
 ## Beiträge
+
 Beiträge liegen als Markdown-Dateien in `_posts/` mit folgendem Format:
 ```
 YYYY-MM-DD-titel-des-beitrags.md
 ```
+
 Front Matter:
+
 ```yaml
 ---
 layout: post
@@ -42,19 +51,20 @@ tags: [tag1, tag2]
 excerpt: "Kurze Beschreibung für Vorschau"
 ---
 ```
+
 ## Lokal ausführen
+
 ```bash
 bundle exec jekyll serve
 bundle exec jekyll serve --livereload
 ```
 Erreichbar unter: `http://localhost:4000`
+
 ## Lizenz
 |                           | Lizenz          | Text                                    | Link                                                                |
 |---------------------------|-----------------|-----------------------------------------|---------------------------------------------------------------------|
 | Inhalte (Texte, Bild)     | CC BY-NC-ND 4.0 | [Lizenz](LICENSE_cc-by-nc-nd-4.0)       | [Quelle](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de) |
 | Quellcode (HTML, CSS, JS) | CC BY-NC 4.0    | [Lizenz](LICENSE_cc-by-nc-4.0)          | [Quelle](https://creativecommons.org/licenses/by-nc/4.0/deed.de)    |
 | Schriftart (Plex)         | OFL 1.1         | [Lizenz](assets/fonts/ibm-plex/LICENSE) | [Quelle](https://opensource.org/licenses/MIT)                       |
+
 Svetlana / [svetixoxo.github.io](https://svetixoxo.github.io)
-
-
-Kann ich irgendwie in der tabelle mit den farben noch eine spalte machen die in der jeweiligen farbe gefärt bst?
