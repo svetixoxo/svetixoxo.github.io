@@ -562,6 +562,34 @@ nav a:hover span::after {
     background: var(--tinte);
 }
 
+.nav-ueber-mich {
+    background: var(--gelb);
+    color: var(--tinte);
+}
+
+.nav-ueber-mich.aktiv {
+    background: var(--gelb);
+    color: var(--tinte);
+}
+
+.nav-ueber-mich:hover {
+    background: var(--gelb);
+    color: var(--tinte);
+}
+
+.nav-ueber-mich span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.nav-ueber-mich:hover span {
+    transform: scaleX(-1);
+}
+
+.nav-ueber-mich span::after {
+    display: none;
+}
+
 /* ── Mobile Navigation ── */
 #mobil-menu,
 nav a.mobil-menu-kachel {
@@ -1863,7 +1891,7 @@ code {
 
 @media (min-width: 993px) {
     .nur-mobil {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -1890,7 +1918,7 @@ code {
     }
 
     .nur-desktop {
-        display: none;
+        display: none !important;
     }
 
     .artikel-kopf[style*="grid"] {

@@ -23,7 +23,7 @@
                 <em>svetis</em>Blog </a>
             <!--
             <span class="logo-untertitel">svetixoxo.github.io</span>-->
-        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% else %} {% endif %} <nav>
+        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% elsif page.url contains "archiv" %} {% assign nav-aktiv = "archiv" %} {% elsif page.url contains "ueber-mich" %} {% assign nav-aktiv = "ueber-mich" %} {% else %} {% endif %} <nav>
             <a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting {% if nav-aktiv == 'self-hosting' %}aktiv{% endif %}">
                 <span>Self-Hosting</span>
             </a>
@@ -38,6 +38,9 @@
             </a>
             <a href="/archiv/" class="nav-archiv {% if nav-aktiv == 'archiv' %}aktiv{% endif %}">
                 <span>Archiv</span>
+            </a>
+            <a href="/ueber-mich/" class="nav-ueber-mich">
+                <span>?</span>
             </a>
         </nav>
         <button class="mobil-menu-btn" id="mobil-menu-btn" onclick="
@@ -80,6 +83,10 @@
             <a class="mobil-menu-kachel mobil-menu-archiv" href="/archiv/">
                 <span class="mobil-menu-zeile1">Archiv</span>
             </a>
+
+            <a class="mobil-menu-kachel mobil-menu-archiv" href="/ueber-mich/">
+                <span class="mobil-menu-zeile1">Über mich</span>
+            </a>
         </nav>
     </div>
     <div class="seiteninhalt">
@@ -87,7 +94,7 @@
     </div>
     <footer class="seitenfuss">
         <span class="schrift-gelb">
-            <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> <span class="nur-desktop">»</span> <br class="nur-mobil" /><span class="nur-mobil">« </span><a href="https://github.com/svetixoxo/svetixoxo.github.io" class="schrift-regular" target="_blank">source</a> / <a href="/stats/" class="schrift-regular">stats</a>  / <a href="/it-infrastruktur/" class="schrift-regular">mein it-setup</a><span class="nur-mobil"> »</span>
+            <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> <span class="nur-desktop">»</span> <br class="nur-mobil" /><span class="nur-mobil schrift-gelb">« </span><a href="/ueber-mich/" class="schrift-regular">ueber-mich</a>  / <a href="/archiv/" class="schrift-regular">archiv</a><span class="nur-mobil schrift-gelb"> »</span>
         </span>
         <span>mit <em>♥</em> gebaut </span>
     </footer>
