@@ -1,6 +1,8 @@
 # svetis Blog
 
-Persönlicher Blog über Self-Hosting, Netzwerk & Infrastruktur, Smart Home & Automatisierung sowie Proberaum & Musikmachen. Gebaut mit HTML und CSS, gehostet mit Jekyll und GitHub Pages. Erreichbar unter: **[svetixoxo.github.io](https://svetixoxo.github.io)**
+Persönlicher Blog über Self-Hosting, Netzwerk & Infrastruktur, Smart Home & Automatisierung sowie Proberaum & Musikmachen. Gebaut mit HTML und CSS, gehostet mit Jekyll und GitHub Pages.
+
+Erreichbar unter: **[svetixoxo.github.io](https://svetixoxo.github.io)**
 
 ## Farben
 
