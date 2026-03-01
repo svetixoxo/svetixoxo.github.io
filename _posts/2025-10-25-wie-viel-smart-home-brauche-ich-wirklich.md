@@ -58,9 +58,9 @@ Klassisches Szenario: Morgens ist es kalt, also wird die Heizung hochgedreht. Mi
 
 ### Was nicht auf die erste Liste gehört
 
-* Steckdosen: Smarte Steckdosen sind praktisch, aber kein Einstieg. Sie lösen selten echte Probleme und führen oft dazu, dass man anfängt, Geräte zu automatisieren, die es nicht brauchen. Eine Stehlampe, die smart geschaltet wird, ist nett, aber nicht notwendig.
-* Jalousien und Rollläden: Technisch interessant, praktisch kompliziert. Automatische Jalousien klingen gut, bis man das erste Mal gegen die Automatisierung arbeiten muss. Dann wird es nervig. Wer Jalousien automatisieren will, sollte erst ein funktionierendes Basis-System haben.
-* Sicherheitstechnik: Kameras, Alarmanlagen, Sensoren – das ist kein Einstieg, das ist ein eigenes Projekt. Wer Sicherheit will, sollte das separat planen und nicht nebenbei beim Smart-Home-Einstieg mitlaufen lassen.
+- Steckdosen: Smarte Steckdosen sind praktisch, aber kein Einstieg. Sie lösen selten echte Probleme und führen oft dazu, dass man anfängt, Geräte zu automatisieren, die es nicht brauchen. Eine Stehlampe, die smart geschaltet wird, ist nett, aber nicht notwendig.
+- Jalousien und Rollläden: Technisch interessant, praktisch kompliziert. Automatische Jalousien klingen gut, bis man das erste Mal gegen die Automatisierung arbeiten muss. Dann wird es nervig. Wer Jalousien automatisieren will, sollte erst ein funktionierendes Basis-System haben.
+- Sicherheitstechnik: Kameras, Alarmanlagen, Sensoren – das ist kein Einstieg, das ist ein eigenes Projekt. Wer Sicherheit will, sollte das separat planen und nicht nebenbei beim Smart-Home-Einstieg mitlaufen lassen.
 
 ## Die häufigsten Fehler beim Aufbau
 

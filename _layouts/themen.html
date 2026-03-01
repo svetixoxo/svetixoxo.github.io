@@ -1,40 +1,46 @@
 ---
 layout: default
 ---
+
 <style>
-    .artikel-rahmen p {
-        margin-bottom: 0;
-    }
+  .artikel-rahmen p {
+    margin-bottom: 0;
+  }
 
-    .artikel-inhalt.zweispaltig .artikel-rahmen {
-        margin-bottom: 0;
-    }
+  .artikel-inhalt.zweispaltig .artikel-rahmen {
+    margin-bottom: 0;
+  }
 
-    .kategorie-self-hosting-dienste .artikel-rahmen h2 {
-        border-left: 4px solid var(--magenta);
-        padding-left: 0.6em;
-    }
+  .kategorie-self-hosting-dienste .artikel-rahmen h2 {
+    border-left: 4px solid var(--magenta);
+    padding-left: 0.6em;
+  }
 
-    .kategorie-netzwerk-infrastruktur .artikel-rahmen h2 {
-        border-left: 4px solid var(--orange);
-        padding-left: 0.6em;
-    }
+  .kategorie-netzwerk-infrastruktur .artikel-rahmen h2 {
+    border-left: 4px solid var(--orange);
+    padding-left: 0.6em;
+  }
 
-    .kategorie-smart-home-automatisierung .artikel-rahmen h2 {
-        border-left: 4px solid var(--gruen);
-        padding-left: 0.6em;
-    }
+  .kategorie-smart-home-automatisierung .artikel-rahmen h2 {
+    border-left: 4px solid var(--gruen);
+    padding-left: 0.6em;
+  }
 
-    .kategorie-proberaum-musikmachen .artikel-rahmen h2 {
-        border-left: 4px solid var(--lila);
-        padding-left: 0.6em;
-    }
-
+  .kategorie-proberaum-musikmachen .artikel-rahmen h2 {
+    border-left: 4px solid var(--lila);
+    padding-left: 0.6em;
+  }
 </style>
-<div class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-    <h1>{{ page.title }}</h1>
-    {% if page.excerpt %}<p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>{% endif %}
+<div
+  class="artikel-kopf artikel-rahmen kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}"
+>
+  <h1>{{ page.title }}</h1>
+  {% if page.excerpt %}
+  <p class="artikel-einleitung">{{ page.excerpt | strip_html }}</p>
+  {% endif %}
 </div>
-<div class="artikel-inhalt js-themen {% if page.zweispaltig %}zweispaltig{% endif %} kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}">
-    {{ content }}
+<div
+  class="artikel-inhalt js-themen {% if page.zweispaltig %}zweispaltig{% endif %} kategorie-{{ page.category | downcase | replace: ' & ', '-' | replace: ' ', '-' }}"
+>
+  {{ content }}
 </div>

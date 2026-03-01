@@ -20,7 +20,6 @@ Das Problem bei Netzwerk-Upgrades ist, dass man leicht in beide Richtungen über
 
 Darüber hinaus sind sämtliche fest installierten LAN-Buchsen im Haus über 10 GbE mit der Core-Infrastruktur verbunden. Das bedeutet: Jede Wanddose ist technisch in der Lage, einem angeschlossenen Gerät die volle Bandbreite bereitzustellen, sofern das Endgerät dies unterstützt.
 
-
 ## Wo 10 GbE wirklich etwas bringt
 
 ### Heimserver-NAS
@@ -41,7 +40,7 @@ Mac Studio und iMac haben 10-GbE-Ports, aber ehrlich: Die schnelle Verbindung is
 
 Ich würde behaupten, 2,5 GbE ist der Sweet Spot für Client-Geräte: Deutlich schneller als Gigabit, aber ohne den Preisaufschlag und die Komplexität von 10 GbE. 2,5 GbE ist bei modernen Geräten inzwischen auch kein exotisches Feature mehr. Ich denke beim Aufrüsten des Netzwerks ist man auch heute mit 2,5 oder 5 GbE oft besser bedient als mit dem Sprung auf 10 GbE. Wer nach 25 oder 100 GbE schaut, hat ohnehin einen anderen Anwendungszweck und wird schon wissen, was und warum er das tut.
 
-Auch beim Thema WLAN relativiert sich die Diskussion um 10 GbE ein Stück weit, denn hier entscheidet nicht nur die kabelgebundene Infrastruktur, sondern vor allem der eingesetzte WLAN-Standard und das Client-Gerät. Mit Wi-Fi 5 (802.11ac) sind in der Praxis meist einige hundert MBit/s realistisch. Wi-Fi 6 (802.11ax) steigert Effizienz und Durchsatz deutlich, besonders bei vielen gleichzeitigen Clients. Wi-Fi 6E erweitert das Ganze um das 6-GHz-Band und reduziert Interferenzen und mit Wi-Fi 7 (802.11be) sind theoretisch mehrere Gigabit pro Client möglich. 
+Auch beim Thema WLAN relativiert sich die Diskussion um 10 GbE ein Stück weit, denn hier entscheidet nicht nur die kabelgebundene Infrastruktur, sondern vor allem der eingesetzte WLAN-Standard und das Client-Gerät. Mit Wi-Fi 5 (802.11ac) sind in der Praxis meist einige hundert MBit/s realistisch. Wi-Fi 6 (802.11ax) steigert Effizienz und Durchsatz deutlich, besonders bei vielen gleichzeitigen Clients. Wi-Fi 6E erweitert das Ganze um das 6-GHz-Band und reduziert Interferenzen und mit Wi-Fi 7 (802.11be) sind theoretisch mehrere Gigabit pro Client möglich.
 
 In meinem Fall kommen als Access Points UniFi U7 Pro XGS für das Haus bzw. UniFi U7 Pro Outdoor für den Garten. Erstere haben eine Uplink-Anbindung von 10 GbE, letztere von 2,5 GbE. Das bedeutet konkret: Der Access Point selbst kann mehr als 1 GbE zum Switch liefern, so wird der Uplink nicht zum Flaschenhals.
 

@@ -136,7 +136,6 @@ permalink: /it-infrastruktur/
   <p class="artikel-einleitung">Was bei mir läuft und wie es aufgebaut ist. Diese Seite gibt einen Überblick über Hardware, Netzwerk und Software, ohne dass ich in jedem Beitrag von vorne anfangen muss. Kein Anspruch auf Vollständigkeit, aber nah dran. Was sich ändert, wird hier aktualisiert.</p>
 </div>
 
-
 <!-- ══════════════════════════════════════════
      NETZWERK
 ══════════════════════════════════════════ -->
@@ -163,7 +162,6 @@ permalink: /it-infrastruktur/
     </table>
   </div>
 </div>
-
 
 <!-- ══════════════════════════════════════════
      SERVER & SPEICHER
@@ -205,7 +203,6 @@ permalink: /it-infrastruktur/
   </div>
 </div>
 
-
 <!-- ══════════════════════════════════════════
      SMART HOME
 ══════════════════════════════════════════ -->
@@ -237,7 +234,6 @@ permalink: /it-infrastruktur/
   </div>
 </div>
 
-
 <!-- ══════════════════════════════════════════
      CLIENT-GERÄTE
 ══════════════════════════════════════════ -->
@@ -262,7 +258,6 @@ permalink: /it-infrastruktur/
   </table>
 </div>
 </div>
-
 
 <!-- ══════════════════════════════════════════
      VLAN-STRUKTUR
@@ -324,5 +319,6 @@ permalink: /it-infrastruktur/
       <tr><td>80</td><td>10.80.0.0/24</td><td>Reserve 1</td></tr>
       <tr><td>90</td><td>10.90.0.0/24</td><td>Reserve 2</td></tr>
     </tbody>
+
   </table>
 </div>

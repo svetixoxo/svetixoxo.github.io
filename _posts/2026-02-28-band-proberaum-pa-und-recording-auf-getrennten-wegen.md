@@ -153,6 +153,7 @@ Herzstück des Setups sind zwei <a href="/was-ein-signalsplitter-im-proberaum-br
 Recording läuft nicht parallel zur Probe. Entweder werden Gesang und Instrumente über die beiden Steinberg UR816C aufgenommen oder es wird ein Probemitschnitt über die Stereo-Summe des Yamaha MG20XU per USB gemacht. Kein Umbauen, einfach Aufnahme starten.
 
 ## Schaubild: Signalkette
+
 <div class="signal-karten">
   <div class="signal-karte">
     <div class="signal-karte-titel">Schlagzeug</div>
@@ -251,6 +252,7 @@ Für Aufnahmen sitzt der Keyboarder im Technikbereich am Mac Studio. Das Monitor
 </div>
 
 ## Soweit so gewachsen
+
 Das Setup ist nie fertig geworden, weil jemand einen Plan gemacht hat, sondern weil es irgendwann einfach an der Zeit war, etwas zu ändern. Zuerst der Wunsch, nicht jedes Mal Kabel umzustecken. Dann der Wunsch, Schlagzeug und Band getrennt aufnehmen zu können. Dann das zweite Interface. Jedes Gerät im Rack hat eine Geschichte und die meisten davon beginnen mit „das andere hat nicht mehr gereicht“.
 
 Was dabei rausgekommen ist, funktioniert für uns – auch weil der Keyboarder einen guten Teil davon zusammenhält und weiß, was wann umzustecken ist. Ohne jemanden, der den Überblick behält, wäre ein Setup dieser Größe eher Chaos als Werkzeug.

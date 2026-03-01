@@ -52,14 +52,14 @@ Ein Raspberry Pi 5 kann problemlos 2-3 gleichzeitige Nextcloud-Benutzer bedienen
 
 Was den typischen Stromverbrauch betrifft, gibt es keine nennenswerten Unterschiede zwischen einem Raspberry Pi mit DAS im Vergleich zu einer fertigen NAS.
 
-| Gerät                          | Stromverbrauch | Typ    |
-|--------------------------------|----------------|--------|
-| Raspberry Pi 5 + QNAP TR-002   | 22 W           | 2 Bay  |
-| QNAP TS-253E                   | 25 W           | 2 Bay  |
-| Raspberry Pi 5 + QNAP TR-004   | 30 W           | 4 Bay  |
-| QNAP TS-433eU                  | 30 W           | 4 Bay  |
-| Raspberry Pi 5 + QNAP TL-D800C | 60 W           | 8 Bay  |
-| QNAP TS-873AeU-RP              | 58 W           | 8 Bay  |
+| Gerät                          | Stromverbrauch | Typ   |
+| ------------------------------ | -------------- | ----- |
+| Raspberry Pi 5 + QNAP TR-002   | 22 W           | 2 Bay |
+| QNAP TS-253E                   | 25 W           | 2 Bay |
+| Raspberry Pi 5 + QNAP TR-004   | 30 W           | 4 Bay |
+| QNAP TS-433eU                  | 30 W           | 4 Bay |
+| Raspberry Pi 5 + QNAP TL-D800C | 60 W           | 8 Bay |
+| QNAP TS-873AeU-RP              | 58 W           | 8 Bay |
 
 ### Limitierungen
 
@@ -91,15 +91,15 @@ Will ich experimentieren? Einfach eine neue VM aufsetzen. Brauche ich eine spezi
 
 ### Technische Aspekte
 
-| Kriterium              | Raspberry Pi  | Fertig-NAS    | DIY-Server    |
-|------------------------|---------------|---------------|---------------|
-| **Anschaffungskosten** | 300–500 €     | 1.000–5.000 € | 1.000-5.000 € |
-| **Stromverbrauch**     | 20–60 W       | 25–60 W       | 70–200 W      |
-| **Performance**        | moderat       | sehr gut      | legendär      |
-| **Erweiterbarkeit**    | gering        | moderat       | hoch          |
-| **Lernkurve**          | moderat       | niedrig       | hoch          |
-| **Flexibilität**       | moderat       | niedrig       | hoch          |
-| **Vendor Lock-in**     | gering        | hoch          | keiner        |
+| Kriterium              | Raspberry Pi | Fertig-NAS    | DIY-Server    |
+| ---------------------- | ------------ | ------------- | ------------- |
+| **Anschaffungskosten** | 300–500 €    | 1.000–5.000 € | 1.000-5.000 € |
+| **Stromverbrauch**     | 20–60 W      | 25–60 W       | 70–200 W      |
+| **Performance**        | moderat      | sehr gut      | legendär      |
+| **Erweiterbarkeit**    | gering       | moderat       | hoch          |
+| **Lernkurve**          | moderat      | niedrig       | hoch          |
+| **Flexibilität**       | moderat      | niedrig       | hoch          |
+| **Vendor Lock-in**     | gering       | hoch          | keiner        |
 
 ### Wartung
 
@@ -112,14 +112,16 @@ Hier zeigen sich die größten Unterschiede. Der Raspberry Pi ist begrenzt erwei
 ## Anwendungsszenarien: Wer braucht was?
 
 ### Der Einsteiger
+
 - Nextcloud für 1–2 Personen
-- Grundlegende Automatisation  
+- Grundlegende Automatisation
 - Budget um 500 €
 - **Empfehlung: Raspberry Pi**
 
 Ein Raspberry Pi 5 mit externem USB-Gehäuse reicht völlig aus. Die Lernkurve ist moderat, die Kosten überschaubar und für erste Schritte ins Self-Hosting ist es perfekt.
 
 ### Die kleine Familie
+
 - 3-5 Benutzer
 - Medienserver für lokale Medien
 - Smart-Home-Integration
@@ -129,6 +131,7 @@ Ein Raspberry Pi 5 mit externem USB-Gehäuse reicht völlig aus. Die Lernkurve i
 Hier wird es interessant. Ein gebrauchter Dell-Server für 500 € plus neuer Festplatten kann mehr Performance bieten als eine NAS für 1.000 €. Dafür ist die Einrichtung aufwendiger.
 
 ### Der Technik-Enthusiast
+
 - Experimentierfreude vorhanden
 - zu viel Virtualisierung und noch mehr Container
 - hohe Performance-Anforderungen
@@ -138,6 +141,7 @@ Hier wird es interessant. Ein gebrauchter Dell-Server für 500 € plus neuer Fe
 Wer gerne bastelt und lernt, ist mit einem DIY-System besser bedient. Die Flexibilität und Lernmöglichkeiten überwiegen den höheren Aufwand.
 
 ### Der Profi-Heimanwender
+
 - Business-ähnliche Anforderungen
 - Redundanz und Ausfallsicherheit
 - Integration in bestehende Infrastruktur

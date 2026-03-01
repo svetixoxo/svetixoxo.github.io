@@ -9,76 +9,84 @@
 
 /* ── IBM Plex Sans ── */
 @font-face {
-    font-family: "IBM Plex Sans";
-    src: url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Sans";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "IBM Plex Sans";
-    src: url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Sans";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "IBM Plex Sans";
-    src: url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Sans";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "IBM Plex Sans";
-    src: url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Sans";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* ── IBM Plex Mono ── */
 @font-face {
-    font-family: "IBM Plex Mono";
-    src: url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Mono";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "IBM Plex Mono";
-    src: url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Mono";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "IBM Plex Mono";
-    src: url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Mono";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexMono-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "IBM Plex Mono";
-    src: url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff2") format("woff2"),
-        url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "IBM Plex Mono";
+  src:
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff2") format("woff2"),
+    url("/assets/fonts/ibm-plex/IBMPlexMono-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* ══════════════════════════════════════════
@@ -86,35 +94,35 @@
 ══════════════════════════════════════════ */
 
 :root {
-    /* ── Farben ── */
-    --hintergrund: #f8f6f0;
-    --hintergrund-karte: #ffffff;
-    --tinte: #080810;
-    --text: #1a1a2a;
-    --gedimmt: #666680;
-    --linie: #d8d4cc;
+  /* ── Farben ── */
+  --hintergrund: #f8f6f0;
+  --hintergrund-karte: #ffffff;
+  --tinte: #080810;
+  --text: #1a1a2a;
+  --gedimmt: #666680;
+  --linie: #d8d4cc;
 
-    --tuerkis: #00b8d9;
-    --tuerkis-hell: #e0f8ff;
-    --orange: #ff8700;
-    --orange-hell: #fff1eb;
-    --gelb: #fecc02;
-    --gelb-hell: #fef4cc;
-    --lila: #d36ff9;
-    --lila-hell: #f0ebff;
-    --magenta: #ff2b6b;
-    --magenta-hell: #ffe0ec;
-    --gruen: #00a878;
-    --gruen-hell: #e0fff6;
-    --rot: #e53e3e;
-    --weiss: #ffffff;
+  --tuerkis: #00b8d9;
+  --tuerkis-hell: #e0f8ff;
+  --orange: #ff8700;
+  --orange-hell: #fff1eb;
+  --gelb: #fecc02;
+  --gelb-hell: #fef4cc;
+  --lila: #d36ff9;
+  --lila-hell: #f0ebff;
+  --magenta: #ff2b6b;
+  --magenta-hell: #ffe0ec;
+  --gruen: #00a878;
+  --gruen-hell: #e0fff6;
+  --rot: #e53e3e;
+  --weiss: #ffffff;
 
-    /* ── Schatten & Rahmen ── */
-    --schatten: 4px 4px 0 var(--tinte);
-    --schatten-gross: 6px 6px 0 var(--tinte);
-    --schatten-klein: 2px 2px 0 var(--tinte);
-    --rahmen: 2px solid var(--tinte);
-    --rahmen-gross: 3px solid var(--tinte);
+  /* ── Schatten & Rahmen ── */
+  --schatten: 4px 4px 0 var(--tinte);
+  --schatten-gross: 6px 6px 0 var(--tinte);
+  --schatten-klein: 2px 2px 0 var(--tinte);
+  --rahmen: 2px solid var(--tinte);
+  --rahmen-gross: 3px solid var(--tinte);
 }
 
 /* ══════════════════════════════════════════
@@ -124,58 +132,64 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 120px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 
 body {
-    font-family: "IBM Plex Sans", sans-serif;
-    cursor: url("/assets/cursors/left_ptr.png") 4 4, auto;
-    background: var(--tuerkis);
-    background-image: repeating-linear-gradient(315deg,
-            transparent,
-            transparent 20px,
-            rgba(0, 0, 0, 1) 20px,
-            rgba(0, 0, 0, 1) 21px);
-    background-size: 22px 22px;
-    color: var(--text);
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "IBM Plex Sans", sans-serif;
+  cursor:
+    url("/assets/cursors/left_ptr.png") 4 4,
+    auto;
+  background: var(--tuerkis);
+  background-image: repeating-linear-gradient(
+    315deg,
+    transparent,
+    transparent 20px,
+    rgba(0, 0, 0, 1) 20px,
+    rgba(0, 0, 0, 1) 21px
+  );
+  background-size: 22px 22px;
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body.kein-scroll,
 body.kein-scroll::-webkit-scrollbar {
-    overflow: hidden;
-    display: none;
-    position: fixed;
-    width: 100%;
-    scrollbar-width: none;
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  width: 100%;
+  scrollbar-width: none;
 }
 
 .aufmacher-profil a {
-    font-weight: 700;
-    color: var(--tuerkis);
-    text-decoration: none;
+  font-weight: 700;
+  color: var(--tuerkis);
+  text-decoration: none;
 }
 
 .aufmacher-profil a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--gelb);
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: var(--gelb);
+  text-decoration-thickness: 2px;
 }
 
 /* ── Cursor ── */
 a,
 .schaltflaeche {
-    cursor: url("/assets/cursors/hand2.png") 4 4, pointer !important;
+  cursor:
+    url("/assets/cursors/hand2.png") 4 4,
+    pointer !important;
 }
 
 p,
@@ -185,102 +199,104 @@ h3,
 h4,
 h5,
 li {
-    cursor: url("/assets/cursors/xterm.png") 12 12, text;
+  cursor:
+    url("/assets/cursors/xterm.png") 12 12,
+    text;
 }
 
 p a {
-    font-weight: 700;
-    color: var(--tuerkis);
-    text-decoration: none;
+  font-weight: 700;
+  color: var(--tuerkis);
+  text-decoration: none;
 }
 
 p a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--gelb);
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: var(--gelb);
+  text-decoration-thickness: 2px;
 }
 
 /* ── Auswahl ── */
 ::selection {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 /* ── Hilfsklassen Schrift ── */
 .schrift-tuerkis {
-    color: var(--orange) !important;
+  color: var(--orange) !important;
 }
 
 .schrift-orange {
-    color: var(--orange) !important;
+  color: var(--orange) !important;
 }
 
 .schrift-lila {
-    color: var(--lila) !important;
+  color: var(--lila) !important;
 }
 
 .schrift-magenta {
-    color: var(--magenta) !important;
+  color: var(--magenta) !important;
 }
 
 .schrift-gruen {
-    color: var(--gruen) !important;
+  color: var(--gruen) !important;
 }
 
 .schrift-gelb {
-    color: var(--gelb) !important;
+  color: var(--gelb) !important;
 }
 
 .schrift-tinte {
-    color: var(--tinte) !important;
+  color: var(--tinte) !important;
 }
 
 .schrift-regular {
-    font-weight: 400 !important;
+  font-weight: 400 !important;
 }
 
 .schrift-medium {
-    font-weight: 500 !important;
+  font-weight: 500 !important;
 }
 
 .schrift-semibold {
-    font-weight: 600 !important;
+  font-weight: 600 !important;
 }
 
 .schrift-bold {
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 .link-magenta {
-    color: var(--magenta);
+  color: var(--magenta);
 }
 
 .link-orange {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 .link-gruen {
-    color: var(--gruen);
+  color: var(--gruen);
 }
 
 .link-lila {
-    color: var(--lila);
+  color: var(--lila);
 }
 
 .link-tuerkis {
-    color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 .link-gelb {
-    color: var(--gelb);
+  color: var(--gelb);
 }
 
 .link-tinte {
-    color: var(--tinte);
+  color: var(--tinte);
 }
 
 .link-weiss {
-    color: var(--weiss);
+  color: var(--weiss);
 }
 
 .link-magenta,
@@ -291,8 +307,8 @@ p a:hover {
 .link-gelb,
 .link-tinte,
 .link-weiss {
-    font-weight: 700;
-    text-decoration: none;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .link-magenta:hover,
@@ -303,9 +319,9 @@ p a:hover {
 .link-gelb:hover,
 .link-tinte:hover,
 .link-weiss:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--tinte);
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: var(--tinte);
+  text-decoration-thickness: 2px;
 }
 
 /* ══════════════════════════════════════════
@@ -314,96 +330,96 @@ p a:hover {
 
 /* ── Obere Leiste ── */
 .seitenkopf-oben {
-    background: var(--tinte);
-    color: var(--weiss);
-    padding: 0.3rem 2rem;
-    border-bottom: 2px solid var(--tuerkis);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1323;
+  background: var(--tinte);
+  color: var(--weiss);
+  padding: 0.3rem 2rem;
+  border-bottom: 2px solid var(--tuerkis);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1323;
 }
 
 .seitenkopf-oben .ausgabe {
-    color: var(--tuerkis);
-    text-transform: uppercase;
+  color: var(--tuerkis);
+  text-transform: uppercase;
 }
 
 .seitenkopf-oben .ausgabe a,
 .seitenfuss a {
-    color: var(--weiss);
-    font-weight: 600;
-    text-decoration: none;
+  color: var(--weiss);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .seitenkopf-oben .ausgabe a:hover,
 .seitenfuss a:hover,
 .seitenkopf-oben em {
-    color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 /* ── Hauptkopf ── */
 .seitenkopf-haupt {
-    background: var(--hintergrund-karte);
-    border-bottom: var(--rahmen);
-    box-shadow: 0 4px 0 var(--tinte);
-    padding: 1em 2em;
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 777;
-    transition: padding 0.2s ease;
+  background: var(--hintergrund-karte);
+  border-bottom: var(--rahmen);
+  box-shadow: 0 4px 0 var(--tinte);
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 777;
+  transition: padding 0.2s ease;
 }
 
 .seitenkopf-haupt.kompakt {
-    padding: 0.8em 2em;
+  padding: 0.8em 2em;
 }
 
 .seitenkopf-haupt.kompakt .logo-titel {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .seitenkopf-haupt.kompakt .logo-untertitel {
-    display: none;
+  display: none;
 }
 
 /* ── Logo ── */
 .logo-block {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-titel {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    color: var(--tinte);
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-decoration: none;
-    transition: font-size 0.2s ease;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--tinte);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: font-size 0.2s ease;
 }
 
 .logo-titel:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--gelb);
-    text-decoration-thickness: 4px;
+  text-decoration: underline;
+  text-decoration-color: var(--gelb);
+  text-decoration-thickness: 4px;
 }
 
 .logo-titel em {
-    font-style: normal;
-    color: var(--tuerkis);
+  font-style: normal;
+  color: var(--tuerkis);
 }
 
 /*
@@ -412,382 +428,388 @@ p a:hover {
 }
 */
 .logo-untertitel {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.68rem;
-    color: var(--gedimmt);
-    letter-spacing: 0.12em;
-    margin-top: 0.1em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  color: var(--gedimmt);
+  letter-spacing: 0.12em;
+  margin-top: 0.1em;
 }
 
 .logo-posttitel {
-    color: var(--weiss);
-    text-transform: none;
+  color: var(--weiss);
+  text-transform: none;
 }
 
 /* ── Navigation ── */
 nav {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    border: var(--rahmen);
-    box-shadow: var(--schatten-klein);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  border: var(--rahmen);
+  box-shadow: var(--schatten-klein);
 }
 
 nav a {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--tinte);
-    text-decoration: none;
-    padding: 0.4em 1em;
-    border-right: var(--rahmen);
-    transition: background 0.1s, color 0.1s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--tinte);
+  text-decoration: none;
+  padding: 0.4em 1em;
+  border-right: var(--rahmen);
+  transition:
+    background 0.1s,
+    color 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav a:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 nav a span {
-    position: relative;
+  position: relative;
 }
 
 nav a span::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 25%;
-    width: 50%;
-    height: 2px;
-    transition: width 0.4s ease, left 0.4s ease, background 0.2s ease;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  transition:
+    width 0.4s ease,
+    left 0.4s ease,
+    background 0.2s ease;
 }
 
 nav a:hover span::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .nav-self-hosting.aktiv {
-    background: var(--magenta);
-    color: var(--weiss);
+  background: var(--magenta);
+  color: var(--weiss);
 }
 
 .nav-netzwerk.aktiv {
-    background: var(--orange);
-    color: var(--weiss);
+  background: var(--orange);
+  color: var(--weiss);
 }
 
 .nav-smart-home.aktiv {
-    background: var(--gruen);
-    color: var(--weiss);
+  background: var(--gruen);
+  color: var(--weiss);
 }
 
 .nav-musikmachen.aktiv {
-    background: var(--lila);
-    color: var(--weiss);
+  background: var(--lila);
+  color: var(--weiss);
 }
 
 .nav-archiv.aktiv {
-    background: var(--gelb);
-    color: var(--tinbte);
+  background: var(--gelb);
+  color: var(--tinbte);
 }
 
 .nav-self-hosting:hover {
-    background: var(--magenta);
-    color: var(--weiss);
+  background: var(--magenta);
+  color: var(--weiss);
 }
 
 .nav-netzwerk:hover {
-    background: var(--orange);
-    color: var(--weiss);
+  background: var(--orange);
+  color: var(--weiss);
 }
 
 .nav-smart-home:hover {
-    background: var(--gruen);
-    color: var(--weiss);
+  background: var(--gruen);
+  color: var(--weiss);
 }
 
 .nav-musikmachen:hover {
-    background: var(--lila);
-    color: var(--weiss);
+  background: var(--lila);
+  color: var(--weiss);
 }
 
 .nav-archiv:hover {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .nav-self-hosting span::after {
-    background: var(--magenta);
+  background: var(--magenta);
 }
 
 .nav-netzwerk span::after {
-    background: var(--orange);
+  background: var(--orange);
 }
 
 .nav-smart-home span::after {
-    background: var(--gruen);
+  background: var(--gruen);
 }
 
 .nav-musikmachen span::after {
-    background: var(--lila);
+  background: var(--lila);
 }
 
 .nav-archiv span::after {
-    background: var(--tinte);
+  background: var(--tinte);
 }
 
 .nav-self-hosting:hover span::after {
-    background: var(--magenta-hell);
+  background: var(--magenta-hell);
 }
 
 .nav-netzwerk:hover span::after {
-    background: var(--orange-hell);
+  background: var(--orange-hell);
 }
 
 .nav-smart-home:hover span::after {
-    background: var(--gruen-hell);
+  background: var(--gruen-hell);
 }
 
 .nav-musikmachen:hover span::after {
-    background: var(--lila-hell);
+  background: var(--lila-hell);
 }
 
 .nav-archiv:hover span::after {
-    background: var(--tinte);
+  background: var(--tinte);
 }
 
 .nav-ueber-mich {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .nav-ueber-mich.aktiv {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .nav-ueber-mich:hover {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .nav-ueber-mich span {
-    display: inline-block;
-    transition: transform 0.3s ease;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .nav-ueber-mich:hover span {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .nav-ueber-mich span::after {
-    display: none;
+  display: none;
 }
 
 /* ── Mobile Navigation ── */
 #mobil-menu,
 nav a.mobil-menu-kachel {
-    border-left: none !important;
-    border-right: none !important;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 .mobil-menu-btn {
-    display: none;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3px;
-    width: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 2px;
-    flex-shrink: 0;
-    margin-left: auto;
-    position: relative;
-    z-index: 333;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  width: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  flex-shrink: 0;
+  margin-left: auto;
+  position: relative;
+  z-index: 333;
 }
 
 .mobil-menu-btn span {
-    width: 6px;
-    height: 6px;
-    background: var(--tinte);
-    display: block;
-    transition: opacity 0.2s, transform 0.2s;
+  width: 6px;
+  height: 6px;
+  background: var(--tinte);
+  display: block;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
 }
 
 .mobil-menu-btn.offen span:nth-child(1) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(3) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(4) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(5) {
-    opacity: 1;
-    transform: rotate(45deg) scale(1.5);
+  opacity: 1;
+  transform: rotate(45deg) scale(1.5);
 }
 
 .mobil-menu-btn.offen span:nth-child(6) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(7) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(8) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu-btn.offen span:nth-child(9) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .mobil-menu {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 59px;
-    left: 0;
-    width: 100vw;
-    max-width: 100%;
-    height: calc(100dvh - 59px);
-    z-index: 332;
-    overflow: hidden;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 59px;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: calc(100dvh - 59px);
+  z-index: 332;
+  overflow: hidden;
 }
 
 .mobil-menu.offen {
-    display: flex;
+  display: flex;
 }
 
 .mobil-menu-kachel {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.1em;
-    padding: 0 1.5em;
-    text-decoration: none;
-    border-bottom: 0.35rem solid var(--tinte);
-    min-height: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 2.5rem;
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  padding: 0 1.5em;
+  text-decoration: none;
+  border-bottom: 0.35rem solid var(--tinte);
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 2.5rem;
 }
 
 .mobil-menu-und {
-    position: absolute;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 9rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.25);
-    pointer-events: none;
-    line-height: 1;
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  line-height: 1;
 }
 
 .mobil-menu-zeile1,
 .mobil-menu-zeile2 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: none;
-    color: var(--weiss);
-    position: relative;
-    z-index: 1;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: none;
+  color: var(--weiss);
+  position: relative;
+  z-index: 1;
 }
 
 .mobil-menu-kachel:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .mobil-menu-archiv {
-    background: var(--gelb) !important;
-    flex: 0.5;
+  background: var(--gelb) !important;
+  flex: 0.5;
 }
 
 .mobil-menu-archiv .mobil-menu-zeile1,
 .mobil-menu-archiv .mobil-menu-zeile2 {
-    color: var(--tinte);
+  color: var(--tinte);
 }
 
 @media (max-width: 992px) {
-    nav {
-        display: none;
-        border: none;
-    }
+  nav {
+    display: none;
+    border: none;
+  }
 
-    .mobil-menu-btn {
-        display: grid;
-    }
+  .mobil-menu-btn {
+    display: grid;
+  }
 }
-
 
 /* ══════════════════════════════════════════
    SEITENINHALT & LAYOUT
 ══════════════════════════════════════════ */
 
 .seiteninhalt {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    position: relative;
-    flex: 1;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  position: relative;
+  flex: 1;
 }
 
 /* ── Abschnittsüberschrift ── */
 .abschnitt-kopf {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    margin-bottom: 1rem;
-    border-top: 3px solid var(--tinte);
-    padding-top: 0.6em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1rem;
+  border-top: 3px solid var(--tinte);
+  padding-top: 0.6em;
 }
 
 .abschnitt-kopf h2 {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--tinte);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--tinte);
 }
 
 .abschnitt-akzent {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 .abschnitt-kopf a {
-    margin-left: auto;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08rem;
-    color: var(--gedimmt);
-    text-decoration: none;
+  margin-left: auto;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: var(--gedimmt);
+  text-decoration: none;
 }
 
 .abschnitt-kopf a:hover {
-    color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 /* ══════════════════════════════════════════
@@ -795,187 +817,187 @@ nav a.mobil-menu-kachel {
 ══════════════════════════════════════════ */
 
 .aufmacher {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    border: var(--rahmen-gross);
-    box-shadow: var(--schatten-gross);
-    margin-bottom: 2rem;
-    background: var(--hintergrund-karte);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border: var(--rahmen-gross);
+  box-shadow: var(--schatten-gross);
+  margin-bottom: 2rem;
+  background: var(--hintergrund-karte);
 }
 
 .aufmacher:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .aufmacher-profil-bild-rechts > div:last-child,
 .aufmacher-profil-bild-links > div:first-child {
-    display: flex;
+  display: flex;
 }
 
 .aufmacher-profil-bild-rechts .bild,
 .aufmacher-profil-bild-links .bild {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: unset;/*
+  width: 100%;
+  height: 100%;
+  aspect-ratio: unset; /*
     object-fit: cover;*/
 }
 
 .aufmacher-profil-bild-rechts .bild img,
 .aufmacher-profil-bild-links .bild img {
-    width: 100%;
-    height: 100%;/*
+  width: 100%;
+  height: 100%; /*
     object-fit: cover;*/
 }
 
 .aufmacher-profil-bild-links {
-    grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 .aufmacher-profil-bild-rechts {
-    grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
 .aufmacher-haupt {
-    border-right: var(--rahmen-gross);
-    padding: 2em;
+  border-right: var(--rahmen-gross);
+  padding: 2em;
 }
 
 .aufmacher-haupt p.nur-desktop:not(:has(~ p.nur-desktop)) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .aufmacher-etikett {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--weiss);
-    background: var(--tuerkis);
-    display: inline-block;
-    padding: 0.15em 0.6em;
-    margin-bottom: 0.7em;
-    border: 1.5px solid var(--tinte);
-    box-shadow: var(--schatten-klein);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--weiss);
+  background: var(--tuerkis);
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  margin-bottom: 0.7em;
+  border: 1.5px solid var(--tinte);
+  box-shadow: var(--schatten-klein);
 }
 
 .aufmacher-etikett-zeile {
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
-    margin-bottom: 0.7em;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 0.7em;
+  flex-wrap: wrap;
 }
 
 .aufmacher-etikett-zeile .aufmacher-etikett {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .aufmacher-datum {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--gedimmt);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gedimmt);
 }
 
 .aufmacher h1 {
-    font-size: 2.4rem;
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--tinte);
-    margin-bottom: 0.7em;
-    max-width: 100%;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--tinte);
+  margin-bottom: 0.7em;
+  max-width: 100%;
 }
 
 .aufmacher-trennlinie {
-    border: none;
-    border-top: 3px solid var(--tuerkis);
-    margin: 0.8em 0;
-    width: 60px;
+  border: none;
+  border-top: 3px solid var(--tuerkis);
+  margin: 0.8em 0;
+  width: 60px;
 }
 
 .aufmacher p {
-    font-size: 0.97rem;
-    color: var(--gedimmt);
-    margin-bottom: 1.2rem;
-    max-width: 100%;
-    text-align: justify;
+  font-size: 0.97rem;
+  color: var(--gedimmt);
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+  text-align: justify;
 }
 
 . aufmacher p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* ── Seitenleiste im Aufmacher ── */
 .aufmacher-seite {
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .aufmacher-seite-titel {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--gedimmt);
-    border-bottom: 2px solid var(--tuerkis);
-    padding-bottom: 0.4em;
-    margin-bottom: 0.2em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gedimmt);
+  border-bottom: 2px solid var(--tuerkis);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 .seitenleiste-eintrag {
-    padding-bottom: 0.8em;
-    border-bottom: 2px solid var(--linie);
+  padding-bottom: 0.8em;
+  border-bottom: 2px solid var(--linie);
 }
 
 .seitenleiste-eintrag:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .seitenleiste-kategorie {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--gedimmt);
-    margin-bottom: 0.2em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gedimmt);
+  margin-bottom: 0.2em;
 }
 
 .seitenleiste-titel {
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: var(--tinte);
-    line-height: 1.3;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--tinte);
+  line-height: 1.3;
 }
 
 .seitenleiste-titel a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .seitenleiste-titel a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--tuerkis);
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: var(--tuerkis);
+  text-decoration-thickness: 2px;
 }
 
 /* ── Bild ── */
 .bild {
-    width: 100%;
-    aspect-ratio: 1;
-    overflow: hidden;
-    vertical-align: top;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 .bild img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ══════════════════════════════════════════
@@ -983,26 +1005,26 @@ nav a.mobil-menu-kachel {
 ══════════════════════════════════════════ */
 
 .etikett {
-    display: inline-block;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    padding: 0.18em 0.6em;
-    border: 1.5px solid var(--tinte);
-    box-shadow: var(--schatten-klein);
-    margin-right: 0.3em;
-    margin-bottom: 0.3em;
-    user-select: none;
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.18em 0.6em;
+  border: 1.5px solid var(--tinte);
+  box-shadow: var(--schatten-klein);
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  user-select: none;
 }
 
 .etiketten-zeile {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .artikel-kopf .etiketten-zeile {
-    margin: 0;
+  margin: 0;
 }
 
 /* ── Etikett-Farben ── */
@@ -1011,23 +1033,23 @@ nav a.mobil-menu-kachel {
 .etikett-homekit,
 .etikett-zigbee,
 .etikett-netzwerk {
-    background: var(--orange-hell);
-    color: #006b80;
+  background: var(--orange-hell);
+  color: #006b80;
 }
 
 .etikett-orange,
 .etikett-hardware,
 .etikett-infrastruktur {
-    background: var(--tuerkis-hell);
-    color: var(--tuerkis);
+  background: var(--tuerkis-hell);
+  color: var(--tuerkis);
 }
 
 .etikett-gelb,
 .etikett-yaml,
 .etikett-blueprint,
 .etikett-automatisierung {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .etikett-lila,
@@ -1035,8 +1057,8 @@ nav a.mobil-menu-kachel {
 .etikett-energie,
 .etikett-docker,
 .etikett-self-hosting {
-    background: var(--lila-hell);
-    color: var(--lila);
+  background: var(--lila-hell);
+  color: var(--lila);
 }
 
 .etikett-gruen,
@@ -1045,15 +1067,15 @@ nav a.mobil-menu-kachel {
 .etikett-python,
 .etikett-linux,
 .etikett-backups {
-    background: var(--gruen-hell);
-    color: var(--gruen);
+  background: var(--gruen-hell);
+  color: var(--gruen);
 }
 
 .etikett-magenta,
 .etikett-sicherheit,
 .etikett-smart-home {
-    background: #ffe0ec;
-    color: var(--magenta);
+  background: #ffe0ec;
+  color: var(--magenta);
 }
 
 /* ══════════════════════════════════════════
@@ -1061,135 +1083,135 @@ nav a.mobil-menu-kachel {
 ══════════════════════════════════════════ */
 
 .rahmen-mit-sticker {
-    position: relative;
+  position: relative;
 }
 
 .rahmen-sticker {
-    position: absolute;
-    top: -0.85rem;
-    left: 1rem;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    padding: 0.25em 0.7em;
-    border: var(--rahmen);
-    box-shadow: var(--schatten-klein);
-    text-transform: uppercase;
-    z-index: 2;
+  position: absolute;
+  top: -0.85rem;
+  left: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.25em 0.7em;
+  border: var(--rahmen);
+  box-shadow: var(--schatten-klein);
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 .sticker-gelb {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .sticker-magenta {
-    background: var(--magenta);
-    color: var(--weiss);
+  background: var(--magenta);
+  color: var(--weiss);
 }
 
 .sticker-orange {
-    background: var(--orange);
-    color: var(--weiss);
+  background: var(--orange);
+  color: var(--weiss);
 }
 
 .sticker-gruen {
-    background: var(--gruen);
-    color: var(--weiss);
+  background: var(--gruen);
+  color: var(--weiss);
 }
 
 .sticker-lila {
-    background: var(--lila);
-    color: var(--weiss);
+  background: var(--lila);
+  color: var(--weiss);
 }
 
 .sticker-tuerkis {
-    background: var(--tuerkis);
-    color: var(--weiss);
+  background: var(--tuerkis);
+  color: var(--weiss);
 }
 
 .artikel-rahmen-nummer {
-    position: absolute;
-    top: -0.85rem;
-    right: 1rem;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 0.25em 0.7em;
-    border: var(--rahmen);
-    box-shadow: var(--schatten-klein);
-    background: var(--gelb);
-    color: var(--tinte);
-    text-transform: uppercase;
-    z-index: 2;
-    cursor: pointer;
+  position: absolute;
+  top: -0.85rem;
+  right: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.25em 0.7em;
+  border: var(--rahmen);
+  box-shadow: var(--schatten-klein);
+  background: var(--gelb);
+  color: var(--tinte);
+  text-transform: uppercase;
+  z-index: 2;
+  cursor: pointer;
 }
-
 
 /* ══════════════════════════════════════════
    SCHALTFLÄCHEN
 ══════════════════════════════════════════ */
 
 .schaltflaeche {
-    display: inline-block;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 0.45em 1.2em;
-    border: var(--rahmen);
-    box-shadow: var(--schatten-klein);
-    text-decoration: none;
-    transition: transform 0.1s, box-shadow 0.1s;
-    cursor: pointer;
-    max-width: 50%;
-    user-select: none;
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.45em 1.2em;
+  border: var(--rahmen);
+  box-shadow: var(--schatten-klein);
+  text-decoration: none;
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+  cursor: pointer;
+  max-width: 50%;
+  user-select: none;
 }
 
 .schaltflaeche:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: var(--schatten);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--schatten);
 }
 
 .schaltflaeche-orange {
-    background: var(--orange);
-    color: var(--weiss);
+  background: var(--orange);
+  color: var(--weiss);
 }
 
 .schaltflaeche-tuerkis {
-    background: var(--tuerkis);
-    color: var(--weiss);
+  background: var(--tuerkis);
+  color: var(--weiss);
 }
 
 .schaltflaeche-lila {
-    background: var(--lila);
-    color: var(--weiss);
+  background: var(--lila);
+  color: var(--weiss);
 }
 
 .schaltflaeche-gruen {
-    background: var(--gruen);
-    color: var(--weiss);
+  background: var(--gruen);
+  color: var(--weiss);
 }
 
 .schaltflaeche-magenta {
-    background: var(--magenta);
-    color: var(--weiss);
+  background: var(--magenta);
+  color: var(--weiss);
 }
 
 .schaltflaeche-gelb,
 .schaltflaeche-gelb-links,
 .schaltflaeche-gelb-rechts {
-    background: var(--gelb);
-    color: var(--tinte);
+  background: var(--gelb);
+  color: var(--tinte);
 }
 
 .schaltflaeche-weiss {
-    background: var(--weiss);
-    color: var(--tinte);
+  background: var(--weiss);
+  color: var(--tinte);
 }
-
 
 /* ══════════════════════════════════════════
    BEITRAGSLISTE
@@ -1197,38 +1219,40 @@ nav a.mobil-menu-kachel {
 
 /* ── Raster (3 Spalten) ── */
 .beitragsliste-raster {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .beitragsliste-raster .beitragskarte {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .beitragsliste-raster .beitragskarte-streifen {
-    width: 100%;
-    height: 6px;
-    flex-shrink: 0;
+  width: 100%;
+  height: 6px;
+  flex-shrink: 0;
 }
 
 /* ── Liste (1 Spalte) ── */
 .beitragsliste {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2em;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  margin-bottom: 2rem;
 }
 
 /* ── Beitragskarte ── */
 .beitragskarte {
-    background: var(--hintergrund-karte);
-    border: var(--rahmen-gross);
-    box-shadow: var(--schatten-gross);
-    display: flex;
-    transition: transform 0.1s, box-shadow 0.1s;
-    position: relative;
+  background: var(--hintergrund-karte);
+  border: var(--rahmen-gross);
+  box-shadow: var(--schatten-gross);
+  display: flex;
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+  position: relative;
 }
 
 /*
@@ -1239,183 +1263,206 @@ nav a.mobil-menu-kachel {
 */
 
 .beitragskarte-streifen {
-    width: 6px;
-    flex-shrink: 0;
+  width: 6px;
+  flex-shrink: 0;
 }
 
 .beitragskarte-inhalt {
-    padding: 1.3em 1.6em;
-    padding-top: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  padding: 1.3em 1.6em;
+  padding-top: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .beitragskarte-meta {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08rem;
-    color: var(--gedimmt);
-    padding: 1.3rem 1.6rem 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  color: var(--gedimmt);
+  padding: 1.3rem 1.6rem 0 0;
 }
 
 .beitragskarte-titel {
-    font-size: 1.05rem;
-    font-weight: 800;
-    line-height: 1.3;
-    margin-bottom: 0.45em;
-    color: var(--tinte);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 0.45em;
+  color: var(--tinte);
 }
 
 .beitragskarte-titel a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .beitragskarte-titel a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--tuerkis);
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-color: var(--tuerkis);
+  text-decoration-thickness: 2px;
 }
 
 .beitragskarte-titel a.link-magenta:hover {
-    text-decoration-color: var(--magenta);
+  text-decoration-color: var(--magenta);
 }
 
 .beitragskarte-titel a.link-orange:hover {
-    text-decoration-color: var(--orange);
+  text-decoration-color: var(--orange);
 }
 
 .beitragskarte-titel a.link-gruen:hover {
-    text-decoration-color: var(--gruen);
+  text-decoration-color: var(--gruen);
 }
 
 .beitragskarte-titel a.link-lila:hover {
-    text-decoration-color: var(--lila);
+  text-decoration-color: var(--lila);
 }
 
 .beitragskarte-titel a.link-tuerkis:hover {
-    text-decoration-color: var(--tuerkis);
+  text-decoration-color: var(--tuerkis);
 }
 
 .beitragskarte-titel-zeile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
-    margin-bottom: 0.45em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 0.45em;
 }
 
 .beitragskarte-titel-zeile .beitragskarte-titel {
-    margin-bottom: 0;
-    flex: 1;
-    min-width: 0;
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .beitragskarte-titel-zeile .schaltflaeche {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .beitragskarte-auszug {
-    font-size: 0.87rem;
-    color: var(--gedimmt);
+  font-size: 0.87rem;
+  color: var(--gedimmt);
 }
 
 .beitragskarte-etikett {
-    display: inline flow-root;
-    margin-bottom: 0.9em;
+  display: inline flow-root;
+  margin-bottom: 0.9em;
 }
 
 /* ── Startseite-Kacheln ── */
 .startseite-kacheln .beitragskarte-inhalt {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
-    padding: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1rem;
 }
 
 .startseite-kacheln .beitragskarte-inhalt .schaltflaeche {
-    display: inline-block;
-    margin-top: 0 !important;
-    align-self: center !important;
-    flex-shrink: 0;
+  display: inline-block;
+  margin-top: 0 !important;
+  align-self: center !important;
+  flex-shrink: 0;
 }
 
 .startseite-kacheln .beitragskarte-titel {
-    position: relative;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: auto;
-    margin-bottom: 0;
-    flex: 1;
-    min-width: 0;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: auto;
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .startseite-kacheln .beitragskarte-titel a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-    align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  align-items: flex-start;
 }
 
 .startseite-kacheln .beitragskarte-titel a:hover .beitragskarte-zeile1,
 .startseite-kacheln .beitragskarte-titel a:hover .beitragskarte-zeile2 {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-.startseite-kacheln .beitragskarte-titel a.unterstrich-magenta:hover .beitragskarte-zeile1,
-.startseite-kacheln .beitragskarte-titel a.unterstrich-magenta:hover .beitragskarte-zeile2 {
-    text-decoration-color: var(--magenta);
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-magenta:hover
+  .beitragskarte-zeile1,
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-magenta:hover
+  .beitragskarte-zeile2 {
+  text-decoration-color: var(--magenta);
 }
 
-.startseite-kacheln .beitragskarte-titel a.unterstrich-orange:hover .beitragskarte-zeile1,
-.startseite-kacheln .beitragskarte-titel a.unterstrich-orange:hover .beitragskarte-zeile2 {
-    text-decoration-color: var(--orange);
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-orange:hover
+  .beitragskarte-zeile1,
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-orange:hover
+  .beitragskarte-zeile2 {
+  text-decoration-color: var(--orange);
 }
 
-.startseite-kacheln .beitragskarte-titel a.unterstrich-gruen:hover .beitragskarte-zeile1,
-.startseite-kacheln .beitragskarte-titel a.unterstrich-gruen:hover .beitragskarte-zeile2 {
-    text-decoration-color: var(--gruen);
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-gruen:hover
+  .beitragskarte-zeile1,
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-gruen:hover
+  .beitragskarte-zeile2 {
+  text-decoration-color: var(--gruen);
 }
 
-.startseite-kacheln .beitragskarte-titel a.unterstrich-lila:hover .beitragskarte-zeile1,
-.startseite-kacheln .beitragskarte-titel a.unterstrich-lila:hover .beitragskarte-zeile2 {
-    text-decoration-color: var(--lila);
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-lila:hover
+  .beitragskarte-zeile1,
+.startseite-kacheln
+  .beitragskarte-titel
+  a.unterstrich-lila:hover
+  .beitragskarte-zeile2 {
+  text-decoration-color: var(--lila);
 }
 
 .startseite-kacheln .beitragskarte-und {
-    position: absolute;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1;
-    left: 0.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    user-select: none;
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
 }
 
 .startseite-kacheln .beitragskarte-zeile1,
 .startseite-kacheln .beitragskarte-zeile2 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    line-height: 1.2;
-    position: relative;
-    z-index: 1;
-    color: var(--tinte);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  color: var(--tinte);
 }
-
 
 /* ══════════════════════════════════════════
    ARTIKEL-EINZELANSICHT
@@ -1423,297 +1470,297 @@ nav a.mobil-menu-kachel {
 
 /* ── Rahmen ── */
 .artikel-rahmen {
-    background: var(--hintergrund-karte);
-    border: var(--rahmen-gross);
-    box-shadow: var(--schatten-gross);
-    padding: 2em;
-    margin-bottom: 2rem;
+  background: var(--hintergrund-karte);
+  border: var(--rahmen-gross);
+  box-shadow: var(--schatten-gross);
+  padding: 2em;
+  margin-bottom: 2rem;
 }
 
 .artikel-rahmen:last-of-type {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .artikel-kopf.artikel-rahmen {
-    background: var(--tuerkis-hell);
+  background: var(--tuerkis-hell);
 }
 
 /* ── Zweispaltig ── */
 .artikel-inhalt.zweispaltig {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2em;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  align-items: start;
 }
 
 .artikel-inhalt.zweispaltig .artikel-rahmen {
-    display: block;
+  display: block;
 }
 
 /* ── Meta ── */
 .artikel-meta {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.8rem !important;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--gedimmt);
-    margin-bottom: 0.4em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gedimmt);
+  margin-bottom: 0.4em;
 }
 
 .artikel-meta-datum {
-    background: var(--gelb);
-    color: var(--tinte);
-    display: inline;
-    padding: 0.2em 0.6em;
-    border: var(--rahmen);
-    box-shadow: var(--schatten-klein);
+  background: var(--gelb);
+  color: var(--tinte);
+  display: inline;
+  padding: 0.2em 0.6em;
+  border: var(--rahmen);
+  box-shadow: var(--schatten-klein);
 }
 
 .artikel-meta-thema {
-    color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 .artikel-meta-thema a {
-    color: var(--tinte);
-    text-decoration: none;
+  color: var(--tinte);
+  text-decoration: none;
 }
 
 .artikel-meta-thema a:hover {
-    color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 /* ── Hintergrund Artikelkopf ── */
 .kategorie-self-hosting-dienste.artikel-kopf {
-    background: var(--magenta-hell);
+  background: var(--magenta-hell);
 }
 
 .kategorie-netzwerk-infrastruktur.artikel-kopf {
-    background: var(--orange-hell);
+  background: var(--orange-hell);
 }
 
 .kategorie-smart-home-automatisierung.artikel-kopf {
-    background: var(--gruen-hell);
+  background: var(--gruen-hell);
 }
 
 .kategorie-proberaum-musikmachen.artikel-kopf {
-    background: var(--lila-hell);
+  background: var(--lila-hell);
 }
 
 .kategorie-bild-self-hosting-dienste {
-    background: var(--magenta);
+  background: var(--magenta);
 }
 
 .kategorie-bild-netzwerk-infrastruktur {
-    background: var(--orange);
+  background: var(--orange);
 }
 
 .kategorie-bild-smart-home-automatisierung {
-    background: var(--gruen);
+  background: var(--gruen);
 }
 
 .kategorie-bild-proberaum-musikmachen {
-    background: var(--lila);
+  background: var(--lila);
 }
 
 /* ── Datum ── */
 .kategorie-self-hosting-dienste .artikel-meta-datum {
-    background: var(--magenta);
-    color: var(--weiss);
+  background: var(--magenta);
+  color: var(--weiss);
 }
 
 .kategorie-netzwerk-infrastruktur .artikel-meta-datum {
-    background: var(--orange);
-    color: var(--weiss);
+  background: var(--orange);
+  color: var(--weiss);
 }
 
 .kategorie-smart-home-automatisierung .artikel-meta-datum {
-    background: var(--gruen);
-    color: var(--weiss);
+  background: var(--gruen);
+  color: var(--weiss);
 }
 
 .kategorie-proberaum-musikmachen .artikel-meta-datum {
-    background: var(--lila);
-    color: var(--weiss);
+  background: var(--lila);
+  color: var(--weiss);
 }
 
 /* ── Thema ── */
 .kategorie-self-hosting-dienste .artikel-meta-thema,
 .kategorie-self-hosting-dienste .artikel-meta-thema a:hover {
-    color: var(--magenta);
+  color: var(--magenta);
 }
 
 .kategorie-netzwerk-infrastruktur .artikel-meta-thema,
 .kategorie-netzwerk-infrastruktur .artikel-meta-thema a:hover {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 .kategorie-smart-home-automatisierung .artikel-meta-thema,
 .kategorie-smart-home-automatisierung .artikel-meta-thema a:hover {
-    color: var(--gruen);
+  color: var(--gruen);
 }
 
 .kategorie-proberaum-musikmachen .artikel-meta-thema,
 .kategorie-proberaum-musikmachen .artikel-meta-thema a:hover {
-    color: var(--lila);
+  color: var(--lila);
 }
 
 /* ── Einleitung ── */
 .artikel-einleitung {
-    font-size: 1.05rem;
-    color: var(--tinte);
-    font-weight: 500;
-    margin-top: 0.8em;
-    margin-bottom: 0;
-    line-height: 1.65;
+  font-size: 1.05rem;
+  color: var(--tinte);
+  font-weight: 500;
+  margin-top: 0.8em;
+  margin-bottom: 0;
+  line-height: 1.65;
 }
 
 /* ── Überschriften ── */
 .artikel-rahmen h1 {
-    font-size: 2.1rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    color: var(--tinte);
-    margin-bottom: 0.3em;
-    /*
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--tinte);
+  margin-bottom: 0.3em;
+  /*
   background: var(--gelb);
   padding: 0.2em;
   display: inline-block;*/
 }
 
 .artikel-rahmen h2 {
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: var(--tinte);
-    margin: 0 0 1em;
-    border-left: 4px solid var(--tuerkis);
-    padding-left: 0.7em;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--tinte);
+  margin: 0 0 1em;
+  border-left: 4px solid var(--tuerkis);
+  padding-left: 0.7em;
 }
 
 .artikel-rahmen h3 {
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--tinte);
-    margin: 0em 0 0.4em 0;
-    border-left: 4px solid var(--tuerkis);
-    padding-left: 0.6em;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--tinte);
+  margin: 0em 0 0.4em 0;
+  border-left: 4px solid var(--tuerkis);
+  padding-left: 0.6em;
 }
 
 .kategorie-self-hosting-dienste .artikel-rahmen h2 {
-    border-left-color: var(--magenta);
+  border-left-color: var(--magenta);
 }
 
 .kategorie-netzwerk-infrastruktur .artikel-rahmen h2 {
-    border-left-color: var(--tuerkis);
+  border-left-color: var(--tuerkis);
 }
 
 .kategorie-smart-home-automatisierung .artikel-rahmen h2 {
-    border-left-color: var(--gruen);
+  border-left-color: var(--gruen);
 }
 
 .kategorie-proberaum-musikmachen .artikel-rahmen h2 {
-    border-left-color: var(--lila);
+  border-left-color: var(--lila);
 }
 
 .quadrat-farbe {
-    width: 8px;
-    height: 8px;
-    border-radius: 0;
-    flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  flex-shrink: 0;
 }
 
 .artikel-mehr-datum .quadrat-farbe {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    flex-shrink: 0;
-    vertical-align: middle;
-    position: relative;
-    top: -1px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
 
 /* ── Fließtext ── */
 .artikel-rahmen p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    /*
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  /*
     line-height: 1.75;*/
-    text-align: justify;
+  text-align: justify;
 }
 
 .artikel-rahmen p:last-child {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 .artikel-rahmen ul,
 .artikel-rahmen ol {
-    padding-left: 1.5em;
-    margin-bottom: 1rem;
+  padding-left: 1.5em;
+  margin-bottom: 1rem;
 }
 
 .artikel-rahmen li {
-    margin-bottom: 0.4em;
-    font-size: 0.97rem;
+  margin-bottom: 0.4em;
+  font-size: 0.97rem;
 }
 
 .artikel-rahmen li:last-child {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 .artikel-rahmen ul li::marker {
-    color: var(--tuerkis);
+  color: var(--tuerkis);
 }
 
 /* ── Trennlinie ── */
 .artikel-trennlinie {
-    border: none;
-    border-top: 2px dashed var(--linie);
-    margin: 2em 0 1.5em;
+  border: none;
+  border-top: 2px dashed var(--linie);
+  margin: 2em 0 1.5em;
 }
 
 /* ── Navigation ── */
 .artikel-navigation {
-    display: flex;
-    gap: 1em;
-    margin-top: 2rem;
+  display: flex;
+  gap: 1em;
+  margin-top: 2rem;
 }
 
 .artikel-navigation .schaltflaeche {
-    display: grid;
-    padding: 0.8em 1.2em;
-    align-items: center;
-    margin: auto;
-    width: fit-content;
+  display: grid;
+  padding: 0.8em 1.2em;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
 }
 
 .schaltflaeche-tuerkis.artikel-nav,
 .schaltflaeche-gelb-links.artikel-nav {
-    grid-template-columns: 24px 1fr;
-    gap: 0.8em;
+  grid-template-columns: 24px 1fr;
+  gap: 0.8em;
 }
 
 .schaltflaeche-magenta.artikel-nav,
 .schaltflaeche-gelb-rechts.artikel-nav {
-    grid-template-columns: 1fr 24px;
-    gap: 0.8em;
-    text-align: right;
+  grid-template-columns: 1fr 24px;
+  gap: 0.8em;
+  text-align: right;
 }
 
 .artikel-nav-pfeil {
-    font-size: 3rem;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0.5rem;
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.5rem;
 }
 
 .artikel-nav-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-    font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  font-size: 1rem;
 }
 
 /* ══════════════════════════════════════════
@@ -1721,72 +1768,72 @@ nav a.mobil-menu-kachel {
 ══════════════════════════════════════════ */
 
 .hinweisbox {
-    border: var(--rahmen);
-    box-shadow: var(--schatten);
-    padding: 0.9em 1.2em 0.9em 1.5em;
-    margin: 1.4em 0;
-    display: flex;
-    gap: 0.9em;
-    align-items: flex-start;
-    position: relative;
+  border: var(--rahmen);
+  box-shadow: var(--schatten);
+  padding: 0.9em 1.2em 0.9em 1.5em;
+  margin: 1.4em 0;
+  display: flex;
+  gap: 0.9em;
+  align-items: flex-start;
+  position: relative;
 }
 
 .hinweisbox::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 5px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
 }
 
 blockquote.hinweisbox p,
 .hinweisbox p {
-    font-size: 0.9rem;
-    margin: 0;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 blockquote.hinweisbox strong:first-child,
 .hinweisbox strong:first-child {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08rem;
-    display: block;
-    margin-bottom: 0.2em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  display: block;
+  margin-bottom: 0.2em;
 }
 
 .hinweisbox-tipp {
-    background: var(--gruen-hell);
+  background: var(--gruen-hell);
 }
 
 .hinweisbox-tipp::before {
-    background: var(--gruen);
+  background: var(--gruen);
 }
 
 .hinweisbox-warnung {
-    background: var(--gelb-hell);
+  background: var(--gelb-hell);
 }
 
 .hinweisbox-warnung::before {
-    background: var(--gelb);
+  background: var(--gelb);
 }
 
 .hinweisbox-info {
-    background: var(--orange-hell);
+  background: var(--orange-hell);
 }
 
 .hinweisbox-info::before {
-    background: var(--orange);
+  background: var(--orange);
 }
 
 /* ── Normales Blockquote ── */
 blockquote:not(.hinweisbox) {
-    border-left: 4px solid var(--linie);
-    padding: 0.5em 1em;
-    margin: 1em 0;
-    color: var(--gedimmt);
-    font-style: italic;
+  border-left: 4px solid var(--linie);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  color: var(--gedimmt);
+  font-style: italic;
 }
 
 /* ══════════════════════════════════════════
@@ -1794,66 +1841,66 @@ blockquote:not(.hinweisbox) {
 ══════════════════════════════════════════ */
 
 pre {
-    background: #0d0d1a;
-    color: #e8e8f8;
-    border: var(--rahmen);
-    box-shadow: var(--schatten);
-    padding: 1.3em;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.87rem;
-    overflow-x: auto;
-    margin: 1.3em 0;
-    line-height: 1.6;
+  background: #0d0d1a;
+  color: #e8e8f8;
+  border: var(--rahmen);
+  box-shadow: var(--schatten);
+  padding: 1.3em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.87rem;
+  overflow-x: auto;
+  margin: 1.3em 0;
+  line-height: 1.6;
 }
 
 pre code {
-    font-family: inherit;
-    background: none;
-    border: none;
-    padding: 0;
+  font-family: inherit;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 code {
-    background: var(--gelb-hell);
-    color: #875100;
-    border: 1.5px solid #f5c518;
-    padding: 0.1em 0.35em;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.86em;
+  background: var(--gelb-hell);
+  color: #875100;
+  border: 1.5px solid #f5c518;
+  padding: 0.1em 0.35em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.86em;
 }
 
 /* ── Syntax-Highlighting ── */
 .highlight .k,
 .highlight .kd,
 .highlight .kn {
-    color: #ff9060;
-    font-weight: 700;
+  color: #ff9060;
+  font-weight: 700;
 }
 
 .highlight .s,
 .highlight .s1,
 .highlight .s2 {
-    color: #68d391;
+  color: #68d391;
 }
 
 .highlight .c,
 .highlight .c1,
 .highlight .cm {
-    color: #555;
+  color: #555;
 }
 
 .highlight .nf,
 .highlight .nb {
-    color: #b794f4;
+  color: #b794f4;
 }
 
 .highlight .mi,
 .highlight .mf {
-    color: #ffd700;
+  color: #ffd700;
 }
 
 .highlight .na {
-    color: #79c0ff;
+  color: #79c0ff;
 }
 
 /* ══════════════════════════════════════════
@@ -1861,28 +1908,28 @@ code {
 ══════════════════════════════════════════ */
 
 .seitenfuss {
-    background: var(--tinte);
-    color: rgba(255, 255, 255, 0.5);
-    padding: 1.5em 2em;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 3px solid var(--gelb);
+  background: var(--tinte);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1.5em 2em;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid var(--gelb);
 }
 
 .seitenfuss a {
-    text-transform: none;
+  text-transform: none;
 }
 
 .seitenfuss span {
-    color: var(--weiss);
+  color: var(--weiss);
 }
 
 .seitenfuss em {
-    color: var(--rot);
+  color: var(--rot);
 }
 
 /* ══════════════════════════════════════════
@@ -1890,267 +1937,267 @@ code {
 ══════════════════════════════════════════ */
 
 @media (min-width: 993px) {
-    .nur-mobil {
-        display: none !important;
-    }
+  .nur-mobil {
+    display: none !important;
+  }
 }
 
 @media (max-width: 992px) {
-    h1 {
-        font-size: 1.68rem !important;
-        line-height: 2rem;
-    }
+  h1 {
+    font-size: 1.68rem !important;
+    line-height: 2rem;
+  }
 
-    h2 {
-        font-size: 1.4rem !important;
-        line-height: 1.68rem;
-    }
+  h2 {
+    font-size: 1.4rem !important;
+    line-height: 1.68rem;
+  }
 
-    h3,
-    h4 {
-        font-size: 1.2rem !important;
-        line-height: 1.44rem;
-    }
+  h3,
+  h4 {
+    font-size: 1.2rem !important;
+    line-height: 1.44rem;
+  }
 
-    h5 {
-        font-size: 1rem !important;
-        line-height: 1.2rem;
-    }
+  h5 {
+    font-size: 1rem !important;
+    line-height: 1.2rem;
+  }
 
-    .nur-desktop {
-        display: none !important;
-    }
+  .nur-desktop {
+    display: none !important;
+  }
 
-    .artikel-kopf[style*="grid"] {
-        grid-template-columns: 1fr !important;
-    }
+  .artikel-kopf[style*="grid"] {
+    grid-template-columns: 1fr !important;
+  }
 
-    .artikel-kopf[style*="grid"] > div:last-child {
-        height: auto;
-        border-left: none !important;
-        border-top: var(--rahmen-gross);
-    }
+  .artikel-kopf[style*="grid"] > div:last-child {
+    height: auto;
+    border-left: none !important;
+    border-top: var(--rahmen-gross);
+  }
 
-    .artikel-mehr-kopf,
-    .artikel-mehr-eintrag {
-        font-size: 1rem !important;
-    }
+  .artikel-mehr-kopf,
+  .artikel-mehr-eintrag {
+    font-size: 1rem !important;
+  }
 
-    .artikel-meta-datum {
-        line-height: 2rem !important;
-    }
+  .artikel-meta-datum {
+    line-height: 2rem !important;
+  }
 
-    .artikel-navigation {
-        flex-direction: column;
-    }
+  .artikel-navigation {
+    flex-direction: column;
+  }
 
-    .artikel-navigation .schaltflaeche {
-        width: 100%;
-    }
+  .artikel-navigation .schaltflaeche {
+    width: 100%;
+  }
 
-    .artikel-rahmen {
-        padding: 1.5em;
-    }
+  .artikel-rahmen {
+    padding: 1.5em;
+  }
 
-    .artikel-inhalt.zweispaltig,
-    .aufmacher {
-        grid-template-columns: 1fr;
-    }
+  .artikel-inhalt.zweispaltig,
+  .aufmacher {
+    grid-template-columns: 1fr;
+  }
 
-    .aufmacher:last-of-type {
-        margin-bottom: 2rem;
-    }
+  .aufmacher:last-of-type {
+    margin-bottom: 2rem;
+  }
 
-    .aufmacher-etikett,
-    .aufmacher-seite-titel {
-        font-size: 0.8rem;
-    }
+  .aufmacher-etikett,
+  .aufmacher-seite-titel {
+    font-size: 0.8rem;
+  }
 
-    .aufmacher-etikett-zeile {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4em;
-    }
+  .aufmacher-etikett-zeile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4em;
+  }
 
-    .aufmacher-haupt {
-        border-right: none;
-    }
+  .aufmacher-haupt {
+    border-right: none;
+  }
 
-    .aufmacher-profil {
-        grid-template-columns: 1fr;
-    }
+  .aufmacher-profil {
+    grid-template-columns: 1fr;
+  }
 
-    .aufmacher-seite {
-        border-top: var(--rahmen-gross);
-    }
+  .aufmacher-seite {
+    border-top: var(--rahmen-gross);
+  }
 
-    .beitragskarte {
-        overflow: hidden;
-        box-shadow: var(--schatten);
-        border: var(--rahmen-gross);
-    }
+  .beitragskarte {
+    overflow: hidden;
+    box-shadow: var(--schatten);
+    border: var(--rahmen-gross);
+  }
 
-    .beitragskarte:nth-child(2n) {
-        border-right: none;
-    }
+  .beitragskarte:nth-child(2n) {
+    border-right: none;
+  }
 
-    .beitragskarte:nth-last-child(-n+2) {
-        border-bottom: none;
-    }
+  .beitragskarte:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
 
-    .beitragskarte-auszug {
-        display: none;
-    }
+  .beitragskarte-auszug {
+    display: none;
+  }
 
-    .beitragsliste-raster {
-        grid-template-columns: 1fr !important;
-    }
+  .beitragsliste-raster {
+    grid-template-columns: 1fr !important;
+  }
 
-    .beitragskarte-inhalt {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1em;
-    }
+  .beitragskarte-inhalt {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
 
-    .beitragskarte-inhalt .schaltflaeche {
-        margin-top: 0 !important;
-        align-self: center !important;
-        flex-shrink: 0;
-    }
+  .beitragskarte-inhalt .schaltflaeche {
+    margin-top: 0 !important;
+    align-self: center !important;
+    flex-shrink: 0;
+  }
 
-    .beitragskarte-titel {
-        position: relative;
-        overflow: visible;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        margin-bottom: 0.45em;
-    }
+  .beitragskarte-titel {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0.45em;
+  }
 
-    .beitragskarte-titel a {
-        align-items: center;
-    }
+  .beitragskarte-titel a {
+    align-items: center;
+  }
 
-    .beitragskarte-zeile1,
-    .beitragskarte-zeile2 {
-        font-size: 1.1rem;
-    }
+  .beitragskarte-zeile1,
+  .beitragskarte-zeile2 {
+    font-size: 1.1rem;
+  }
 
-    .beitragskarte-und {
-        font-size: 6rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .beitragskarte-und {
+    font-size: 6rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    .rahmen-sticker {
-        max-width: 75%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+  .rahmen-sticker {
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    .seitenkopf-oben {
-        display: none;
-    }
+  .seitenkopf-oben {
+    display: none;
+  }
 
-    .seitenkopf-haupt {
-        padding: 0.8em 1em;
-    }
+  .seitenkopf-haupt {
+    padding: 0.8em 1em;
+  }
 
-    .seitenkopf-oben .ausgabe {
-        text-align: center;
-    }
+  .seitenkopf-oben .ausgabe {
+    text-align: center;
+  }
 
-    .logo-titel {
-        font-size: 1.4rem;
-    }
+  .logo-titel {
+    font-size: 1.4rem;
+  }
 
-    nav a {
-        padding: 0.4em 0.6em;
-        font-size: 0.7rem;
-    }
+  nav a {
+    padding: 0.4em 0.6em;
+    font-size: 0.7rem;
+  }
 
-    .seiteninhalt {
-        padding: 1.5rem 1rem 0 1rem;
-    }
+  .seiteninhalt {
+    padding: 1.5rem 1rem 0 1rem;
+  }
 
-    .bild {
-        width: 100%;
-        height: auto;
-        padding: 0;
-        padding-bottom: 0;
-    }
+  .bild {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-bottom: 0;
+  }
 
-    .schaltflaeche {
-        max-width: none;
-        font-size: 1rem !important;
-    }
+  .schaltflaeche {
+    max-width: none;
+    font-size: 1rem !important;
+  }
 
-    .seitenfuss {
-        flex-direction: column;
-        gap: 0.3em;
-        text-align: center;
-    }
+  .seitenfuss {
+    flex-direction: column;
+    gap: 0.3em;
+    text-align: center;
+  }
 
-    .seiteninhalt {
-        max-width: 100%;
-    }
+  .seiteninhalt {
+    max-width: 100%;
+  }
 
-    .seitenleiste-kategorie {
-        font-size: 0.8rem;
-    }
+  .seitenleiste-kategorie {
+    font-size: 0.8rem;
+  }
 
-    .seitenleiste-titel {
-        font-size: 1.2rem;
-    }
+  .seitenleiste-titel {
+    font-size: 1.2rem;
+  }
 
-    .startseite-kacheln .beitragskarte {
-        box-shadow: none;
-        border: none;
-        border-right: var(--rahmen-gross);
-        border-bottom: var(--rahmen-gross);
-    }
+  .startseite-kacheln .beitragskarte {
+    box-shadow: none;
+    border: none;
+    border-right: var(--rahmen-gross);
+    border-bottom: var(--rahmen-gross);
+  }
 
-    .startseite-kacheln .beitragskarte:nth-child(2n) {
-        border-right: none;
-    }
+  .startseite-kacheln .beitragskarte:nth-child(2n) {
+    border-right: none;
+  }
 
-    .startseite-kacheln .beitragskarte:nth-last-child(-n+2) {
-        border-bottom: none;
-    }
+  .startseite-kacheln .beitragskarte:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
 
-    .startseite-kacheln.beitragsliste-raster {
-        grid-template-columns: 1fr 1fr !important;
-        gap: 0;
-        border: var(--rahmen-gross);
-        box-shadow: var(--schatten);
-    }
+  .startseite-kacheln.beitragsliste-raster {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0;
+    border: var(--rahmen-gross);
+    box-shadow: var(--schatten);
+  }
 
-    .startseite-kacheln .beitragskarte-inhalt {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2em;
-        min-height: auto;
-    }
+  .startseite-kacheln .beitragskarte-inhalt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    min-height: auto;
+  }
 
-    .startseite-kacheln .beitragskarte-inhalt .schaltflaeche {
-        display: none;
-    }
+  .startseite-kacheln .beitragskarte-inhalt .schaltflaeche {
+    display: none;
+  }
 
-    .startseite-kacheln .beitragskarte-titel {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
+  .startseite-kacheln .beitragskarte-titel {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .startseite-kacheln .beitragskarte-titel a {
-        align-items: center;
-    }
+  .startseite-kacheln .beitragskarte-titel a {
+    align-items: center;
+  }
 
-    .startseite-kacheln .beitragskarte-und {
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .startseite-kacheln .beitragskarte-und {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

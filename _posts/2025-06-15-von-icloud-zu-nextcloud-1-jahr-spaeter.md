@@ -50,7 +50,7 @@ Manche Sachen könnten im Interface einfacher zugänglich sein:
 
 ### Foto-Management nicht auf Apple-Niveau
 
-Neben  der Nextcloud-Galerie ist auch Nextcloud Memories  eine tolle App, aber die Übersicht und besonders die Suchfunktion erreichen nicht die Qualität von Apple Fotos. Hier teste ich parallel noch Immich als Alternative.
+Neben der Nextcloud-Galerie ist auch Nextcloud Memories eine tolle App, aber die Übersicht und besonders die Suchfunktion erreichen nicht die Qualität von Apple Fotos. Hier teste ich parallel noch Immich als Alternative.
 
 ## Apps und Erweiterungen: Weniger ist mehr
 
@@ -73,21 +73,22 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 ## Kosten vs. Nutzen nach einem Jahr
 
 ### Kosten
+
 #### Hardware-Kosten
 
-| Komponente              | Hardware-Setup                 | Alternatives Setup              |
-|-------------------------|--------------------------------|---------------------------------|
-| **NAS/Computer**        | QNAP TR-872AeU-RP: 1.900 €     | Raspberry Pi 5 (16GB): 150 €    |
-| **Speicher-Controller** | -                              | M.2-HAT+: 15 €                  |
-| **System-SSD/Cache**    | 2× 2 TB Samsung 980 Pro: 350 € | 512 GB SSD: 50 €                |
-| **Externes Gehäuse**    | -                              | QNAP TR-004: 220 €              |
-| **HDD-Speicher**        | 8× 12 TB Seagate Exos: 2.250 € | 4× 12 TB Seagate Exos: 1.100 €  |
-| **Gesamtkosten**        | **4.500 €**                    | **1.535 €**                     |
+| Komponente              | Hardware-Setup                 | Alternatives Setup             |
+| ----------------------- | ------------------------------ | ------------------------------ |
+| **NAS/Computer**        | QNAP TR-872AeU-RP: 1.900 €     | Raspberry Pi 5 (16GB): 150 €   |
+| **Speicher-Controller** | -                              | M.2-HAT+: 15 €                 |
+| **System-SSD/Cache**    | 2× 2 TB Samsung 980 Pro: 350 € | 512 GB SSD: 50 €               |
+| **Externes Gehäuse**    | -                              | QNAP TR-004: 220 €             |
+| **HDD-Speicher**        | 8× 12 TB Seagate Exos: 2.250 € | 4× 12 TB Seagate Exos: 1.100 € |
+| **Gesamtkosten**        | **4.500 €**                    | **1.535 €**                    |
 
 #### Laufende Kosten (jährlich)
 
-| Kostenpunkt               | Hardware-Setup       | Alternatives Setup  | Apple Services |
-|---------------------------|----------------------|---------------------|--------------------------------------|
+| Kostenpunkt               | Hardware-Setup       | Alternatives Setup  | Apple Services                       |
+| ------------------------- | -------------------- | ------------------- | ------------------------------------ |
 | **Stromverbrauch**        | 540 kWh = 190 €/Jahr | 220 kWh = 75 €/Jahr | -                                    |
 | **Cloud-Dienste**         | -                    | -                   | Apple One Premium (2 TB): 420 €/Jahr |
 | **Zusätzlicher Speicher** | -                    | -                   | iCloud+ (2 TB): 120 €/Jahr           |
@@ -96,17 +97,17 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 #### Amortisationsrechnung (5 Jahre)
 
 | Setup                       | Anschaffung | Laufende Kosten (5J) | Gesamtkosten | Speicherkapazität |
-|-----------------------------|-------------|----------------------|--------------|-------------------|
+| --------------------------- | ----------- | -------------------- | ------------ | ----------------- |
 | **Hardware-Setup**          | 4.500 €     | 950 €                | **5.500 €**  | 48 TB (RAID 10)   |
 | **Alternatives Setup**      | 1.535 €     | 375 €                | **1.900 €**  | 24 TB (RAID 10)   |
 | **Apple One Premium 4 TB**  | 0 €         | 2.700 €              | **2.700 €**  | 4 TB              |
 | **Apple One Family 200 GB** | 0 €         | 1.500 €              | **1.500 €**  | 200 GB            |
-| **Downgrade bei Apple**     | 0 €         | -1.200 €              | **-1.200 €**  | 200 GB            |
+| **Downgrade bei Apple**     | 0 €         | -1.200 €             | **-1.200 €** | 200 GB            |
 
 #### Zusätzliche Faktoren
 
 | Aspekt             | Nextcloud                        | Apple Services               |
-|--------------------|----------------------------------|------------------------------|
+| ------------------ | -------------------------------- | ---------------------------- |
 | **Zeitaufwand**    | Wartung: 1 Std./Monat            | minimal                      |
 | **Datenkontrolle** | vollständig                      | eingeschränkt                |
 | **Privacy**        | maximal                          | abhängig von Apple           |
@@ -116,11 +117,13 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 ### Nutzen
 
 #### Technische Vorteile
+
 - Vollständige Kontrolle über eigene Daten
 - Keine Speicherlimits (außer Hardware-Grenzen)
 - Flexibilität bei Apps und Konfiguration
 
 #### Persönliche Vorteile
+
 - Privacy: Daten bleiben im eigenen Besitz
 - Lerneffekt: Server-Administration und Selbst-Hosting
 - Unabhängigkeit: Keine Abhängigkeit von Apple-Services

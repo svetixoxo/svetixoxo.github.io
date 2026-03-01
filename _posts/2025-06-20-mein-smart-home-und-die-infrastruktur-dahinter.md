@@ -4,7 +4,8 @@ title: "Mein Smart Home und die Infrastruktur dahinter"
 date: 2025-06-20
 category: "Netzwerk & Infrastruktur"
 bild: /assets/img/posts/250620-mein-smart-home-und-die-infrastruktur-dahinter.png
-tags: [smart-home, infrastruktur, netzwerk, automatisierung, hardware, sicherheit]
+tags:
+  [smart-home, infrastruktur, netzwerk, automatisierung, hardware, sicherheit]
 excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden."
 ---
 
@@ -29,6 +30,7 @@ Ein wichtiger Sicherheitsaspekt in der <a href="/it-infrastruktur/">Smart-Home-I
 - Sonstiges / Reserve (2 VLANs)
 
 Vorteile der Segmentierung:
+
 - Verbesserte Sicherheit: Ein kompromittiertes IoT-Gerät kann nicht auf persönliche Daten in Nextcloud zugreifen („IoT“ steht für „Internet of Things“, also bspw. Smart-Home-Geräte)
 - Bessere Performance durch reduzierten Broadcast-Traffic
 - Einfacheres Troubleshooting bei Netzwerkproblemen

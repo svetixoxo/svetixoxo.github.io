@@ -149,7 +149,6 @@ permalink: /ueber-mich/
 </div>
 </div>
 
-
 <!-- ══════════════════════════════════════════
      KURZPROFIL
 ══════════════════════════════════════════ -->
@@ -176,7 +175,6 @@ permalink: /ueber-mich/
     <img src="/assets/img/svetixoxo-ueber-mich.png" class="bild" style="padding: 1.3rem;">
   </div>
 </div>
-
 
 <!-- ══════════════════════════════════════════
      WICHTIGE SEITEN & ARTIKEL
@@ -221,7 +219,6 @@ permalink: /ueber-mich/
   </div>
 </div>
 
-
 <!-- ══════════════════════════════════════════
      WIE DIESER BLOG ENTSTAND
 ══════════════════════════════════════════ -->
@@ -243,7 +240,6 @@ permalink: /ueber-mich/
   <p>Dieser Blog ist keine Tutorial-Seite und kein Showcase – er ist ein Ort, wo ich aufschreibe, was ich einsetze, warum ich mich so entschieden habe und was dabei schiefgelaufen ist. An wen er sich richtet, weiß ich ehrlich gesagt nicht genau. Vielleicht an mich selbst. Wer ähnliche Interessen hat und gerne liest, wie jemand anderes das alles zusammenbaut, wird hier vielleicht etwas finden.</p>
 </div>
 
-
 <!-- ══════════════════════════════════════════
      BLOG IN ZAHLEN
 ══════════════════════════════════════════ -->
@@ -254,13 +250,13 @@ permalink: /ueber-mich/
 
 {% assign woerter_gesamt = 0 %}
 {% for post in site.posts %}
-  {% assign woerter = post.content | strip_html | number_of_words %}
-  {% assign woerter_gesamt = woerter_gesamt | plus: woerter %}
+{% assign woerter = post.content | strip_html | number_of_words %}
+{% assign woerter_gesamt = woerter_gesamt | plus: woerter %}
 {% endfor %}
 {% if site.posts.size > 0 %}
-  {% assign woerter_schnitt = woerter_gesamt | divided_by: site.posts.size %}
+{% assign woerter_schnitt = woerter_gesamt | divided_by: site.posts.size %}
 {% else %}
-  {% assign woerter_schnitt = 0 %}
+{% assign woerter_schnitt = 0 %}
 {% endif %}
 {% assign erster_post = site.posts | last %}
 {% assign letzter_post = site.posts | first %}
@@ -358,7 +354,6 @@ permalink: /ueber-mich/
       document.getElementById('repo-commits-info').textContent = 'nicht verfügbar (API-Limit erreicht)';
     });
 </script>
-
 
 <!-- ══════════════════════════════════════════
      LIZENZ

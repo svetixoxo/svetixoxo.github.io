@@ -102,6 +102,7 @@ Der wichtigste: Latenz. Je mehr einzelne Kanäle übertragen werden, desto höhe
 </div>
 
 ## Einfach, aber durchdacht
+
 Was diesen Raum von einer improvisierten Lösung unterscheidet, ist dass nichts umgebaut werden muss. Alles ist dauerhaft verkabelt, alles liegt bereit. Sicherlich hätte man einiges anders machen können, aber irgendwie funktioniert es dann doch. Ob Aufnahme, Probe zu zweit oder Remote-Session mit der Band: Es geht darum, so wenig Reibung wie möglich zwischen dem Wunsch zu spielen und dem tatsächlichen Spielen zu haben.
 
 Remote-Proben mit Sonobus sind kein vollwertiger Ersatz für einen gemeinsamen Raum. Die Latenz ist teilweise spürbar, die Balance stimmt nie ganz so wie vor Ort und vereinzelt bricht die Verbindung einfach ab. Aber sie funktionieren gut genug, um Arrangements durchzuarbeiten, neue Songs zu besprechen und den Draht zur Band zu halten – und das zählt mehr als die technische Perfektion.
