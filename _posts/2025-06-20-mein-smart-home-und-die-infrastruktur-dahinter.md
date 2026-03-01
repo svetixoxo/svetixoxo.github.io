@@ -53,7 +53,7 @@ Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus m
 
 In meiner vorherigen Wohnung hatte ich bereits Erfahrungen mit der Smart-Home-App von Fritz gesammelt, jedoch stellte sich schnell heraus, dass dieses System auf deutlich weniger Geräte ausgelegt und komplett geschlossen ist. Apple HomeKit bietet im Gegensatz dazu ein offenes System, das Geräte verschiedenster Hersteller problemlos einbinden kann. Über Homebridge lassen sich auch Geräte integrieren, die ursprünglich nicht HomeKit-kompatibel sind. HomeKit nutzt dabei verschiedene Protokolle wie WLAN, Zigbee und das neuere Matter/Thread, was eine hohe Flexibilität bei der Auswahl der Geräte ermöglicht.
 
-Herausforderungen bei der Interoperabilität verschiedener Hersteller sind mit Homebridge praktisch nicht existent. Selbst Geräte, die ursprünglich gar nicht für Smart-Home-Anwendungen vorgesehen waren, konnten durch einen spezialisierten Elektrotechnik-Betrieb erfolgreich eingebunden werden. Ein perfektes Beispiel dafür ist die Fußbodenheizung – was die Jungs dort an Integrationsarbeit geleistet haben, bleibt für mich zwar ein Rätsel, aber das Ergebnis funktioniert tadellos und ich bin sehr dankbar für diese Lösung.
+Herausforderungen bei der Interoperabilität verschiedener Hersteller sind mit Homebridge praktisch nicht existent. Selbst Geräte, die ursprünglich gar nicht für Smart-Home-Anwendungen vorgesehen waren, konnten durch einen spezialisierten Elektrotechnik-Betrieb erfolgreich eingebunden werden. Ein perfektes Beispiel dafür ist die <a href="/fussbodenheizung-smart-integration-schritt-fuer-schritt/" class="link-gruen">smart integrierte Fußbodenheizung</a> – was die Jungs dort an Integrationsarbeit geleistet haben, bleibt für mich zwar ein Rätsel, aber das Ergebnis funktioniert tadellos und ich bin sehr dankbar für diese Lösung.
 
 Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin aber mit HomeKit soweit sehr zufrieden gewesen. Wer weiß – vielleicht steige ich ja irgendwann um. Bisher ist das aber nicht geplant. Noch nicht.
 
@@ -81,7 +81,7 @@ Die Kameras laufen an zwei 16-Port-Switches zusammen, die Speicherung der Aufzei
 
 ## Zentrale Steuerung & Monitoring
 
-An den Treppenaufgängen jedes Stockwerks ist je ein iPad in der Wand installiert, die als weitere Steuereinheiten dienen. Sie zeigen den Status der jeweiligen Systeme an und ermöglichen die manuelle Steuerung einzelner Komponenten. Darüber hinaus ist eine Steuerung über iPhone, Mac usw. möglich.
+An den Treppenaufgängen jedes Stockwerks ist je ein <a href="/ipad-als-steuerung-warum-ich-sie-fest-montiert-habe/" class="link-gruen">iPad in der Wand</a> installiert, die als weitere Steuereinheiten dienen. Sie zeigen den Status der jeweiligen Systeme an und ermöglichen die manuelle Steuerung einzelner Komponenten. Darüber hinaus ist eine Steuerung über iPhone, Mac usw. möglich.
 
 ## Redundanz & Ausfallsicherheit
 

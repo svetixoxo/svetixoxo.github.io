@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Smart Home und Datenschutz: Was nach außen geht und was nicht"
-date: 2025-11-07
+date: 2025-12-07
 category: "Smart Home & Automatisierung"
 bild: /assets/img/posts/251107-smart-home-und-datenschutz.png
 tags: [smart-home, datenschutz, netzwerk, vlan, homekit, sicherheit, infrastruktur]

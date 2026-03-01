@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Steinberg UR44C im Alltag"
-date: 2026-01-16
+date: 2025-11-20
 category: "Proberaum & Musikmachen"
 bild: /assets/img/posts/260116-steinberg-ur44c-im-alltag.png
 tags: [recording, interface, steinberg, mikrofon, logic-pro, home-recording]

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Was ein Signalsplitter im Proberaum bringt"
-date: 2026-02-23
+date: 2025-09-15
 category: "Proberaum & Musikmachen"
-bild: /assets/img/posts/260223-was-ein-signalsplitter-im-proberaum-bringt.png
+bild: /assets/img/posts/250915-was-ein-signalsplitter-im-proberaum-bringt.png
 tags: [proberaum, recording, signalkette, pa, mischpult]
 excerpt: "Kabel umstecken, Mikrofone umstellen, dann wieder zurück — so hat es bei uns angefangen. Heute steht alles an seinem Platz, egal ob wir proben oder aufnehmen. Der Grund dafür hängt an der Wand und hat acht Eingänge."
 ---
