@@ -3,7 +3,7 @@ layout: post
 title: "10 GbE im Heimnetzwerk: Overkill oder sinnvoll?"
 date: 2026-01-16
 category: "Netzwerk & Infrastruktur"
-bild: /assets/img/posts/2601-16-10-gbe-im-heimnetzwerk.png
+bild: /assets/img/posts/260116-10-gbe-im-heimnetzwerk.png
 tags: [netzwerk, switches, nas, performance]
 excerpt: "10 Gigabit Ethernet im Heimnetzwerk– klingt nach Overkill, ist aber in manchen Situationen der Unterschied zwischen flüssig und frustrierend. Wo es sich lohnt, wo 2,5 GbE reicht und wo 1 GbE immer noch ausreicht."
 ---

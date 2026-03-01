@@ -3,7 +3,7 @@ layout: post
 title: "Fußbodenheizung smart: Integration Schritt für Schritt"
 date: 2026-01-11
 category: "Smart Home & Automatisierung"
-bild: /assets/img/posts/260320-fussbodenheizung-smart.png
+bild: /assets/img/posts/260111-fussbodenheizung-smart.png
 tags: [smart-home, heizung, homekit, homebridge, integration]
 excerpt: "9 Räume, ein Gateway, viele Kabel und ein Elektrobetrieb, der wusste, was er tut. Wie die Fußbodenheizung ins Smart Home kam und warum ich es nicht selbst gemacht habe."
 ---

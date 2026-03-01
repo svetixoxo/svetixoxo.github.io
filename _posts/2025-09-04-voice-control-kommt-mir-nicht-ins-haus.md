@@ -3,7 +3,7 @@ layout: post
 title: "Voice Control? Kommt mir nicht ins Haus"
 date: 2025-09-04
 category: "Smart Home & Automatisierung"
-bild: /assets/img/posts/250904-voice-control.png
+bild: /assets/img/posts/250904-voice-control-kommt-mir-nicht-ins-haus.png
 tags: [smart-home, datenschutz, sprachsteuerung, homekit, siri]
 excerpt: "Kein Alexa, kein Google Assistant, kein Siri im Dauerbetrieb. Sprachsteuerung ist die ein super Feature im Smart Home – und trotzdem nutze ich sie nicht. Eine Erklärung, warum."
 ---
