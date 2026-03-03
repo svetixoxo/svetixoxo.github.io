@@ -1,20 +1,8 @@
 # Lizenz
 
-Dieses Lizenz-Dokument bezieht sich auf die Website unter [svetixoxo.github.io](https://svetixoxo.github.io) und das zugehörige Repository [svetixoxo/svetixoxo.github.io](https://github.com/svetixoxo/svetixoxo.github.io).
-
-```json
-{
-  "license": {
-    "code": {
-      "name": "All Rights Reserved",
-    },
-    "content": {
-      "name": "CC-BY-NC-ND-4.0",
-      "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-    }
-  }
-}
-```
+Dieses Lizenz-Dokument bezieht sich auf die
+- Website unter [svetixoxo.github.io](https://svetixoxo.github.io) und
+- das zugehörige Repository [svetixoxo/svetixoxo.github.io](https://github.com/svetixoxo/svetixoxo.github.io).
 
 ## Code-Lizenz
 
@@ -38,6 +26,7 @@ Eine Kopie dieser Lizenz ist abrufbar unter: [creativecommons.org/licenses/by-nc
 
 ---
 
+```txt
 Attribution-NonCommercial-NoDerivatives 4.0 International
 
 =======================================================================
@@ -440,3 +429,4 @@ the avoidance of doubt, this paragraph does not form part of the
 public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
+```
