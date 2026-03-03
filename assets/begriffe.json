@@ -1,0 +1,7 @@
+---
+---
+{
+  {% for begriff in site.data.begriffe %}
+  "{{ begriff[0] }}": "{{ begriff[1] }}"{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}
