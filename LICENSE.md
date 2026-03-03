@@ -6,7 +6,7 @@ Dieses Lizenz-Dokument bezieht sich auf die
 
 ## Code-Lizenz
 
-Copyright (c) 2026 svetixoxo — Alle Rechte vorbehalten.
+Copyright (c) 2026 Svetlana/svetixoxo.github.io — Alle Rechte vorbehalten.
 
 Der Code dieser Website – einschließlich, aber nicht beschränkt auf HTML und CSS – wurde vollständig selbst erstellt und ist urheberrechtlich geschützt.
 
@@ -24,7 +24,6 @@ Die Inhalte dieser Website – einschließlich, aber nicht beschränkt auf Texte
 
 Eine Kopie dieser Lizenz ist abrufbar unter: [creativecommons.org/licenses/by-nc-nd/4.0/deed.de](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de)
 
----
 
 ```txt
 Attribution-NonCommercial-NoDerivatives 4.0 International
