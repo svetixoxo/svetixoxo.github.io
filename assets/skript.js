@@ -197,9 +197,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (rahmen.length > 0) {
         fetch('/assets/begriffe.json')
             .then(function (r) {
-                return r.json();
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.text();
             })
-            .then(function (begriffe) {
+            .then(function (text) {
+                var begriffe = JSON.parse(text);
 
                 function escapeFuerRegex(str) {
                     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
