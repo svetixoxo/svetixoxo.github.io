@@ -179,50 +179,6 @@ permalink: /ueber-mich/
 
 
 <!-- ══════════════════════════════════════════
-     WICHTIGE SEITEN & ARTIKEL
-══════════════════════════════════════════ -->
-
-<div class="abschnitt-kopf">
-  <h2 style="background:var(--orange)">Wichtige Seiten &amp; Artikel</h2>
-</div>
-
-<div class="ueber-raster">
-  <div class="artikel-rahmen">
-    <ul class="link-liste">
-      <li>
-        <div>
-          <a href="/it-infrastruktur/" class="link-orange">Meine IT-Infrastruktur</a>
-          <span class="link-beschreibung">Übersicht über Netzwerk, Server, Smart Home und Client-Geräte – live gehalten und aktuell.</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="/mein-smart-home-und-die-infrastruktur-dahinter/" class="link-gruen">Mein Smart Home und die Infrastruktur dahinter</a>
-          <span class="link-beschreibung">Wie alles zusammenhängt: Netzwerk, Automatisierung, Kameras, Klimatisierung, Audio.</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div class="artikel-rahmen">
-    <ul class="link-liste">
-      <li>
-        <div>
-          <a href="/duo-proberaum-aufnehmen-proben-und-remote-sessions-zu-zweit/" class="link-lila">Duo-Proberaum: Aufnehmen, Proben und Remote-Sessions zu zweit</a>
-          <span class="link-beschreibung">Der kleine Heimproberaum – Interface, Mischpult, PA, Monitoring und Sonobus.</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="/band-proberaum-pa-und-recording-auf-getrennten-wegen/" class="link-lila">Band-Proberaum: PA und Recording auf getrennten Wegen</a>
-          <span class="link-beschreibung">95 qm, zwei Mischpulte, zwei Interfaces, zwei Signalsplitter – und wie das alles funktioniert.</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-<!-- ══════════════════════════════════════════
      WIE DIESER BLOG ENTSTAND
 ══════════════════════════════════════════ -->
 
