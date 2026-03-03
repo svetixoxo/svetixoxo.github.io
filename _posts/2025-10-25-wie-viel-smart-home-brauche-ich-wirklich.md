@@ -5,7 +5,7 @@ date: 2025-10-25
 category: "Smart Home & Automatisierung"
 bild: /assets/img/posts/251025-wie-viel-smart-home-brauche-ich-wirklich.png
 tags: [smart-home, einstieg, automatisierung, planung]
-excerpt: "Smart Home kann schnell eskalieren. Zwischen „ganz nett“ und „völlig übertrieben“ liegen oft nur ein paar Impulskäufe. Was braucht man wirklich und wo fängt man sinnvoll an?"
+excerpt: "Smart Home kann schnell eskalieren. Zwischen «ganz nett» und «völlig übertrieben» liegen oft nur ein paar Impulskäufe. Was braucht man wirklich und wo fängt man sinnvoll an?"
 ---
 
 ## Die Frage, die sich niemand stellt
@@ -16,7 +16,7 @@ Ich habe ein <a href="/it-infrastruktur/">umfangreiches Smart-Home-System</a>. B
 
 Nicht, weil es nicht funktioniert. Sondern weil der Weg dorthin ein anderer sein sollte. Nach dem Hauskauf habe ich das System zusammen mit entsprechenden Fachfirmen geplant und einrichten lassen. Alles auf einmal, alles durchdacht, alles nach meinen Vorgaben. Das Ergebnis funktioniert hervorragend.
 
-Aber: Mein Einstieg ins Smart Home sah anders aus. In der alten Wohnung hatte ich mit Fritz-Thermostaten angefangen. Später kamen Zwischensteckdosen und Tür-/Fenstersensoren dazu, alles über DECT vernetzt. Das war überschaubar, das war lernbar, das hat funktioniert. Vom großen System im Haus war das weit entfernt.
+Aber: Mein Einstieg ins Smart Home sah anders aus. In der alten Wohnung hatte ich <a href="/fritz-dect-302-vom-fritz-oekosystem-zu-apple-homekit/" class="link-gruen">mit Fritz-Thermostaten angefangen</a>. Später kamen Zwischensteckdosen und Tür-/Fenstersensoren dazu, alles über <span class="erklaerung" data-tip="Funkstandard für schnurlose Telefone">DECT</span> vernetzt. Das war überschaubar, das war lernbar, das hat funktioniert. Vom großen System im Haus war das weit entfernt.
 
 ## Die drei Kernfragen vor dem ersten Kauf
 
@@ -108,7 +108,7 @@ Smart Home ist nie fertig. Es gibt immer etwas zu verbessern, anzupassen oder zu
 
 ## Was ich heute anders machen würde
 
-Ich habe ein großes System, das nach dem Hauskauf <a href="/mein-smart-home-und-die-infrastruktur-dahinter/">professionell geplant und eingerichtet</a> wurde. Das funktioniert, aber der Weg dorthin ist nicht der, den ich Einsteigern empfehlen würde. Nicht, weil das System zu groß ist, sondern weil der Sprung von „ein paar Fritz-Geräte in der Wohnung" zu „komplettes Haus vernetzt" zu radikal war.
+Ich habe ein großes System, das nach dem Hauskauf <a href="/mein-smart-home-und-die-infrastruktur-dahinter/" class="link-orange">professionell geplant und eingerichtet</a> wurde. Das funktioniert, aber der Weg dorthin ist nicht der, den ich Einsteigern empfehlen würde. Nicht, weil das System zu groß ist, sondern weil der Sprung von «ein paar Fritz-Geräte in der Wohnung» zu «komplettes Haus vernetzt» zu radikal war.
 
 Meine ersten Schritte mit Smart Home in der alten Wohnung waren genau richtig: Fritz-Thermostate, ein paar Zwischensteckdosen, Tür- und Fenstersensoren. Alles über DECT, alles überschaubar. Ich habe gelernt, wie Automatisierung funktioniert, was Sinn macht und was nicht. Das war der richtige Einstieg. Der Fehler war der Sprung danach. Vom kleinen System direkt zum vollautomatisierten Haus, alles auf einmal geplant und installiert. Das funktioniert technisch einwandfrei, aber ich habe dabei Erfahrungen übersprungen, die wichtig gewesen wären.
 

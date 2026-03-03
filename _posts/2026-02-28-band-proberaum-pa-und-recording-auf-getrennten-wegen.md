@@ -109,11 +109,11 @@ excerpt: "95 qm, zwei Mischpulte, zwei Interfaces, zwei Signalsplitter – und e
 
 Wir haben zwei Proberäume – <a href="/duo-proberaum-aufnehmen-proben-und-remote-sessions-zu-zweit" class="link-lila">einen kleinen bei mir Zuhause für Duo-Sessions</a> und diesen hier: Den Band-Proberaum im Souterrain eines Bungalows. Rund 95 qm groß, akustisch behandelt und schallisoliert. Eine halbhohe Mauer teilt den Raum in zwei Bereiche: Den eigentlichen Proberaum und einen separaten Technikbereich, wo Computer und Geräteracks stehen.
 
-Das aktuelle Setup mit zwei Mischpulten und zwei Interfaces ist über die Zeit gewachsen — nicht nach einem großen Plan, sondern Stück für Stück mit jeder neuen Anforderung. Früher lief das Schlagzeug über ein Mischpult mit USB-Ausgang, der Rest der Band über ein kleines Interface. Das hat funktioniert, solange man nicht gleichzeitig aufnehmen und proben wollte. Die heutige Aufteilung gibt deutlich mehr Spielraum. Gemischt wird von unserem Keyboarder, sowohl bei Proben als auch bei Aufnahmen.
+Das aktuelle Setup mit zwei Mischpulten und zwei Interfaces ist über die Zeit gewachsen – nicht nach einem großen Plan, sondern Stück für Stück mit jeder neuen Anforderung. Früher lief das Schlagzeug über ein Mischpult mit USB-Ausgang, der Rest der Band über ein kleines Interface. Das hat funktioniert, solange man nicht gleichzeitig aufnehmen und proben wollte. Die heutige Aufteilung gibt deutlich mehr Spielraum. Gemischt wird von unserem Keyboarder, sowohl bei Proben als auch bei Aufnahmen.
 
 ## Mikrofonierung
 
-Das Schlagzeug wird vollständig abgenommen und hat seinen eigenen Submix über das Yamaha MG16. Die Keyboards kommen mit dem Allen & Heath ZED-10 ebenfalls über einen eigenen Submix. Gitarren laufen per Mikrofon am Amp, zusätzlich jeweils ein DI-Signal parallel — das gibt beim Reamping in der Nachbearbeitung mehr Flexibilität. Der Bass wird ebenfalls mit Mikrofon und DI kombiniert.
+Das Schlagzeug wird vollständig abgenommen und hat seinen eigenen Submix über das Yamaha MG16. Die Keyboards kommen mit dem Allen & Heath ZED-10 ebenfalls über einen eigenen Submix. Gitarren laufen per Mikrofon am Amp, zusätzlich jeweils ein DI-Signal parallel – das gibt beim Reamping in der Nachbearbeitung mehr Flexibilität. Der Bass wird ebenfalls mit Mikrofon und DI kombiniert.
 
 Für Gesang gibt es eine klare Trennung: Leadgesang und Backgrounds laufen über dynamische Mikrofone direkt in die PA. Für Aufnahmen kommen Großmembran-Kondensatoren zum Einsatz, die erst dann ins Interface gehen, wenn wirklich aufgenommen wird. Lediglich Gesang und Keys werden über die PA wiedergegeben; Gitarren und Bass laufen bei Proben über ihre Amps, das akustische Schlagzeug ist laut genug.
 
@@ -148,7 +148,7 @@ Für Gesang gibt es eine klare Trennung: Leadgesang und Backgrounds laufen über
 
 ## Signalkette
 
-Herzstück des Setups sind zwei <a href="/was-ein-signalsplitter-im-proberaum-bringt/" class="link-lila">Signalsplitter Art S8</a> — einer für das Schlagzeug, einer für den Rest der Band. Das Signal wird direkt nach den Mikrofonen aufgeteilt, bevor irgendetwas damit passiert. So laufen PA und Recording von Anfang an komplett getrennt: Was am Mischpult eingestellt wird, beeinflusst das Recording nicht. Was beim Recording passiert, interessiert die PA nicht. Sofern etwas mit akustischen Gitarren gemacht wird, kommen diese entweder direkt ins Mischpult oder leihen sich eines der Mikrofone der Gitarrenverstärker.
+Herzstück des Setups sind zwei <a href="/was-ein-signalsplitter-im-proberaum-bringt/" class="link-lila">Signalsplitter Art S8</a> – einer für das Schlagzeug, einer für den Rest der Band. Das Signal wird direkt nach den Mikrofonen aufgeteilt, bevor irgendetwas damit passiert. So laufen PA und Recording von Anfang an komplett getrennt: Was am Mischpult eingestellt wird, beeinflusst das Recording nicht. Was beim Recording passiert, interessiert die PA nicht. Sofern etwas mit akustischen Gitarren gemacht wird, kommen diese entweder direkt ins Mischpult oder leihen sich eines der Mikrofone der Gitarrenverstärker.
 
 Recording läuft nicht parallel zur Probe. Entweder werden Gesang und Instrumente über die beiden Steinberg UR816C aufgenommen oder es wird ein Probemitschnitt über die Stereo-Summe des Yamaha MG20XU per USB gemacht. Kein Umbauen, einfach Aufnahme starten.
 
@@ -224,9 +224,9 @@ Recording läuft nicht parallel zur Probe. Entweder werden Gesang und Instrument
 
 ## Monitoring & Mixing
 
-Für Proben läuft nicht jeder im Raum über einen eigenen Monitor — nur Leadgesang und der Keyboarder haben je einen db Flexsys FM10 als Bühnenmonitor vor sich. Der Keyboarder nutzt wahlweise auch Kopfhörer. Gitarren und akustisches Schlagzeug klingen ohnehin laut genug und der Bass schwebt auch irgendwo im Raum.
+Für Proben läuft nicht jeder im Raum über einen eigenen Monitor – nur Leadgesang und der Keyboarder haben je einen db Flexsys FM10 als Bühnenmonitor vor sich. Der Keyboarder nutzt wahlweise auch Kopfhörer. Gitarren und akustisches Schlagzeug klingen ohnehin laut genug und der Bass schwebt auch irgendwo im Raum.
 
-Für Aufnahmen sitzt der Keyboarder im Technikbereich am Mac Studio. Das Monitoring läuft dann über den Mackie Big Knob Studio auf die Yamaha&nbsp;HS5 und den HS8S-Subwoofer. Was im Raum klingt, bestimmt das MX20XU — was auf den Monitoren läuft, kommt direkt aus dem Interface. Die beiden laufen nicht zwingend identisch.
+Für Aufnahmen sitzt der Keyboarder im Technikbereich am Mac Studio. Das Monitoring läuft dann über den Mackie Big Knob Studio auf die Yamaha&nbsp;HS5 und den HS8S-Subwoofer. Was im Raum klingt, bestimmt das MX20XU – was auf den Monitoren läuft, kommt direkt aus dem Interface. Die beiden laufen nicht zwingend identisch.
 
 ## Übersicht: Geräte
 
@@ -251,6 +251,6 @@ Für Aufnahmen sitzt der Keyboarder im Technikbereich am Mac Studio. Das Monitor
 </div>
 
 ## Soweit so gewachsen
-Das Setup ist nie fertig geworden, weil jemand einen Plan gemacht hat, sondern weil es irgendwann einfach an der Zeit war, etwas zu ändern. Zuerst der Wunsch, nicht jedes Mal Kabel umzustecken. Dann der Wunsch, Schlagzeug und Band getrennt aufnehmen zu können. Dann das zweite Interface. Jedes Gerät im Rack hat eine Geschichte und die meisten davon beginnen mit „das andere hat nicht mehr gereicht“.
+Das Setup ist nie fertig geworden, weil jemand einen Plan gemacht hat, sondern weil es irgendwann einfach an der Zeit war, etwas zu ändern. Zuerst der Wunsch, nicht jedes Mal Kabel umzustecken. Dann der Wunsch, Schlagzeug und Band getrennt aufnehmen zu können. Dann das zweite Interface. Jedes Gerät im Rack hat eine Geschichte und die meisten davon beginnen mit «das andere hat nicht mehr gereicht».
 
 Was dabei rausgekommen ist, funktioniert für uns – auch weil der Keyboarder einen guten Teil davon zusammenhält und weiß, was wann umzustecken ist. Ohne jemanden, der den Überblick behält, wäre ein Setup dieser Größe eher Chaos als Werkzeug.

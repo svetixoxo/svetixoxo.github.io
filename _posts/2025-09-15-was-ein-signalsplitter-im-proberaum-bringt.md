@@ -5,7 +5,7 @@ date: 2025-09-15
 category: "Proberaum & Musikmachen"
 bild: /assets/img/posts/250915-was-ein-signalsplitter-im-proberaum-bringt.png
 tags: [proberaum, recording, signalkette, pa, mischpult]
-excerpt: "Kabel umstecken, Mikrofone umstellen, dann wieder zurück — so hat es bei uns angefangen. Heute steht alles an seinem Platz, egal ob wir proben oder aufnehmen. Der Grund dafür hängt an der Wand und hat acht Eingänge."
+excerpt: "Kabel umstecken, Mikrofone umstellen, dann wieder zurück – so hat es bei uns angefangen. Heute steht alles an seinem Platz, egal ob wir proben oder aufnehmen. Der Grund dafür hängt an der Wand und hat acht Eingänge."
 ---
 
 ## Wie es angefangen hat
@@ -16,32 +16,32 @@ Das funktioniert, solange man es nicht zu oft macht. Bei einer Band die auf Daue
 
 ## Das Problem: PA und Recording wollen verschiedene Dinge
 
-Ein Mischpult für die PA – bei uns das Yamaha MG20XU – ist auf Live-Sound ausgelegt: EQ, Kompression, Effekte… alles darauf ausgerichtet wie es im Raum klingt. Ein Recording-Signal will davon möglichst wenig. Wer das Signal erst nach dem Mischpult abgreift, nimmt auch alles mit, was dort gerade eingestellt ist. Das ist selten das, was man im Mix haben will. Die sauberste Lösung: Das Signal so früh wie möglich aufteilen — direkt nach dem Mikrofon, bevor irgendjemand daran dreht.
+Ein Mischpult für die PA – bei uns das Yamaha MG20XU – ist auf Live-Sound ausgelegt: EQ, Kompression, Effekte… alles darauf ausgerichtet wie es im Raum klingt. Ein Recording-Signal will davon möglichst wenig. Wer das Signal erst nach dem Mischpult abgreift, nimmt auch alles mit, was dort gerade eingestellt ist. Das ist selten das, was man im Mix haben will. Die sauberste Lösung: Das Signal so früh wie möglich aufteilen – direkt nach dem Mikrofon, bevor irgendjemand daran dreht.
 
 ## Der Art S8: Acht Eingänge, zwei unabhängige Ausgänge
 
 Der Signalsplitter Art S8 nimmt ein Eingangssignal und gibt es auf zwei komplett voneinander unabhängige Ausgänge weiter. Kein Pegelunterschied, keine Beeinflussung, kein gemeinsamer Signalweg. Was auf Ausgang A passiert, interessiert Ausgang B nicht.
 
-Bei uns hängen zwei davon im Rack — einer für das Schlagzeug, einer für den Rest der Band. Das Schlagzeug allein braucht schon sieben Kanäle: Kick, drei Toms, Snare, zwei Overheads. Der zweite S8 nimmt die restlichen Kanäle auf — Gitarren, Bass und Keys. Der Gesang geht direkt ins Mischpult, einfach weil für geplante Aufnahmen ohnehin andere Mikrofone verwendet werden.
+Bei uns hängen zwei davon im Rack – einer für das Schlagzeug, einer für den Rest der Band. Das Schlagzeug allein braucht schon sieben Kanäle: Kick, drei Toms, Snare, zwei Overheads. Der zweite S8 nimmt die restlichen Kanäle auf – Gitarren, Bass und Keys. Der Gesang geht direkt ins Mischpult, einfach weil für geplante Aufnahmen ohnehin andere Mikrofone verwendet werden.
 
 ## Was das konkret bedeutet
 
 Ab dem Splitter laufen PA und Recording komplett getrennte Wege:
 
 - **PA-Weg:** Signal geht ins Mischpult, wird dort bearbeitet, kommt (je nach Kanal) aus den Boxen.
-- **Recording-Weg:** Signal geht direkt ins Interface (da nutzen wir zwei Steinberg UR816C), kommt unbearbeitet auf den Rechner.
+- **Recording-Weg:** Signal geht direkt ins Interface (da nutzen wir zwei <a href="/steinberg-ur44c-im-alltag/" class="link-lila">Steinberg UR816C</a>), kommt unbearbeitet auf den Rechner.
 
-Für schnelle Mitschnitte zwischendurch nutzen wir einen dritten Weg: Die Stereo-Summe des MG20XU direkt per USB an den Rechner. Kein Umbauen, kein Umdenken — einfach die DAW öffnen und aufnehmen. Was dabei drauf ist, klingt so, wie es im Raum klingt. Für eine Gedächtnisstütze nach der Probe reicht das vollkommen.
+Für schnelle Mitschnitte zwischendurch nutzen wir einen dritten Weg: Die Stereo-Summe des MG20XU direkt per USB an den Rechner. Kein Umbauen, kein Umdenken – einfach die DAW öffnen und aufnehmen. Was dabei drauf ist, klingt so, wie es im Raum klingt. Für eine Gedächtnisstütze nach der Probe reicht das vollkommen.
 
-Umgekehrt können wir die PA-Einstellungen frei anpassen ohne Angst, dass es das Recording beeinflusst. Wenn der Gesang in der Probe mehr Reverb braucht damit er sich im Raum gut anfühlt — kein Problem. Im Recording kommt er trotzdem trocken an.
+Umgekehrt können wir die PA-Einstellungen frei anpassen ohne Angst, dass es das Recording beeinflusst. Wenn der Gesang in der Probe mehr Reverb braucht damit er sich im Raum gut anfühlt – kein Problem. Im Recording kommt er trotzdem trocken an.
 
 Das klingt nach einer Kleinigkeit. Ist es nicht. Gerade bei langen Proben oder spontanen Aufnahme-Sessions ist es ein erheblicher Unterschied, ob man fünf Minuten umbaut oder einfach die Aufnahme startet.
 
 ## Schlagzeug als Sonderfall
 
-Das Schlagzeug hat bei uns einen eigenen Signalweg — nicht nur wegen der Kanalzahl, sondern weil es einen eigenen Submix braucht. Die sieben Mikrofone laufen über den ersten Signalsplitter in ein eigenes Mischpult, das Yamaha MG16, wo der Schlagzeug-Sound als Submix aufbereitet wird. Dieser Submix geht dann in den Hauptmix des MG20XU — und klingt für die Band so als käme das Schlagzeug aus einer Quelle.
+Das Schlagzeug hat bei uns einen eigenen Signalweg – nicht nur wegen der Kanalzahl, sondern weil es einen eigenen Submix braucht. Die sieben Mikrofone laufen über den ersten Signalsplitter in ein eigenes Mischpult, das Yamaha MG16, wo der Schlagzeug-Sound als Submix aufbereitet wird. Dieser Submix geht dann in den Hauptmix des MG20XU – und klingt für die Band so als käme das Schlagzeug aus einer Quelle.
 
-Für das Recording läuft es anders: Hier gehen die sieben Kanäle über den zweiten Ausgang des S8 direkt in ein zweites Interface. So landet jedes Mikrofon als eigene Spur auf dem Rechner — Kick, Snare, jede Tom, jedes Overhead einzeln. Das gibt beim Mix die volle Kontrolle.
+Für das Recording läuft es anders: Hier gehen die sieben Kanäle über den zweiten Ausgang des S8 direkt in ein zweites Interface. So landet jedes Mikrofon als eigene Spur auf dem Rechner – Kick, Snare, jede Tom, jedes Overhead einzeln. Das gibt beim Mix die volle Kontrolle.
 
 Warum das Schlagzeug ein eigenes Interface bekommt und was der Submix konkret bringt, kommt demnächst in einem eigenen Beitrag.
 

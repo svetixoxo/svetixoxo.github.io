@@ -29,7 +29,7 @@ Ein wichtiger Sicherheitsaspekt in der <a href="/it-infrastruktur/">Smart-Home-I
 - Sonstiges / Reserve (2 VLANs)
 
 Vorteile der Segmentierung:
-- Verbesserte Sicherheit: Ein kompromittiertes IoT-Gerät kann nicht auf persönliche Daten in Nextcloud zugreifen („IoT“ steht für „Internet of Things“, also bspw. Smart-Home-Geräte)
+- Verbesserte Sicherheit: Ein kompromittiertes IoT-Gerät kann nicht auf persönliche Daten in Nextcloud zugreifen («IoT» steht für «Internet of Things», also bspw. Smart-Home-Geräte)
 - Bessere Performance durch reduzierten Broadcast-Traffic
 - Einfacheres Troubleshooting bei Netzwerkproblemen
 - Klare Trennung zwischen Smart-Home-Diensten und persönlichen Services

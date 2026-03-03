@@ -10,11 +10,11 @@ excerpt: "Kein Alexa, kein Google Assistant, kein Siri im Dauerbetrieb. Sprachst
 
 ## Die Frage, die immer kommt
 
-Wenn ich jemandem von meinem Smart-Home-Setup erzähle, kommt irgendwann die Frage: „Und wie steuerst du das? Per Sprache?“ Wenn ich dann sage, dass ich keine Sprachsteuerung nutze, folgt meistens ein verwirrter Blick. „Smart Home ohne Sprachsteuerung? Geht das überhaupt?“ Natürlich geht das – und zwar sehr gut.
+Wenn ich jemandem von meinem Smart-Home-Setup erzähle, kommt irgendwann die Frage: «Und wie steuerst du das? Per Sprache?» Wenn ich dann sage, dass ich keine Sprachsteuerung nutze, folgt meistens ein verwirrter Blick. «Smart Home ohne Sprachsteuerung? Geht das überhaupt?» Natürlich geht das – und zwar sehr gut.
 
 ## Was Sprachsteuerung verspricht
 
-Die Werbung malt ein schönes Bild: Du sagst „Alexa, Licht an“ und es wird hell. Du sagst „Hey Google, Heizung auf 22 Grad“ und es wird warm. Du sagst „Hey Siri, Jalousien runter“ und die Sonne blendet nicht mehr. Keine App öffnen, kein Schalter drücken, nur sprechen. Das klingt bequem, futuristisch und genau nach dem, was Smart Home sein sollte. Und für viele Leute funktioniert das bestimmt auch gut. Ich will niemandem absprechen, dass Sprachsteuerung praktisch sein kann. Aber für mich überwiegen die Nachteile.
+Die Werbung malt ein schönes Bild: Du sagst «Alexa, Licht an» und es wird hell. Du sagst «Hey Google, Heizung auf 22 Grad» und es wird warm. Du sagst «Hey Siri, Jalousien runter» und die Sonne blendet nicht mehr. Keine App öffnen, kein Schalter drücken, nur sprechen. Das klingt bequem, futuristisch und genau nach dem, was Smart Home sein sollte. Und für viele Leute funktioniert das bestimmt auch gut. Ich will niemandem absprechen, dass Sprachsteuerung praktisch sein kann. Aber für mich überwiegen die Nachteile.
 
 ## Warum ich keine smarten Lautsprecher habe
 
@@ -53,8 +53,8 @@ Die meisten Dinge passieren automatisch. Licht geht an, wenn Bewegung erkannt wi
 Ehrlich gesagt: Nicht viel. Ich habe genug Alternativen und keine davon braucht ein Mikrofon, das permanent zuhört. Die Szenarien, in denen Sprachsteuerung wirklich überlegen wäre, sind selten:
 
 * **Freihändige Bedienung:** Wenn ich koche und dreckige Hände habe, wäre Sprache praktisch. Aber das kommt selten genug vor, dass ich dafür kein Gerät ins Haus hole.
-* **Schnelle Änderungen aus der Entfernung:** Wenn ich auf dem Sofa sitze und das Licht dimmen will, wäre Sprache bequemer als sich zu bewegen. Aber irgendwo liegt schon mein iPhone herum und die Home-App ist schneller geöffnet als „Hey Siri“ gesagt.
-* **Komplexe Szenen:** „Alexa, starte den Filmabend“ klingt cool. Aber ein Tap auf eine Szene in der Home-App macht das Gleiche, ohne dass ich laut im Wohnzimmer sprechen muss. Dabei fällt mir ein, dass ich vielleicht wirklich mal eine Filmabend-Szene einstellen sollte; ich denke hier primär an Licht.
+* **Schnelle Änderungen aus der Entfernung:** Wenn ich auf dem Sofa sitze und das Licht dimmen will, wäre Sprache bequemer als sich zu bewegen. Aber irgendwo liegt schon mein iPhone herum und die Home-App ist schneller geöffnet als «Hey Siri» gesagt.
+* **Komplexe Szenen:** «Alexa, starte den Filmabend» klingt cool. Aber ein Tap auf eine Szene in der Home-App macht das Gleiche, ohne dass ich laut im Wohnzimmer sprechen muss. Dabei fällt mir ein, dass ich vielleicht wirklich mal eine Filmabend-Szene einstellen sollte; ich denke hier primär an Licht.
 
 ## Warum ich selbst lokale Sprachsteuerung nicht will
 
@@ -64,11 +64,11 @@ Selbst wenn die Sprachsteuerung komplett lokal laufen würde, würde ich sie nic
 
 Wenn ich jemandem erklärt habe, dass ich keine Sprachsteuerung nutze, kamen oft die gleichen Argumente:
 
-* **„Aber es ist so bequem!“** Stimmt, kann sein. Aber für mich ist die Home-App genauso bequem. Ich muss nicht überlegen, wie ich den Befehl formuliere, ich sehe direkt, welche Geräte aktiv sind und ich muss nicht hoffen, dass die Spracherkennung mich versteht.
+* **«Aber es ist so bequem!»** Stimmt, kann sein. Aber für mich ist die Home-App genauso bequem. Ich muss nicht überlegen, wie ich den Befehl formuliere, ich sehe direkt, welche Geräte aktiv sind und ich muss nicht hoffen, dass die Spracherkennung mich versteht.
 
-* **„Du kannst doch einfach das Mikrofon ausschalten, wenn du es nicht brauchst.“** Wenn ich das Mikrofon ausschalten muss, damit ich mich wohlfühle, brauche ich das Gerät nicht. Ein smarter Lautsprecher mit ausgeschaltetem Mikrofon ist ein teurer Briefbeschwerer.
+* **«Du kannst doch einfach das Mikrofon ausschalten, wenn du es nicht brauchst.»** Wenn ich das Mikrofon ausschalten muss, damit ich mich wohlfühle, brauche ich das Gerät nicht. Ein smarter Lautsprecher mit ausgeschaltetem Mikrofon ist ein teurer Briefbeschwerer.
 
-* **„Apple ist doch vertrauenswürdig, oder?“** Mehr als Amazon oder Google, ja. Aber Vertrauen ist nicht binär. Ich vertraue Apple mit meinen Daten auf dem iPhone, weil ich es aktiv nutze und die Vorteile den Kompromiss rechtfertigen. Aber ein zusätzliches Gerät, das nur für Sprachsteuerung da ist? Das brauche ich nicht.
+* **«Apple ist doch vertrauenswürdig, oder?»** Mehr als Amazon oder Google, ja. Aber Vertrauen ist nicht binär. Ich vertraue Apple mit meinen Daten auf dem iPhone, weil ich es aktiv nutze und die Vorteile den Kompromiss rechtfertigen. Aber ein zusätzliches Gerät, das nur für Sprachsteuerung da ist? Das brauche ich nicht.
 
 ## Smart Home ohne Worte
 

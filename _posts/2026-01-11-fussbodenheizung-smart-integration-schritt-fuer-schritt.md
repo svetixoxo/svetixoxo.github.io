@@ -32,7 +32,7 @@ Die Installation durch den Elektrobetrieb lief in mehreren Schritten:
 
 ### Bestandsaufnahme
 
-Zuerst wurde geschaut, wie die vorhandene Heizungssteuerung verkabelt ist, welche Stellantriebe verbaut sind und welche Signale sie erwarten. Hier gibt es keine Universallösungen, sondern es kann Unterschiede geben: Manche Heizungen arbeiten mit 24-V-Stellantrieben, andere mit PWM-Signalen, andere mit einfachen Schaltsignalen. In meinem Fall waren es 230-V-Stellantriebe mit potentialfreien Kontakten, was auch immer das bedeutet, aber so steht es auf dem Zettel, der vor mir liegt.
+Zuerst wurde geschaut, wie die vorhandene Heizungssteuerung verkabelt ist, welche Stellantriebe verbaut sind und welche Signale sie erwarten. Hier gibt es keine Universallösungen, sondern es kann Unterschiede geben: Manche Heizungen arbeiten mit 24-Volt-Stellantrieben, andere mit PWM-Signalen, andere mit einfachen Schaltsignalen. In meinem Fall waren es 230-Volt-Stellantriebe mit potentialfreien Kontakten, was auch immer das bedeutet, aber so steht es auf dem Zettel, der vor mir liegt.
 
 ### Gateway-Installation
 
@@ -64,7 +64,7 @@ Die Reaktionszeit ist deutlich langsamer als bei Heizkörper-Thermostaten. Fußb
 
 Alle Räume aus einer App heraus steuern zu können, ist deutlich komfortabler als neun einzelne Drehregler. Besonders praktisch: Wenn ich länger weg bin, kann ich das gesamte Haus auf Grundtemperatur setzen und vor der Rückkehr wieder hochfahren – alles remote über VPN.
 
-Wer cool ist, legt sich zusätzlich eine Szene wie „länger abwesend“, Urlaub“ oder sonstiges an. Eine Szene ist ein vordefinierter Haus-Zustand, in dem für alle Geräte einmal definiert wird, was passieren soll. Einmal aktiviert, fährt das Haus in den Energiesparmodus: Heizung auf Grundtemperatur, Klimaanlagen aus, Lichter aus, Jalousien in Sicherheitsposition. Optional lässt sich das Ganze auch automatisieren. Komfort ist, wenn man nicht mehr daran denken muss.
+Wer cool ist, legt sich zusätzlich eine Szene wie «länger abwesend», «Urlaub» oder sonstiges an. Eine Szene ist ein vordefinierter Haus-Zustand, in dem für alle Geräte einmal definiert wird, was passieren soll. Einmal aktiviert, fährt das Haus in den Energiesparmodus: Heizung auf Grundtemperatur, Klimaanlagen aus, Lichter aus, Jalousien in Sicherheitsposition. Optional lässt sich das Ganze auch automatisieren. Komfort ist, wenn man nicht mehr daran denken muss.
 
 ### Automatisierung mit anderen Systemen
 
