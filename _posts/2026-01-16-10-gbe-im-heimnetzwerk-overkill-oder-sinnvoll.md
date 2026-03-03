@@ -53,13 +53,13 @@ Für die meisten Smart-Home-Geräte, Kameras (einzeln betrachtet) und diverse Ne
 
 Die Hardware ist nicht günstig. Die QNAP-Erweiterungskarten kosten jeweils etwa 300 Euro. Switches mit 10-GbE-Ports sind deutlich teurer als ihre Gigabit-Pendants, wobei es hier große Unterschiede gibt: Je nachdem, ob managed oder unmanaged, mit oder ohne PoE sowie wie viele (oder alle) 10-GbE-Ports man haben möchte.
 
-Eine weitere Herausforderung ist oft die Verkabelung. 10 GbE funktioniert zwar theoretisch auch über <span class="erklaerung" data-tip="Netzwerkkabel für kurze Strecken">Cat 6</span>, aber für die vollen 100 Meter Reichweite sollte es schon <span class="erklaerung" data-tip="Netzwerkkabel bis 100 Meter">Cat 6</span> oder besser sein. Wer sein Haus bereits verkabelt hat und auf 10 GbE aufrüsten will, sollte die Kabel prüfen – nicht jede Verkabelung ist dafür geeignet. Ich würde da von Anfang an einfach auf <span class="erklaerung" data-tip="stärker geschirmtes Netzwerkkabel bis 100 Meter">Cat 7</span> setzen, dann muss man sich darüber keine Gedanken mehr machen.
+Eine weitere Herausforderung ist oft die Verkabelung. 10 GbE funktioniert zwar theoretisch auch über Cat 6, aber für die vollen 100 Meter Reichweite sollte es schon Cat 6a oder besser sein. Wer sein Haus bereits verkabelt hat und auf 10 GbE aufrüsten will, sollte die Kabel prüfen – nicht jede Verkabelung ist dafür geeignet. Ich würde da von Anfang an einfach auf Cat 7 setzen, dann muss man sich darüber keine Gedanken mehr machen.
 
 ## Stromverbrauch
 
 Ein oft übersehener Aspekt: 10-GbE-Ports verbrauchen mehr Strom als Gigabit. Nicht dramatisch viel pro Port, aber in der Summe spürbar. Vergleicht man zwei ähnliche 24-Port-Switches, liegen typische Leistungsaufnahmen bei rund 20–30 Watt für ein reines Gigabit-Modell, während ein 10-GbE-Switch durchaus um die 100–120 Watt aufnehmen kann. PoE wurd jeweils nicht berücksichtigt.
 
-Auf das Jahr gerechnet kann das einen Unterschied machen. 70 Watt Mehrverbrauch im Dauerbetrieb entsprechen grob über 600 kWh in zehn Jahren – also nicht nur mehr Abwärme im Netzwerkschrank, sondern auch Stromkosten. Dauerbetrieb heißt nicht, dass zwingend Daten übertragen werden müssen; es reicht aus, dass bereits ein Kabel eingesteckt wurde und der Uplink steht. Bei <span class="erklaerung" data-tip="Steckmodul für Glasfaser oder DAC-Kabel">SFP+</span> sieht die Sache hingegen wieder etwas anders aus.
+Auf das Jahr gerechnet kann das einen Unterschied machen. 70 Watt Mehrverbrauch im Dauerbetrieb entsprechen grob über 600 kWh in zehn Jahren – also nicht nur mehr Abwärme im Netzwerkschrank, sondern auch Stromkosten. Dauerbetrieb heißt nicht, dass zwingend Daten übertragen werden müssen; es reicht aus, dass bereits ein Kabel eingesteckt wurde und der Uplink steht. Bei SFP+ sieht die Sache hingegen wieder etwas anders aus.
 
 ## Würde ich es wieder machen?
 

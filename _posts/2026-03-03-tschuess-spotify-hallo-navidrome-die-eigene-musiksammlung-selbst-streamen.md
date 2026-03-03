@@ -14,7 +14,7 @@ Ich höre viel Musik, sehr viel – wirklich. Spotify nutze ich seit rund zehn J
 
 Trotzdem fehlten Lieder. Demo-Versionen, Aufnahmen von Bands aus dem Bekanntenkreis, Sachen die einfach nicht auf Streaming-Plattformen sind. Und Qualität ist für mich kein Nebenpunkt – ich hatte Apple Music parallel abonniert, weil ich im Haus lossless hören wollte. Spotify hat das inzwischen auch eingeführt, aber deutlich zu spät, nachdem andere Anbieter das längst hatten. Außerdem ging es mir ja auch irgendwo um Self-Hosting und ich wollte nicht, dass die ganzen CDs nur noch in Kisten oder Regalen rumliegen.
 
-Irgendwann habe ich mich hingesetzt und über Wochen meine CD-Sammlung digitalisiert – rund 450 CDs, etwa 400 von mir, den Rest von meiner Mitbewohnerin. Wobei digitalisiert ist dabei eigentlich das falsche Wort, CDs sind ja schon digital – ich habe sie überspielt. Dazu habe ich den Audiograbber <span class="erklaerung" data-tip="&laquo;A Better CD Encoder&raquo;">abcde</span> sowie ein externes CD-Laufwerk genutzt. Hinzu kamen Alben, die ich bei Qobuz und ähnlichen Diensten gekauft hatte. Am Ende war da eine Bibliothek, die ich gerne auf allen Geräten nutzen wollte.
+Irgendwann habe ich mich hingesetzt und über Wochen meine CD-Sammlung digitalisiert – rund 450 CDs, etwa 400 von mir, den Rest von meiner Mitbewohnerin. Wobei digitalisiert ist dabei eigentlich das falsche Wort, CDs sind ja schon digital – ich habe sie überspielt. Dazu habe ich den Audiograbber abcde sowie ein externes CD-Laufwerk genutzt. Hinzu kamen Alben, die ich bei Qobuz und ähnlichen Diensten gekauft hatte. Am Ende war da eine Bibliothek, die ich gerne auf allen Geräten nutzen wollte.
 
 ## Die Suche nach dem richtigen Tool
 
@@ -26,7 +26,7 @@ Bevor Navidrome ins Spiel kam, musste die Bibliothek erstmal in Form gebracht we
 
 Die Ordnerstruktur ist klar: Zwei Hauptordner, «Friends» und «Pros» – der Name ist selbsterklärend. Darin alles nach Albumkünstler sortiert, darunter die Alben im Format «YYYY – Albumtitel». Habe ich von einem Künstler viele Veröffentlichungen, kommt da eine weitere Ebene mit Unterordnern nach Art der Veröffentlichung zwischen (bspw. Alben, Singles und Compilations). Gibt es von einem Album noch eine Sonderedition oder ähnliches, liegt diese als Unterordner im Albumordner.
 
-Die Musik ist physisch auf der NAS, technisch gesehen aber eigentlich auf meinem Laptop, der die Quelle ist. Verwaltet und getaggt wird alles über Quod Libet, per <span class="erklaerung" data-tip="CLI-Tool zum Synchronisieren von Dateien">rsync</span> kommt es dann auf die NAS. Die Bibliothek umfasst inzwischen fast 15.000 Lieder über 1.000 Veröffentlichungen, überwiegend <span class="erklaerung" data-tip="{{ site.data.begriffe.flac }}">FLAC</span>, und über 500 GB groß. Ungefähr die Hälfte kommt von CDs, die andere Hälfte von digitalen Käufen.
+Die Musik ist physisch auf der NAS, technisch gesehen aber eigentlich auf meinem Laptop, der die Quelle ist. Verwaltet und getaggt wird alles über Quod Libet, per rsync kommt es dann auf die NAS. Die Bibliothek umfasst inzwischen fast 15.000 Lieder über 1.000 Veröffentlichungen, überwiegend FLAC, und über 500 GB groß. Ungefähr die Hälfte kommt von CDs, die andere Hälfte von digitalen Käufen.
 
 ## Das Setup
 

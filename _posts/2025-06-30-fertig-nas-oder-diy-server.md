@@ -32,13 +32,13 @@ Das SSD-Caching mit den Samsung 980 Pro bringt spürbare Performance-Verbesserun
 
 Der größte Kritikpunkt: Vendor Lock-in. QuTS hero ist zwar auf ZFS basiert, aber stark an QNAP-Hardware und -Software gekoppelt. Ich lasse sämtliche Dienste über Docker-Container laufen und habe mit der QNAP-Software im Grunde nichts mehr zu tun.
 
-Heute würde ich lieber Standard-Debian auf der Hardware laufen haben. Das Problem: Ein OS-Wechsel ist praktisch unmöglich, ohne zentrale Funktionen zu verlieren. Das RAID-Management, Hardware-Monitoring oder erweiterte Netzwerkfunktionen wie Link Aggregation (Dual 2,5 GbE) zum Erhöhen der Bandbreite und Ausfallsicherheit durch Zusammenfassen mehrerer Verbindungen sind tief ins System integriert, nur um einige wenige Funktionen zu nennen. Inwieweit kompatible Erweiterungskarten für USB 4, 10 bzw. 25 GbE oder <span class="erklaerung" data-tip="GPU-Computing für nicht-grafische Aufgaben">GPGPUs</span> (NVIDIA Quadro P1000 oder NVIDIA GeForce GT 1030) dann noch unterstützt würden, entzieht sich meiner Kenntnis.
+Heute würde ich lieber Standard-Debian auf der Hardware laufen haben. Das Problem: Ein OS-Wechsel ist praktisch unmöglich, ohne zentrale Funktionen zu verlieren. Das RAID-Management, Hardware-Monitoring oder erweiterte Netzwerkfunktionen wie Link Aggregation (Dual 2,5 GbE) zum Erhöhen der Bandbreite und Ausfallsicherheit durch Zusammenfassen mehrerer Verbindungen sind tief ins System integriert, nur um einige wenige Funktionen zu nennen. Inwieweit kompatible Erweiterungskarten für USB 4, 10 bzw. 25 GbE oder GPGPUs (NVIDIA Quadro P1000 oder NVIDIA GeForce GT 1030) dann noch unterstützt würden, entzieht sich meiner Kenntnis.
 
 ## Alternativ: Raspberry Pi als Nextcloud-Server
 
 ### Hardware-Setup
 
-Für viele wäre ein Raspberry Pi der perfekte Einstieg gewesen, auch für mich. Mein Setup hätte etwa so ausgesehen: Raspberry Pi 5 mit 16 GB Arbeitsspeicher, dazu eine SSD mit 512 GB über das <span class="erklaerung" data-tip="Aufsteckmodul für Raspberry Pi">M.2-HAT+</span> sowie ein <span class="erklaerung" data-tip="&laquo;Direct Attached Storage&raquo;">DAS</span> (Festplattengehäuse) wie das QNAP TR-004 über USB 3.2 (10 Gbps) mit 4 Festplatten im RAID-10-Verbund; für ein einfaches Setup sollte auch ein 2-Bay-Gehäuse ausreichend sein, dort dann als RAID 1. Die QNAP-DAS hatte ich tatsächlich vorher schon als Speichererweiterung für meinen Mac genutzt und den Raspi in der obigen Konfiguration ist inzwischen meine Testumgebung geworden.
+Für viele wäre ein Raspberry Pi der perfekte Einstieg gewesen, auch für mich. Mein Setup hätte etwa so ausgesehen: Raspberry Pi 5 mit 16 GB Arbeitsspeicher, dazu eine SSD mit 512 GB über das M.2-HAT+ sowie ein DAS (Festplattengehäuse) wie das QNAP TR-004 über USB 3.2 (10 Gbps) mit 4 Festplatten im RAID-10-Verbund; für ein einfaches Setup sollte auch ein 2-Bay-Gehäuse ausreichend sein, dort dann als RAID 1. Die QNAP-DAS hatte ich tatsächlich vorher schon als Speichererweiterung für meinen Mac genutzt und den Raspi in der obigen Konfiguration ist inzwischen meine Testumgebung geworden.
 
 Der entscheidende Punkt: Weg von der SD-Karte! Das M.2-HAT+ ermöglicht das Booten von einer SSD, die über PCIe mit 4 Spuren angebunden ist, was die Performance und Langlebigkeit dramatisch verbessert. Die Daten lagern dann auf den USB 3.0-angeschlossenen Festplatten im externen Gehäuse.
 
@@ -71,7 +71,7 @@ Die USB-Bandbreite wird zum Flaschenhals, wenn mehrere Benutzer gleichzeitig auf
 
 Ein DIY-Server bietet maximale Flexibilität. Der Vollständigkeit halber: «DIY» steht for «do it yourself». Für 1.000 € bekommt man bereits ein solides System mit gebrauchter Enterprise-Hardware. Den Stromverbrauch lasse ich jetzt mal außen vor. Für 2.500 € ist ein neues System mit aktueller Hardware möglich, das meinem QNAP-Setup performance-mäßig deutlich überlegen wäre.
 
-Die Frage ist halt immer, wie viel braucht man und wie viel ist genug, damit der Server auch nach mehreren Jahren ausreichend dimensioniert ist? Es kommt halt drauf an, was man damit machen möchte. Es braucht keinen AMD EPYC mit 12 <span class="erklaerung" data-tip="Chip, der mehrere CPU-Kerne enthält">CCDs</span> und 192 Kernen, nur um ein Smart Home zu steuern, Nextcloud zu hosten, einen Werbeblocker laufen zu lassen und gelegentlich Medien zu streamen.
+Die Frage ist halt immer, wie viel braucht man und wie viel ist genug, damit der Server auch nach mehreren Jahren ausreichend dimensioniert ist? Es kommt halt drauf an, was man damit machen möchte. Es braucht keinen AMD EPYC mit 12 CCDs und 192 Kernen, nur um ein Smart Home zu steuern, Nextcloud zu hosten, einen Werbeblocker laufen zu lassen und gelegentlich Medien zu streamen.
 
 Für so ein Heizkraftwerk mit CPU-Funktion braucht es einfach mehr als nur eine Steckdose, schon aus Prinzip…
 
@@ -83,7 +83,7 @@ Für so ein Heizkraftwerk mit CPU-Funktion braucht es einfach mehr als nur eine 
 
 ### Betriebssystem
 
-Hier liegt die wahre Stärke: <span class="erklaerung" data-tip="Plattform zur Virtualisierung von Containern">Proxmox</span> für Virtualisierung, <span class="erklaerung" data-tip="Betriebssystem für NAS-Server">TrueNAS Scale</span> für <span class="erklaerung" data-tip="Dateisystem mit Prüfsummen zu">ZFS</span> mit Container-Support, <span class="erklaerung" data-tip="Ubuntu ohne grafische Oberfläche">Ubuntu Server</span> für maximale Flexibilität oder Debian für rock-solid Stabilität. Jedes System kann exakt an die eigenen Bedürfnisse angepasst werden.
+Hier liegt die wahre Stärke: Proxmox für Virtualisierung, TrueNAS für ZFS mit Container-Support, Ubuntu Server für maximale Flexibilität oder Debian für rock-solid Stabilität. Jedes System kann exakt an die eigenen Bedürfnisse angepasst werden.
 
 Will ich experimentieren? Einfach eine neue VM aufsetzen. Brauche ich eine spezielle Docker-Konfiguration? Kein Problem. Möchte ich das Betriebssystem komplett wechseln? Geht, solange die Hardware unterstützt wird.
 

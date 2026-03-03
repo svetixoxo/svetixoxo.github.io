@@ -16,7 +16,7 @@ Ich habe ein <a href="/it-infrastruktur/">umfangreiches Smart-Home-System</a>. B
 
 Nicht, weil es nicht funktioniert. Sondern weil der Weg dorthin ein anderer sein sollte. Nach dem Hauskauf habe ich das System zusammen mit entsprechenden Fachfirmen geplant und einrichten lassen. Alles auf einmal, alles durchdacht, alles nach meinen Vorgaben. Das Ergebnis funktioniert hervorragend.
 
-Aber: Mein Einstieg ins Smart Home sah anders aus. In der alten Wohnung hatte ich <a href="/fritz-dect-302-vom-fritz-oekosystem-zu-apple-homekit/" class="link-gruen">mit Fritz-Thermostaten angefangen</a>. Später kamen Zwischensteckdosen und Tür-/Fenstersensoren dazu, alles über <span class="erklaerung" data-tip="Funkstandard für schnurlose Telefone">DECT</span> vernetzt. Das war überschaubar, das war lernbar, das hat funktioniert. Vom großen System im Haus war das weit entfernt.
+Aber: Mein Einstieg ins Smart Home sah anders aus. In der alten Wohnung hatte ich <a href="/fritz-dect-302-vom-fritz-oekosystem-zu-apple-homekit/" class="link-gruen">mit Fritz-Thermostaten angefangen</a>. Später kamen Zwischensteckdosen und Tür-/Fenstersensoren dazu, alles über DECT vernetzt. Das war überschaubar, das war lernbar, das hat funktioniert. Vom großen System im Haus war das weit entfernt.
 
 ## Die drei Kernfragen vor dem ersten Kauf
 

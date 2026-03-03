@@ -16,7 +16,7 @@ Die Lösung: Fest montierte iPads an zentralen Stellen – eines pro Stockwerk, 
 
 ## Was im Einsatz ist
 
-Drei iPad Air mit <span class="erklaerung" data-tip="ARM-basierter Prozessor von Apple">M1</span>-Chip, montiert in Einbau-Wandhalterungen an den Treppenaufgängen. Jedes ist dauerhaft am Strom, läuft mit der Home-App als Standard-Screen und zeigt den Status des jeweiligen Stockwerks. Die iPads sind nicht alt – ich habe bewusst aktuelle Modelle genommen, weil ich will, dass sie für die nächsten Jahre laufen, ohne durch Software-Updates zu langsam zu werden.
+Drei iPad Air mit M1-Chip, montiert in Einbau-Wandhalterungen an den Treppenaufgängen. Jedes ist dauerhaft am Strom, läuft mit der Home-App als Standard-Screen und zeigt den Status des jeweiligen Stockwerks. Die iPads sind nicht alt – ich habe bewusst aktuelle Modelle genommen, weil ich will, dass sie für die nächsten Jahre laufen, ohne durch Software-Updates zu langsam zu werden.
 
 Die Wandhalterungen sind keine einfachen Ständer, sondern fest verbaute Rahmen, in denen das iPad sitzt. Das sieht sauberer aus als ein iPad, das auf einem Tisch liegt. Das Kabel läuft hinter der Wand.
 
