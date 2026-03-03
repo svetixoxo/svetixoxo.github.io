@@ -1,12 +1,16 @@
-# LICENSE
+# Lizenz
 
-Dieses Lizenz-Dokument bezieht sich auf die Website unter [svetixoxo.github.io](https://svetixoxo.github.io) und das zugehörige Repository ([svetixoxo/svetixoxo.github.io](https://github.com/svetixoxo/svetixoxo.github.io)).
+Dieses Lizenz-Dokument bezieht sich auf die Website unter [svetixoxo.github.io](https://svetixoxo.github.io) und das zugehörige Repository [svetixoxo/svetixoxo.github.io](https://github.com/svetixoxo/svetixoxo.github.io).
 
-───────────────────────────────────────────────
-Code-Lizenz
-───────────────────────────────────────────────
-Copyright (c) 2026 svetixoxo
-Alle Rechte vorbehalten.
+#### License
+- Code license: all rights reserved
+- Content license: CC BY-NC-ND 4.0
+
+---
+
+## Code-Lizenz
+
+Copyright (c) 2026 svetixoxo — Alle Rechte vorbehalten.
 
 Der Code dieser Website – einschließlich, aber nicht beschränkt auf HTML und CSS – wurde vollständig selbst erstellt und ist urheberrechtlich geschützt.
 
@@ -14,15 +18,15 @@ Der Code dieser Website – einschließlich, aber nicht beschränkt auf HTML und
 2. Eine Bearbeitung, Anpassung oder Weiterentwicklung des Codes ist nicht gestattet.
 3. Eine Weitergabe des Codes, ganz oder in Teilen, ist nicht gestattet.
 4. Eine kommerzielle Nutzung des Codes ist nicht gestattet.
-5. Kurze Auszüge dürfen zu Bildungszwecken, zu Zwecken der kritischen Besprechung oder für sonstige nach dem Urheberrecht zulässige Nutzungen reproduziert werden, sofern eine angemessene Quellenangabe erfolgt.
+5. Kurze Auszüge dürfen zu Bildungszwecken, zur kritischen Besprechung oder für sonstige nach dem Urheberrecht zulässige Zwecke reproduziert werden, sofern eine angemessene Quellenangabe erfolgt.
 
-───────────────────────────────────────────────
-Inhalts-Lizenz
-───────────────────────────────────────────────
+---
 
-Die Inhalte dieser Website – einschließlich, aber nicht beschränkt auf Texte – sind lizenziert unter Lizenz CC BY-NC-ND 4.0 (Creative Commons Namensnennung – Nicht kommerziell – Keine Bearbeitungen)
+## Inhalts-Lizenz
 
-Eine Kopie dieser Lizenz ist abrufbar unter: [https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de)
+Die Inhalte dieser Website – einschließlich, aber nicht beschränkt auf Texte – sind lizenziert unter der **CC BY-NC-ND 4.0** (Creative Commons Namensnennung – Nicht kommerziell – Keine Bearbeitungen 4.0 International).
+
+Eine Kopie dieser Lizenz ist abrufbar unter: [creativecommons.org/licenses/by-nc-nd/4.0/deed.de](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de)
 
 ---
 
