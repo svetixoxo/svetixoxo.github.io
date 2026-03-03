@@ -2,10 +2,18 @@
 
 Dieses Lizenz-Dokument bezieht sich auf die Website unter [svetixoxo.github.io](https://svetixoxo.github.io) und das zugehörige Repository [svetixoxo/svetixoxo.github.io](https://github.com/svetixoxo/svetixoxo.github.io).
 
-```
-License (english)
-- Code:    all rights reserved
-- Content: CC BY-NC-ND 4.0
+```json
+{
+  "license": {
+    "code": {
+      "name": "All Rights Reserved",
+    },
+    "content": {
+      "name": "CC-BY-NC-ND-4.0",
+      "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  }
+}
 ```
 
 ## Code-Lizenz
