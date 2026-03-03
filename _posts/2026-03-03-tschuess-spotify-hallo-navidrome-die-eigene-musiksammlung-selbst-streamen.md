@@ -26,7 +26,7 @@ Bevor Navidrome ins Spiel kam, musste die Bibliothek erstmal in Form gebracht we
 
 Die Ordnerstruktur ist klar: Zwei Hauptordner, «Friends» und «Pros» – der Name ist selbsterklärend. Darin alles nach Albumkünstler sortiert, darunter die Alben im Format «YYYY – Albumtitel». Habe ich von einem Künstler viele Veröffentlichungen, kommt da eine weitere Ebene mit Unterordnern nach Art der Veröffentlichung zwischen (bspw. Alben, Singles und Compilations). Gibt es von einem Album noch eine Sonderedition oder ähnliches, liegt diese als Unterordner im Albumordner.
 
-Die Musik ist physisch auf der NAS, technisch gesehen aber eigentlich auf meinem Laptop, der die Quelle ist. Verwaltet und getaggt wird alles über Quod Libet, per <span class="erklaerung" data-tip="CLI-Tool zum Synchronisieren von Dateien">rsync</span> kommt es dann auf die NAS. Die Bibliothek umfasst inzwischen fast 15.000 Lieder über 1.000 Veröffentlichungen, überwiegend FLAC, und über 500 GB groß. Ungefähr die Hälfte kommt von CDs, die andere Hälfte von digitalen Käufen.
+Die Musik ist physisch auf der NAS, technisch gesehen aber eigentlich auf meinem Laptop, der die Quelle ist. Verwaltet und getaggt wird alles über Quod Libet, per <span class="erklaerung" data-tip="CLI-Tool zum Synchronisieren von Dateien">rsync</span> kommt es dann auf die NAS. Die Bibliothek umfasst inzwischen fast 15.000 Lieder über 1.000 Veröffentlichungen, überwiegend <span class="erklaerung" data-tip="{{ site.data.begriffe.flac }}">FLAC</span>, und über 500 GB groß. Ungefähr die Hälfte kommt von CDs, die andere Hälfte von digitalen Käufen.
 
 ## Das Setup
 
