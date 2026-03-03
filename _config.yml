@@ -4,6 +4,8 @@ author: "Svetlana"
 url: "https://svetixoxo.github.io"
 baseurl: ""
 
+encoding: utf-8
+
 # Markdown-Einstellungen
 markdown: kramdown
 kramdown:
