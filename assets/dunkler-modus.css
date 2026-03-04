@@ -169,6 +169,10 @@ nav a,
     color: var(--tinte-fest) !important;
 }
 
+[data-theme="dunkel"] .artikel-rahmen h3 {
+    color: var(--gedimmt-dunkel) !important;
+}
+
 [data-theme="dunkel"] .erklaerung::after {
     color: var(--tinte-fest);
 }
