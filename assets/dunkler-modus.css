@@ -5,23 +5,45 @@
 
 :root {
     /* ── Basis ── */
-    --hintergrund-dunkel:       #121218;
+    --hintergrund-dunkel: #121218;
     --hintergrund-karte-dunkel: #1a1a24;
-    --tinte-dunkel:             #ffd633;
-    --text-dunkel:              #d0d0e0;
-    --gedimmt-dunkel:           #9090a8;
-    --linie-dunkel:             #2a2a38;
-    --weiss-dunkel:             #1a1a24;
+    --tinte-dunkel: #ffd633;
+    --text-dunkel: #d0d0e0;
+    --gedimmt-dunkel: #9090a8;
+    --linie-dunkel: #2a2a38;
+    --weiss-dunkel: #1a1a24;
 
     /* ── Akzentfarben ── */
-    --tuerkis-dunkel:  #00d4ff;
-    --orange-dunkel:   #ff9933;
-    --gelb-dunkel:     #ffd633;
-    --lila-dunkel:     #dd88ff;
-    --magenta-dunkel:  #ff4488;
-    --gruen-dunkel:    #00cc88;
-    --rot-dunkel:      #ff5555;
+    --tuerkis-dunkel: #00768b;
+    --orange-dunkel: #cc6c00;
+    --gelb-dunkel: #ffd633;
+    --lila-dunkel: #a959c7;
+    --magenta-dunkel: #cc2256;
+    --gruen-dunkel: #008660;
+    --rot-dunkel: #ff5555;
 }
+
+    --tuerkis: #00b8d9;
+    --tuerkis-fest: #00b8d9;
+    --tuerkis-pastell: #e0f8ff;
+    --orange: #ff8700;
+    --orange-fest: #ff8700;
+    --orange-pastell: #fff1eb;
+    --gelb: #fecc02;
+    --gelb-fest: #fecc02;
+    --gelb-pastell: #fef4cc;
+    --lila: #d36ff9;
+    --lila-fest: #d36ff9;
+    --lila-pastell: #f0ebff;
+    --magenta: #ff2b6b;
+    --magenta-fest: #ff2b6b;
+    --magenta-pastell: #ffe0ec;
+    --gruen: #00a878;
+    --gruen-fest: #00a878;
+    --gruen-pastell: #e0fff6;
+    --rot: #e53e3e;
+    --weiss: #ffffff;
+    --weiss-fest: #ffffff;
 
 /* ══════════════════════════════════════════
    BODY-HINTERGRUND
@@ -30,10 +52,10 @@
 [data-theme="dunkel"] body {
     background: #0a4a5a;
     background-image: repeating-linear-gradient(315deg,
-        transparent,
-        transparent 20px,
-        rgba(255, 255, 255, 0.12) 20px,
-        rgba(255, 255, 255, 0.12) 21px);
+            transparent,
+            transparent 20px,
+            rgba(255, 255, 255, 0.12) 20px,
+            rgba(255, 255, 255, 0.12) 21px);
     background-size: 22px 22px;
 }
 
@@ -77,38 +99,36 @@ nav a,
 .mobil-menu,
 .seitenfuss {
     transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease;
+        background-color 0s ease,
+        color 0s ease,
+        border-color 0s ease;
 }
 
 /* ══════════════════════════════════════════
    TOGGLE-BUTTON
 ══════════════════════════════════════════ */
 
-/* ── Desktop: Teil der Nav ── */
 .nav-theme-toggle {
     background: var(--hintergrund-karte);
-    border: var(--rahmen);
-    box-shadow: var(--schatten-klein);
+    border: none;
+    box-shadow: none;
     cursor: url("/assets/cursors/hand2.png") 4 4, pointer !important;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.78rem;
-    padding: 0.4em 1em;
-    transition:
-        background 0.1s,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    font-size: 1.5rem;
     position: relative;
 }
 
+[data-theme="dunkel"] .nav-theme-toggle {
+    color: var(--gelb-fest);
+}
+
 .nav-theme-toggle:hover {
-    background: var(--gelb);
+    background: none;
     transform: none;
-    box-shadow: var(--schatten-klein);
+    box-shadow: none;
 }
 
 .nav-theme-toggle:active {
@@ -117,14 +137,13 @@ nav a,
 }
 
 .nav-theme-toggle::before {
-    content: "☀️";
+    content: "☾";
 }
 
 [data-theme="dunkel"] .nav-theme-toggle::before {
-    content: "🌙";
+    content: "☀";
 }
 
-/* ── Mobil: fixed in der Ecke ── */
 @media (max-width: 992px) {
     .nav-theme-toggle {
         position: fixed;
@@ -144,4 +163,24 @@ nav a,
         box-shadow: var(--schatten-gross);
         background: var(--hintergrund-karte);
     }
+}
+
+/* ══════════════════════════════════════════
+   post.html
+══════════════════════════════════════════ */
+
+[data-theme="dunkel"] .kategorie-self-hosting-dienste.artikel-kopf {
+    background: var(--magenta-dunkel);
+}
+
+[data-theme="dunkel"] .kategorie-netzwerk-infrastruktur.artikel-kopf {
+    background: var(--orange-dunkel);
+}
+
+[data-theme="dunkel"] .kategorie-smart-home-automatisierung.artikel-kopf {
+    background: var(--gruen-dunkel);
+}
+
+[data-theme="dunkel"] .kategorie-proberaum-musikmachen.artikel-kopf {
+    background: var(--lila-dunkel);
 }
