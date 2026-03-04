@@ -8,19 +8,21 @@ Erreichbar unter: **[svetixoxo.github.io](https://svetixoxo.github.io)**
 
 ## Farben
 
-| Farbe   | HEX       | Bereich                      |
-|---------|-----------|------------------------------|
-| Türkis  | `#00b8d9` | Primärfarbe                  |
-| Gelb    | `#fecc02` | Sekundärfarbe                |
-| Magenta | `#ff2b6b` | Self-Hosting & Dienste       |
-| Orange  | `#ff8700` | Netzwerk & Infrastruktur     |
-| Grün    | `#00a878` | Smart Home & Automatisierung |
-| Lila    | `#d36ff9` | Proberaum & Musikmachen      |
+Jede Farbe hat drei Varianten: Vollton, Pastell (heller Shade) und Dunkel (für den dunklen Modus).
+
+| Farbe   | Variable    | Hell `--x` | Pastell `--x-pastell` | Dunkel `--x-dunkel` | Bereich                      |
+|---------|-------------|------------|-----------------------|---------------------|------------------------------|
+| Türkis  | `--tuerkis` | `#00b8d9`  | `#e0f8ff`             | `#00799b`           | Primärfarbe                  |
+| Gelb    | `--gelb`    | `#fecc02`  | `#fef4cc`             | `#ffc107`           | Sekundärfarbe                |
+| Magenta | `--magenta` | `#ff2b6b`  | `#ffe0ec`             | `#d00062`           | Self-Hosting & Dienste       |
+| Orange  | `--orange`  | `#ff8700`  | `#fff1eb`             | `#f97e00`           | Netzwerk & Infrastruktur     |
+| Grün    | `--gruen`   | `#00a878`  | `#e0fff6`             | `#00a651`           | Smart Home & Automatisierung |
+| Lila    | `--lila`    | `#d36ff9`  | `#f0ebff`             | `#9b51e0`           | Proberaum & Musikmachen      |
 
 ## Struktur
 
 ```
-├── _layouts/          # Layout-Templates (default, post, thema, archiv …)
+├── _layouts/          # Layout-Templates
 ├── _posts/            # Blogbeiträge als Markdown
 ├── assets/
 │   └── cursors/       # Cursor
@@ -62,6 +64,7 @@ excerpt: "Kurze Beschreibung für Vorschau"
 bundle exec jekyll serve
 bundle exec jekyll serve --livereload
 ```
+
 Erreichbar unter: `http://localhost:4000`
 
 ## Lizenz

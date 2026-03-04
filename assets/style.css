@@ -90,24 +90,33 @@
     --hintergrund: #f8f6f0;
     --hintergrund-karte: #ffffff;
     --tinte: #080810;
+    --tinte-fest: #080810;
     --text: #1a1a2a;
+    --text-fest: #1a1a2a;
     --gedimmt: #666680;
     --linie: #d8d4cc;
 
     --tuerkis: #00b8d9;
-    --tuerkis-hell: #e0f8ff;
+    --tuerkis-fest: #00b8d9;
+    --tuerkis-pastell: #e0f8ff;
     --orange: #ff8700;
-    --orange-hell: #fff1eb;
+    --orange-fest: #ff8700;
+    --orange-pastell: #fff1eb;
     --gelb: #fecc02;
-    --gelb-hell: #fef4cc;
+    --gelb-fest: #fecc02;
+    --gelb-pastell: #fef4cc;
     --lila: #d36ff9;
-    --lila-hell: #f0ebff;
+    --lila-fest: #d36ff9;
+    --lila-pastell: #f0ebff;
     --magenta: #ff2b6b;
-    --magenta-hell: #ffe0ec;
+    --magenta-fest: #ff2b6b;
+    --magenta-pastell: #ffe0ec;
     --gruen: #00a878;
-    --gruen-hell: #e0fff6;
+    --gruen-fest: #00a878;
+    --gruen-pastell: #e0fff6;
     --rot: #e53e3e;
     --weiss: #ffffff;
+    --weiss-fest: #ffffff;
 
     /* ── Schatten & Rahmen ── */
     --schatten: 4px 4px 0 var(--tinte);
@@ -204,6 +213,11 @@ p a:hover {
 ::selection {
     background: var(--gelb);
     color: var(--tinte);
+}
+
+button:focus,
+a:focus {
+    outline: none !important;
 }
 
 /* ── Hilfsklassen Schrift ── */
@@ -494,7 +508,7 @@ nav a:hover span::after {
 
 .nav-archiv.aktiv {
     background: var(--gelb);
-    color: var(--tinbte);
+    color: var(--tinte);
 }
 
 .nav-self-hosting:hover {
@@ -542,20 +556,24 @@ nav a:hover span::after {
     background: var(--tinte);
 }
 
+.nav-archiv.aktiv span::after {
+    width: 0 !important;
+}
+
 .nav-self-hosting:hover span::after {
-    background: var(--magenta-hell);
+    background: var(--magenta-pastell);
 }
 
 .nav-netzwerk:hover span::after {
-    background: var(--orange-hell);
+    background: var(--orange-pastell);
 }
 
 .nav-smart-home:hover span::after {
-    background: var(--gruen-hell);
+    background: var(--gruen-pastell);
 }
 
 .nav-musikmachen:hover span::after {
-    background: var(--lila-hell);
+    background: var(--lila-pastell);
 }
 
 .nav-archiv:hover span::after {
@@ -1011,14 +1029,14 @@ nav a.mobil-menu-kachel {
 .etikett-homekit,
 .etikett-zigbee,
 .etikett-netzwerk {
-    background: var(--orange-hell);
+    background: var(--orange-pastell);
     color: #006b80;
 }
 
 .etikett-orange,
 .etikett-hardware,
 .etikett-infrastruktur {
-    background: var(--tuerkis-hell);
+    background: var(--tuerkis-pastell);
     color: var(--tuerkis);
 }
 
@@ -1035,7 +1053,7 @@ nav a.mobil-menu-kachel {
 .etikett-energie,
 .etikett-docker,
 .etikett-self-hosting {
-    background: var(--lila-hell);
+    background: var(--lila-pastell);
     color: var(--lila);
 }
 
@@ -1045,7 +1063,7 @@ nav a.mobil-menu-kachel {
 .etikett-python,
 .etikett-linux,
 .etikett-backups {
-    background: var(--gruen-hell);
+    background: var(--gruen-pastell);
     color: var(--gruen);
 }
 
@@ -1467,7 +1485,7 @@ nav a.mobil-menu-kachel {
 }
 
 .artikel-kopf.artikel-rahmen {
-    background: var(--tuerkis-hell);
+    background: var(--tuerkis-pastell);
 }
 
 /* ── Zweispaltig ── */
@@ -1517,19 +1535,19 @@ nav a.mobil-menu-kachel {
 
 /* ── Hintergrund Artikelkopf ── */
 .kategorie-self-hosting-dienste.artikel-kopf {
-    background: var(--magenta-hell);
+    background: var(--magenta-pastell);
 }
 
 .kategorie-netzwerk-infrastruktur.artikel-kopf {
-    background: var(--orange-hell);
+    background: var(--orange-pastell);
 }
 
 .kategorie-smart-home-automatisierung.artikel-kopf {
-    background: var(--gruen-hell);
+    background: var(--gruen-pastell);
 }
 
 .kategorie-proberaum-musikmachen.artikel-kopf {
-    background: var(--lila-hell);
+    background: var(--lila-pastell);
 }
 
 .kategorie-bild-self-hosting-dienste {
@@ -1789,7 +1807,7 @@ blockquote.hinweisbox strong:first-child,
 }
 
 .hinweisbox-tipp {
-    background: var(--gruen-hell);
+    background: var(--gruen-pastell);
 }
 
 .hinweisbox-tipp::before {
@@ -1797,7 +1815,7 @@ blockquote.hinweisbox strong:first-child,
 }
 
 .hinweisbox-warnung {
-    background: var(--gelb-hell);
+    background: var(--gelb-pastell);
 }
 
 .hinweisbox-warnung::before {
@@ -1805,7 +1823,7 @@ blockquote.hinweisbox strong:first-child,
 }
 
 .hinweisbox-info {
-    background: var(--orange-hell);
+    background: var(--orange-pastell);
 }
 
 .hinweisbox-info::before {
@@ -1846,7 +1864,7 @@ pre code {
 }
 
 code {
-    background: var(--tuerkis-hell);
+    background: var(--tuerkis-pastell);
     color: var(--tinte);
     padding: 0.1em 0.35em;
     font-family: "IBM Plex Mono", monospace;

@@ -4,14 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} // {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     {% seo %}
+    
     {% feed_meta %}
+    
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/dunkler-modus.css' | relative_url }}">
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var menu = document.getElementById('mobil-menu');
@@ -31,7 +37,8 @@
                 <em>svetis</em>Blog </a>
             <!--
             <span class="logo-untertitel">svetixoxo.github.io</span>-->
-        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% elsif page.url contains "archiv" %} {% assign nav-aktiv = "archiv" %} {% elsif page.url contains "ueber-mich" %} {% assign nav-aktiv = "ueber-mich" %} {% else %} {% endif %} <nav>
+        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% elsif page.url contains "archiv" %} {% assign nav-aktiv = "archiv" %} {% elsif page.url contains "ueber-mich" %} {% assign nav-aktiv = "ueber-mich" %} {% else %} {% endif %}
+        <nav>
             <a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting {% if nav-aktiv == 'self-hosting' %}aktiv{% endif %}">
                 <span>Self-Hosting</span>
             </a>
@@ -51,6 +58,7 @@
                 <span>?</span>
             </a>
         </nav>
+        <button id="theme-toggle" class="theme-toggle nav-theme-toggle" aria-label="Theme wechseln"></button>
         <button class="mobil-menu-btn" id="mobil-menu-btn" onclick="
   var menu = document.getElementById('mobil-menu');
   var btn = document.getElementById('mobil-menu-btn');
@@ -100,13 +108,19 @@
     <div class="seiteninhalt">
         {{ content }}
     </div>
+    
+    <!-- Dunkler Modus Toggle -->
+    
     <footer class="seitenfuss">
         <span class="schrift-gelb">
             <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> <span class="nur-desktop">»</span> <br class="nur-mobil" /><span class="nur-mobil schrift-gelb">« </span><a href="/ueber-mich/" class="schrift-regular">ueber-mich</a> / <a href="/archiv/" class="schrift-regular">archiv</a><span class="nur-mobil schrift-gelb"> »</span>
         </span>
         <span>mit <em>♥</em> gebaut </span>
     </footer>
+    
+    <!-- Skripte -->
     <script src="{{ '/assets/skript.js' | relative_url }}"></script>
+    <script src="{{ '/assets/dunkler-modus.js' | relative_url }}"></script>
 </body>
 
 </html>
