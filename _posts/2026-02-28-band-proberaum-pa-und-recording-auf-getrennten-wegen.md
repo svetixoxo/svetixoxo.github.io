@@ -81,8 +81,8 @@ excerpt: "95 qm, zwei Mischpulte, zwei Interfaces, zwei Signalsplitter – und e
     border: 1.5px solid var(--tinte);
     flex-shrink: 0;
   }
-  .badge-pa  { background: var(--lila-hell);  color: var(--lila); }
-  .badge-rec { background: var(--tuerkis-hell); color: var(--tuerkis); }
+  .badge-pa  { background: var(--lila-pastell);  color: var(--lila); }
+  .badge-rec { background: var(--tuerkis-pastell); color: var(--tuerkis); }
   .signal-karte-pfad { color: var(--gedimmt); line-height: 1.4; }
   @media (max-width: 992px) {
     .setup-raster { grid-template-columns: 1fr; }

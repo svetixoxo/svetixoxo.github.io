@@ -1,0 +1,154 @@
+/* ═══════════════════════════════════════════════════════════
+   svetixoxo.github.io — dunkler-modus.css
+   /assets/dunkler-modus.css
+═══════════════════════════════════════════════════════════ */
+
+:root {
+    /* ── Basis ── */
+    --hintergrund-dunkel:       #121218;
+    --hintergrund-karte-dunkel: #1a1a24;
+    --tinte-dunkel:             #ffd633;
+    --text-dunkel:              #d0d0e0;
+    --gedimmt-dunkel:           #9090a8;
+    --linie-dunkel:             #2a2a38;
+    --weiss-dunkel:             #1a1a24;
+
+    /* ── Akzentfarben ── */
+    --tuerkis-dunkel:  #00d4ff;
+    --orange-dunkel:   #ff9933;
+    --gelb-dunkel:     #ffd633;
+    --lila-dunkel:     #dd88ff;
+    --magenta-dunkel:  #ff4488;
+    --gruen-dunkel:    #00cc88;
+    --rot-dunkel:      #ff5555;
+}
+
+/* ══════════════════════════════════════════
+   BODY-HINTERGRUND
+   (kann nicht per Property-Swap abgedeckt
+   werden, da background-image den Farbwert
+   einbettet)
+══════════════════════════════════════════ */
+
+[data-theme="dunkel"] body {
+    background: #0a4a5a;
+    background-image: repeating-linear-gradient(315deg,
+        transparent,
+        transparent 20px,
+        rgba(0, 0, 0, 0.3) 20px,
+        rgba(0, 0, 0, 0.3) 21px);
+}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+
+[data-theme="dunkel"] .seitenfuss {
+    background: #080810;
+    color: rgba(255, 255, 255, 0.5);
+    border-top-color: #ffd633;
+}
+
+[data-theme="dunkel"] .seitenfuss span {
+    color: #ffffff;
+}
+
+[data-theme="dunkel"] .seitenfuss a {
+    color: #ffffff;
+}
+
+[data-theme="dunkel"] .seitenfuss a:hover {
+    color: #00d4ff;
+}
+
+[data-theme="dunkel"] .seitenfuss em {
+    color: #ff5555;
+}
+
+/* ══════════════════════════════════════════
+   TRANSITIONS
+══════════════════════════════════════════ */
+
+body,
+.artikel-rahmen,
+.aufmacher,
+.beitragskarte,
+.seitenkopf-haupt,
+nav a,
+.schaltflaeche,
+.mobil-menu,
+.seitenfuss {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* ══════════════════════════════════════════
+   TOGGLE-BUTTON
+══════════════════════════════════════════ */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 777;
+    width: 56px;
+    height: 56px;
+    background: var(--hintergrund-karte);
+    border: var(--rahmen-gross);
+    box-shadow: var(--schatten-gross);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.6rem;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 var(--tinte);
+}
+
+.theme-toggle:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--tinte);
+}
+
+.theme-toggle::before {
+    content: "☀️";
+}
+
+[data-theme="dunkel"] .theme-toggle::before {
+    content: "🌙";
+}
+
+@media (max-width: 992px) {
+    .theme-toggle {
+        bottom: 1rem;
+        right: 1rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
+    }
+}
+
+.theme-toggle:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    background: var(--tinte);
+    color: var(--hintergrund);
+    padding: 0.4em 0.8em;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 2px solid var(--tinte);
+}

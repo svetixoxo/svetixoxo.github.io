@@ -85,7 +85,7 @@ permalink: /it-infrastruktur/
     border-bottom: none;
   }
   .vlan-tabelle tr:not(.vlan-kategorie-kopf):hover td {
-    background: var(--orange-hell);
+    background: var(--orange-pastell);
     color: var(--tinte);
   }
   .vlan-kategorie-kopf td {
