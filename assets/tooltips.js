@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    var rahmen = document.querySelectorAll('.artikel-rahmen');
+    var rahmen = document.querySelectorAll('.artikel-inhalt');
     if (rahmen.length > 0) {
         fetch('/assets/begriffe.json')
             .then(function (r) {
