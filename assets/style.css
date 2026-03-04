@@ -1190,38 +1190,6 @@ nav a.mobil-menu-kachel {
     color: var(--tinte);
 }
 
-.erklaerung {
-  border-bottom: 2px dashed var(--gelb);
-  cursor: help;
-  position: relative;
-}
-
-.erklaerung::after {
-  content: attr(data-tip);
-  display: none;
-  position: absolute;
-  bottom: calc(100% + 6px);
-  left: 0;
-  background: var(--gelb);
-  color: var(--tinte);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.75rem;
-  font-weight: 400;
-  padding: 0.4em 0.8em;
-  border: var(--rahmen);
-  box-shadow: var(--schatten-klein);
-  width: max-content;
-  max-width: 400px;
-  z-index: 99;
-  line-height: 1.5;
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.erklaerung:hover::after {
-  display: block;
-}
-
 
 /* ══════════════════════════════════════════
    BEITRAGSLISTE
