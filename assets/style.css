@@ -478,7 +478,7 @@ nav a span::after {
     left: 25%;
     width: 50%;
     height: 2px;
-    transition: width 0.4s ease, left 0.4s ease, background 0.2s ease;
+    transition: width 0.4s ease, left 0.4s ease, background 0s ease;
 }
 
 nav a:hover span::after {
