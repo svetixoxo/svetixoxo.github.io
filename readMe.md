@@ -67,8 +67,8 @@ Erreichbar unter: `http://localhost:4000`
 ## Lizenz
 |                           | Lizenz                  | Text                                    | Link                                                                |
 |---------------------------|-------------------------|-----------------------------------------|---------------------------------------------------------------------|
+| Quellcode (HTML, CSS, JS) | alle Rechte vorbehalten | [Lizenz](LICENSE.md)                    |    |
 | Inhalte (Texte, Bild)     | CC BY-NC-ND 4.0         | [Lizenz](LICENSE.md)                    | [Quelle](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de) |
-| Quellcode (HTML, CSS, JS) | Alle Rechte vorbehalten | [Lizenz](LICENSE.md)                    | [Quelle](https://creativecommons.org/licenses/by-nc/4.0/deed.de)    |
 | Schriftart (Plex)         | OFL 1.1                 | [Lizenz](assets/fonts/ibm-plex/LICENSE) | [Quelle](https://opensource.org/licenses/MIT)                       |
 
 Svetlana / [svetixoxo.github.io](https://svetixoxo.github.io)

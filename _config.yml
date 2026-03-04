@@ -1,10 +1,20 @@
-title: "svetixoxo"
-description: "Mein Homelab-Abenteuer: Cloud, Smart Home & Self-Hosting"
+title: "svetisBlog"
+description: "Self-Hosting, Smart Home, Netzwerk und Musikmachen – was bei mir läuft und wie es dahin gekommen ist"
 author: "Svetlana"
-url: "https://svetixoxo.github.io"
 baseurl: ""
 
 encoding: utf-8
+lang: de_DE
+timezone: Europe/Berlin
+url: "https://svetixoxo.github.io"
+
+tagline: "Self-Hosting, Smart Home & Netzwerk"
+
+# RSS-Feed
+feed :
+  path: feed.xml
+  excerpt_only: false
+  tags: true
 
 # Markdown-Einstellungen
 markdown: kramdown
@@ -31,6 +41,6 @@ header_pages:
 
 # Ausschlüsse
 exclude:
-  - README.md
+  - readMe.md
   - Gemfile
   - Gemfile.lock

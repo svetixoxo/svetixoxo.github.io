@@ -327,13 +327,12 @@ permalink: /ueber-mich/
 <div class="artikel-rahmen">
     <table class="ueber-tabelle" style="margin-top:0.4em">
       <tr>
-        <td>Inhalte</td>
-        <td><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de" class="link-tuerkis" target="_blank">CC BY-NC-ND 4.0</a></td>
-          <td>Teilen erlaubt / Quelle nennen / keine kommerzielle Nutzung / keine Bearbeitungen</td>
-      </tr>
-      <tr>
         <td>Quellcode</td>
         <td>alle Rechte vorbehalten</td>
+      </tr>
+      <tr>
+        <td>Inhalte</td>
+        <td><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de" class="link-tuerkis" target="_blank">CC BY-NC-ND 4.0</a><br>Teilen erlaubt / Quelle nennen / keine kommerzielle Nutzung / keine Bearbeitungen</td>
       </tr>
         <tr>
             <td>Copyright &amp; Nennung</td>
