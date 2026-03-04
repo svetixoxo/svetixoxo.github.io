@@ -20,6 +20,8 @@
 | Branch erstellen + wechseln | `git checkout -b branch-name` |
 | Branch erstellen            | `git branch branch-name`      |
 | In bestimmten Branch pushen | `git push origin branch-name` |
+| Branch lokal löschen        | `git branch -d branch-name`   |
+| Remote-Branches aufräumen   | `git fetch --prune`           |
 
 ## Änderungen zurücksetzen
 
