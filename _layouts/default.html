@@ -8,11 +8,14 @@
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"> {% seo %} {% feed_meta %}
     <script>
-        var menu = document.getElementById('mobil-menu');
-        var btn = document.getElementById('mobil-menu-btn');
-        menu.classList.toggle('offen');
-        btn.classList.toggle('offen');
-        document.body.classList.toggle('kein-scroll');
+        document.addEventListener('DOMContentLoaded', function() {
+            var menu = document.getElementById('mobil-menu');
+            var btn = document.getElementById('mobil-menu-btn');
+            if (!menu || !btn) return;
+            menu.classList.toggle('offen');
+            btn.classList.toggle('offen');
+        });
+
     </script>
 </head>
 
@@ -94,7 +97,7 @@
     </div>
     <footer class="seitenfuss">
         <span class="schrift-gelb">
-            <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> <span class="nur-desktop">»</span> <br class="nur-mobil" /><span class="nur-mobil schrift-gelb">« </span><a href="/ueber-mich/" class="schrift-regular">ueber-mich</a>  / <a href="/archiv/" class="schrift-regular">archiv</a><span class="nur-mobil schrift-gelb"> »</span>
+            <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> <span class="nur-desktop">»</span> <br class="nur-mobil" /><span class="nur-mobil schrift-gelb">« </span><a href="/ueber-mich/" class="schrift-regular">ueber-mich</a> / <a href="/archiv/" class="schrift-regular">archiv</a><span class="nur-mobil schrift-gelb"> »</span>
         </span>
         <span>mit <em>♥</em> gebaut </span>
     </footer>

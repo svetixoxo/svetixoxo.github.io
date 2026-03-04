@@ -59,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     Array.from(rahmen.childNodes).forEach(verarbeiteKnoten);
                 });
+            })
+            .catch(function (err) {
+                console.error('Tooltip Fehler:', err);
             });
     }
 
