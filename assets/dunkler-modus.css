@@ -23,9 +23,9 @@
     --rot-dunkel: #ff6666;
 
     /* ── Schatten & Rahmen ── */
-    --schatten: 4px 4px 0 var(--tinte-fest);
-    --schatten-gross: 6px 6px 0 var(--tinte-fest);
-    --schatten-klein: 2px 2px 0 var(--tinte-fest);
+    --schatten: 4px 4px 0 var(--linie-dunkel);
+    --schatten-gross: 6px 6px 0 var(--linie-dunkel);
+    --schatten-klein: 2px 2px 0 var(--linie-dunkel);
 }
 
 
@@ -150,8 +150,33 @@ nav a,
 }
 
 /* ══════════════════════════════════════════
-   post.html
+   POSTS
 ══════════════════════════════════════════ */
+
+[data-theme="dunkel"] 
+:is(.artikel-rahmen h1, 
+    .artikel-einleitung, 
+    .artikel-meta-thema, 
+    .artikel-rahmen-nummer,
+    .artikel-meta,
+    .artikel-meta span,
+    .aufmacher-haupt h1,
+    .artikel-navigation a) {
+    color: var(--tinte-fest) !important;
+}
+
+[data-theme="dunkel"] .erklaerung::after {
+    color: var(--tinte-fest);
+}
+
+[data-theme="dunkel"] .artikel-meta-datum {
+    background: var(--gelb-fest);
+    color: var(--tinte-fest)
+}
+
+[data-theme="dunkel"] .artikel-meta-thema a:hover {
+    color: var(--tinte);
+}
 
 [data-theme="dunkel"] .kategorie-self-hosting-dienste.artikel-kopf {
     background: var(--magenta-dunkel);
@@ -191,4 +216,23 @@ nav a,
 
 .nav-ueber-mich:hover {
     color: var(--tinte-fest);
+}
+
+
+/* ══════════════════════════════════════════
+   BEITRAGSKARTEN
+══════════════════════════════════════════ */
+
+[data-theme="dunkel"] .beitragskarte {
+    background: var(--weiss-dunkel) !important;
+}
+
+[data-theme="dunkel"] 
+:is(.startseite-kacheln .beitragskarte-zeile1,
+.startseite-kacheln .beitragskarte-zeile2) {
+    color: var(--gedimmt-dunkel);
+}
+
+[data-theme="dunkel"] .beitragskarte-und {
+    color: var(--linie-dunkel) !important;
 }
