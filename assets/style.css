@@ -90,24 +90,33 @@
     --hintergrund: #f8f6f0;
     --hintergrund-karte: #ffffff;
     --tinte: #080810;
+    --tinte-fest: #080810;
     --text: #1a1a2a;
+    --text-fest: #1a1a2a;
     --gedimmt: #666680;
     --linie: #d8d4cc;
 
     --tuerkis: #00b8d9;
+    --tuerkis-fest: #00b8d9;
     --tuerkis-pastell: #e0f8ff;
     --orange: #ff8700;
+    --orange-fest: #ff8700;
     --orange-pastell: #fff1eb;
     --gelb: #fecc02;
+    --gelb-fest: #fecc02;
     --gelb-pastell: #fef4cc;
     --lila: #d36ff9;
+    --lila-fest: #d36ff9;
     --lila-pastell: #f0ebff;
     --magenta: #ff2b6b;
+    --magenta-fest: #ff2b6b;
     --magenta-pastell: #ffe0ec;
     --gruen: #00a878;
+    --gruen-fest: #00a878;
     --gruen-pastell: #e0fff6;
     --rot: #e53e3e;
     --weiss: #ffffff;
+    --weiss-fest: #ffffff;
 
     /* ── Schatten & Rahmen ── */
     --schatten: 4px 4px 0 var(--tinte);
