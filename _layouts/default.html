@@ -37,7 +37,8 @@
                 <em>svetis</em>Blog </a>
             <!--
             <span class="logo-untertitel">svetixoxo.github.io</span>-->
-        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% elsif page.url contains "archiv" %} {% assign nav-aktiv = "archiv" %} {% elsif page.url contains "ueber-mich" %} {% assign nav-aktiv = "ueber-mich" %} {% else %} {% endif %} <nav>
+        </div> {% if page.category == "Self-Hosting & Dienste" or page.url contains "self-hosting" %} {% assign nav-aktiv = "self-hosting" %} {% elsif page.category == "Netzwerk & Infrastruktur" or page.url contains "netzwerk" %} {% assign nav-aktiv = "netzwerk" %} {% elsif page.category == "Smart Home & Automatisierung" or page.url contains "smart-home" %} {% assign nav-aktiv = "smart-home" %} {% elsif page.category == "Proberaum & Musikmachen" or page.url contains "musikmachen" or page.url contains "proberaum" %} {% assign nav-aktiv = "musikmachen" %} {% elsif page.url contains "archiv" %} {% assign nav-aktiv = "archiv" %} {% elsif page.url contains "ueber-mich" %} {% assign nav-aktiv = "ueber-mich" %} {% else %} {% endif %}
+        <nav>
             <a href="/thema/self-hosting-und-dienste/" class="nav-self-hosting {% if nav-aktiv == 'self-hosting' %}aktiv{% endif %}">
                 <span>Self-Hosting</span>
             </a>
