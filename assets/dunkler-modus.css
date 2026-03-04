@@ -3,29 +3,31 @@
    /assets/dunkler-modus.css
 ═══════════════════════════════════════════════════════════ */
 
-:root {
+[data-theme="dunkel"] {
     /* ── Basis ── */
     --hintergrund-dunkel: #15151d;
     --hintergrund-karte-dunkel: #1f1f2a;
-    --tinte-dunkel: #ffdd55;
+    --tinte-dunkel: #ffc107;
     --text-dunkel: #e0e0f0;
     --gedimmt-dunkel: #9595b0;
-    --linie-dunkel: #2d2d3a;
+    --linie-dunkel: #00607c;
     --weiss-dunkel: #1f1f2a;
     
     /* ── Akzentfarben ── */
-    --tuerkis-dunkel: #00ccee;
-    --orange-dunkel: #ff9933;
-    --gelb-dunkel: #ffdd55;
-    --lila-dunkel: #e077ff;
-    --magenta-dunkel: #ff4488;
-    --gruen-dunkel: #00dd88;
-    --rot-dunkel: #ff6666;
+    --tuerkis-dunkel: #00799b;
+    --orange-dunkel: #f97e00;
+    --gelb-dunkel: #ffc107;
+    --lila-dunkel: #9b51e0;
+    --magenta-dunkel: #d00062;
+    --gruen-dunkel: #00a651;
+    --rot-dunkel: #e63946;
 
     /* ── Schatten & Rahmen ── */
     --schatten: 4px 4px 0 var(--linie-dunkel);
     --schatten-gross: 6px 6px 0 var(--linie-dunkel);
     --schatten-klein: 2px 2px 0 var(--linie-dunkel);
+    --rahmen: 2px solid var(--gelb-dunkel);
+    --rahmen-gross: 3px solid var(--gelb-dunkel);
 }
 
 
@@ -34,7 +36,7 @@
 ══════════════════════════════════════════ */
 
 [data-theme="dunkel"] body {
-    background: #0a4a5a;
+    background: #004d61;
     background-image: repeating-linear-gradient(315deg,
             transparent,
             transparent 20px,
@@ -50,7 +52,7 @@
 [data-theme="dunkel"] .seitenfuss {
     background: var(--tinte-fest);
     color: rgba(255, 255, 255, 0.5);
-    border-top-color: var(--gelb-fest);
+    border-top-color: var(--gelb-dunkel);
 }
 
 [data-theme="dunkel"] .seitenfuss span {
@@ -106,7 +108,7 @@ nav a,
 }
 
 [data-theme="dunkel"] .nav-theme-toggle {
-    color: var(--gelb-fest);
+    color: var(--gelb-dunkel);
 }
 
 .nav-theme-toggle:hover {
@@ -154,8 +156,7 @@ nav a,
 ══════════════════════════════════════════ */
 
 [data-theme="dunkel"] 
-:is(.artikel-rahmen h1, 
-    .artikel-einleitung, 
+:is(.artikel-einleitung, 
     .artikel-meta-thema, 
     .artikel-rahmen-nummer,
     .artikel-meta,
@@ -172,8 +173,10 @@ nav a,
     color: var(--tinte-fest);
 }
 
-[data-theme="dunkel"] .artikel-meta-datum {
-    background: var(--gelb-fest);
+[data-theme="dunkel"]
+:is(.artikel-meta-datum,
+    #ueber-mich__aufmacher) {
+    background: var(--gelb-dunkel);
     color: var(--tinte-fest)
 }
 
@@ -195,6 +198,10 @@ nav a,
 
 [data-theme="dunkel"] .kategorie-proberaum-musikmachen.artikel-kopf {
     background: var(--lila-dunkel);
+}
+
+[data-theme="dunkel"] #ueber-mich__lizenz {
+    border-color: var(--weiss-dunkel);
 }
 
 /* ══════════════════════════════════════════
@@ -232,10 +239,24 @@ nav a,
 
 [data-theme="dunkel"] 
 :is(.startseite-kacheln .beitragskarte-zeile1,
-.startseite-kacheln .beitragskarte-zeile2) {
+    .startseite-kacheln .beitragskarte-zeile2) {
     color: var(--gedimmt-dunkel);
 }
 
 [data-theme="dunkel"] .beitragskarte-und {
     color: var(--linie-dunkel) !important;
+}
+
+[data-theme="dunkel"]
+:is(.aufmacher-haupt h1,
+    .artikel-rahmen h1) {
+    text-shadow: 
+    -1px -1px 0 var(--weiss-dunkel),  /* oben links */
+     0   -1px 0 var(--weiss-dunkel),  /* oben */
+     1px -1px 0 var(--weiss-dunkel),  /* oben rechts */
+    -1px  0   0 var(--weiss-dunkel),  /* links */
+     2px  0   0 var(--weiss-dunkel),  /* rechts */
+    -1px  1px 0 var(--weiss-dunkel),  /* unten links */
+     0    2px 0 var(--weiss-dunkel),  /* unten */
+     2px  2px 0 var(--weiss-dunkel);  /* unten rechts */
 }

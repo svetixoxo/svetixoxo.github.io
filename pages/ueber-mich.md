@@ -142,7 +142,7 @@ permalink: /ueber-mich/
   }
 </style>
 
-<div class="aufmacher">
+<div class="aufmacher" id="ueber-mich__aufmacher">
   <div class="aufmacher-haupt">
   <h1>Über mich</h1>
   <p class="artikel-einleitung">Svetlana. Irgendwo zwischen neugierig und überfordert – auf Arch Linux unterwegs. Das hier ist mein Blog über Self-Hosting, Netzwerk, Smart Home, Musikmachen und den ganzen Rest, der sich dabei so ansammelt.</p>
@@ -321,7 +321,7 @@ permalink: /ueber-mich/
 ══════════════════════════════════════════ -->
 
 <div class="abschnitt-kopf">
-  <h2 style="background:var(--gelb); color:var(--tinte)">Lizenz</h2>
+  <h2 style="background:var(--gelb); color:var(--tinte)" id="ueber-mich__lizenz">Lizenz</h2>
 </div>
 
 <div class="artikel-rahmen">
