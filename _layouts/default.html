@@ -5,19 +5,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     {% seo %}
-    
+
     {% feed_meta %}
-    
+
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/dunkler-modus.css' | relative_url }}">
-    
+
+    <script>
+        (function() {
+            var theme = new URLSearchParams(window.location.search).get('theme');
+            if (theme === 'dunkel') {
+                document.documentElement.setAttribute('data-theme', 'dunkel');
+                var MAPPING = [
+                    ['--hintergrund', '--hintergrund-dunkel'],
+                    ['--hintergrund-karte', '--hintergrund-karte-dunkel'],
+                    ['--tinte', '--tinte-dunkel'],
+                    ['--text', '--text-dunkel'],
+                    ['--gedimmt', '--gedimmt-dunkel'],
+                    ['--linie', '--linie-dunkel'],
+                    ['--weiss', '--weiss-dunkel'],
+                    ['--tuerkis', '--tuerkis-dunkel'],
+                    ['--orange', '--orange-dunkel'],
+                    ['--gelb', '--gelb-dunkel'],
+                    ['--lila', '--lila-dunkel'],
+                    ['--magenta', '--magenta-dunkel'],
+                    ['--gruen', '--gruen-dunkel'],
+                    ['--rot', '--rot-dunkel'],
+                ];
+                var style = document.documentElement.style;
+                var cs = getComputedStyle(document.documentElement);
+                MAPPING.forEach(function(e) {
+                    var val = cs.getPropertyValue(e[1]).trim();
+                    if (val) style.setProperty(e[0], val);
+                });
+            }
+        })();
+
+    </script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var menu = document.getElementById('mobil-menu');
@@ -27,6 +59,7 @@
             btn.classList.remove('offen');
             document.body.classList.remove('kein-scroll');
         });
+
     </script>
 </head>
 
@@ -108,16 +141,16 @@
     <div class="seiteninhalt">
         {{ content }}
     </div>
-    
+
     <!-- Dunkler Modus Toggle -->
-    
+
     <footer class="seitenfuss">
         <span class="schrift-gelb">
             <a href="https://svetixoxo.github.io">svetixoxo.github.io</a> <span class="nur-desktop">»</span> <br class="nur-mobil" /><span class="nur-mobil schrift-gelb">« </span><a href="/ueber-mich/" class="schrift-regular">ueber-mich</a> / <a href="/archiv/" class="schrift-regular">archiv</a><span class="nur-mobil schrift-gelb"> »</span>
         </span>
         <span>mit <em>♥</em> gebaut </span>
     </footer>
-    
+
     <!-- Skripte -->
     <script src="{{ '/assets/skript.js' | relative_url }}"></script>
     <script src="{{ '/assets/dunkler-modus.js' | relative_url }}"></script>
