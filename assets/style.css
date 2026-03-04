@@ -503,7 +503,7 @@ nav a:hover span::after {
 
 .nav-archiv.aktiv {
     background: var(--gelb);
-    color: var(--tinbte);
+    color: var(--tinte);
 }
 
 .nav-self-hosting:hover {

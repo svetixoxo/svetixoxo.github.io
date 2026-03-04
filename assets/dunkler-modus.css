@@ -5,45 +5,29 @@
 
 :root {
     /* ── Basis ── */
-    --hintergrund-dunkel: #121218;
-    --hintergrund-karte-dunkel: #1a1a24;
-    --tinte-dunkel: #ffd633;
-    --text-dunkel: #d0d0e0;
-    --gedimmt-dunkel: #9090a8;
-    --linie-dunkel: #2a2a38;
-    --weiss-dunkel: #1a1a24;
-
+    --hintergrund-dunkel: #15151d;
+    --hintergrund-karte-dunkel: #1f1f2a;
+    --tinte-dunkel: #ffdd55;
+    --text-dunkel: #e0e0f0;
+    --gedimmt-dunkel: #9595b0;
+    --linie-dunkel: #2d2d3a;
+    --weiss-dunkel: #1f1f2a;
+    
     /* ── Akzentfarben ── */
-    --tuerkis-dunkel: #00768b;
-    --orange-dunkel: #cc6c00;
-    --gelb-dunkel: #ffd633;
-    --lila-dunkel: #a959c7;
-    --magenta-dunkel: #cc2256;
-    --gruen-dunkel: #008660;
-    --rot-dunkel: #ff5555;
+    --tuerkis-dunkel: #00ccee;
+    --orange-dunkel: #ff9933;
+    --gelb-dunkel: #ffdd55;
+    --lila-dunkel: #e077ff;
+    --magenta-dunkel: #ff4488;
+    --gruen-dunkel: #00dd88;
+    --rot-dunkel: #ff6666;
+
+    /* ── Schatten & Rahmen ── */
+    --schatten: 4px 4px 0 var(--tinte-fest);
+    --schatten-gross: 6px 6px 0 var(--tinte-fest);
+    --schatten-klein: 2px 2px 0 var(--tinte-fest);
 }
 
-    --tuerkis: #00b8d9;
-    --tuerkis-fest: #00b8d9;
-    --tuerkis-pastell: #e0f8ff;
-    --orange: #ff8700;
-    --orange-fest: #ff8700;
-    --orange-pastell: #fff1eb;
-    --gelb: #fecc02;
-    --gelb-fest: #fecc02;
-    --gelb-pastell: #fef4cc;
-    --lila: #d36ff9;
-    --lila-fest: #d36ff9;
-    --lila-pastell: #f0ebff;
-    --magenta: #ff2b6b;
-    --magenta-fest: #ff2b6b;
-    --magenta-pastell: #ffe0ec;
-    --gruen: #00a878;
-    --gruen-fest: #00a878;
-    --gruen-pastell: #e0fff6;
-    --rot: #e53e3e;
-    --weiss: #ffffff;
-    --weiss-fest: #ffffff;
 
 /* ══════════════════════════════════════════
    BODY-HINTERGRUND
@@ -78,11 +62,11 @@
 }
 
 [data-theme="dunkel"] .seitenfuss a:hover {
-    color: #00d4ff;
+    color: var(--tuerkis);
 }
 
 [data-theme="dunkel"] .seitenfuss em {
-    color: #ff5555;
+    color: var(--rot);
 }
 
 /* ══════════════════════════════════════════
@@ -183,4 +167,28 @@ nav a,
 
 [data-theme="dunkel"] .kategorie-proberaum-musikmachen.artikel-kopf {
     background: var(--lila-dunkel);
+}
+
+/* ══════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════ */
+
+.nav-archiv.aktiv {
+    color: var(--tinte-fest);
+}
+
+.nav-archiv:hover {
+    color: var(--tinte-fest);
+}
+
+.nav-archiv:hover span::after {
+    background: var(--tinte-fest);
+}
+
+.nav-ueber-mich {
+    color: var(--tinte-fest);
+}
+
+.nav-ueber-mich:hover {
+    color: var(--tinte-fest);
 }
