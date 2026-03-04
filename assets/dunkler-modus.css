@@ -253,7 +253,7 @@ nav a,
 [data-theme="dunkel"] 
 :is(.startseite-kacheln .beitragskarte-zeile1,
     .startseite-kacheln .beitragskarte-zeile2) {
-    color: var(--gedimmt-dunkel);
+    color: var(--gelb-dunkel);
 }
 
 [data-theme="dunkel"] .beitragskarte-und {
