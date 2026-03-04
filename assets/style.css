@@ -481,106 +481,63 @@ nav a:hover span::after {
     left: 0;
 }
 
-.nav-self-hosting.aktiv {
+.nav-self-hosting.aktiv,
+.nav-self-hosting:hover  {
     background: var(--magenta);
     color: var(--weiss);
 }
 
-.nav-netzwerk.aktiv {
-    background: var(--orange);
-    color: var(--weiss);
+.nav-self-hosting span::after,
+.nav-self-hosting:hover span::after {
+    background: var(--magenta-pastell);
 }
 
-.nav-smart-home.aktiv {
-    background: var(--gruen);
-    color: var(--weiss);
-}
-
-.nav-musikmachen.aktiv {
-    background: var(--lila);
-    color: var(--weiss);
-}
-
-.nav-archiv.aktiv {
-    background: var(--gelb);
-    color: var(--tinte);
-}
-
-.nav-self-hosting:hover {
-    background: var(--magenta);
-    color: var(--weiss);
-}
-
+.nav-netzwerk.aktiv,
 .nav-netzwerk:hover {
     background: var(--orange);
     color: var(--weiss);
 }
 
+.nav-netzwerk span::after,
+.nav-netzwerk:hover span::after {
+    background: var(--orange-pastell);
+}
+
+.nav-smart-home.aktiv,
 .nav-smart-home:hover {
     background: var(--gruen);
     color: var(--weiss);
 }
 
+.nav-smart-home span::after,
+.nav-smart-home:hover span::after {
+    background: var(--gruen-pastell);
+}
+
+.nav-musikmachen.aktiv,
 .nav-musikmachen:hover {
     background: var(--lila);
     color: var(--weiss);
 }
 
-.nav-archiv:hover {
-    background: var(--gelb);
-    color: var(--tinte);
-}
-
-.nav-self-hosting span::after {
-    background: var(--magenta);
-}
-
-.nav-netzwerk span::after {
-    background: var(--orange);
-}
-
-.nav-smart-home span::after {
-    background: var(--gruen);
-}
-
-.nav-musikmachen span::after {
-    background: var(--lila);
-}
-
-.nav-archiv span::after {
-    background: var(--tinte);
-}
-
-.nav-self-hosting:hover span::after {
-    background: var(--magenta-pastell);
-}
-
-.nav-netzwerk:hover span::after {
-    background: var(--orange-pastell);
-}
-
-.nav-smart-home:hover span::after {
-    background: var(--gruen-pastell);
-}
-
+.nav-musikmachen span::after,
 .nav-musikmachen:hover span::after {
     background: var(--lila-pastell);
 }
 
+.nav-archiv.aktiv,
+.nav-archiv:hover  {
+    background: var(--gelb);
+    color: var(--tinte);
+}
+
+.nav-archiv span::after,
 .nav-archiv:hover span::after {
     background: var(--tinte);
 }
 
-.nav-ueber-mich {
-    background: var(--gelb);
-    color: var(--tinte);
-}
-
-.nav-ueber-mich.aktiv {
-    background: var(--gelb);
-    color: var(--tinte);
-}
-
+.nav-ueber-mich,
+.nav-ueber-mich.aktiv,
 .nav-ueber-mich:hover {
     background: var(--gelb);
     color: var(--tinte);
