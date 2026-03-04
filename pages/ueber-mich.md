@@ -333,8 +333,7 @@ permalink: /ueber-mich/
       </tr>
       <tr>
         <td>Quellcode</td>
-        <td><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.de" class="link-tuerkis" target="_blank">CC BY-NC 4.0</a></td>
-          <td>Teilen erlaubt / Quelle nennen / keine kommerzielle Nutzung</td>
+        <td>alle Rechte vorbehalten</td>
       </tr>
         <tr>
             <td>Copyright &amp; Nennung</td>
