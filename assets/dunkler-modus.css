@@ -208,12 +208,21 @@ nav a,
    NAVIGATION
 ══════════════════════════════════════════ */
 
-.nav-archiv.aktiv {
-    color: var(--tinte-fest);
-}
-
+.nav-archiv.aktiv,
 .nav-archiv:hover {
     color: var(--tinte-fest);
+    position: relative;
+}
+
+.nav-archiv.aktiv::before,
+.nav-archiv:hover::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 2px;
+    background: var(--weiss-dunkel);
 }
 
 .nav-archiv:hover span::after {
