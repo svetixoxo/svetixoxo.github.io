@@ -160,8 +160,11 @@ nav a,
     .artikel-rahmen-nummer,
     .artikel-meta,
     .artikel-meta span,
-    .aufmacher-haupt h1,
-    .artikel-navigation a) {
+    .artikel-meta-thema a,
+    .artikel-navigation a,
+    .sticker-gelb,
+    .schaltflaeche-gelb,
+    .abschnitt-kopf h2) {
     color: var(--tinte-fest) !important;
 }
 
