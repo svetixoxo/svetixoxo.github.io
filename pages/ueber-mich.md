@@ -252,11 +252,13 @@ permalink: /ueber-mich/
       {% elsif tage_pro_beitrag < 60 %}
         {% assign wochen = tage_pro_beitrag | divided_by: 7.0 %}
         {% assign wochen_gerundet = wochen | round: 1 %}
-        {{ wochen_gerundet }} Wochen
+        {% assign wochen_text = wochen_gerundet | replace: '.', ',' %}
+        {{ wochen_text }} Wochen
       {% else %}
         {% assign monate = tage_pro_beitrag | divided_by: 30.0 %}
         {% assign monate_gerundet = monate | round: 1 %}
-        {{ monate_gerundet }} Monate
+        {% assign monate_text = monate_gerundet | replace: '.', ',' %}
+        {{ monate_text }} Monate
       {% endif %}
     {% else %}
       –
