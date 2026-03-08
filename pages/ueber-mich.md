@@ -235,9 +235,36 @@ permalink: /ueber-mich/
     <div class="stats-kachel-wert" style="color:var(--lila)">{{ woerter_schnitt }}</div>
   </div>
   <div class="stats-kachel">
-    <div class="stats-kachel-label">Letzter/Erster<span class="nur-desktop"> Beitrag</span></div>
-    <div class="stats-kachel-wert klein">{{ erster_post.date | date: "%Y-%m-%d" }}<span class="nur-desktop"> / </span><br class="nur-mobil">{{ letzter_post.date | date: "%Y-%m-%d" }}</div>
+  <div class="stats-kachel-label">Ø Neuer Beitrag</div>
+  <div class="stats-kachel-wert">
+    {% assign erster_post = site.posts | last %}
+    {% assign letzter_post = site.posts | first %}
+    {% assign start_datum = erster_post.date | date: "%s" | times: 1 %}
+    {% assign end_datum = letzter_post.date | date: "%s" | times: 1 %}
+    {% assign tage_gesamt = end_datum | minus: start_datum | divided_by: 86400 %}
+    {% assign anzahl_beitraege = site.posts.size | minus: 1 %}
+    
+    {% if anzahl_beitraege > 0 and tage_gesamt > 0 %}
+      {% assign tage_pro_beitrag = tage_gesamt | divided_by: anzahl_beitraege %}
+      
+      {% if tage_pro_beitrag < 14 %}
+        {{ tage_pro_beitrag }} Tage
+      {% elsif tage_pro_beitrag < 60 %}
+        {% assign wochen = tage_pro_beitrag | divided_by: 7.0 %}
+        {% assign wochen_gerundet = wochen | round: 1 %}
+        {% assign wochen_text = wochen_gerundet | replace: '.', ',' %}
+        {{ wochen_text }} Wochen
+      {% else %}
+        {% assign monate = tage_pro_beitrag | divided_by: 30.0 %}
+        {% assign monate_gerundet = monate | round: 1 %}
+        {% assign monate_text = monate_gerundet | replace: '.', ',' %}
+        {{ monate_text }} Monate
+      {% endif %}
+    {% else %}
+      –
+    {% endif %}
   </div>
+</div>
 </div>
 
 <div class="ueber-raster" style="margin-top:2rem">
