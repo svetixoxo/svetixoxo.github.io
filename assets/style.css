@@ -1844,8 +1844,8 @@ blockquote:not(.hinweisbox) {
 ══════════════════════════════════════════ */
 
 pre {
-    background: #0d0d1a;
-    color: #e8e8f8;
+    background: var(--tuerkis-pastell);
+    color: var(--tinte);
     border: var(--rahmen);
     box-shadow: var(--schatten);
     padding: 1.3em;

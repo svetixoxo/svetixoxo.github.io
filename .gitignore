@@ -2,6 +2,8 @@ Gemfile
 Gemfile.lock
 _assets/img/originals/
 assets/img/originals/
+_posts/_entwuerfe
+posts/_entwuerfe
 _site/
 _site
 .DS_Store

@@ -208,6 +208,11 @@ nav a,
     border-color: var(--weiss-dunkel);
 }
 
+[data-theme="dunkel"] pre {
+    background: var(--weiss-dunkel);
+    color: var(--text-dunkel);
+}
+
 /* ══════════════════════════════════════════
    NAVIGATION
 ══════════════════════════════════════════ */
