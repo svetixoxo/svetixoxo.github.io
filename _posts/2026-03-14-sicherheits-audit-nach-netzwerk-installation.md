@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Sicherheits-Audit nach Netzwerk-Installation: Vertrauen ist gut, Kontrolle ist besser"
+title: "Audit nach Netzwerk-Installation: Vertrauen ist gut, Kontrolle ist besser"
 date: 2026-03-14
 category: "Netzwerk & Infrastruktur"
-bild: /assets/img/posts/260314-sicherheits-audit-nach-netzwerk-installation.png
+bild: /assets/img/posts/260314-audit-nach-netzwerk-installation.png
 tags: [netzwerk, sicherheit, smart-home, vlan, firewall]
 excerpt: "Fast 30 VLANs, über 300 Geräte, professionelle Installation – und trotzdem/deshalb ein unabhängiges Sicherheits-Audit beauftragt. Warum ich mein Netzwerk prüfen ließ, was dabei überprüft wurde und ob sich der Aufwand gelohnt hat."
 ---
@@ -79,7 +79,7 @@ Die Prüfer haben auch Penetrationstests durchgeführt: Können sie von einem Io
 
 ## 3. Externe Erreichbarkeit
 
-Einer der kritischsten Punkte bei jedem Netzwerk-Audit: Was ist von außen erreichbar?
+Einer der kritischsten Punkte bei jedem Netzwerk-Audit: <a href="/smart-home-und-datenschutz-was-nach-aussen-geht-und-was-nicht/" class="link-gruen">Was ist von außen erreichbar?</a>
 
 - **Offene Ports:** Gibt es Ports, die von außen erreichbar sind und nicht sein sollten? Es wurden Port-Scans von außen durchgeführt (mit meiner Erlaubnis natürlich), um zu sehen, welche Dienste von außen sichtbar sind.
 - **Port-Forwarding-Regeln:** Sind alle Port-Forwarding-Regeln dokumentiert und gerechtfertigt? Gibt es vergessene Weiterleitungen, die niemand mehr braucht?

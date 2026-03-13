@@ -191,7 +191,7 @@ permalink: /ueber-mich/
     <p>HTML und CSS habe ich selbst gemacht – und dabei gemerkt, dass mir das mehr Spaß macht als erwartet. Das Design, die Layouts, die Farbsysteme, die Komponenten: Alles von Hand geschrieben. Dass das auch für meine Text gilt, brauche ich hier nicht zu erwähnen.</p>
   </div>
   <div class="artikel-rahmen">
-    <p>In zwei Bereichen kommt hier KI zum Einsatz: Von JavaScript habe ich keine Ahnung, also kam das von Anthropic Claude. Die Grafiken basieren auf einem Foto von mir und kommen von OpenAI ChatGPT, müssen aber fast immer noch angepasst werden.</p>
+    <p>In zwei Bereichen kommt hier KI zum Einsatz: Von JavaScript habe ich keine Ahnung, also kam das von Anthropic Claude. Die Grafiken basieren auf einem Foto von mir und kommen von OpenAI ChatGPT, müssen aber fast jedesmal noch angepasst werden.</p>
   </div>
 </div>
 

@@ -1841,6 +1841,106 @@ blockquote:not(.hinweisbox) {
 }
 
 /* ══════════════════════════════════════════
+   TABELLEN
+══════════════════════════════════════════ */
+
+.artikel-inhalt table {
+    width: 100%;
+    border-collapse: collapse;
+    border: var(--rahmen);
+    box-shadow: var(--schatten);
+    font-size: 0.88rem;
+    margin: 1.5em 0;
+    overflow: hidden;
+}
+
+.artikel-inhalt table thead tr {
+    background: var(--tinte);
+    color: var(--weiss);
+}
+
+.artikel-inhalt table thead th {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.65em 1em;
+    text-align: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.artikel-inhalt table thead th:last-child {
+    border-right: none;
+}
+
+.artikel-inhalt table tbody tr {
+    border-bottom: 1px solid var(--linie);
+    background: var(--hintergrund-karte);
+    transition: background 0.1s ease;
+}
+
+.artikel-inhalt table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.artikel-inhalt table tbody tr:nth-child(even) {
+    background: var(--hintergrund);
+}
+
+.artikel-inhalt table tbody tr:hover {
+    background: var(--gelb-pastell);
+}
+
+.artikel-inhalt table td {
+    padding: 0.6em 1em;
+    border-right: 1px solid var(--linie);
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.artikel-inhalt table td:last-child {
+    border-right: none;
+}
+
+.artikel-inhalt table td strong {
+    font-weight: 700;
+}
+
+/* Scrollbar für breite Tabellen auf Mobil */
+.artikel-inhalt .tabellen-wrapper,
+.artikel-inhalt table {
+    overflow-x: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.artikel-inhalt table thead,
+.artikel-inhalt table tbody,
+.artikel-inhalt table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Kategoriefarben für th-Hintergrund */
+.kategorie-self-hosting-dienste .artikel-inhalt table thead tr {
+    background: var(--magenta);
+}
+
+.kategorie-netzwerk-infrastruktur .artikel-inhalt table thead tr {
+    background: var(--orange);
+}
+
+.kategorie-smart-home-automatisierung .artikel-inhalt table thead tr {
+    background: var(--gruen);
+}
+
+.kategorie-proberaum-musikmachen .artikel-inhalt table thead tr {
+    background: var(--lila);
+}
+
+/* ══════════════════════════════════════════
    CODE
 ══════════════════════════════════════════ */
 

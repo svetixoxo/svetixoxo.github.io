@@ -228,6 +228,63 @@ ol code) {
 }
 
 /* ══════════════════════════════════════════
+   TABELLEN
+══════════════════════════════════════════ */
+
+[data-theme="dunkel"] .artikel-inhalt table {
+    border-color: var(--linie-dunkel);
+    box-shadow: var(--schatten);
+}
+
+[data-theme="dunkel"] .artikel-inhalt table thead tr {
+    background: var(--tinte-fest);
+    color: var(--gelb-dunkel);
+}
+
+[data-theme="dunkel"] .artikel-inhalt table thead th {
+    border-right-color: var(--linie-dunkel);
+}
+
+[data-theme="dunkel"] .artikel-inhalt table tbody tr {
+    background: var(--hintergrund-karte-dunkel);
+    border-bottom-color: var(--linie-dunkel);
+}
+
+[data-theme="dunkel"] .artikel-inhalt table tbody tr:nth-child(even) {
+    background: var(--hintergrund-dunkel);
+}
+
+[data-theme="dunkel"] .artikel-inhalt table tbody tr:hover {
+    background: color-mix(in srgb, var(--gelb-dunkel) 12%, var(--hintergrund-karte-dunkel));
+}
+
+[data-theme="dunkel"] .artikel-inhalt table td {
+    border-right-color: var(--linie-dunkel);
+    color: var(--text-dunkel);
+}
+
+/* Kategoriefarben im Dunkelmodus */
+[data-theme="dunkel"] .kategorie-self-hosting-dienste .artikel-inhalt table thead tr {
+    background: var(--magenta-dunkel);
+    color: var(--weiss-fest);
+}
+
+[data-theme="dunkel"] .kategorie-netzwerk-infrastruktur .artikel-inhalt table thead tr {
+    background: var(--orange-dunkel);
+    color: var(--weiss-fest);
+}
+
+[data-theme="dunkel"] .kategorie-smart-home-automatisierung .artikel-inhalt table thead tr {
+    background: var(--gruen-dunkel);
+    color: var(--weiss-fest);
+}
+
+[data-theme="dunkel"] .kategorie-proberaum-musikmachen .artikel-inhalt table thead tr {
+    background: var(--lila-dunkel);
+    color: var(--weiss-fest);
+}
+
+/* ══════════════════════════════════════════
    NAVIGATION
 ══════════════════════════════════════════ */
 
