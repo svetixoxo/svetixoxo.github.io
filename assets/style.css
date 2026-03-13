@@ -211,8 +211,8 @@ p a:hover {
 
 /* ── Auswahl ── */
 ::selection {
-    background: var(--gelb);
-    color: var(--tinte);
+    background: var(--gelb-fest);
+    color: var(--tinte-feste);
 }
 
 button:focus,
@@ -1225,6 +1225,7 @@ nav a.mobil-menu-kachel {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.75rem;
   font-weight: 400;
+  text-align: left;
   padding: 0.4em 0.8em;
   border: var(--rahmen);
   box-shadow: var(--schatten-klein);

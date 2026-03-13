@@ -213,6 +213,20 @@ nav a,
     color: var(--text-dunkel);
 }
 
+[data-theme="dunkel"] pre code {
+    background: none;
+    color: inherit;
+}
+
+[data-theme="dunkel"]
+:is(p code,
+li code,
+ul code,
+ol code) {
+    background: var(--gelb-dunkel);
+    color: var(--tinte-fest);
+}
+
 /* ══════════════════════════════════════════
    NAVIGATION
 ══════════════════════════════════════════ */
