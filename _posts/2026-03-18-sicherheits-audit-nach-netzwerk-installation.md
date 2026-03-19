@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Audit nach Netzwerk-Installation: Vertrauen ist gut, Kontrolle ist besser"
-date: 2026-03-14
+date: 2026-03-18
 category: "Netzwerk & Infrastruktur"
-bild: /assets/img/posts/260314-audit-nach-netzwerk-installation.png
+bild: /assets/img/posts/260318-audit-nach-netzwerk-installation.png
 tags: [netzwerk, sicherheit, smart-home, vlan, firewall]
 excerpt: "Fast 30 VLANs, über 300 Geräte, professionelle Installation – und trotzdem/deshalb ein unabhängiges Sicherheits-Audit beauftragt. Warum ich mein Netzwerk prüfen ließ, was dabei überprüft wurde und ob sich der Aufwand gelohnt hat."
 ---
