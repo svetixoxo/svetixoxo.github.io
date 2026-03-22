@@ -181,7 +181,7 @@ nav a,
 :is(.artikel-meta-datum,
     #ueber-mich__aufmacher) {
     background: var(--gelb-dunkel);
-    color: var(--tinte-fest)
+    color: var(--tinte-fest);
     border: 2px solid var(--linie-dunkel)
 }
 
