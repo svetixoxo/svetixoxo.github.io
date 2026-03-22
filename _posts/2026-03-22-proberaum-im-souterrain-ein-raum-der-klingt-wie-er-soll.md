@@ -48,7 +48,7 @@ Absorber wandeln Schallenergie in Wärme um. Das klingt dramatischer als es ist 
 
 ### Auf die Größe kommt es an
 
-DieDicke entscheidet über den Frequenzbereich. Das ist der Punkt, der beim Thema Absorber gerne unterschätzt wird. Dünne Absorber absorbieren nur hohe Frequenzen. Ein 5 cm dicker Basotect-Block beginnt bei etwa 400 Hz zu wirken – darunter kann man eigentlich auch darauf verzichten.
+Die Dicke entscheidet über den Frequenzbereich. Das ist der Punkt, der beim Thema Absorber gerne unterschätzt wird. Dünne Absorber absorbieren nur hohe Frequenzen. Ein 5 cm dicker Basotect-Block beginnt bei etwa 400 Hz zu wirken – darunter kann man eigentlich auch darauf verzichten.
 
 Für den Bassbereich braucht es Masse und Tiefe. Breitbandabsorber, die bis in den unteren Mittelton und Bassbereich wirken, fangen bei 10–15 cm Dicke an, realistisch sind 20–30 cm für Maßnahmen im unteren Bassbereich. Diese sogenannten Bassabsorber (oder Bassfallen) werden besonders in den Raumecken platziert, weil sich dort tiefe Frequenzen besonders stark konzentrieren.
 
