@@ -46,7 +46,7 @@ Ein Einsteiger-Setup mit einem aktuellen Raspi (8 GB), 256 GB SSD, QNAP TR-002 a
 
 ### Performance-Realität
 
-Ein Raspberry Pi 5 kann problemlos 2-3 gleichzeitige Nextcloud-Benutzer bedienen und bietet schon eine durchaus amtliche Grundlage. Bei reiner Dateisynchronisation sollten sogar mehr möglich sein. Der Gigabit-Ethernet-Port ist voll nutzbar, und bei lokalen Transfers erreicht man tatsächlich die theoretischen 125 MB/s.
+Ein Raspberry Pi 5 kann problemlos 2–3 gleichzeitige Nextcloud-Benutzer bedienen und bietet schon eine durchaus amtliche Grundlage. Bei reiner Dateisynchronisation sollten sogar mehr möglich sein. Der Gigabit-Ethernet-Port ist voll nutzbar, und bei lokalen Transfers erreicht man tatsächlich die theoretischen 125 MB/s.
 
 ### Stromverbrauch
 
