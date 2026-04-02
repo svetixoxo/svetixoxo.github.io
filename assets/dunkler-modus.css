@@ -182,7 +182,7 @@ nav a,
     #ueber-mich__aufmacher) {
     background: var(--gelb-dunkel);
     color: var(--tinte-fest);
-    border: 2px solid var(--linie-dunkel)
+    border: 2px solid var(--linie-dunkel);
 }
 
 [data-theme="dunkel"] .artikel-meta-thema a:hover {

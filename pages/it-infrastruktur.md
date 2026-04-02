@@ -162,6 +162,14 @@ permalink: /it-infrastruktur/
       <tr><td>Netzwerkgeräte</td><td>ca. 320 angebunden</td></tr>
     </table>
   </div>
+  <div class="artikel-rahmen">
+    <table class="setup-tabelle">
+      <tr><td>Netzwerkschrank</td><td>Rittal 42 HE</td></tr>
+      <tr><td>Patch-Panels</td><td>1× 48 Port, 1× 24 Port</td></tr>
+      <tr><td>USV</td><td>APC Smart-UPS SRT 5000VA RM<br>APC Smart-UPS SRT 192V</td></tr>
+      <tr><td>PDU</td><td>2× APC AP7552</td></tr>
+    </table>
+  </div>
 </div>
 
 

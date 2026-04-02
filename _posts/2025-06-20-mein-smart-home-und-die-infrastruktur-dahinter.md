@@ -85,7 +85,11 @@ An den Treppenaufgängen jedes Stockwerks ist je ein <a href="/ipad-als-steuerun
 
 ## Redundanz & Ausfallsicherheit
 
-Ein kritischer Aspekt bei einer so umfassenden Automatisierung ist die Ausfallsicherheit. Für alle wesentlichen Systeme existieren Redundanz-Konzepte: Die Beleuchtung kann bei Ausfall der Smart-Home-Zentrale über konventionelle Lichtschalter gesteuert werden. Heizung und Klimaanlage behalten ihre ursprünglichen Steuereinheiten als Fallback-Option. Die Alarmanlage funktioniert auch bei Netzwerkausfall autonom und die Jalousien lassen sich über separate Gateways auch manuell bedienen. Die Kameras sind zusätzlich über die NVR-Systeme abgesichert, sodass die Aufzeichnung auch bei Ausfall des Heimservers weiterläuft.
+Ein kritischer Aspekt bei einer so umfassenden Automatisierung ist die Ausfallsicherheit. Für alle wesentlichen Systeme existieren Redundanz-Konzepte: Die Beleuchtung kann bei Ausfall der Smart-Home-Zentrale über konventionelle Lichtschalter gesteuert werden. Heizung und Klimaanlage behalten ihre ursprünglichen Steuereinheiten als Fallback-Option. Die Alarmanlage funktioniert auch bei Netzwerkausfall autonom und die Jalousien lassen sich auch manuell bedienen.
+
+<s style="color:var(--linie)">Die Kameras sind zusätzlich über die NVR-Systeme abgesichert, sodass die Aufzeichnung auch bei Ausfall des Heimservers weiterläuft.</s> Für die Kameras kam früher ein separates Hardware-NVR zum Einsatz, inzwischen wurde die Videoüberwachung aber vollständig in QVR Pro migriert, faktisch ein software-basiertes NVR. Die Kameras selbst bleiben unabhängig davon erreichbar. Auch bei Ausfall der NAS kann ein Livebild weiterhin direkt abgerufen werden (etwa per Webinterface oder RTSP-Stream auf IP-Ebene). Die zentrale Verwaltung, Ereigniserkennung und Aufzeichnung entfällt in diesem Fall jedoch.
+
+Für die Stromversorgung der zentralen Komponenten sorgt eine unterbrechungsfreie Stromversorgung (USV), die über zwei getrennte Ausgänge die redundanten Netzteile der Server auf separaten Kreisen hält.
 
 Grundsätzlich gilt: Alle Geräte, die über Bridges oder ähnliches eingebunden wurden, verfügen über eine Fallback-Funktionalität, die den Grundbetrieb auch bei Smart-Home-Ausfall gewährleistet.
 
