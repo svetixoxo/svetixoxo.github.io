@@ -230,17 +230,16 @@ permalink: /it-infrastruktur/
       <tr><td>Klimaanlage</td><td>8× Mitsubishi Electric, Multi-Split</td></tr>
       <tr><td>Lüftung</td><td>Viessmann Vitovent 300-W</td></tr>
       <tr><td>Heizung</td><td>Fußbodenheizung, 9 Räume</td></tr>
-      <tr><td>Außenjalousien</td><td>44× elektrisch</td></tr>
+      <tr><td>Raffstore-Jalousien</td><td>44× elektrisch</td></tr>
       <tr><td>Steckdosen</td><td>83× smart</td></tr>
       <tr><td>Lichtschalter</td><td>25× smart</td></tr>
     </table>
   </div>
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>Wetterstation</td><td>Gira Wetterstation Plus</td></tr>
+      <tr><td>Sensoren</td><td>Gira Wetterstation Plus<br>16× Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>15× Rauchmelder<br>11× Temperatur-/Feuchtigkeitssensor<br>&nbsp;9× CO<sub>2</sub>-Sensor<br>&nbsp;6× CO-Melder<br>&nbsp;4× Gasmelder<br>&nbsp;4× Wassermelder</td></tr>
       <tr><td>Audio</td><td>KEF Einbaulautsprecher, 9 Räume<br>3× Yamaha Multiroom-Verstärker</td></tr>
-      <tr><td>Alarmanlage</td><td>16× Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>15× Rauchmelder<br>&nbsp;4× Gasmelder</td></tr>
-      <tr><td>Kameras</td><td>12× bispektral Tube<br>&nbsp;8× bispektral Dome<br>&nbsp;6× Fisheye 360°</td></tr>
+      <tr><td>Kameras</td><td>8× Axis Thermal<br>6× Axis Dome/PTZ<br>2× Axis Panoramic</td></tr>
     </table>
   </div>
 </div>
