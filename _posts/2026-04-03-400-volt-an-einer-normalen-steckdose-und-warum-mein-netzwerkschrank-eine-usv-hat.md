@@ -52,7 +52,7 @@ Nach der Behebung wurde die gesamte Installation nochmal neu durchgemessen, mit 
 
 Mit im Rack sitzt daher eine APC Smart-UPS SRT 5000VA RM USV (unterbechungsfreie Stromversorgung), ergänzt um ein zusätzliches Batterie-Modul. Die Kombination macht bei meiner tatsächlichen Last einen deutlichen Unterschied.
 
-Die USV selbst gibt bei 50 % Last – also 2250 W – etwa 12 Minuten an. Meine Infrastruktur zieht im typischen Betrieb aber deutlich weniger, nämlich grob 600–700 W, also rund 15% der Nennleistung. Bei so niedriger Auslastung verlängert sich die Laufzeit erheblich, weit jenseits der Herstellerangaben für 50 % Last. Das Batterie-Modul kommt noch obendrauf. Ohne genaue Messung lässt sich keine exakte Zahl nennen, aber die Größenordnung liegt bei einer Stunde oder mehr – genug um bei einem echten Stromausfall in Ruhe zu entscheiden was als nächstes passiert und genug, um die Server sauber herunterzufahren wenn nötig.
+Die USV selbst gibt bei 50 % Last – also 2250 W – etwa 12 Minuten an. Meine Infrastruktur zieht im typischen Betrieb aber deutlich weniger, nämlich grob 600–700 W, also rund 15 % der Nennleistung. Bei so niedriger Auslastung verlängert sich die Laufzeit erheblich, weit jenseits der Herstellerangaben für 50 % Last. Das Batterie-Modul kommt noch obendrauf. Ohne genaue Messung lässt sich keine exakte Zahl nennen, aber die Größenordnung liegt bei einer Stunde oder mehr – genug um bei einem echten Stromausfall in Ruhe zu entscheiden was als nächstes passiert und genug, um die Server sauber herunterzufahren wenn nötig.
 
 ## Was eine USV in diesem Kontext eigentlich tut
 
