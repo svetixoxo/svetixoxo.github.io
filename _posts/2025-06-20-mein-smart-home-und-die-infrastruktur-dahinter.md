@@ -65,7 +65,7 @@ Die **Fußbodenheizung** in 9 Räumen wird über ein separates Gateway-System ge
 
 Für die Sicherheit sorgt eine umfassende **Alarmanlage** mit 16 Bewegungsmeldern, 50 Tür- und Fensterkontakten, 15 Rauch- und 4 Gasmeldern. Auch diese Anlage ist über ein Gateway in das Netzwerk eingebunden.
 
-Die **Beleuchtung** ist vollständig automatisiert – sowohl die Außenbeleuchtung auf dem Grundstück und am Haus als auch die Innenbeleuchtung in jedem Raum mit direkter und indirekter Beleuchtung. 83 smarte Steckdosen und 25 smarte Lichtschalter mit Dimmer-Funktion (bei Bedarf einsetzbar) ergänzen das System. Bewegungsmelder in jedem Raum sorgen für automatisches Ein- und Ausschalten je nach Anwesenheit.
+Die **Beleuchtung** ist vollständig automatisiert – sowohl die Außenbeleuchtung auf dem Grundstück und am Haus als auch die Innenbeleuchtung in jedem Raum mit direkter und indirekter Beleuchtung. 83 smarte Steckdosen und 25 smarte Lichtschalter (bei Bedarf einsetzbar) ergänzen das System. Bewegungsmelder in jedem Raum sorgen für automatisches Ein- und Ausschalten je nach Anwesenheit.
 
 Die **Audio-Integration** wird oft übersehen, zumindest kam ich da vergleichsweise spät drauf, obwohl ich viel und gerne Musik höre. In jedem Raum sind Einbaulautsprecher von KEF installiert, die über einen Multiroom-Verstärker von Yamaha ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System existiert zwar, läuft aber unabhängig vom Smart-Home-System. Sprachsteuerung kommt bewusst nicht zum Einsatz.
 

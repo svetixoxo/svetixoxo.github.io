@@ -232,7 +232,7 @@ permalink: /it-infrastruktur/
       <tr><td>Heizung</td><td>Fußbodenheizung, 9 Räume</td></tr>
       <tr><td>Außenjalousien</td><td>44× elektrisch</td></tr>
       <tr><td>Steckdosen</td><td>83× smart</td></tr>
-      <tr><td>Lichtschalter</td><td>25× smart (Dimmer)</td></tr>
+      <tr><td>Lichtschalter</td><td>25× smart</td></tr>
     </table>
   </div>
   <div class="artikel-rahmen">
