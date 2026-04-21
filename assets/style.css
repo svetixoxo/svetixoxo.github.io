@@ -145,7 +145,6 @@ html {
 
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    cursor: url("/assets/cursors/left_ptr.png") 4 4, auto;
     background: var(--tuerkis);
     background-image: repeating-linear-gradient(315deg,
             transparent,
