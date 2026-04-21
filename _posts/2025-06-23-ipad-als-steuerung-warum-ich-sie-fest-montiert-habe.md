@@ -3,7 +3,6 @@ layout: post
 title: "iPad als Steuerung: Warum ich sie fest montiert habe"
 date: 2025-06-23
 category: "Smart Home & Automatisierung"
-bild: /assets/img/posts/250623-ipad-als-steuerung.png
 tags: [smart-home, homekit, ipad, steuerung, hardware]
 excerpt: "Drei iPads, fest in der Wand, immer an, immer bereit. Kein Herumtragen, kein Suchen, kein leerer Akku. Warum ich mich für dedicated Control-Panels entschieden habe – und was dabei schiefgegangen ist."
 ---

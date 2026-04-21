@@ -3,7 +3,6 @@ layout: post
 title: "Dual-Homing für Game-Streaming: Dediziertes LAN richtig konfiguriert"
 date: 2026-04-21
 category: "Netzwerk & Infrastruktur"
-bild: /assets/img/posts/260421-dual-homing-game-streaming.png
 tags: [netzwerk, lan, self-hosting, gaming, streaming]
 excerpt: "Ein Ethernet-Port, zwei Aufgaben: Game-Streaming über LAN, Internet über WiFi. Wie ich ein Point-to-Point-Netzwerk mit Metrik-basiertem Routing aufgebaut habe – und warum das funktioniert."
 ---

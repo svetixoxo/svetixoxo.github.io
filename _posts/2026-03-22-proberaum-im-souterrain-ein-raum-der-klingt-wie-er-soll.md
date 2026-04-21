@@ -3,7 +3,6 @@ layout: post
 title: "Proberaum im Souterrain: Ein Raum der klingt, wie er soll (und Spaß macht)"
 date: 2026-03-22
 category: "Proberaum & Musikmachen"
-bild: /assets/img/posts/260322-proberaum-im-souterrain-ein-raum-der-klingt-wie-er-soll.png
 tags: [proberaum, akustik, recording, studio, haus]
 excerpt: "Rund 50 Quadratmeter Kellerrohbau, akustisch behandelt für Gitarre, Gesang und Remote-Proben. Was Absorber und Diffusoren tatsächlich tun, warum die Decke oft unterschätzt wird und warum Holz hier gleichzeitig Gestaltungsmittel und akustisches Material ist"
 ---

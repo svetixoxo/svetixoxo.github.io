@@ -3,7 +3,6 @@ layout: post
 title: "Tschüss Spotify, hallo Navidrome: Die eigene Musiksammlung selbst streamen"
 date: 2026-03-03
 category: "Self-Hosting & Dienste"
-bild: /assets/img/posts/260303-tschuess-spotify-hallo-navidrome.png
 tags: [self-hosting, musik, navidrome, nas, docker, streaming]
 excerpt: "Spotify seit zehn Jahren, Apple Music für lossless und trotzdem fehlte immer etwas. Also habe ich meine CD-Sammlung überspielt, digitale Käufe sortiert und alles in Navidrome geworfen. Sechs Monate später: Ein kurzer Bericht dazu."
 ---

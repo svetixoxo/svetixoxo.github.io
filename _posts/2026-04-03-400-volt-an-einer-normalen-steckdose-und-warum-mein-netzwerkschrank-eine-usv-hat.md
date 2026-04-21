@@ -3,7 +3,6 @@ layout: post
 title: "400 Volt an einer normalen Steckdose und warum mein Netzwerkschrank eine USV hat"
 date: 2026-04-03
 category: "Netzwerk & Infrastruktur"
-bild: /assets/img/posts/260403-400-volt-an-einer-normalen-steckdose.png
 tags: [infrastruktur, strom, netzwerk, server]
 excerpt: "Ein Staubsauger, ein Knall, 400 Volt an einer normalen Steckdose. Was dabei kaputtging, warum eine USV im Netzwerkschrank sinnvoll ist und was sie konkret kann."
 ---
