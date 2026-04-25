@@ -150,7 +150,7 @@ permalink: /it-infrastruktur/
     <table class="setup-tabelle">
       <tr><td>Firewall</td><td>WatchGuard Firebox M390</td></tr>
       <tr><td>Router</td><td>UniFi Cable Internet</td></tr>
-      <tr><td>Repeater</td><td>4× UniFi U7 Pro XGS<br>2× UniFi U7 Pro Outdoor</td></tr>
+      <tr><td>Repeater</td><td>5× UniFi U7 Pro XGS<br>2× UniFi U7 Pro Outdoor</td></tr>
       <tr><td>Switches</td><td>2× Netgear 24-Port (managed)<br>5× Netgear 16-Port (managed)</td></tr>
     </table>
   </div>
@@ -164,7 +164,7 @@ permalink: /it-infrastruktur/
   </div>
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>Netzwerkschrank</td><td>Rittal 42 HE</td></tr>
+      <tr><td>Netzwerkschrank</td><td>Rittal 42 HE<br>3× Rittal 9 HE</td></tr>
       <tr><td>Patch-Panels</td><td>1× 48 Port, 1× 24 Port</td></tr>
       <tr><td>USV</td><td>APC Smart-UPS SRT 5000VA RM<br>APC Smart-UPS SRT 192V</td></tr>
       <tr><td>PDU</td><td>2× APC AP7552</td></tr>
@@ -227,18 +227,18 @@ permalink: /it-infrastruktur/
     <table class="setup-tabelle">
       <tr><td>Plattform</td><td>Apple HomeKit via Homebridge</td></tr>
       <tr><td>Protokolle</td><td>WLAN, Zigbee, Matter/Thread</td></tr>
-      <tr><td>Klimaanlage</td><td>8× Mitsubishi Electric, Multi-Split</td></tr>
-      <tr><td>Lüftung</td><td>Viessmann Vitovent 300-W</td></tr>
-      <tr><td>Heizung</td><td>Fußbodenheizung, 9 Räume</td></tr>
-      <tr><td>Raffstore-Jalousien</td><td>44× elektrisch</td></tr>
+      <tr><td>Klimaanlage</td><td>5× Mitsubishi Electric, Multi-Split</td></tr>
+      <tr><td>Lüftung</td><td>3× Viessmann Vitovent 300-W H32E</td></tr>
+      <tr><td>Heizung</td><td>Fußbodenheizung, 13 Räume/Bereiche</td></tr>
+      <tr><td>Raffstore-Jalousien</td><td>32× elektrisch</td></tr>
       <tr><td>Steckdosen</td><td>83× smart</td></tr>
       <tr><td>Lichtschalter</td><td>25× smart</td></tr>
     </table>
   </div>
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>Sensoren</td><td>Gira Wetterstation Plus<br>16× Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>15× Rauchmelder<br>11× Temperatur-/Feuchtigkeitssensor<br>&nbsp;9× CO<sub>2</sub>-Sensor<br>&nbsp;6× CO-Melder<br>&nbsp;4× Gasmelder<br>&nbsp;4× Wassermelder</td></tr>
-      <tr><td>Audio</td><td>KEF Einbaulautsprecher, 9 Räume<br>3× Yamaha Multiroom-Verstärker</td></tr>
+      <tr><td>Sensoren</td><td>Gira Wetterstation Plus<br>34 Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>19× Rauchmelder<br>20× Temperatur-/Feuchtigkeitssensor<br>&nbsp;9× CO<sub>2</sub>-Sensor<br>&nbsp;6× CO-Melder<br>&nbsp;4× Gasmelder<br>&nbsp;4× Wassermelder</td></tr>
+      <tr><td>Audio</td><td>KEF Einbaulautsprecher, 7 Räume/Bereiche<br>3× Yamaha Multiroom-Verstärker</td></tr>
       <tr><td>Kameras</td><td>8× Axis Thermal<br>6× Axis Dome/PTZ<br>2× Axis Panoramic</td></tr>
     </table>
   </div>

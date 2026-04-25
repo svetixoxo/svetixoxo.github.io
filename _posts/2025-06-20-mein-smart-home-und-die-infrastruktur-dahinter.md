@@ -42,7 +42,7 @@ Die Server-Infrastruktur besteht aus zwei QNAP-Systemen.
 
 Das erste ist ein TS-1273AU-RP mit einer GPGPU (NVIDIA Quadro P1000), 64 GB Arbeitsspeicher und 12 Festplatten zu je 24 TB (Seagate Exos X24). Diese Konfiguration ist ausschließlich für die Videoüberwachung ausgelegt – die Grafikkarte übernimmt dabei das Transcoding von Videos, während der große Speicherplatz die Aufzeichnung von 26 Kameras über längere Zeiträume ermöglicht. Das SSD-Caching übernehmen zwei Samsung 990 Pro mit je 4 TB.
 
-Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten zu je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch <a href="/von-icloud-zu-nextcloud-1-jahr-spaeter/">meine eigene Daten-Cloud</a>.
+Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten zu je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch <a href="/von-icloud-zu-nextcloud-1-jahr-spaeter/" class="link-rot">meine eigene Daten-Cloud</a>.
 
 Für Nextcloud und ähnliche Anwendungen setze ich bereits auf Docker-Container, was sich als sehr praktisch erwiesen hat. Für die restlichen Services stellt sich die Frage: Virtualisierung oder Container? Container bieten den Vorteil geringerer Ressourcennutzung und einfacherer Verwaltung, während Virtualisierung eine stärkere Isolation bietet. Bei der aktuellen Hardware-Ausstattung wäre beides problemlos möglich – für die meisten Smart-Home-Dienste sind Container jedoch die elegantere Lösung.
 
@@ -58,19 +58,19 @@ Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin a
 
 ## Vollständige Automatisierung
 
-Die **Klimatisierung** des Hauses übernehmen 8 Multi-Split-Klimaanlagen von Mitsubishi Electric, 2 mit je 6,8 kW und 6 mit je 4,2 kW Leistung. Über WLAN-Brücken sind diese in das Smart Home eingebunden. Ergänzt wird das System durch verschiedene Steuermodule und eine Viessmann-Lüftungsanlage.
+Die **Klimatisierung** des Hauses übernehmen 5 Multi-Split-Klimaanlagen von Mitsubishi Electric, 2 mit je 6,8 kW und 3 mit je 4,2 kW Leistung. Über WLAN-Brücken sind diese in das Smart Home eingebunden. Ergänzt wird das System durch verschiedene Steuermodule und eine Viessmann-Lüftungsanlage für jede Etage.
 
-Die **Fußbodenheizung** in 9 Räumen wird über ein separates Gateway-System gesteuert, das wiederum über eine der Switches in das Smart Home integriert ist. Darüber hinaus ist auch weiterhin eine manuelle Steuerung möglich. Dadurch ist es möglich, auch bei Ausfall einzelner Komponenten die Grundfunktionen aufrechtzuerhalten.
+Die **Fußbodenheizung** in 13 Räumen/Bereichen wird über ein separates Gateway-System gesteuert, das wiederum über eine der Switches in das Smart Home integriert ist. Darüber hinaus ist auch weiterhin eine manuelle Steuerung über die Thermostate möglich. Dadurch ist es möglich, auch bei Ausfall einzelner Komponenten die Grundfunktionen aufrechtzuerhalten.
 
-Für die Sicherheit sorgt eine umfassende **Alarmanlage** mit 16 Bewegungsmeldern, 50 Tür- und Fensterkontakten, 15 Rauch-, 6 CO-, 4 Wasser- und 4 Gasmeldern sowie weiteren Sensoren wie Glasbruch- und Erschütterungsmeldern. Auch diese Anlage ist über ein Gateway in das Netzwerk eingebunden.
+Für die Sicherheit sorgt eine umfassende **Alarmanlage** mit 34 Bewegungsmeldern, 50 Tür- und Fensterkontakten, 19 Rauch-, 6 CO-, 4 Wasser- und 4 Gasmeldern sowie weiteren Sensoren wie Glasbruch- und Erschütterungsmeldern. Auch diese Anlage ist über ein Gateway in das Netzwerk eingebunden.
 
-Die **Luftqualität** wird über 8 CO₂-Sensoren sowie 11 Temperatur- und Feuchtigkeitssensoren überwacht. Ein weiterer CO₂-Sensor ist in die Lüftungsanlage integriert.
+Die **Luftqualität** wird über 8 CO₂-Sensoren sowie 18 Temperatur- und Feuchtigkeitssensoren überwacht. Ein weiterer CO₂-Sensor ist jeweils in die Lüftungsanlagen integriert.
 
 Die **Beleuchtung** ist vollständig automatisiert – sowohl die Außenbeleuchtung auf dem Grundstück und am Haus als auch die Innenbeleuchtung in jedem Raum mit direkter und indirekter Beleuchtung. 83 smarte Steckdosen und 25 smarte Lichtschalter (bei Bedarf einsetzbar) ergänzen das System. Bewegungsmelder in jedem Raum sorgen für automatisches Ein- und Ausschalten je nach Anwesenheit.
 
-Die **Audio-Integration** wird oft übersehen, zumindest kam ich da vergleichsweise spät drauf, obwohl ich viel und gerne Musik höre. In jedem Raum sind Einbaulautsprecher von KEF installiert, die über einen Multiroom-Verstärker von Yamaha ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System existiert zwar, läuft aber unabhängig vom Smart-Home-System. Sprachsteuerung kommt bewusst nicht zum Einsatz.
+Die **Audio-Integration** wird oft übersehen, zumindest kam ich da vergleichsweise spät drauf, obwohl ich viel und gerne Musik höre. In den meisten Wohnräumen sind Einbaulautsprecher installiert, die über einen Multiroom-Verstärker ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System existiert zwar, läuft aber unabhängig vom Smart-Home-System. <a href="/voice-control-kommt-mir-nicht-ins-haus/ class="link-gruen"">Sprachsteuerung kommt bewusst nicht zum Einsatz.</a>
 
-Darüber hinaus werden 44 **elektrische Raffstore-Jalousien** ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden.
+Darüber hinaus werden 32 **elektrische Raffstore-Jalousien** ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden.
 
 Eine **Wetterstation** liefert darüber hinaus Wetterdaten für die Automatisierung. So werden etwa alle Jalousien bei starkem Wind hochgefahren oder die Klimaanlagen (je nach Anwesenheit) bei hohen Außentemperaturen eingeschaltet; dies gilt entsprechend auch für die Heizung. Darüber hinaus wird über den Stromverbrauch bestimmter Steckdosen (Computer im Arbeitszimmer, Fernseher im Wohnzimmer, Nachtlicht im Schlafzimmer usw.) erkannt, in welchem Raum bzw. Stockwerk ich gerade unterwegs bin und Klimaanlage bzw. Heizung dort dementsprechend auch etwas stärker eingesetzt.
 
@@ -96,7 +96,7 @@ Grundsätzlich gilt: Alle Geräte, die über Bridges oder ähnliches eingebunden
 
 ## Sicherheit & Datenschutz
 
-Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. <a href="/smart-home-und-datenschutz-was-nach-aussen-geht-und-was-nicht/">Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal.</a> Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht.
+Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. <a href="/smart-home-und-datenschutz-was-nach-aussen-geht-und-was-nicht/" class="link-gruen">Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal.</a> Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht.
 
 Die Zugriffskontrolle erfolgt über differenzierte Benutzerrechte: Die fest installierten iPads haben eigene Apple IDs, können jedoch keine Geräte hinzufügen oder entfernen. Besonders sensible Bereiche wie die Kameras oder Alarmanlage sind über diese Terminals nicht zugänglich – darauf haben ausschließlich meine Admin-Geräte Zugriff.
 
