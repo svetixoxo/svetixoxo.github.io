@@ -28,7 +28,7 @@ Der offensichtlichste Nutzen zeigt sich beim Zugriff auf die Heimserver-NAS: Wen
 
 ### Videoüberwachung
 
-Das Überwachungs-NAS verarbeitet die Streams von 26 Kameras gleichzeitig. Die meisten davon laufen mit 4K-Auflösung, einige zusätzlich mit Wärmebilddaten. Die aggregierte Bandbreite dieser Streams liegt deutlich über 1 GbE. Mit 10 GbE hat das System genug Spielraum, um auch bei Spitzenlasten nicht ins Stocken zu geraten.
+Das Überwachungs-NAS verarbeitet die Streams von 16 Kameras gleichzeitig. Die meisten davon laufen mit 4K-Auflösung, einige zusätzlich mit Wärmebilddaten. Die aggregierte Bandbreite dieser Streams liegt deutlich über 1 GbE. Mit 10 GbE hat das System genug Spielraum, um auch bei Spitzenlasten nicht ins Stocken zu geraten.
 
 ### Mehrere parallele Zugriffe
 
@@ -62,7 +62,7 @@ Auf das Jahr gerechnet kann das einen Unterschied machen. 70 Watt Mehrverbrauch 
 
 ## Würde ich es wieder machen?
 
-Für die NAS-Verbindungen: Ja, definitiv. Der Geschwindigkeitsvorteil bei Backups und größeren Datentransfers rechtfertigt den Aufwand. Für die Überwachungskameras: Ebenfalls ja, allein schon wegen der aggregierten Bandbreite von 26 Kameras bzw. der möglichen 46 Streams (20 der Kameras liefern zusätzlich Wärmebild).
+Für die NAS-Verbindungen: Ja, definitiv. Der Geschwindigkeitsvorteil bei Backups und größeren Datentransfers rechtfertigt den Aufwand. Für die Überwachungskameras: Ebenfalls ja, allein schon wegen der aggregierten Bandbreite von 16 Kameras (einige Kameras bieten durch Wärmebild je einen zusätzlichen Stream).
 
 Für Client-Geräte: Wahrscheinlich nicht. Ich habe zwar welche, die 10 GbE unterstützen, im Alltag wäre 2,5 GbE aber genauso gut gewesen. Wenn ich heute von vorne anfangen würde, würde ich das Netzwerk gestaffelt aufbauen: 10 GbE nur für die NAS-Systeme und die Switch-Verbindungen, 2,5 GbE für Workstations und wichtige Client-Geräte, 1 GbE für den Rest. Das würde die Kosten deutlich senken, ohne dass die Performance im Alltag leidet.
 
