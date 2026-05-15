@@ -207,7 +207,7 @@ permalink: /it-infrastruktur/
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
       <tr><td>Heimserver</td><td>Nextcloud, Navidrome, Homebridge</td></tr>
-      <tr><td>Überwachungs-NAS</td><td>QVR Pro, 26 Kameras</td></tr>
+      <tr><td>Überwachungs-NAS</td><td>QVR Pro, 16 Kameras</td></tr>
       <tr><td>Backup-NAS</td><td>QNAP HBS (Raspberry Pi)<br>rsync (WD)</td></tr>
     </table>
   </div>
