@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sporadischer Paketverlust im LAN: Wenn die Switch der Flaschenhals ist"
+title: "Paketverlust im LAN: Wenn die Switch der Flaschenhals ist"
 date: 2026-05-23
 category: "Netzwerk & Infrastruktur"
 tags: [netzwerk, switches, gaming, streaming, diagnose, unifi]
