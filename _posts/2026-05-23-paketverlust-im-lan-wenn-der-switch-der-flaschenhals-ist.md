@@ -85,7 +85,7 @@ ping -c 300 10.40.0.1
 round-trip min/avg/max/mdev = 0.5/0.8/3.9/0.3 ms
 ```
 
-Kein Paketverlust, keine Spikes. Webseiten laden beim ersten Aufruf sofort. Sunshine und Moonlight (das ist das Game-Stream-Setup, das ich nutze) verbinden sich zuverlässig und ohne Aussetzer. Nextcloud-Transfers zwischen Mac Studio und NAS laufen wieder mit den erwarteten Raten.
+Kein Paketverlust, keine Spikes. Webseiten laden beim ersten Aufruf sofort. Sunshine und Moonlight (das ist das [Game-Stream-Setup](/dual-homing-fuer-game-streaming-dediziertes-lan-richtig-konfiguriert/), das ich nutze) verbinden sich zuverlässig und ohne Aussetzer. Nextcloud-Transfers zwischen Mac Studio und NAS laufen wieder mit den erwarteten Raten.
 
 ## Was ich daraus mitnehme
 
