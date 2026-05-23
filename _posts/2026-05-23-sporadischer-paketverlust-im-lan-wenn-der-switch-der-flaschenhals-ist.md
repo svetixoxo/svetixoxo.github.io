@@ -32,7 +32,7 @@ round-trip min/avg/max/mdev = 0.4/18.3/487.2/68.4 ms
 Zwölf Prozent Paketverlust zum Router, mit einzelnen Spikes bis fast 500 ms. Das ist kein normales Verhalten in einem verkabelten Netz. Zum Vergleich, ein direkter Ping vom Mac an den Gaming-Server ohne Switch dazwischen:
 
 ```
-ping -c 300 10.40.0.11
+ping -c 300 10.40.0.54
 300 packets transmitted, 300 packets received, 0.0% packet loss
 round-trip min/avg/max/mdev = 0.4/0.9/4.3/0.4 ms
 ```
