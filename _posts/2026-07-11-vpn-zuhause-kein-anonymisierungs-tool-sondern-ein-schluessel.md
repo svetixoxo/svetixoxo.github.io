@@ -4,7 +4,7 @@ title: "VPN Zuhause: Kein Anonymisierungs-Tool, sondern ein Schlüssel"
 date: 2026-07-11
 category: "Netzwerk & Infrastruktur"
 tags: [netzwerk, vpn, wireguard, sicherheit, datenschutz, smart-home, self-hosting]
-excerpt: "Wenn jemand VPN hört, denkt er an die allgegenwärtige NordVPN-Werbung auf YouTube. An «sicher surfen im öffentlichen WLAN» und «anonym im Internet unterwegs sein». Das ist VPN als Produkt, als Dienstleistung, als Versprechen von Anonymität im Internet. Darum geht es hier nicht."
+excerpt: "Wenn jemand VPN hört, denkt er an die allgegenwärtige NordVPN-Werbung auf YouTube. An «sicher surfen im öffentlichen WLAN» und «anonym im Internet unterwegs sein». Das ist VPN als Produkt, als Dienstleistung, als Versprechen von Anonymität im Internet. Das hier ist etwas völlig anderes – nämlich ein sicherer Weg ins eigene Heimnetz, ohne es dafür öffnen zu müssen."
 ---
 
 ## Das Problem, das VPN löst
