@@ -95,7 +95,7 @@ Der wichtigste: Latenz. Je mehr einzelne Kanäle übertragen werden, desto höhe
     <table class="setup-tabelle">
       <tr><td>PA</td><td>db Opera 10 (2×)<br>db Sub 612 (2×)<br>db Flexsys FM10</td></tr>
       <tr><td>Monitoring</td><td>Genelec 8020D (2×)<br>Beyerdynamic DT 770 PRO</td></tr>
-      <tr><td>Computer</td><td>Mac Mini M4</td></tr>
+      <tr><td>Computer</td><td>Mac Mini M4 Pro</td></tr>
     </table>
   </div>
 </div>
