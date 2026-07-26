@@ -256,7 +256,7 @@ permalink: /it-infrastruktur/
 <div class="setup-raster">
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
-      <tr><td>Desktop</td><td>Mac Studio M2<br>iMac M4</td></tr>
+      <tr><td>Desktop</td><td>Mac Studio M2<br>Mac Mini M4</td></tr>
       <tr><td>Gaming-Server</td><td>Mini-ITX-Tower (Linux/AMD)</td></tr>
       <tr><td>Laptops</td><td>ThinkPad T14 Gen 3 (Linux/AMD)<br>MacBook Pro M4</td></tr>
     </table>
