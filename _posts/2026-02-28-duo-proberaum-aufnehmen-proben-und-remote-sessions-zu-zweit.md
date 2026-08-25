@@ -62,9 +62,9 @@ Das setzt andere Prioritäten als der große Bandproberaum. Hier steht nicht die
 
 ## Mikrofonierung
 
-Sieben Mikrofone für zwei Personen klingt nach viel – ist aber auf zwei verschiedene Szenarien aufgeteilt, die unterschiedliche Signalwege nutzen.
+Acht Mikrofone für zwei Personen klingt nach viel – ist aber auf zwei verschiedene Szenarien aufgeteilt, die unterschiedliche Signalwege nutzen.
 
-Für Aufnahmen läuft alles über das <a href="/steinberg-ur44c-im-alltag/" class="link-lila">Steinberg UR44C</a>. Ein Neumann TLM 102 geht auf Eingang 1 und übernimmt Gesang in der Recording-Situation. Das Shure SM57 auf Eingang 2 wird für E-Gitarre (oder wahlweise akustische Gitarre) genutzt, sein Signal wird vorher per DI-Box gesplittet – so liegt es gleichzeitig am Interface und am Mischpult an. Außerdem gibt es auch noch ein Beyerdynamic M 160 – ebenfalls für E-Gitarre – auf Eingang 3.Zwei Rode M5 MP werden bei Bedarf angeschlossen, kommen auf die Eingänge 3 und 4 und werden für akustische Gitarren oder Percussion eingesetzt, je nachdem was gebraucht wird.
+Für Aufnahmen läuft alles über das <a href="/steinberg-ur44c-im-alltag/" class="link-lila">Steinberg UR44C</a>. Ein Neumann TLM 102 und Rode NTR gehen auf Eingänge 1+2 und übernehmen Gesang in der Recording-Situation. Das Shure SM57 auf Eingang 3 wird für E-Gitarre (oder wahlweise akustische Gitarre) genutzt, sein Signal wird vorher per DI-Box gesplittet – so liegt es gleichzeitig am Interface und am Mischpult an. Außerdem gibt es auch noch ein Beyerdynamic M 160 – ebenfalls für E-Gitarre – auf Eingang 4. Zwei Rode M5 MP werden bei Bedarf an die Eingänge 3+4 angeschlossen und werden für akustische Gitarren oder Percussion eingesetzt, je nachdem was gebraucht wird.
 
 Für Remote-Proben und Live-Mitschnitte läuft der Signalweg über das Yamaha MG10X. Zwei Sennheiser-Mikrofone – ein e 865-S und ein e 835-S – übernehmen Gesang und Kommunikation. Das «S» steht übrigens nicht für «Sport», sondern für «mit Schalter». Die akustische Gitarre kommt bei Remote-Proben über einen magnetischen Tonabnehmer direkt ins Mischpult. Das SM57 ist, wie oben beschrieben, über die DI-Box auf beiden Wegen gleichzeitig aktiv.
 
@@ -87,7 +87,7 @@ Der wichtigste: Latenz. Je mehr einzelne Kanäle übertragen werden, desto höhe
     <table class="setup-tabelle">
       <tr><td>Interface</td><td>Steinberg UR44C</td></tr>
       <tr><td>Mischpult</td><td>Yamaha MG10X</td></tr>
-      <tr><td>Mikrofone Rec</td><td>Neumann TLM 102<br>Shure SM57<br>Beyerdynamic M 160<br>Rode M5 MP (2×)<br>Sennheiser e 865-S<br>Sennheiser e 835-S</td></tr>
+      <tr><td>Mikrofone Rec</td><td>Neumann TLM 102<br>Rode NTR<br>Shure SM57<br>Beyerdynamic M 160<br>Rode M5 MP (2×)<br>Sennheiser e 865-S<br>Sennheiser e 835-S</td></tr>
       <tr><td>DI-Box</td><td>Radial ProMS2</td></tr>
     </table>
   </div>
