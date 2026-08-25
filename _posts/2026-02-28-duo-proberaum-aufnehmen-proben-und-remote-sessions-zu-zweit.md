@@ -4,7 +4,7 @@ title: "Duo-Proberaum: Aufnehmen, Proben und Remote-Sessions zu zweit"
 date: 2026-02-28
 category: "Proberaum & Musikmachen"
 tags: [proberaum, recording, remote, sonobus, interface, heimstudio, mikrofon]
-excerpt: "Ein Proberaum für zwei Personen, der gleichzeitig Aufnahmestudio und Remote-Basis ist – mit einem Steinberg-Interface, einem Yamaha MG10X, einer PA, mehreren Mikrofonen und Sonobus als Verbindung zur Band."
+excerpt: "Ein Proberaum für zwei Personen, der gleichzeitig Aufnahmestudio und Remote-Basis ist – mit einem USB-Interface, einem Mischpult, einer PA, mehreren Mikrofonen und Sonobus als Verbindung zur Band."
 ---
 
 <style>
