@@ -72,6 +72,8 @@ Für Remote-Proben und Live-Mitschnitte läuft der Signalweg über das Yamaha MG
 
 Am UR44C hängen die beiden Genelec 8020D – die laufen ausschließlich für das Monitoring beim Mixing. Die PA ist sowohl am MG10X als auch über einen Line-Ausgang des UR44C erreichbar; welcher Weg aktiv ist, hängt davon ab, was gerade gemacht wird.
 
+Als Computer wurde zunächst ein iMac M3 (8-core, 24 GB RAM) genutzt. Nach dem Elektroschaden wurde dieser durch einen Mac Mini M4 Pro (14-core, 64 GB RAM) ersetzt.
+
 Bei Remote-Proben läuft ein db Flexsys FM10 als Bühnenmonitor für den Gesang, damit man sich im Raum hört, ohne in die PA hören zu müssen. Über die PA kommt dann ausschließlich das eingehende Signal der Band als einfacher Stereo-Mix.
 
 ## Remote-Proben mit Sonobus
