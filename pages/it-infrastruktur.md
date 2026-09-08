@@ -239,7 +239,7 @@ permalink: /it-infrastruktur/
     <table class="setup-tabelle">
       <tr><td>Sensoren</td><td>Gira Wetterstation Plus<br>34 Bewegungsmelder<br>50× Tür-/Fensterkontakt<br>19× Rauchmelder<br>20× Temperatur-/Feuchtigkeitssensor<br>&nbsp;9× CO<sub>2</sub>-Sensor<br>&nbsp;6× CO-Melder<br>&nbsp;4× Gasmelder<br>&nbsp;4× Wassermelder</td></tr>
       <tr><td>Audio</td><td>KEF Einbaulautsprecher, 7 Räume/Bereiche<br>3× Yamaha Multiroom-Verstärker</td></tr>
-      <tr><td>Kameras</td><td>8× Axis Thermal<br>6× Axis Dome/PTZ<br>2× Axis Panoramic</td></tr>
+      <tr><td>Kameras</td><td>8× Axis Thermal/Bispectral<br>6× Axis Dome/PTZ<br>2× Axis Panoramic</td></tr>
     </table>
   </div>
 </div>
