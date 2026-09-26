@@ -157,7 +157,7 @@ permalink: /it-infrastruktur/
   <div class="artikel-rahmen">
     <table class="setup-tabelle">
       <tr><td>VLANs</td><td>28 konfiguriert</td></tr>
-      <tr><td>IP-Schema</td><td>10.[VLAN-ID].0.0/24</td></tr>
+      <tr><td>IP-Schema</td><td>10.[Bereich].[Funktion].0/24</td></tr>
       <tr><td>Nutzbare IPs</td><td>7.112 Adressen gesamt</td></tr>
       <tr><td>Netzwerkgeräte</td><td>ca. 320 angebunden</td></tr>
     </table>
@@ -290,46 +290,46 @@ permalink: /it-infrastruktur/
     </thead>
     <tbody>
       <tr class="vlan-kategorie-kopf"><td colspan="3">Management &amp; Infrastruktur</td></tr>
-      <tr><td>10</td><td>10.10.0.0/24</td><td>Netzwerk-Management</td></tr>
-      <tr><td>11</td><td>10.11.0.0/24</td><td>WLAN-Infrastruktur</td></tr>
-      <tr><td>19</td><td>10.19.0.0/24</td><td>Onboarding</td></tr>
+      <tr><td>110</td><td>10.10.10.0/24</td><td>Netzwerk-Management</td></tr>
+      <tr><td>120</td><td>10.10.20.0/24</td><td>WLAN-Infrastruktur</td></tr>
+      <tr><td>190</td><td>10.10.90.0/24</td><td>Onboarding</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Smart Home</td></tr>
-      <tr><td>20</td><td>10.20.0.0/24</td><td>Klimatisierung / Heizung</td></tr>
-      <tr><td>21</td><td>10.21.0.0/24</td><td>Beleuchtung innen</td></tr>
-      <tr><td>22</td><td>10.22.0.0/24</td><td>Beleuchtung außen</td></tr>
-      <tr><td>23</td><td>10.23.0.0/24</td><td>Außenjalousien / Beschattung</td></tr>
-      <tr><td>24</td><td>10.24.0.0/24</td><td>Steckdosen</td></tr>
-      <tr><td>25</td><td>10.25.0.0/24</td><td>Audio / Entertainment</td></tr>
-      <tr><td>26</td><td>10.26.0.0/24</td><td>Sensoren</td></tr>
-      <tr><td>27</td><td>10.27.0.0/24</td><td>Bewässerung / Garten</td></tr>
-      <tr><td>28</td><td>10.28.0.0/24</td><td>Smart-Home-Control</td></tr>
-      <tr><td>29</td><td>10.29.0.0/24</td><td>Sonstiges</td></tr>
+      <tr><td>210</td><td>10.20.10.0/24</td><td>Klimatisierung / Heizung</td></tr>
+      <tr><td>220</td><td>10.20.20.0/24</td><td>Beleuchtung innen</td></tr>
+      <tr><td>221</td><td>10.20.21.0/24</td><td>Beleuchtung außen</td></tr>
+      <tr><td>230</td><td>10.20.30.0/24</td><td>Außenjalousien / Beschattung</td></tr>
+      <tr><td>240</td><td>10.20.40.0/24</td><td>Steckdosen</td></tr>
+      <tr><td>250</td><td>10.20.50.0/24</td><td>Audio / Entertainment</td></tr>
+      <tr><td>260</td><td>10.20.60.0/24</td><td>Sensoren</td></tr>
+      <tr><td>270</td><td>10.20.70.0/24</td><td>Bewässerung / Garten</td></tr>
+      <tr><td>280</td><td>10.20.80.0/24</td><td>Smart-Home-Control</td></tr>
+      <tr><td>290</td><td>10.20.90.0/24</td><td>Sonstiges</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Client-Geräte</td></tr>
-      <tr><td>40</td><td>10.40.0.0/24</td><td>Stationäre Geräte</td></tr>
-      <tr><td>41</td><td>10.41.0.0/24</td><td>Mobile Geräte</td></tr>
-      <tr><td>42</td><td>10.42.0.0/24</td><td>Sonstiges</td></tr>
+      <tr><td>410</td><td>10.40.10.0/24</td><td>Stationäre Geräte</td></tr>
+      <tr><td>420</td><td>10.40.20.0/24</td><td>Mobile Geräte</td></tr>
+      <tr><td>490</td><td>10.40.90.0/24</td><td>Sonstiges</td></tr>
 
-      <tr class="vlan-kategorie-kopf"><td colspan="3">Sicherheit & Überwachung</td></tr>
-      <tr><td>50</td><td>10.50.0.0/24</td><td>Überwachungs-NAS</td></tr>
-      <tr><td>51</td><td>10.51.0.0/24</td><td>DMZ</td></tr>
-      <tr><td>52</td><td>10.52.0.0/24</td><td>Kameras außen</td></tr>
-      <tr><td>53</td><td>10.53.0.0/24</td><td>Kameras innen</td></tr>
-      <tr><td>54</td><td>10.54.0.0/24</td><td>Alarmanlage</td></tr>
+      <tr class="vlan-kategorie-kopf"><td colspan="3">Sicherheit &amp; Überwachung</td></tr>
+      <tr><td>510</td><td>10.50.10.0/24</td><td>Überwachungs-NAS</td></tr>
+      <tr><td>520</td><td>10.50.20.0/24</td><td>Kameras außen</td></tr>
+      <tr><td>530</td><td>10.50.30.0/24</td><td>Kameras innen</td></tr>
+      <tr><td>540</td><td>10.50.40.0/24</td><td>Alarmanlage</td></tr>
+      <tr><td>650</td><td>10.60.50.0/24</td><td>DMZ</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Services</td></tr>
-      <tr><td>60</td><td>10.60.0.0/24</td><td>Haupt-NAS</td></tr>
-      <tr><td>61</td><td>10.61.0.0/24</td><td>DMZ</td></tr>
+      <tr><td>620</td><td>10.60.20.0/24</td><td>Haupt-NAS</td></tr>
+      <tr><td>650</td><td>10.60.50.0/24</td><td>DMZ</td></tr>
 
-      <tr class="vlan-kategorie-kopf"><td colspan="3">Fernzugriff & Gäste</td></tr>
-      <tr><td>70</td><td>10.70.0.0/24</td><td>VPN</td></tr>
-      <tr><td>71</td><td>10.71.0.0/24</td><td>Remote-Management</td></tr>
-      <tr><td>72</td><td>10.72.0.0/24</td><td>Gäste-WLAN</td></tr>
+      <tr class="vlan-kategorie-kopf"><td colspan="3">Fernzugriff &amp; Gäste</td></tr>
+      <tr><td>710</td><td>10.70.10.0/24</td><td>VPN</td></tr>
+      <tr><td>720</td><td>10.70.20.0/24</td><td>Remote-Management</td></tr>
+      <tr><td>730</td><td>10.70.30.0/24</td><td>Gäste-WLAN</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Sonstiges / Reserve</td></tr>
-      <tr><td>80</td><td>10.80.0.0/24</td><td>Reserve 1</td></tr>
-      <tr><td>90</td><td>10.90.0.0/24</td><td>Reserve 2</td></tr>
+      <tr><td>800</td><td>10.80.10.0/24</td><td>Reserve 1</td></tr>
+      <tr><td>900</td><td>10.90.10.0/24</td><td>Reserve 2</td></tr>
     </tbody>
   </table>
 </div>
