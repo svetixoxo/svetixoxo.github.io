@@ -23,11 +23,11 @@ Ich habe ein **Point-to-Point-Netzwerk** zwischen Gaming-Server und Mac Studio a
 
 **Gaming-Server (CachyOS):**
 - `eno1` (LAN): `10.0.0.1/24` – Dedizierte Verbindung zum Gaming-Client
-- `wlan0` (WiFi): `10.40.0.54/24` – IP aus dem Heimnetzwerk
+- `wlan0` (WiFi): `10.40.10.11/24` – IP aus dem Heimnetzwerk
 
 **Gaming-Client (macOS):**
 - `en0` (LAN): `10.0.0.2/24` ~ Dedizierte Verbindung zum Gaming-Server  
-- `en1` (WiFi): `10.40.0.47/24` – IP aus dem Heimnetzwerk
+- `en1` (WiFi): `10.40.10.10/24` – IP aus dem Heimnetzwerk
 
 Beide Geräte haben also zwei Netzwerk-Interfaces gleichzeitig aktiv. Das Problem: Wie stelle ich sicher, dass Game-Streaming über LAN läuft, während Internet-Traffic über WiFi geht?
 
@@ -43,9 +43,9 @@ Auf dem Gaming-Server sieht die Routing-Tabelle so aus:
 
 ```
 $ ip route show
-default via 10.40.0.1 dev wlan0 proto dhcp src 10.40.0.54 metric 600
+default via 10.40.10.1 dev wlan0 proto dhcp src 10.40.10.11 metric 600
 10.0.0.0/24 dev eno1 proto kernel scope link src 10.0.0.1 metric 100
-10.40.0.0/24 dev wlan0 proto kernel scope link src 10.40.0.54 metric 600
+10.40.10.0/24 dev wlan0 proto kernel scope link src 10.40.10.11 metric 600
 ```
 
 Was passiert hier?
@@ -61,7 +61,7 @@ Auf dem Mac ist es identisch aufgebaut:
 
 ```bash
 $ netstat -rn
-default            10.40.0.1          UGScg                 en1
+default            10.40.10.1          UGScg                 en1
 10/24              link#18            UCS                   en0
 10.0.0.1           xx:xx:xx:xx:xx:xx  UHLWIi                en0
 ```
@@ -88,8 +88,8 @@ Link 2 (eno1)
      Default Route: no
 
 Link 3 (wlan0)
-Current DNS Server: 10.60.0.123
-       DNS Servers: 10.60.0.123
+Current DNS Server: 10.40.90.123
+       DNS Servers: 10.40.90.123
      Default Route: yes
 ```
 
@@ -137,7 +137,7 @@ Bei Game-Streaming zählt nicht nur die durchschnittliche Latenz, sondern auch d
 
 ## Warum nicht einfach beide per LAN ins Heimnetzwerk?
 
-Die naheliegende Frage: Warum nicht einfach Gaming-Server und Mac beide per Ethernet ins <a href="/it-infrastruktur">Heimnetzwerk</a> (VLAN 40) hängen? <a href="/10-gbe-im-heimnetzwerk-overkill-oder-sinnvoll/">Das gesamte Heimnetzwerk läuft mit 10 GbE</a> – mehr als genug Bandbreite für Game-Streaming. Dann wären beide miteinander verbunden, hätten Internet und das Problem wäre direkt gelöst.
+Die naheliegende Frage: Warum nicht einfach Gaming-Server und Mac beide per Ethernet ins <a href="/it-infrastruktur">Heimnetzwerk</a> (VLAN 410) hängen? <a href="/10-gbe-im-heimnetzwerk-overkill-oder-sinnvoll/">Das gesamte Heimnetzwerk läuft mit 10 GbE</a> – mehr als genug Bandbreite für Game-Streaming. Dann wären beide miteinander verbunden, hätten Internet und das Problem wäre direkt gelöst.
 
 Der Mac war ursprünglich per 10 GbE mit dem Heimnetzwerk verbunden. Als ich den Gaming-Server gebaut habe, hätte ich ihn auch per LAN ins Netzwerk hängen können. Das hätte funktioniert, aber es gab einen ganz banalen praktischen Grund: Ich hatte keinen freien LAN-Port in der Nähe.
 
