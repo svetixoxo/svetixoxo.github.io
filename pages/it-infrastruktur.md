@@ -316,11 +316,11 @@ permalink: /it-infrastruktur/
       <tr><td>520</td><td>10.50.20.0/24</td><td>Kameras außen</td></tr>
       <tr><td>530</td><td>10.50.30.0/24</td><td>Kameras innen</td></tr>
       <tr><td>540</td><td>10.50.40.0/24</td><td>Alarmanlage</td></tr>
-      <tr><td>650</td><td>10.60.50.0/24</td><td>DMZ</td></tr>
+      <tr><td>590</td><td>10.50.90.0/24</td><td>DMZ</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Services</td></tr>
       <tr><td>620</td><td>10.60.20.0/24</td><td>Haupt-NAS</td></tr>
-      <tr><td>650</td><td>10.60.50.0/24</td><td>DMZ</td></tr>
+      <tr><td>690</td><td>10.60.90.0/24</td><td>DMZ</td></tr>
 
       <tr class="vlan-kategorie-kopf"><td colspan="3">Fernzugriff &amp; Gäste</td></tr>
       <tr><td>710</td><td>10.70.10.0/24</td><td>VPN</td></tr>
