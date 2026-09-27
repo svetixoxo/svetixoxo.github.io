@@ -119,4 +119,4 @@ Was ich dafür abgebe, ist die Frage nach den Koordinations-Servern. Und diese A
 
 Tailscale ist für mich das, was mein Fernzugriff sein soll: Ein Weg ins eigene Netzwerk, der so einfach ist, dass er immer läuft, ohne dass ich dran denke. Kein Port offen, kein Dienst sichtbar, kein eigenständiger Server, den ich betreibe (wobei letzteres evtl. irgendwann kommt). Und – das ist mir wichtig – die Datenschutzfrage ist nicht verschwunden, sie ist nur an anderer Stelle: Die Geräte finden sich über Tailscale, der Traffic selbst nicht. Das ist ein bewusster Kompromiss.
 
-Und ja, ich schreibe bestimmt auch später noch einen über Headscale – falls ich so weit bin. Tailscale hat sein eigenes Kapitel verdient, das hier ist es.%                                             chanelxoxo   ~  
+Und ja, ich schreibe bestimmt auch später noch einen über Headscale – falls ich so weit bin. Tailscale hat sein eigenes Kapitel verdient, das hier ist es.
