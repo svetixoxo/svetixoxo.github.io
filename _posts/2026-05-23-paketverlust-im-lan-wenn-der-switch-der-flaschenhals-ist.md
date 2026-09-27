@@ -21,10 +21,10 @@ Der erste Schritt war, das Problem einzugrenzen. DNS schied schnell aus: `dig`-A
 
 Was bleibt, wenn DNS und Routing sauber sind, aber der Verbindungsaufbau sporadisch hängt? Paketverlust auf Layer 2. Der erste HTTPS-Verbindungsaufbau ist empfindlich: Ein verlorenes TCP-SYN-Paket (sog. TCP-Handshake) bedeutet eine Sekunde Wartezeit bis zum Retry. Genau das erklärt das Muster – erster Aufruf langsam, danach schnell, weil die Verbindung bereits steht.
 
-Ein einfacher Ping-Test bestätigte den Verdacht. Der Ping geht an 10.40.0.1 – das Gateway von VLAN 40, also die WatchGuard Firebox als nächster Hop im Netzwerk. Das isoliert den lokalen Pfad: Gerät → Switch → Gateway, ohne dass Internet-Latenz das Ergebnis verfälscht.
+Ein einfacher Ping-Test bestätigte den Verdacht. Der Ping geht an 10.40.10.1 – das Gateway von VLAN 410, also die WatchGuard Firebox als nächster Hop im Netzwerk. Das isoliert den lokalen Pfad: Gerät → Switch → Gateway, ohne dass Internet-Latenz das Ergebnis verfälscht.
 
 ```
-ping -c 100 10.40.0.1
+ping -c 100 10.40.10.1
 100 packets transmitted, 88 packets received, 12.0% packet loss
 round-trip min/avg/max/mdev = 0.4/18.3/487.2/68.4 ms
 ```
@@ -32,7 +32,7 @@ round-trip min/avg/max/mdev = 0.4/18.3/487.2/68.4 ms
 Zwölf Prozent Paketverlust zum Router, mit einzelnen Spikes bis fast 500 ms. Das ist kein normales Verhalten in einem verkabelten Netz. Zum Vergleich, ein direkter Ping vom Mac an den Gaming-Server ohne Switch dazwischen:
 
 ```
-ping -c 300 10.40.0.54
+ping -c 300 10.40.10.11
 300 packets transmitted, 300 packets received, 0.0% packet loss
 round-trip min/avg/max/mdev = 0.4/0.9/4.3/0.4 ms
 ```
@@ -58,7 +58,7 @@ Der Paketverlust ging von zwölf auf etwa sechs Prozent zurück. Behoben war das
 Ich hatte noch einen Zyxel XMG-105 herumliegen – eine kompakte unmanaged Switch mit fünf 2,5-GbE-Ports. Der Tausch war schnell gemacht. Ergebnis:
 
 ```
-ping -c 300 10.40.0.1
+ping -c 300 10.40.10.1
 300 packets transmitted, 300 packets received, 0.0% packet loss
 round-trip min/avg/max/mdev = 0.5/0.9/4.6/0.3 ms
 ```
@@ -80,7 +80,7 @@ Der Mac Studio hängt jetzt mit vollem 10-GbE-Uplink daran, der Gaming-Server mi
 Das Ergebnis nach dem Tausch:
 
 ```
-ping -c 300 10.40.0.1
+ping -c 300 10.40.10.1
 300 packets transmitted, 300 packets received, 0.0% packet loss
 round-trip min/avg/max/mdev = 0.5/0.8/3.9/0.3 ms
 ```
